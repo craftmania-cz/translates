@@ -1,0 +1,3508 @@
+Command:
+  Island:
+    Bans:
+      Owner:
+        Message: '&c&l(!) &cNejsi majitel ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva vidět bany tohoto ostrova.'
+      Bans:
+        Message: '&c&l(!) &cNa tvém ostrově nejsou žádné bany.'
+      Info:
+        Message: '&f&oOtevře banovací menu ostrova.'
+    Unlock:
+      Money:
+        Message: '&c&l(!) &cNemáš dostatek peněz k odemčení. Cena za odemknutí je
+          &c$%cost%&e.'
+      Info:
+        Message: '&f&oOdemkne &c&oThe Nether &f&onebo &3&oThe End.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island unlock [<Nether&8|&cEnd>]'
+      Owner:
+        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+      Finish:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eÚspěšně jsi odemkl ''&7The %type%&e''.'
+      Disabled:
+        Message: '&c&l(!) &c''&7The %type%&e'' je vypnutý a není možné jej odemknout.'
+      Unlocked:
+        Message: '&c&l(!) &cJiž máš odemknutý ''&7The %type%&e''.'
+    Bank:
+      Short5:
+        Message: '&c&l(!) &cZadal jsi zápornou hodnotu. Můžeš zadat pouze kladnou
+          hodnotu.'
+      Short2:
+        Message: '&c&l(!) &cNení dostatek peněz k výběru.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island bank [<Deposit&8|&cWithdraw&8|&cBalance>]'
+      Short6:
+        Message: '&c&l(!) &cMusíš zadat pouze celé číslo.'
+      Short4:
+        Message: '&c&l(!) &cZadaná částka je neplatná.'
+      Short3:
+        Message: '&c&l(!) &cNespecifikoval jsi částku.'
+      Short:
+        Message: '&c&l(!) &cK tomuto nemáš dostatek peněz.'
+      Withdraw:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eÚspěšně sis vybral částku: ''&7$%amount%&e''.'
+      Deposit:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eÚspěšně jsi vložil částku: ''&7$%amount%&e''.'
+      Disabled:
+        Message: '&c&l(!) &cBanka byla vypnuta.'
+      Unknown:
+        Message: '&c&l(!) &cAktuálně nejsi na ostrově.'
+      Info:
+        Message: '&f&oUmožňuje Ti pracovat s bankou ostrova.'
+      Perm:
+        Message: '&c&l(!) &cNemáš práva pracovat s bankou tohoto ostrova.'
+      Balance:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNa tomto ostrově je v bance ''&7$%balance%&e''.'
+    Accept:
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island accept <player>'
+      Invited:
+        Message: '&c&l(!) &cTento hráč tě nepozval na jeho ostrov.'
+      Info:
+        Message: '&f&oPotvrdíš pozvání na ostrov.'
+      Capacity:
+        Broadcast:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvoje pozvánka od hráče &d%player
+            &ebyla automaticky zamítnuta, protože ostrov dosáhl maximálního počtu
+            členů.'
+      Accepted:
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &d%player &epřijal pozvánku.'
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePřijal jsi pozvánku od hráče
+            &d%player.'
+        Broadcast:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &6%player &ese přidal na tvůj ostrov!'
+      Owner:
+        Message: '&c&l(!) &cMusíš opustit tvůj současný ostrov pro připojení se na
+          jiný ostrov.'
+      Invite:
+        Message: '&c&l(!) &cNeobdržel jsi žádnou žádost.'
+    Level:
+      Scanning:
+        Finished:
+          Message: '&aSkenování levelu ostrova dokončeno!'
+        Progress:
+          Message: '&eSkenuje level ostrova: &b%percent%'
+        NotOnIsland:
+          Message: '&c&l(!) &cNemůžeš spustit sken ostrov, když na žádnem nejsi.'
+        BlockPlacing:
+          Message: '&b&lSky&f&lCloud &8| &Chyba&8: &eNemůžeš pokládat blocky dokud
+            běží level sken ostrova. Vyčkej na dokončení skenu.'
+      Cooldown:
+        Word:
+          Minute: minut(a/y)
+          Second: sekund(a/y)
+          Hour: hodin(a/y)
+        Message: '&c&l(!) &cMusíš počkat &c&o%time &enež budeš mít možnost znovu zažádat
+          o level sken ostrova.'
+      Level:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrov hráče &d%player &emá level
+          &6%level&e.'
+      Owner:
+        Yourself:
+          Message: '&c&l(!) &cNejsi majitel ostrova.'
+        Other:
+          Message: '&c&l(!) &cTento hráč není členem nebo nevlastní tento ostrov.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva si zobrazit level ostrova jiných hráčů.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island level [<player>]'
+      Loading:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &7&oNačítám seznam materiálů na ostrově....
+          Čekej, prosím!'
+      Info:
+        Message: '&f&oOtevře menu pro level ostrova.'
+      Processing:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &7&oZpracovávám požadavek na výpočet
+          levelu ostrova... Čekej, prosím!'
+      Materials:
+        Message: '&c&l(!) &cNa tomto ostrově nejsou žádné významné blocky.'
+    Unban:
+      Member:
+        Message: '&c&l(!) &cTento hráč nemá ban na tomto ostrově, protože je členem.'
+      Info:
+        Message: '&f&oOdbanuje hráče na tvém ostrově.'
+      Found:
+        Message: '&c&l(!) &cHráč tohoto jména nebyl nalezen.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island unban <player>'
+      Yourself:
+        Message: '&c&l(!) &cNemáš ban na tomto ostrově, protože jsi jeho členem.'
+      Unbanned:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOdbanoval jsi hráče &c%player &ena
+          tvém ostrově.'
+      Disabled:
+        Message: '&c&l(!) &cNemůžeš použít tento příkaz, protože funkce banování byla
+          vypnuta.'
+      Banned:
+        Message: '&c&l(!) &cTento hráč nebyl zabanován na tvém ostrově.'
+      Owner:
+        Message: '&c&l(!) &cNejsi majitelem tohoto ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva zrušit ban hráče na tomto ostrově.'
+    Admin:
+      Reload:
+        Info:
+          Message: '&f&oZnovu načtení všech souborů.'
+        Reloaded:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVšechny soubory byly znovu načteny.'
+      RemoveUpgrade:
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin removeupgrade <player> <upgrade>'
+        Island:
+          Owner:
+            Message: '&c&l(!) &cTento hráč není členem ostrova nebo jej nevlastní.'
+          Data:
+            Message: '&c&l(!) &cData ostrova pro tohoto hráče neexistují.'
+        Info:
+          Message: '&f&oOdstraní vylepšení z ostrova hráče.'
+        Upgrade:
+          Missing:
+            Message: '&c&l(!) &cHráčův ostrov nemá toto vylepšení.'
+          Exist:
+            Message: '&c&l(!) &cVylepšení tohoto názvu neexistuje.'
+        Removed:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: c&lODSTRANIL &ejsi vylepšení ''&d%upgrade&e''
+            z ostrova hráče &d%player&e.'
+      SetBiome:
+        Island:
+          Data:
+            Message: '&c&l(!) &cThe Island data for that player''s Island does not
+              exist.'
+          Owner:
+            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+              Island.'
+        Set:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set &d%player''s &eIsland
+            biome to &d%biome&e.'
+        Info:
+          Message: '&f&oSets the size of a player''s Island.'
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin setbiome <player> <biome>'
+        InvalidBiome:
+          Message: '&c&l(!) &cA biome with that name does not exist.'
+      Structure:
+        Tool:
+          Info:
+            Message: '&f&oGives the player the Structure tool item.'
+          Equiped:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have been given the Structure
+              tool.'
+          Inventory:
+            Message: '&c&l(!) &cYou already have the Structure tool in your inventory.'
+        Save:
+          Player:
+            World:
+              Message: '&c&l(!) &cYou must be in the same World as the selected positions.'
+            Area:
+              Message: '&c&l(!) &cYou must be inside of the selected area.'
+          Position:
+            Message: '&c&l(!) &cPlease use the Structure tool to select two positions
+              of an area.'
+          Complete:
+            Message: '&c&l(!) &cPlease complete the area selection by using the Structure
+              tool and selecting two positions of an area.'
+          Invalid:
+            Message: '&c&l(!) &cUprav zadání: /island admin structure save <name>'
+          Info:
+            Message: '&f&oSaves a selected Structure.'
+          Saved:
+            Successful:
+              Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eThe Structure with the name
+                ''&d%name&e'' has been saved!'
+            Failed:
+              Message: '&c&l(!) &cAn error occurred when trying to save the Structure.'
+          Selection:
+            World:
+              Message: '&c&l(!) &cBoth selected positions have to be in the same World.'
+        Info:
+          Message: '&f&oCreate Structures for Islands.'
+      SetSize:
+        Set:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set &d%player''s &eIsland
+            size to &d%size&e.'
+        Size:
+          Less:
+            Message: '&c&l(!) &cThe size of the Island must be less than 1000.'
+          Greater:
+            Message: '&c&l(!) &cThe size of the Island must be greater than 50.'
+        Info:
+          Message: '&f&oSets the size of a player''s Island.'
+        Island:
+          Owner:
+            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+              Island.'
+          Data:
+            Message: '&c&l(!) &cThe Island data for that player''s Island does not
+              exist.'
+        Numerical:
+          Message: '&c&l(!) &cYou must enter a numerical value.'
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin setsize <player> <size>'
+      AddUpgrade:
+        Info:
+          Message: '&f&oAdd an upgrade to a player''s Island.'
+        Upgrade:
+          Exist:
+            Message: '&c&l(!) &cAn upgrade by that name does not exist.'
+          Already:
+            Message: '&c&l(!) &cThat player''s Island already has that upgrade.'
+        Added:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have &a&lADDED the upgrade
+            ''&d%upgrade&e'' to &d%player''s &eIsland.'
+        Island:
+          Owner:
+            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+              Island.'
+          Data:
+            Message: '&c&l(!) &cThe Island data for that player''s Island does not
+              exist.'
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin addupgrade <player> <upgrade>'
+      SetHologram:
+        Set:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eThe ''&b%type&e'' hologram has
+            been set to your location.'
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin sethologram <Level|Votes>'
+        Info:
+          Message: '&f&oSets the location of a hologram.'
+      Settings:
+        Info:
+          Message: '&f&oChange the default settings for a newly created Island.'
+      Upgrade:
+        Info:
+          Message: '&f&oManage upgrades for the Island Upgrade menu.'
+        Disabled:
+          Message: '&c&l(!) &cYou cannot perform that command because upgrades have
+            been disabled.'
+      Create:
+        Info:
+          Message: '&f&oManage Structures for the Island Creator menu.'
+      Generator:
+        Disabled:
+          Message: '&c&l(!) &cYou cannot perform that command because the generator
+            has been disabled.'
+        Info:
+          Message: '&f&oManage generators for cobblestone generators.'
+      RemoveHologram:
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin removehologram <Level|Votes>'
+        Set:
+          Message: '&c&l(!) &cA location for that hologram has not been set.'
+        Info:
+          Message: '&f&oRemoves an existing hologram.'
+        Removed:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the ''&b%type&e''
+            hologram.'
+      Delete:
+        Deleted:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have deleted &c%player''s
+            &eIsland.'
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin delete <player>'
+        Info:
+          Message: '&f&oDelete a player''s Island permanently.'
+        Spawn:
+          Message: '&c&l(!) &cYou cannot delete that Island because the main spawn
+            point is set there.'
+        Owner:
+          Message: '&c&l(!) &cThat player is not an Island Owner.'
+      RefreshHolograms:
+        Info:
+          Message: '&f&oRefreshes any existing holograms.'
+        Refreshed:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eRefreshed holograms.'
+      Level:
+        Info:
+          Message: '&f&oChange Island level materials and points.'
+      Owner:
+        Invalid:
+          Message: '&c&l(!) &cUprav zadání: /island admin Owner <player>'
+        Info:
+          Message: '&f&oGet the Owner of a player''s Island.'
+        Island:
+          Owner:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &d%player &eis an Island Owner.'
+          Member:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &d%player''s Island Owner is
+              &d%player&e.'
+          None:
+            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+              Island.'
+      SetSpawn:
+        Set:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eThe spawn point has been set
+            to your location.'
+        Info:
+          Message: '&f&oSets the spawn point to your location.'
+    Coop:
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island coop [<player>]'
+      Removed:
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOdebral jsi coop hráči &d%player&e.'
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eJiž nejsi coop členem tohoto
+            ostrova.'
+      Disabled:
+        Message: '&c&l(!) &cNemůžeš použít tento příkaz, protože coop funkce je vypnutá.'
+      Info:
+        Message: '&f&oOtevře menu pro nastavení coop hráčů ostrova.'
+      Member:
+        Message: '&c&l(!) &cTento hráč nemůže dostat coop, protože je již členem tohoto
+          ostrova.'
+      Found:
+        Message: '&c&l(!) &cHráč tohoto jména nebyl nalezen.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Yourself:
+        Message: '&c&l(!) &cNemůžeš dát coop sám sobě, protože již jsi členem tohoto
+          ostrova.'
+      Added:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDal jsi coop hráči &d%player&e.'
+      Banned:
+        Message: '&c&l(!) &cNemůžeš dát coop hráči, který má ban.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva toto udělat.'
+    Delete:
+      Owner:
+        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+      Confirmation:
+        Confirm:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eChystáš se smazat vlastní ostrov.
+            Máš &c%time &esekund k potvrzení.   \n %confirm'
+          Word:
+            Confirm: POTVRZUJI
+            Tutorial: '&7Klikni pro &f&opotvrzení &r&7smazání ostrova!'
+        Pending:
+          Message: '&c&l(!) &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
+      Info:
+        Message: '&f&oSmaže tvůj ostrov.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva na smazání tvého ostrova. Asi někde nastala
+          chyba :D'
+    Kick:
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island kick <player>'
+      Role:
+        Owner:
+          Message: '&c&l(!) &cNemůžeš vykopnout majitele ostrova.'
+        Operator:
+          Message: '&c&l(!) &cNemůžeš vykopnout člena ostrova, který má stejnou roli
+            jako ty.'
+      Occupant:
+        Visit:
+          Open:
+            Message: '&c&l(!) &cTento hráč není členem ani návštěvníkem tvého ostrova.'
+          Closed:
+            Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+      Kicked:
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVykopnul jsi hráče &c%player
+            z ostrova.'
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi vykopnut z ostrova.'
+      Yourself:
+        Message: '&c&l(!) &cNemůžeš vykopnout sám sebe z ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+      Permission:
+        Visit:
+          Open:
+            Message: '&c&l(!) &cNemáš práva pro vykopnutí člena ostrova nebo návštěvníky.'
+          Closed:
+            Message: '&c&l(!) &cNemáš práva pro vykopnutí člena ostrova.'
+      Cooped:
+        Message: '&c&l(!) &cNemůžeš vykopnout hráče, který má coop.'
+      Info:
+        Message: '&f&oOdebere hráče nebo návštěvníka z tvého ostrova.'
+    KickAll:
+      Info:
+        Message: '&f&oVykopne všechny návštěvníky z tvého ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+      Role:
+        Message: '&c&l(!) &cNemáš správnou roli, aby jsi mohl vykopávat návštěníky
+          ostrova.'
+      Closed:
+        Message: '&c&l(!) &cNemůžeš vykopnout návštěvníky z ostrova, protože tento
+          ostrov je uzavřen.'
+      Kicked:
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVykopnul jsi nášvštěvníka &c%visitors
+            z ostrova.'
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi vykopnut z ostrova.'
+      Visitors:
+        Message: '&c&l(!) &cNa tomto ostrově nejsou návštěvníci.'
+    Open:
+      Info:
+        Message: '&f&oOtevře ostrov pro návštěvníky.'
+      Owner:
+        Message: '&c&l(!) &cTento hráč není vlastníkem ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva otevřít ostrov.'
+      Already:
+        Message: '&c&l(!) &cTvůj ostrov je již otevřen.'
+      Opened:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov byl otevřen.'
+    Leave:
+      Member:
+        Message: '&c&l(!) &cNejsi členem ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNemůžeš opustit tvůj ostrov.'
+      Left:
+        Broadcast:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &c%player &eopustil tvůj ostrov.'
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOpustil jsi ostrov.'
+      Info:
+        Message: '&f&oOpustíš hráčův ostrov.'
+    Promote:
+      Promoted:
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi povýšen na &dOperátora&e.'
+        Broadcast:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč &d%player &ebyl povýšen
+            na &dOperátora&e.'
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePovýšil jsi hráče &d%player &ena
+            &dOperátora&e.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva k povyšování členů tohoto ostrova.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island promote <player>'
+      Member:
+        Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Info:
+        Message: '&f&oPovýšení člena na Operátora.'
+      Operator:
+        Message: '&c&l(!) &cTento hráč je již &dOperátorem&e.'
+    Chat:
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Team:
+        Message: '&c&l(!) &cNemůžeš aktivovat ostrovní chat, protože nemáš ostrovní
+          tým.'
+      Offline:
+        Message: '&c&l(!) &cNemůžeš aktivovat ostrovní chat, protože ostatní členové
+          nejsou online.'
+      Untoggled:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDeaktivoval jsi ostrovní chat.
+          Zprávy budou nyní vidět pro všechny hráče.'
+      Info:
+        Message: '&f&oPrivátní komunikace se členy ostrova.'
+      Toggled:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eAktvivoval jsi ostrovní chat. Zprávy
+          budou nyní viditelné jen pro členy ostrova.'
+    Vote:
+      Island:
+        Closed:
+          Message: '&c&l(!) &cNemůžeš hlasovat pro tento ostrov, protože je zavřený.'
+        Member:
+          Message: '&c&l(!) &cNemůžeš hlasovat pro tento ostrov, protože jsi jeho
+            členem.'
+        None:
+          Message: '&c&l(!) &cTento hráč není členem ostrova nebo nevlastní ostrov.'
+        Location:
+          Message: '&c&l(!) &cMusíš být na ostrově hráče, abys pro něj mohl hlasovat.'
+        Unloaded:
+          Message: '&c&l(!) &cNikdo z členů tohoto ostrova není online.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island vote <player>'
+      Disabled:
+        Message: '&c&l(!) &cNemůžeš hlasovat pro tento ostrov, protože hlasování je
+          vypnuté.'
+      Info:
+        Message: '&f&oPřidá nebo odebere hlas z ostrova hráče.'
+      Vote:
+        Added:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &a&lPŘIDÁN &epro
+            ostrov hráče %player.'
+        Removed:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &c&lODEBRÁN &epro
+            ostrov hráče %player.'
+    Current:
+      Island:
+        Owner:
+          Yourself:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eJsi na ostrově hráče &d%player''s&e.'
+          Other:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč&a%target &eje na ostrově
+              hráče &d%owner&e.'
+        None:
+          Yourself:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNejsi na ostrově.'
+          Other:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč není na ostrově.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island current <player>'
+      Info:
+        Message: '&f&oUkáže, na kterém ostrově jsi.'
+      Offline:
+        Message: '&c&l(!) &cHráč není připojen na serveru.'
+      Permission:
+        Message: '&c&l(!) &cNemáš právo se podívat, na kterém ostrově hráči aktuálně
+          jsou.'
+    Deny:
+      Info:
+        Message: '&f&oZamítne pozvánku na ostrov.'
+      Invited:
+        Message: '&c&l(!) &cTento hráč Ti neposlal pozvánku na jeho ostrov.'
+      Denied:
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZamítl jsi pozvání od hráče &c%player&e.'
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &Hráč &c%player &eodmítl tvoje
+            pozvání.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island deny <player>'
+    Value:
+      Hand:
+        Message: '&c&l(!) &cMusíš držet předmět v ruce.'
+      None:
+        Message: '&c&l(!) &cNebylo možné získat hodnotu tohoto materiálu.'
+      Info:
+        Message: '&f&oVypíše hodnotu materiálu drženého v ruce.'
+      Value:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHodnota materiálu ''&d%material&e''
+          je &d%points &ebodů a zvýšení o &d%level level(y/ů)&e.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva zjistit hodnotu předmětu.'
+    Ownership:
+      Confirmation:
+        Pending:
+          Message: '&c&l(!) &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
+        Confirm:
+          Word:
+            Confirm: POTVRZENÍ
+            Tutorial: '&7Klikni pro &f&opotvrzení &r&7převodu vlastnictví ostrova!'
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eChystáš se převést vlastnictví
+            ostrova na hráče &d%player&e. Máš &c%time &esekund k potvrzení.   \n %confirm'
+      Password:
+        Unset:
+          Message: '&c&l(!) &cVlastník ostrova nemá nastavené heslo.'
+        Incorrect:
+          Message: '&c&l(!) &cZadané heslo je chybné.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island ownership / (<player> / <password>)'
+      Cooldown:
+        Word:
+          Minute: minut(a/y)
+          Second: sekund(a/y)
+          Hour: hodin(a/y)
+        Message: '&c&l(!) &cMusíš vyčkat &c&o%time &epředtím, než převedeš vlastníctví
+          ostrova.'
+      Info:
+        Message: '&f&oOtevře menu pro převod vlastnictví.'
+      Assigned:
+        Broadcast:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVlastnictí ostrova bylo převedeno
+            na hráče &a%player&e!'
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePrávě Ti bylo převedeno vlastnictví
+            ostrova.'
+      Yourself:
+        Message: '&c&l(!) &cNemůžeš převést vlastnictví sám sobě. Již jsi vlastníkem.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Member:
+        Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+    Invite:
+      Invited:
+        Target:
+          Expired:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNa pozvánku od hráče &c%player
+              &ejsi neodpověděl včas..'
+          Received:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi pozván pro připojení
+              se na ostrov hráče &d%player&e. &eMáš &c%time &ena reakci.'
+        Sender:
+          Expired:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč &c%player &enereagoval
+              na tvou pozvánku včas.'
+          Sent:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePozval jsi hráče &d%player
+              &ena tvůj ostrov. Má &c%time na reakci.   \n%cancel'
+          Disconnected:
+            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč &c%player &ese odpojil
+              a nereagoval na tvou pozvánku.'
+        Word:
+          Second: sekund(a/y)
+          Minute: minut(a/y)
+          Tutorial: '&7Klikni na &f&o%action &r&7pozvánku!'
+          Cancel: Zrušit
+          Deny: Zamítnout
+          Resend: Odeslat znovu
+          Accept: Příjmout
+      Capacity:
+        Message: '&c&l(!) &cNemůžeš pozvat více hráčů na tvůj sotrov, protože jsi
+          dosáhl kapacity členů.'
+      Already:
+        Own:
+          Message: '&c&l(!) &cPozvánka tomuto hráči již byla poslána.'
+        Other:
+          Message: '&c&l(!) &cJiný ostrov již tohoto hráče pozval.'
+      Yourself:
+        Message: '&c&l(!) &cNemůžeš pozvat sám sebe.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva zvát hráče na tvůj ostrov.'
+      Offline:
+        Message: '&c&l(!) &cHráč nebyl nalezen, nejspíše je offline.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Member:
+        Message: '&c&l(!) &cHráč je již členem tohoto ostrova.'
+      Info:
+        Message: '&f&oPozvat hráče pro připojení se na tvůj ostrov.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island invite <player>'
+    SetSpawn:
+      Protection:
+        Centre:
+          Message: '&c&l(!) &cMusíš stát blízko středu blocku pro nastavení ochrany
+            spawnu.'
+        Ground:
+          Message: '&c&l(!) &cMusíš stát na zemi pro nastavení ochrany spawnu.'
+        Block:
+          Message: '&c&l(!) &cMusíš stát na vrchu blocku pro nastavení ochrany spawnu.'
+        Liquid:
+          Message: '&c&l(!) &cNemůžeš být v kapalině, když nastavuješ ochranu spawnu.'
+        Portal:
+          Message: '&c&l(!) &cNemůžeš stát v portále, když nastavuješ ochranu spawnu.'
+      Spawn:
+        Message: '&c&l(!) &cToto není správný typ spawnu.'
+      Set:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &e%spawn pozice spawnu tvého ostrova
+          byla nastavena na tvou lokaci.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island setspawn <Main|Visitor>'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva nastavit %spawn pozici spawnu tvého ostrova.'
+      Info:
+        Message: '&f&oNastaví hlavní a návštěvnickou pozici spawnu.'
+      Role:
+        Message: '&c&l(!) &cNejsi tím, kdo může nastavit %spawn spawn pozici tvého
+          ostrova.'
+      Island:
+        Message: '&c&l(!) &cMusíš být na tvém ostrově pro nastavení %spawn spawn pozice.'
+    Demote:
+      Role:
+        Message: '&c&l(!) &cTento hráč je již členem.'
+      Demoted:
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDegradoval jsi hráče &d%player
+            &ena &dčlena&e.'
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi degradován na &dčlena&e.'
+      Member:
+        Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva pro degradování členů ostrova.'
+      Info:
+        Message: '&f&oDegradování Operátora na člena.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island demote <player>'
+    Information:
+      Island:
+        Message: '&c&l(!) &cTento hráč není členem ostrova nebo jej nevlastní.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island information [<player>]'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva zobrazit si informace o ostrovech ostatních
+          hráčů.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Info:
+        Message: '&f&oOtevře menu s informacemi o ostrově.'
+    Reset:
+      Info:
+        Message: '&f&oRestartuje tvůj ostrov.'
+      Confirmation:
+        Confirm:
+          Word:
+            Confirm: Potvrzení
+            Tutorial: '&7Klikni na &f&opotvrzení &r&7pro restartování ostrova!'
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eChystáš se restartovat tvůj ostrov.
+            Máš &c%time sekund pro potvrzení.'
+        Pending:
+          Message: '&c&l(!) &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva pro restartování tvého ostrova.'
+    Upgrade:
+      Info:
+        Message: '&f&oOtevře menu pro vylepšení ostrova.'
+      Disabled:
+        Message: '&c&l(!) &cNemůžeš udělat vylepšení ostrova, protože byly deaktivovány.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+    Ban:
+      Banned:
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZabanoval jsi hráče &c%player
+            &ez ostrova.'
+        Target:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDostal jsi ban na ostrově.'
+      Already:
+        Message: '&c&l(!) &cTento hráč již má ban na daném ostrově.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva pro udělení banu členovy ostrova.'
+      Yourself:
+        Message: '&c&l(!) &cNemůžeš udělit ban sám sobě.'
+      Found:
+        Message: '&c&l(!) &cHráč tohoto jména nebyl nalezen.'
+      Info:
+        Message: '&f&oZabanovat hráče z tvého ostrova.'
+      Member:
+        Message: '&c&l(!) &cNemůžeš zabanovat daného hráče z ostrova, protože je jeho
+          členem.'
+      Disabled:
+        Message: '&c&l(!) &cNemůžeš provést tento příkat, protože banování z ostrovů
+          je deaktivované.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island ban <player>'
+    Rollback:
+      Info:
+        Message: '&f&oOtevře Rollback menu ostrova.'
+      Role:
+        Message: '&c&l(!) &cNemáš správnou roli pro otevření Rollback menu ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+    Biome:
+      Info:
+        Message: '&f&oOtevře menu biomů ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš právo měnit biomy na tvém ostrově.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+    Visitors:
+      Info:
+        Message: '&f&oOtevře menu návštěvníků ostrova.'
+      Closed:
+        Message: '&c&l(!) &cNemůžeš otevřít menu návštěvníků ostrova, protože ostrov
+          je zavřený.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Visitors:
+        Message: '&c&l(!) &cNa ostrově nejsou návštěvníci.'
+    ControlPanel:
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Info:
+        Message: '&f&oOtevře menu kontrolního panelu ostrova.'
+    Border:
+      Info:
+        Message: '&f&oOtevře menu hranic ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva pro zobrazení menu hranic ostrova.'
+      Disabled:
+        Message: '&c&l(!) &cToto nemůžeš udělat, protože hranice ostrovů jsou vypnuté.'
+    Settings:
+      Permission:
+        Default:
+          Message: '&c&l(!) &cNemáš práva pro otevření nastavení ostrova.'
+        Change:
+          Message: '&c&l(!) &cNemáš práva pro změnu tohoto nastavení.'
+        Access:
+          Message: '&c&l(!) &cNemáš práva pro úpravu tohoto nastavení.'
+      Info:
+        Message: '&f&oOtevře menu nastavení ostrova.'
+      Role:
+        Message: '&c&l(!) &cNemáš správnou roli pro otevření menu nastavení ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+    Confirmation:
+      Deletion:
+        Spawn:
+          Message: '&c&l(!) &cNemůžeš smazat tvůj ostrov, protože je na něm hlavní
+            spawn.'
+        Open:
+          Message: '&c&l(!) &cMusíš zavřít tvůj ostrov, než ho smažeš.'
+        Sender:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eUž nejsi vlastník ostrova.'
+        Broadcast:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVlastník ostrova mazal ostrov.'
+        Money:
+          Message: '&c&l(!) &cNemáš dostatek peněz pro smazání tvého ostrova Cena
+            za smazání ostrova je &c%cost&e.'
+      Owner:
+        Message: '&c&l(!) &cNemůžeš potvrdit čekající potvrzení, protože nejsi vlastníkem
+          ostrova.'
+      Info:
+        Message: '&f&oPotvrzení pro permanentní operaci.'
+      Ownership:
+        Member:
+          Message: '&c&l(!) &cNemůžeš potvrdit čekající potvrzení, protože hráč, kterému
+            jsi předal vlastnictví ostrova již není členem ostrova.'
+        Assigned:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eBylo Ti předáno vlastnictví ostrova.'
+      Specified:
+        Message: '&c&l(!) &cDůvod, proč potvrzení nebylo specifikováno. Toto se nemělo
+          stát.'
+      Role:
+        Message: '&c&l(!) &cNemůžeš potvrdit čekající potvrzení, protože již nejsi
+          vlastníkem ostrova.'
+      Confirmed:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePotvrdil jsi čekající potvrzení.'
+      Pending:
+        Message: '&c&l(!) &cNemáš čekající potvrzení.'
+    Visit:
+      Info:
+        Message: '&f&oOtevře menu veřejných ostrovů k navštívení.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island visit [<player>]'
+    Help:
+      Page:
+        Message: '&c&l(!) &cNení zde tolik stránek.'
+      Integer:
+        Message: '&c&l(!) &cMusíš napsat číselnou hodnotu.'
+      Word:
+        Next: '&a&lDalší stránka'
+        Previous: '&a&lPředchozí stránka'
+        Pipe: '&8|'
+      Lines:
+      - '&b&lSky&f&lCloud &7- &e%type Přkazy&8:'
+      - '&c&o[&f&o!&c&o] &7&oNajeť myší na příkaz pro více informací.'
+      - '&8&l* &e%commands &7- &f&o%info'
+    Teleport:
+      Island:
+        None:
+          Message: '&c&l(!) &cTento hráč není člen ostrova nebo jej nevlastní.'
+        Closed:
+          Message: '&c&l(!) &cTento hráčův ostrov není otevřen pro návštěvníky.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva se teleportovat na ostrovy ostatních hráčů.'
+      Info:
+        Message: '&f&oTeleport na tvůj ostrov.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island teleport [<player>]'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Teleported:
+        Yourself:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován na tvůj
+            ostrov.'
+        Other:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován na ostrov
+            hráče &a%player&e.'
+    Create:
+      Owner:
+        Message: '&c&l(!) &cJiž jsi vlastníkem ostrova.'
+      Info:
+        Message: '&f&oOtevře menu pro vytváření ostrova.'
+    Members:
+      Info:
+        Message: '&f&oOtevře menu členů ostrova.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+    Weather:
+      Permission:
+        Message: '&c&l(!) &cNemáš práva pro změnu počasí na tvém ostrově.'
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Info:
+        Message: '&f&oOtevře menu počasí na ostrově.'
+    Argument:
+      Unrecognised:
+        Message: '&c&l(!) &cTento argument nebyl rozpoznán.'
+    Cancel:
+      Owner:
+        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Offline:
+        Message: '&c&l(!) &cTento hráč nebyl nalezen.'
+      Info:
+        Message: '&f&oZruší pozvání hráče.'
+      Invited:
+        Message: '&c&l(!) &cTento hráč nebyl pozván na tvůj ostrov.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva pro zrušení pozvánek na tvůj ostrov.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island cancel <player>'
+      Cancelled:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZrušil jsi pozvánku hráče &c%player&e.'
+      Member:
+        Message: '&c&l(!) &cTento hráč je členem ostrova.'
+    Close:
+      Closed:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov byl uzavřen.'
+      Already:
+        Message: '&c&l(!) &cTvůj ostrov je již uzavřen.'
+      Owner:
+        Message: '&c&l(!) &cTento hráč nemá ostrov.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva uzavřít ostrov.'
+      Info:
+        Message: '&f&oUzavře ostrov pro návštěvníky.'
+    Public:
+      Info:
+        Message: '&f&oZmění tvůj ostrov na privátní nebo veřejný.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva změnit ostrov na veřejný nebo privátní.'
+      Owner:
+        Message: '&c&l(!) &cTento hráč není vlastníkem ostrova.'
+      Private:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov je nyní &cprivátní&e.'
+      Public:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov je nyní &aveřejný&e.'
+    Leaderboard:
+      Disabled:
+        Message: '&c&l(!) &cNemůžeš si zobrazit žebříček nejlepších, protože byl vypnut.'
+      Info:
+        Message: '&f&oOtevře menu s žebříčkem 10 nejlepších ostrovů.'
+      Invalid:
+        Message: '&c&l(!) &cUprav zadání: /island leaderboard [<Level&8|&eBank&8|&eVotes>]'
+  PermissionDenied:
+    Admin:
+      Message: '&c&l(!) &cNemáš práva k provedení tohoto příkazu.'
+    Island:
+      Message: '&c&l(!) &cNemáš práva k provedení tohoto příkazu.'
+Scoreboard:
+  Tutorial:
+    Displaylines:
+    - ''
+    - '&b&lOstrov&f:'
+    - '&cNevlastníš ostrov.'
+    - ' &8- &7/island create'
+    - ''
+    - '&b&lProfil&f:'
+    - ' &8- &7Rank&8: &r%luckperms_prefix%'
+    - ' &8- &7Emeraldů&8: &a%vault_eco_balance_formatted%'
+    - ''
+    - '&7  mc.craftmania.cz'
+    Displayname: '&b&lSky&f&lCloud'
+  Island:
+    Solo:
+      Empty:
+        Displaylines:
+        - ''
+        - '&b&lOstrov&f:'
+        - ' &8- &7Level&8: &f%island_level'
+        - ' &8- &7Velikost&8: &f%island_size&7x&f%island_size'
+        - ''
+        - '&b&lProfil&f:'
+        - ' &8- &7Rank&8: &r%luckperms_prefix%'
+        - ' &8- &7Emeraldů&8: &a%vault_eco_balance_formatted%'
+        - ''
+        - '&7  mc.craftmania.cz'
+      Occupied:
+        Displaylines:
+        - ''
+        - '&b&lOstrov&f:'
+        - ' &8- &7Level&8: &f%island_level'
+        - ' &8- &7Návštěvníci&8: &f%island_visitors'
+        - ' &8- &7Velikost&8: &f%island_size&7x&f%island_size'
+        - ''
+        - '&b&lProfil&f:'
+        - ' &8- &7Rank&8: &r%luckperms_prefix%'
+        - ' &8- &7Emeraldů&8: &a%vault_eco_balance_formatted%'
+        - ''
+        - '&7  mc.craftmania.cz'
+      Displayname: '&b&lSky&f&lCloud'
+    Team:
+      Word:
+        Owner: Owner
+        Operator: Operator
+        Member: Member
+      Empty:
+        Displaylines:
+        - ''
+        - '&b&lOstrov&f:'
+        - ' &8- &7Role&8: &f%island_role'
+        - ' &8- &7Uživatelé&8: &f%island_members'
+        - ' &8- &7Level&8: &f%island_level'
+        - ' &8- &7Velikost&8: &f%island_size&7x&f%island_size'
+        - ''
+        - '&b&lProfil&f:'
+        - ' &8- &7Rank&8: &r%luckperms_prefix%'
+        - ' &8- &7Emeraldů&8: &a%vault_eco_balance_formatted%'
+        - ''
+        - '&7  mc.craftmania.cz'
+      Occupied:
+        Displaylines:
+        - ''
+        - '&b&lOstrov&f:'
+        - ' &8- &7Role&8: &f%island_role'
+        - ' &8- &7Uživatelé&8: &f%island_members'
+        - ' &8- &7Level&8: &f%island_level'
+        - ' &8- &7Návštěvníci&8: &f%island_visitors'
+        - ' &8- &7Velikost&8: &f%island_size&7x&f%island_size'
+        - ''
+        - '&b&lProfil&f:'
+        - ' &8- &7Rank&8: &r%luckperms_prefix%'
+        - ' &8- &7Emeraldů&8: &a%vault_eco_balance_formatted%'
+        - ''
+        - '&7  mc.craftmania.cz'
+      Displayname: '&b&lSky&f&lCloud'
+Menu:
+  Settings:
+    Default:
+      Item:
+        Setting:
+          Furnace:
+            Displayname: '&aPoužít pec'
+          Beacon:
+            Displayname: '&aPoužít Beacon'
+          Storage:
+            Displayname: '&aPřístup do truhel'
+          Anvil:
+            Displayname: '&aPoužít kovadlinu'
+          MinecartBoat:
+            Displayname: '&aPoužít loď/vozík'
+          Leash:
+            Displayname: '&aPoužít vodítko'
+          Cake:
+            Displayname: '&aUjídání dortu'
+          Crop:
+            Displayname: '&aZašlapávání farem'
+          Workbench:
+            Displayname: '&aPoužít crafting'
+          ArmorStandUse:
+            Displayname: '&aPoužít ArmorStand'
+          DragonEggUse:
+            Displayname: '&aKliknout na Dragon Egg'
+          Milking:
+            Displayname: '&aDojení krav'
+          ItemDrop:
+            Displayname: '&aVyhazovat předměty'
+          MobRiding:
+            Displayname: '&aJezdit na zvířatech'
+          PressurePlate:
+            Displayname: '&aAktivovat Pressure Plate'
+          Status:
+            Enabled:
+              Lore:
+              - '&7Status&8: &apovoleno'
+            Disabled:
+              Lore:
+              - '&7Status&8: &czakázáno'
+          Hopper:
+            Displayname: '&aPoužít Hopper'
+          Gate:
+            Displayname: '&aPoužít branku'
+          Door:
+            Displayname: '&aOtevřít/zavřít dveře'
+          Jukebox:
+            Displayname: '&aPoužít Jukebox'
+          Bucket:
+            Displayname: '&aPoužít kyblík'
+          SpawnEgg:
+            Displayname: '&aVylíhnout Spawn Egg'
+          Trading:
+            Displayname: '&aObchodování s vesničany'
+          HorseInventory:
+            Displayname: '&aOtevřít inventář koně'
+          Fire:
+            Displayname: '&aUhasit oheň'
+          Portal:
+            Displayname: '&aPoužít portál'
+          ItemPickup:
+            Displayname: '&aZvedat předměty'
+          Shearing:
+            Displayname: '&aStříhání zvířat'
+          Fishing:
+            Displayname: '&aRybaření'
+          WaterCollection:
+            Displayname: '&aNabrat vodu'
+          AnimalBreeding:
+            Displayname: '&aMnožení zvířat'
+          MobHurting:
+            Displayname: '&aUbližovat monstrům'
+          Bed:
+            Displayname: '&aPoužít postel'
+          Place:
+            Displayname: '&aPokládání blocků'
+          Brewing:
+            Displayname: '&aPoužít Brewing Stand'
+          ExperienceOrbPickup:
+            Displayname: '&aSebrat XPčka'
+          EntityPlacement:
+            Displayname: '&aPoložit entitu'
+          Enchant:
+            Displayname: '&aPoužít Enchantment Table'
+          HangingDestroy:
+            Displayname: '&aNičení vysících předmětů'
+          DropperDispenser:
+            Displayname: '&aPoužít Dropper/Dispenser'
+          MobTaming:
+            Displayname: '&aOchočit zvířata'
+          Redstone:
+            Displayname: '&aPoužít Redstone'
+          Projectile:
+            Displayname: '&aStřílet projektily'
+          LeverButton:
+            Displayname: '&aPoužít páčku/tlačítko'
+          Destroy:
+            Displayname: '&aNičení blocků'
+    Owner:
+      Item:
+        Setting:
+          Explosions:
+            Displayname: '&aVýbuchy'
+          NaturalMobSpawning:
+            Displayname: '&aVanilla spawnování monster a zvířat'
+          Damage:
+            Displayname: '&aPoškození (damage)'
+          LeafDecay:
+            Displayname: '&aRozpad listí'
+          MobGriefing:
+            Displayname: '&aMonstra ničí/kradou blocky'
+          Status:
+            Enabled:
+              Lore:
+              - '&7Status&8: &apovoleno'
+            Disabled:
+              Lore:
+              - '&7Status&8: &czakázáno'
+          PvP:
+            Displayname: '&aPvP'
+          FireSpread:
+            Displayname: '&aŠíření ohně'
+          Hunger:
+            Displayname: '&aHlad'
+          KeepItemsOnDeath:
+            Displayname: '&aZachovat předměty při smrti'
+        Return:
+          Displayname: '&cZpět'
+      Title: '&8Nastavení ostrova'
+    Operator:
+      Item:
+        Setting:
+          Ban:
+            Displayname: '&aBan návštěvníkům'
+          Status:
+            Disabled:
+              Lore:
+              - '&7Status&8: &czakázáno'
+            Enabled:
+              Lore:
+              - '&7Status&8: &apovoleno'
+          Member:
+            Displayname: '&aUpravit nastavení členů'
+          VisitorSpawn:
+            Displayname: '&aNastavit spawn ostrova pro návštěvníky'
+          Coop:
+            Displayname: '&aUpravit coop nastavení'
+          Invite:
+            Displayname: '&aPoslat pozvánky'
+          Unban:
+            Displayname: '&aOdbanovat návštěvníky'
+          Border:
+            Displayname: '&aNastavení hranic'
+          Kick:
+            Displayname: '&aVykopnout návštěvníky/člena'
+          MainSpawn:
+            Displayname: '&aNastavit hlavní spawn ostrova'
+          CoopPlayers:
+            Displayname: '&aCoop hráči'
+          Weather:
+            Displayname: '&aNastavení počasí'
+          Island:
+            Displayname: '&aUpravit nastavení ostrova'
+          Visitor:
+            Displayname: '&aUpravit nastavení pro návštěvníky'
+          Biome:
+            Displayname: '&aNastavit biom'
+        Return:
+          Displayname: '&cZpět'
+      Title: '&8Nastavení operátorů'
+    Visitor:
+      Item:
+        Statistics:
+          Vote:
+            Enabled:
+              Open:
+                Lore:
+                - '&7Návštěvníků ostrova&8: &e%visits'
+                - '&7Získaných hlasů&8: &e%votes'
+                - ''
+                - '&7Aktuální návštěvníci&8: &a%visitors'
+                - ''
+                - '&eKlikni pro uzamčení ostrova!'
+              Closed:
+                Lore:
+                - '&7Návštěvníků ostrova&8: &e%visits'
+                - '&7Získaných hlasů&8: &e%votes'
+                - ''
+                - '&aKlikni pro odemknutí ostrova!'
+            Disabled:
+              Closed:
+                Lore:
+                - '&7Návštěvníci ostrova&8: &e%visitors'
+                - ''
+                - '&eKlikni pro odemknutí ostrova!'
+              Open:
+                Lore:
+                - '&7Návštěvníků ostrova&8: &e%visits'
+                - ''
+                - '&7Aktuální návštěvníci&8: &a%visitors'
+                - ''
+                - '&eKlikni pro uzamčení ostrova!'
+          Displayname: '&aStatistiky návštěvníků ostrova'
+        Signature:
+          Displayname: '&bPodpis ostrova'
+          Lore:
+          - '&7Nastavení vlastního podpisu, který'
+          - '&7se zobrazuje v menu ostrova,'
+          - '&7když je ostrov odemknutý.'
+          - ''
+          - '&eKlikni pro zobrazení panelu!'
+        Welcome:
+          Displayname: '&bUvítací zpráva ostrova'
+          Lore:
+          - '&7Nastavení vlastní úvítací zprávy,'
+          - '&7která se ukáže návštěvníkům ostrova,'
+          - '&7když vstoupí na tvůj ostrov.'
+          - ''
+          - '&eKlikni pro zobrazení panelu!'
+        Return:
+          Displayname: '&cZpět'
+      Panel:
+        Signature:
+          Item:
+            Line:
+              Remove:
+                Lines:
+                  Lore:
+                  - ''
+                  - '&7Klikni pro odstranění posledního řádku!'
+                None:
+                  Lore:
+                  - ''
+                  - '&cNejsou tu žádné řádky k odstranění!'
+                Displayname: '&cOdstraní řádek'
+              Add:
+                Displayname: '&aPřidá řádek'
+                Word:
+                  Enter: Napiš text
+                Limit:
+                  Lore:
+                  - ''
+                  - '&cDosáhl jsi limitu!'
+                More:
+                  Lore:
+                  - ''
+                  - '&7Klikni pro přidání řádku!'
+            Message:
+              Word:
+                Empty: '&7&oPrázdné'
+              Displayname: '&bPodpis&f:'
+            Return:
+              Displayname: '&cZpět'
+          Title: '&8Nastavení podpisu'
+        Welcome:
+          Item:
+            Message:
+              Word:
+                Empty: '&7&oPrázdné'
+              Displayname: '&buvítací zpráva&f:'
+            Return:
+              Displayname: '&cZpět'
+            Line:
+              Add:
+                More:
+                  Lore:
+                  - ''
+                  - '&7Klikni pro přídání řádku!'
+                Limit:
+                  Lore:
+                  - ''
+                  - '&cDosáhl jsi limitu!'
+                Word:
+                  Enter: Napiš text
+                Displayname: '&aPřidá řádek'
+              Remove:
+                Displayname: '&cOdstraní řádek'
+                Lines:
+                  Lore:
+                  - ''
+                  - '&7Klikni pro odstranění posledního řádku!'
+                None:
+                  Lore:
+                  - ''
+                  - '&cNejsou tu žádné řádky k odstranění!'
+          Title: '&8Nastavení uvítací zprávy'
+      Title: '&8Nastavení pro návštěvníky'
+    Member:
+      Item:
+        Return:
+          Displayname: '&cZpět'
+      Title: '&8Nastavení pro členy'
+    Categories:
+      Item:
+        Visitor:
+          Displayname: '&aNastavení pro návštěvníky'
+          Lore:
+          - '&7Úprava a změna práv, které'
+          - '&7chceš pro návštěvníky, když'
+          - '&7budou na tvém ostrově.'
+          - ''
+          - '&eKlikni pro úpravu nastavení!'
+        Exit:
+          Displayname: '&cZpět'
+        Coop:
+          Lore:
+          - '&7Úprava a změna práv, které'
+          - '&7chceš pro coop hráče, když'
+          - '&7budou na tvém ostrově.'
+          - ''
+          - '&eKlikni pro úpravu nastavení!'
+          Displayname: '&aNastavení pro coop hráče'
+        Operator:
+          Lore:
+          - '&7Úprava a změna práv, které'
+          - '&7chceš pro Operátora, když'
+          - '&7bude na tvém ostrově.'
+          - ''
+          - '&eKlikni pro úpravu nastavení!'
+          Displayname: '&aNastavení pro Operátory'
+        Owner:
+          Displayname: '&aNastavení ostrova'
+          Lore:
+          - '&7Úprava a změna práv, které'
+          - '&7jsou pro tvůj ostrov nejlepší.'
+          - ''
+          - '&eKlikni pro úpravu nastavení!'
+        Member:
+          Lore:
+          - '&7Úprava a změna práv, které'
+          - '&7chceš pro člena ostrova, když'
+          - '&7hraje na tvém ostrově.'
+          - ''
+          - '&eKlikni pro úpravu nastavení!'
+          Displayname: '&aNastavení člena ostrova'
+      Title: '&8Nastavení - kategorie'
+    Coop:
+      Title: '&8Nastavení coopu'
+      Item:
+        Return:
+          Displayname: '&cZpět'
+  Admin:
+    Settings:
+      Default:
+        Item:
+          Setting:
+            Furnace:
+              Displayname: '&aPoužít pec'
+            Beacon:
+              Displayname: '&aPoužít Beacon'
+            Storage:
+              Displayname: '&aPřístup do truhel'
+            Anvil:
+              Displayname: '&aPoužít kovadlinu'
+            MinecartBoat:
+              Displayname: '&aPoužít loď/vozík'
+            Leash:
+              Displayname: '&aPoužít vodítko'
+            Cake:
+              Displayname: '&aUjídání dortu'
+            Crop:
+              Displayname: '&aZašlapávání farem'
+            Workbench:
+              Displayname: '&aPoužít crafting'
+            ArmorStandUse:
+              Displayname: '&aPoužít ArmorStand'
+            DragonEggUse:
+              Displayname: '&aKliknout na Dragon Egg'
+            Milking:
+              Displayname: '&aDojení krav'
+            ItemDrop:
+              Displayname: '&aVyhazovat předměty'
+            MobRiding:
+              Displayname: '&aJezdit na zvířatech'
+            PressurePlate:
+              Displayname: '&aAktivovat Pressure Plate'
+            Status:
+              Enabled:
+                Lore:
+                - '&7Status&8: &apovoleno'
+              Disabled:
+                Lore:
+                - '&7Status&8: &czakázáno'
+            Hopper:
+              Displayname: '&aPoužít Hopper'
+            Gate:
+              Displayname: '&aPoužít branku'
+            Door:
+              Displayname: '&aOtevřít/zavřít dveře'
+            Jukebox:
+              Displayname: '&aPoužít Jukebox'
+            Bucket:
+              Displayname: '&aPoužít kyblík'
+            SpawnEgg:
+              Displayname: '&aVylíhnout Spawn Egg'
+            Trading:
+              Displayname: '&aObchodování s vesničany'
+            HorseInventory:
+              Displayname: '&aOtevřít inventář koně'
+            Fire:
+              Displayname: '&aUhasit oheň'
+            Portal:
+              Displayname: '&aPoužít portál'
+            ItemPickup:
+              Displayname: '&aZvedat předměty'
+            Shearing:
+              Displayname: '&aStříhání zvířat'
+            Fishing:
+              Displayname: '&aRybaření'
+            WaterCollection:
+              Displayname: '&aNabrat vodu'
+            AnimalBreeding:
+              Displayname: '&aMnožení zvířat'
+            MobHurting:
+              Displayname: '&aUbližovat monstrům'
+            Bed:
+              Displayname: '&aPoužít postel'
+            Place:
+              Displayname: '&aPokládání blocků'
+            Brewing:
+              Displayname: '&aPoužít Brewing Stand'
+            ExperienceOrbPickup:
+              Displayname: '&aSebrat XPčka'
+            EntityPlacement:
+              Displayname: '&aPoložit entitu'
+            Enchant:
+              Displayname: '&aPoužít Enchantment Table'
+            HangingDestroy:
+              Displayname: '&aNičení vysících předmětů'
+            DropperDispenser:
+              Displayname: '&aPoužít Dropper/Dispenser'
+            MobTaming:
+              Displayname: '&aOchočit zvířata'
+            Redstone:
+              Displayname: '&aPoužít Redstone'
+            Projectile:
+              Displayname: '&aStřílet projektily'
+            LeverButton:
+              Displayname: '&aPoužít páčku/tlačítko'
+            Destroy:
+              Displayname: '&aNičení blocků'
+      Member:
+        Item:
+          Return:
+            Displayname: '&cZpět'
+        Title: '&8Úprava nastavení - člen'
+      Categories:
+        Item:
+          Owner:
+            Displayname: '&aIsland Settings'
+            Lore:
+            - '&7Edit and decide what you want'
+            - '&7the default Island permissions'
+            - '&7to be when an Island is created.'
+            - ''
+            - '&eKlikni pro úpravu nastavení!'
+          Operator:
+            Displayname: '&aOperator Settings'
+            Lore:
+            - '&7Edit and decide what you want'
+            - '&7the default Operator permissions'
+            - '&7to be when an Island is created.'
+            - ''
+            - '&eKlikni pro úpravu nastavení!'
+          Member:
+            Displayname: '&aMember Settings'
+            Lore:
+            - '&7Edit and decide what you want'
+            - '&7the default Member permissions'
+            - '&7to be when an Island is created.'
+            - ''
+            - '&eKlikni pro úpravu nastavení!'
+          Visitor:
+            Displayname: '&aVisitor Settings'
+            Lore:
+            - '&7Edit and decide what you want'
+            - '&7the default Visitor permissions'
+            - '&7to be when an Island is created.'
+            - ''
+            - '&eKlikni pro úpravu nastavení!'
+          Exit:
+            Displayname: '&cClick to Exit'
+          Coop:
+            Lore:
+            - '&7Edit and decide what you want'
+            - '&7the default Coop permissions'
+            - '&7to be when an Island is created.'
+            - ''
+            - '&eKlikni pro úpravu nastavení!'
+            Displayname: '&aCoop Settings'
+        Title: '&8Settings Editor - Categories'
+      Operator:
+        Item:
+          Setting:
+            Kick:
+              Displayname: '&aKick Members & Visitors'
+            CoopPlayers:
+              Displayname: '&aCoop Players'
+            Status:
+              Disabled:
+                Lore:
+                - '&7Status&8: &cfalse'
+              Enabled:
+                Lore:
+                - '&7Status&8: &atrue'
+            Weather:
+              Displayname: '&aSet Weather'
+            VisitorSpawn:
+              Displayname: '&aSet Island Visitor Spawn'
+            Island:
+              Displayname: '&aEdit Island Settings'
+            Unban:
+              Displayname: '&aUnban Visitors'
+            Visitor:
+              Displayname: '&aEdit Visitor Settings'
+            Border:
+              Displayname: '&aSet Border'
+            Biome:
+              Displayname: '&aSet Biome'
+            Coop:
+              Displayname: '&aEdit Coop Settings'
+            Member:
+              Displayname: '&aEdit Member Settings'
+            Invite:
+              Displayname: '&aSend Invites'
+            MainSpawn:
+              Displayname: '&aSet Island Main Spawn'
+            Ban:
+              Displayname: '&aBan Visitors'
+          Return:
+            Displayname: '&cZpět'
+        Title: '&8Settings Editor - Operator'
+      Visitor:
+        Item:
+          Return:
+            Displayname: '&cZpět'
+        Title: '&8Settings Editor - Visitor'
+      Owner:
+        Item:
+          Setting:
+            Status:
+              Enabled:
+                Lore:
+                - '&7Status&8: &atrue'
+              Disabled:
+                Lore:
+                - '&7Status&8: &cfalse'
+            NaturalMobSpawning:
+              Displayname: '&aNatural Mob Spawning'
+            MobGriefing:
+              Displayname: '&aMob Griefing'
+            PvP:
+              Displayname: '&aPvP'
+            Explosions:
+              Displayname: '&aExplosions'
+            FireSpread:
+              Displayname: '&aFire Spread'
+            LeafDecay:
+              Displayname: '&aLeaf Decay'
+            KeepItemsOnDeath:
+              Displayname: '&aKeep Items on Death'
+            Damage:
+              Displayname: '&aDamage'
+            Hunger:
+              Displayname: '&aHunger'
+          Return:
+            Displayname: '&cZpět'
+        Title: '&8Settings Editor - Island'
+      Coop:
+        Item:
+          Return:
+            Displayname: '&cZpět'
+        Title: '&8Settings Editor - Coop'
+    Upgrade:
+      Upgrades:
+        Item:
+          Speed:
+            Displayname: '&aSpeed Boost'
+            Lore:
+            - '&7Gives players Speed 2 while'
+            - '&7on the Island.'
+            - ''
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to %status!'
+            - '&eRight-Click to set cost!'
+          Exit:
+            Displayname: '&cExit Upgrade Editor'
+          Jump:
+            Displayname: '&aJump Boost'
+            Lore:
+            - '&7Gives players Jump Boost 2'
+            - '&7while on the Island.'
+            - ''
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to %status!'
+            - '&eRight-Click to set cost!'
+          Size:
+            Displayname: '&aBorder Size'
+            Lore:
+            - '&7Increases the size of'
+            - '&7the Island border.'
+            - ''
+            - '&7Tiers&8: &f%tiers'
+            - ''
+            - '&eClick to manage tiers!'
+          Fly:
+            Displayname: '&aFlight'
+            Lore:
+            - '&7Have the ability to'
+            - '&7fly while on the'
+            - '&7Island.'
+            - ''
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to %status!'
+            - '&eRight-Click to set cost!'
+          Spawner:
+            Lore:
+            - '&7Increases spawners'' spawn'
+            - '&7speed by 2x on the Island.'
+            - ''
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to %status!'
+            - '&eRight-Click to set cost!'
+            Displayname: '&aSpawner Boost'
+          Word:
+            Enable: Enable
+            Disable: Disable
+            Enter: Enter cost
+          Crop:
+            Displayname: '&aCrop Growth'
+            Lore:
+            - '&7Increases the Island''s crop'
+            - '&7growth speed by 2x.'
+            - ''
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to %status!'
+            - '&eRight-Click to set cost!'
+          Drops:
+            Displayname: '&aLoot Drops'
+            Lore:
+            - '&7Increases the amount of'
+            - '&7mob loot dropped by 2x'
+            - '&7on the Island.'
+            - ''
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to %status!'
+            - '&eRight-Click to set cost!'
+        Title: '&8Upgrade Editor'
+      Size:
+        Item:
+          Information:
+            Displayname: '&aInformation'
+            Lore:
+            - '&7Create tiers, and decide the'
+            - '&7cost and what upgrade Islands'
+            - '&7receive from them.'
+            - ''
+            - '&eClick to create a tier!'
+          Return:
+            Displayname: '&cReturn to Upgrade Editor'
+          Word:
+            Size:
+              Enter: Enter Size
+            Cost:
+              Enter: Enter Cost
+          Barrier:
+            Displayname: '&cSize Tiers'
+          Tier:
+            Lore:
+            - '&7Size&8: &f%size'
+            - '&7Cost&8: &f$%cost'
+            - ''
+            - '&eLeft-Click to set size!'
+            - '&eMiddle-Click to remove!'
+            - '&eRight-Click to set cost!'
+            Displayname: '&bTier #%tier'
+        Title: '&8Upgrade Editor - Size'
+    Generator:
+      Generator:
+        Item:
+          Barrier:
+            Displayname: '&cMaterials Below'
+          Information:
+            Permission:
+              Enable:
+                Lore:
+                - '&7Name&8: &f%name'
+                - '&7Permission&8:'
+                - '&f&o%permission'
+                - ''
+                - '&eClick to enable permission!'
+              Disable:
+                Lore:
+                - '&7Name&8: &f%name'
+                - '&7Permission&8:'
+                - '&f&o%permission'
+                - ''
+                - '&eClick to disable permission!'
+            Displayname: '&bInformation'
+          Material:
+            Lore:
+            - '&7Chance&8: &f%chance'
+            - ''
+            - '&eLeft-Click to set chance!'
+            - '&eRight-Click to remove material!'
+            Word:
+              Enter: Enter Chance
+            Displayname: '&a%material'
+          Nothing:
+            Displayname: '&c&oNothing to see here...'
+          Return:
+            Displayname: '&cReturn to browse'
+      Browse:
+        Item:
+          Exit:
+            Displayname: '&cExit Generator Editor'
+          Previous:
+            Displayname: '&a< Předchozí stránka'
+          Next:
+            Displayname: '&aDalší stránka >'
+          Barrier:
+            Displayname: '&cGenerators Below'
+          Nothing:
+            Displayname: '&c&oNothing to see here...'
+          Information:
+            Word:
+              Enter: Enter Name
+            Displayname: '&bInformation'
+            Lore:
+            - '&7Generators&8: &f%generators'
+            - ''
+            - '&eClick to create a Generator!'
+          Generator:
+            Displayname: '&a%generator'
+            Lore:
+            - '&eLeft-Click to manage generator!'
+            - '&eRight-Click to remove generator!'
+      Title: '&8Generator Editor'
+    Creator:
+      Browse:
+        Item:
+          Next:
+            Displayname: '&aDalší stránka >'
+          Information:
+            Displayname: '&bInformation'
+            Word:
+              Enter: Enter Name
+            Lore:
+            - '&7Structures&8: &f%structures'
+            - ''
+            - '&eClick to create a Structure!'
+          Structure:
+            Lore:
+            - '&eLeft-Click to view options!'
+            - '&eRight-Click to remove structure!'
+            Displayname: '&a%structure'
+          Barrier:
+            Displayname: '&cStructures Below'
+          Previous:
+            Displayname: '&a< Předchozí stránka'
+          Nothing:
+            Displayname: '&c&oNothing to see here...'
+          Exit:
+            Displayname: '&cExit Creator Editor'
+      Options:
+        Item:
+          Commands:
+            Unset:
+              Lore:
+              - '&7Commands&8:'
+              - '%commands'
+              - ''
+              - '&c[!] Commands performed on'
+              - '&cisland creation by the'
+              - '&cconsole.'
+              - ''
+              - '&c[!] Use %player for player name.'
+              - ''
+              - '&eClick to add a command!'
+            Set:
+              Lore:
+              - '&7Commands&8:'
+              - '%commands'
+              - ''
+              - '&c[!] Commands performed on'
+              - '&cisland creation by the'
+              - '&cconsole.'
+              - ''
+              - '&c[!] Use %player for player name.'
+              - ''
+              - '&eLeft-Click to add a command!'
+              - '&eRight-click to remove a command!'
+            Word:
+              Enter: Enter command
+            Displayname: '&aCommands'
+          Item:
+            Displayname: '&aItem'
+            Lore:
+            - '&7Material&8:'
+            - '&f&o%material'
+            - ''
+            - '&c[!] When clicked,'
+            - '&cselect an item in'
+            - '&cyour inventory or'
+            - '&cclick this item'
+            - '&cagain to cancel.'
+            - ''
+            - '&eClick to set item!'
+          DeletionCost:
+            Word:
+              Enter: Enter Cost
+            Displayname: '&aDeletion Cost'
+            Lore:
+            - '&7Cost&8: &f%cost'
+            - ''
+            - '&c[!] For no deletion'
+            - '&ccost, enter 0.0.'
+            - ''
+            - '&eClick to set cost!'
+          Description:
+            Word:
+              Enter: Enter Line
+            Displayname: '&aDescription'
+            Unset:
+              Lore:
+              - '&7Description&8:'
+              - '%description'
+              - ''
+              - '&eClick to add line!'
+            Set:
+              Lore:
+              - '&7Description&8:'
+              - '%description'
+              - ''
+              - '&eLeft-Click to add line!'
+              - '&eRight-click to remove line!'
+          Word:
+            Unset: '&f&oUnset'
+          File:
+            Displayname: '&aStructure File'
+            Word:
+              Enter: Enter file name
+            Lore:
+            - '&7Overworld File&8:'
+            - '&f&o%overworld_file'
+            - ''
+            - '&7Nether File&8:'
+            - '&f&o%nether_file'
+            - ''
+            - '&7End File&8:'
+            - '&f&o%end_file'
+            - ''
+            - '&c[!] The structure file must be'
+            - '&cset for all worlds.'
+            - ''
+            - '&eLeft-Click to set overworld file!'
+            - '&eMiddle-Click to set nether file!'
+            - '&eRight-Click to set end file!'
+          Permission:
+            Displayname: '&aPermission'
+            Enable:
+              Lore:
+              - '&7Permission&8:'
+              - '&f&o%permission'
+              - ''
+              - '&eClick to enable!'
+            Disable:
+              Lore:
+              - '&7Permission&8:'
+              - '&f&o%permission'
+              - ''
+              - '&eClick to disable!'
+          Return:
+            Displayname: '&cReturn to browse'
+          Displayname:
+            Word:
+              Enter: Enter Displayname
+            Displayname: '&aDisplayname'
+            Lore:
+            - '&7Displayname&8:'
+            - '&f&o%displayname'
+            - ''
+            - '&eClick to set displayname!'
+      Title: '&8Structure Editor'
+    Levelling:
+      Item:
+        Material:
+          Word:
+            Enter: Enter Points
+          Displayname: '&a%material'
+          Lore:
+          - '&7Points&8: &6%points'
+          - ''
+          - '&eLeft-Click to change points!'
+          - '&eRight-Click to remove material!'
+        Information:
+          Word:
+            Enter: Enter Division
+          Displayname: '&bInformation'
+          Lore:
+          - '&7Materials&8: &f%materials'
+          - '&7Division&8: &f%division'
+          - ''
+          - '&eClick to set Division!'
+        Previous:
+          Displayname: '&a< Předchozí stránka'
+        Exit:
+          Displayname: '&cExit Levelling Editor'
+        Nothing:
+          Displayname: '&c&oNothing to see here...'
+        Next:
+          Displayname: '&aDalší stránka >'
+        Barrier:
+          Displayname: '&cLevelling Materials Below'
+      Title: '&8Levelling Editor'
+  Members:
+    Item:
+      Previous:
+        Displayname: '&a< Předchozí stránka'
+      Nothing:
+        Displayname: '&c&oNení tu nic k vidění...'
+      Member:
+        Action:
+          Word:
+            Promote: povýšit
+            Demote: degradovat
+            Kick: vykopnout
+          Lore: '&e%Klikni na %action hráče!'
+        Word:
+          Click: Klikni
+          Seconds: sekund(a/y)
+          Minutes: minut(a/y)
+          Hours: hodin(a/y)
+          Right-Click: Klikni pravým
+          Left-Click: Klikni levým
+          Days: den(dny/ů)
+        Playtime:
+          Lore:
+          - '&7Odehraný čas&8:'
+          - '&d%playtime'
+        LastOnline:
+          Lore:
+          - '&7Naposledy online&8:'
+          - '&c%last_online'
+        Displayname: '&b%player'
+        Since:
+          Lore:
+          - '&7Členem již&8:'
+          - '&a%since'
+        Role:
+          Word:
+            Member: '&aČlen'
+            Operator: '&bOperátor'
+            Owner: '&6Vlastník'
+          Lore:
+          - '&7Role&8: %role'
+      Statistics:
+        Lore:
+        - '&bČlenů ostrova:'
+        - '&e%island_members/%island_capacity'
+        - ''
+        - '&bČlenové:'
+        - '&e%members'
+        - ''
+        - '&bOperátoři:'
+        - '&e%operators'
+        Displayname: '&3&nStatistiky členů ostrova'
+      Sort:
+        Lore:
+        - '&7Základní třídění&8: &b%sort'
+        - ''
+        - '&bZákladní&7: Zobrazit členy ostrova'
+        - '&7od nejvyšší po nejnižší roli.'
+        - '&bOdehraný čas&7: Zobrazit členy ostrova'
+        - '&7dle nejvíce nahraného času.'
+        - '&bČlenem již&7: Zobrazí členy ostrova'
+        - '&7dle data členství.'
+        - '&bNaposledy online&7: Zobrazí členy'
+        - '&7ostrova dle posledního přihlášení.'
+        - ''
+        - '&eKlikni pro změnu mezi všemi'
+        - '&edostupnými možnostmi třídění.'
+        Displayname: '&aZměnit třídění'
+      Type:
+        Displayname: '&aZměnit typ'
+        Lore:
+        - '&7Současný typ&8: &b%type'
+        - ''
+        - '&bZákladní&7: Zobrazit všechny členy ostrova'
+        - '&bČlenové&7: Zobrazit pouze členy.'
+        - '&bOperátor&7: Zobrazit pouze Operátory.'
+        - '&bVlastník&7: Zobrazit pouze vlastníka.'
+        - ''
+        - '&eKlikni pro změnu mezi všemi'
+        - '&edostupnými možnostmi.'
+      Exit:
+        Displayname: '&cOdejít z členů ostrova'
+      Next:
+        Displayname: '&aDalší strana >'
+      Barrier:
+        Displayname: '&cČlenové ostrova níže'
+    Title: '&8Členové ostrova'
+  Ownership:
+    Item:
+      Original:
+        Displayname: '&bPůvodní majitel'
+        Lore:
+        - '&7Hráč&8: &e%player'
+      Password:
+        Hidden:
+          Lore:
+          - '&7Nastavení hesla, které může'
+          - '&7použít člen ostrova pro'
+          - '&7automatické převedení'
+          - '&7vlastnictví.'
+          - ''
+          - '&7Heslo&8:'
+          - '&f&oHidden'
+          - ''
+          - '&eLevé kliknutí pro nastavení hesla!'
+          - '&eProstřední klik pro zobrazení hesla!'
+          - '&ePravý klik pro resetování hesla!'
+          Word:
+            Enter: Zadat heslo
+        Unset:
+          Lore:
+          - '&7Nastavení hesla, které může'
+          - '&7použít člen ostrova pro'
+          - '&7automatické převedení'
+          - '&7vlastnictví.'
+          - ''
+          - '&7Heslo&8:'
+          - '&c&oNenastaveno'
+          - ''
+          - '&eKlikni pro nastavení hesla!'
+        Visible:
+          Lore:
+          - '&7Nastavení hesla, které může'
+          - '&7použít člen ostrova pro'
+          - '&7automatické převedení'
+          - '&7vlastnictví.'
+          - ''
+          - '&7Heslo&8:'
+          - '&f&o%password'
+          - ''
+          - '&eLevé kliknutí pro nastavení hesla!'
+          - '&eProstřední klik pro zobrazení hesla!'
+          - '&ePravý klik pro resetování hesla!'
+        Displayname: '&aHeslo pro převod vlastnictví'
+      Assign:
+        Word:
+          Enter: Zadej hráče
+        Lore:
+        - '&7Předat vlastnictví ostrova'
+        - '&7na člena tvého ostrova.'
+        - ''
+        - '&eKlikni pro vložení jména hráče!'
+        Displayname: '&aZadej vlastníka'
+      Barrier:
+        Displayname: '&cNastavení vlastnictví ostrova >'
+      Exit:
+        Displayname: '&cOdejít'
+    Title: '&8Vlastnictví ostrova'
+  Levelling:
+    Item:
+      Nothing:
+        Displayname: '&c&oNení tu nic k vidění...'
+      Previous:
+        Displayname: '&a< Předchozí stránka'
+      Statistics:
+        Lore:
+        - '&bLevel:'
+        - '&e%level'
+        - ''
+        - '&bBodů:'
+        - '&e%level_points'
+        Displayname: '&3&nStatistiky materiálů ostrova'
+      Next:
+        Displayname: '&aDalší stránka >'
+      Exit:
+        Displayname: '&cOdejít'
+      Barrier:
+        Displayname: '&cMateriály na ostrově jsou níže'
+      Rescan:
+        Lore:
+        - '&7Klikni pro proskenování materiálů'
+        - '&7na ostrově a pro získání'
+        - '&7celkového počtu bodů a tvého level.'
+        - ''
+        - '&cVarování: Musíš počkat hodinu'
+        - '&cpo proskenování k opakování!'
+        Displayname: '&aProskenování materiálů na ostrově'
+      Material:
+        Displayname: '&7%material &8(&e+%points bodů&8)'
+        Lore:
+        - '&8(&e%blocks Blocků&8)'
+    Title: '&8Levelování ostrova'
+  ControlPanel:
+    Item:
+      Members:
+        Displayname: '&aČlenové ostrova'
+        Lore:
+        - '&7[&f!&7] Zobrazit, kteří hráči jsou členy'
+        - '    &7tvého ostrova a jaké jsou jejich'
+        - '    &7role a statistiky.'
+        - ''
+        - '&eKlikni pro zobrazení členů ostrova!'
+      Weather:
+        Lore:
+        - '&7[&f!&7] Změn počasí a čas na tvém ostrově.'
+        - ''
+        - '&eKlikni pro změnu počasí a času na ostrově!'
+        Displayname: '&aPočasí a čas ostrova'
+      Level:
+        Lore:
+        - '&7[&f!&7] Obdrž levely rozšiřováním'
+        - '    &7tvého ostrova a pokládáním'
+        - '    &7vzácných blocků.'
+        - ''
+        - '&eKlikni pro vypočítání levelu ostrova!'
+        Displayname: '&aLevel ostrova'
+      Biome:
+        Displayname: '&aBiomy ostrova'
+        Lore:
+        - '&7[&f!&7] Zvol několik biomů, které'
+        - '    &7budou na tvém ostrově a rozhodni'
+        - '    &7které se nejvíce hodí k tomu tvému.'
+        - ''
+        - '&eKlikni pro změnu biomu ostrova!'
+      Settings:
+        Displayname: '&aNastavení ostrova'
+        Lore:
+        - '&7[&f!&7] Spravuj nastavení ostrova'
+        - '    &7a rozhodni, která práva'
+        - '    &7chceš dát ostatním.'
+        - ''
+        - '&eKlikni pro zobrazení nastavení ostrova!'
+      Bans:
+        Lore:
+        - '&7[&f!&7] Zobraz si hráče, kteří mají'
+        - '    &7zakázaný vstup na tvůj ostrov'
+        - ''
+        - '&eKlikni pro zobrazení zabanovaných hráčů!'
+        Displayname: '&aBany na ostrově'
+      Teleport:
+        Displayname: '&aTeleporty ostrova'
+        Lore:
+        - '&7[&f!&7] Teleportuje tě na hlavní'
+        - '    &7spawn pozici tvého ostrova.'
+        - ''
+        - '&eKlikni pro teleportování se na ostrov!'
+      Visitors:
+        Lore:
+        - '&7[&f!&7] Podívej se, jací hráči'
+        - '    &7navštěvují tvůj ostrov'
+        - '    &7a kolik zde tráví času.'
+        - ''
+        - '&eKlikni pro zobrazení návštěvníků ostrova!'
+        Displayname: '&aNávštěvníci ostrova'
+      Barrier:
+        Displayname: '&cKontrolní panel ostrova'
+    Title: '&8Kontrolní panel ostrova'
+  Border:
+    Item:
+      Exit:
+        Displayname: '&cOdejít'
+      Toggle:
+        Lore:
+        - '&7Rozhodni, zda hranice ostrova'
+        - '&7budou viditelné pro hráče.'
+        - ''
+        - '&eKlikni pro %toggle!'
+        Displayname: '&aZapnutí hranic'
+      Color:
+        Displayname: '%color barva hranic'
+        Unselected:
+          Lore:
+          - '&7Nastaví barvu hranic'
+          - '&7ostrova na barvu: %color.'
+          - ''
+          - '&eKlikni pro zvolení!'
+        Selected:
+          Lore:
+          - '&7Nastaví barvu hranic'
+          - '&7ostrova na barvu: %color.'
+          - ''
+          - '&e&lJIŽ ZVOLENO'
+      Word:
+        Green: '&aZelená'
+        Red: '&cČervená'
+        Enable: zapnutí
+        Disable: vypnutí
+        Blue: '&bModrá'
+    Title: '&8Hranice ostrova'
+  Visit:
+    Item:
+      Previous:
+        Displayname: '&a< Předchozí stránka'
+      Exit:
+        Displayname: '&cOdejít'
+      Nothing:
+        Displayname: '&c&oZatím tu není žádný ostrov :('
+      Island:
+        Vote:
+          Disabled:
+            Signature:
+              Enabled:
+                Lore:
+                - '&7Popis&8:'
+                - '%signature'
+                - ''
+                - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                - ''
+                - '&7Level&8: &b%level'
+                - '&7Členové&8: &e%members'
+                - '&7Návštěvníci&8: &e%visits'
+                - ''
+                - '&7Zabezpečení&8: %safety'
+                - ''
+                - '&eKlikni pro navštívení ostrova!'
+              Disabled:
+                Lore:
+                - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                - ''
+                - '&7Level&8: &b%level'
+                - '&7Členové&8: &e%members'
+                - '&7Návštěvníci&8: &e%visits'
+                - ''
+                - '&7Zabezpečení&8: %safety'
+                - ''
+                - '&eKlikni pro navštívení ostrova!'
+          Enabled:
+            Signature:
+              Word:
+                Add: přidání
+                Remove: odebrání
+              Disabled:
+                Visitor:
+                  Lore:
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - '&7Hlasů&8: &6%votes'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+                  - ''
+                  - '&eKlikni levý pro navštívení ostrova!'
+                  - '&eKlikni pravým pro %action hlasu!'
+                Member:
+                  Lore:
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - '&7Hlasů&8: &6%votes'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+                  - ''
+                  - '&eKlikni pro navštívení ostrova!'
+              Enabled:
+                Visitor:
+                  Lore:
+                  - '&7Popis&8:'
+                  - '%signature'
+                  - ''
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - '&7Hlasů&8: &6%votes'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+                  - ''
+                  - '&eKlikni levý pro navštívení ostrova!'
+                  - '&eKlikni pravým pro %action hlasu!'
+                Member:
+                  Lore:
+                  - '&7Popis&8:'
+                  - '%signature'
+                  - ''
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - '&7Hlasů&8: &6%votes'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+                  - ''
+                  - '&eKlikni pro navštívení ostrova!'
+          Word:
+            Unsafe: '&c[Nebezpečné]'
+            Empty: '&f&oPrázdné'
+            Safe: '&a[Bezpečné]'
+        Displayname: '&a%player'
+      Sort:
+        Displayname: '&aZměnit třídění'
+        Lore:
+        - '&7Současné třídění&8: &b%sort'
+        - ''
+        - '&bMožnosti třídění ostrovů&8:'
+        - ''
+        - '&bNáhodně.'
+        - '&bDle počtu hráčů.'
+        - '&bPodle levelu ostrova.'
+        - '&bDle počtu členů ostrova.'
+        - '&bDle počtu návštěvníků ostrova.'
+        - '&bDle počtu hlasů ostrova.'
+        - ''
+        - '&eKlikni pro změnu mezi všemi'
+        - '&edostupnými možnostmi třídění.'
+      Barrier:
+        Displayname: '&cOtevře ostrov níže'
+      Type:
+        Displayname: '&aZmění typ'
+        Lore:
+        - '&7Současný typ&8: &b%type'
+        - ''
+        - '&bZákladní&7: Zobrazí všechny odemknuté ostrovy.'
+        - '&bSolo&7: Zobrazí pouze solo ostrovy.'
+        - '&bTým&7: Zobrazí pouze týmové ostrovy.'
+        - ''
+        - '&eKlikni pro změnu mezi všemi'
+        - '&edostupnými typy ostrovů.'
+      Statistics:
+        Displayname: '&bStatistiky ostrova'
+        Lore:
+        - '&7Odemknutých ostrovů&8: &f%islands_open&7/&f%islands'
+      Next:
+        Displayname: '&aDalší stránka >'
+    Title: '&8Navštívit ostrov'
+  Biome:
+    Item:
+      Exit:
+        Displayname: '&cOdejít'
+      Barrier:
+        Displayname: '&cZvolit biom'
+      Info:
+        Displayname: '&bSoučasný biom'
+        Lore:
+        - '&7Typ&8: &e%biome_type'
+      Biome:
+        Current:
+          Displayname: '&a&mBiom: &e&m%biome_type'
+          Lore:
+          - '&cSoučasně nastavený'
+        Select:
+          Lore:
+          - '&7Klikni pro nastavení!'
+          Displayname: '&aBiom: &e%biome_type'
+    Title: '&8Zvolit biom'
+  Information:
+    Categories:
+      Item:
+        Information:
+          Vote:
+            Enabled:
+              Signature:
+                Word:
+                  Add: přidání
+                  Remove: odebrání
+                Disabled:
+                  Lore:
+                  - '&7Vlastník&8: &f%owner'
+                  - ''
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - '&7Hlasů&8: &6%votes'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+                Enabled:
+                  Lore:
+                  - '&7Vlastník&8: &f%owner'
+                  - ''
+                  - '&7Podpis&8:'
+                  - '%signature'
+                  - ''
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - '&7Hlasů&8: &6%votes'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+            Disabled:
+              Signature:
+                Enabled:
+                  Lore:
+                  - '&7Vlastník&8: &f%owner'
+                  - ''
+                  - '&7Podpis&8:'
+                  - '%signature'
+                  - ''
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+                Disabled:
+                  Lore:
+                  - '&7Vlastník&8: &f%owner'
+                  - ''
+                  - '&7Hráčů na ostrově&8: &f%players&7/&f%player_capacity'
+                  - ''
+                  - '&7Level&8: &b%level'
+                  - '&7Členové&8: &e%members'
+                  - '&7Návštěvníci&8: &e%visits'
+                  - ''
+                  - '&7Zabezpečení&8: %safety'
+            Word:
+              Empty: '&f&oPrázdné'
+              Unsafe: '&c[Nebezpečné]'
+              Safe: '&a[Bezpečné]'
+          Displayname: '&aInformace'
+        Visitors:
+          Displayname: '&aNávštěvníci'
+          Lore:
+          - '&7Zobrazí návštěvníky, kteří'
+          - '&7aktuálně jsou na ostrově.'
+          - ''
+          - '&eKlikni pro zobrazení návštěvníků!'
+        Members:
+          Lore:
+          - '&7Zobrazí členy ostrova'
+          - '&7a jejich role.'
+          - ''
+          - '&eKlikni pro zobrazení členů!'
+          Displayname: '&aČlenové'
+        Exit:
+          Displayname: '&cOdejít'
+      Title: '&8Informace o ostrově'
+    Visitors:
+      Item:
+        Statistics:
+          Displayname: '&3&nStatistiky'
+          Lore:
+          - '&bNávštěvníci ostrova:'
+          - '&e%island_visitors'
+        Visitor:
+          Displayname: '&b%player'
+        Previous:
+          Displayname: '&a< Předchozí stránka'
+        Return:
+          Displayname: '&cZpět na informace o ostrově'
+        Next:
+          Displayname: '&aDalší stránka >'
+        Barrier:
+          Displayname: '&cNávštěvníci ostrova níže'
+      Title: '&8Informace o ostrově - návštěvníci'
+    Members:
+      Item:
+        Next:
+          Displayname: '&aDalší stránka >'
+        Previous:
+          Displayname: '&a< Předchozí stránka'
+        Barrier:
+          Displayname: '&cIsland Members Below'
+        Member:
+          Word:
+            Owner: '&6Vlastník'
+            Member: '&aČlenové'
+            Operator: '&bOperátoři'
+          Displayname: '&b%player'
+          Lore:
+          - '&7Role&8:'
+          - '%role'
+        Return:
+          Displayname: '&cZpět na informace o ostrově'
+        Statistics:
+          Displayname: '&3&nStatistiky'
+          Lore:
+          - '&bČlenové ostrova:'
+          - '&e%island_members/%island_capacity'
+          - ''
+          - '&bČlenové:'
+          - '&e%members'
+          - ''
+          - '&bOperátoři:'
+          - '&e%operators'
+      Title: '&8Informace o ostrově - Členové'
+  Upgrade:
+    Item:
+      Crop:
+        Claimable:
+          Lore:
+          - '&7Zvýší rychlost růstů plodin.'
+          - ''
+          - '&7Rychlost růstu&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+        Unclaimable:
+          Lore:
+          - '&7Zvýší rychlost růstů plodin.'
+          - ''
+          - '&7Rychlost růstu&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Claimed:
+          Lore:
+          - '&7Zvýší rychlost růstů plodin.'
+          - ''
+          - '&7Rychlost růstu&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+        Displayname: '&bRůst plodin'
+      Spawner:
+        Unclaimable:
+          Lore:
+          - '&7Zvýší spawn rate monster na ostrově.'
+          - ''
+          - '&7Rychlost&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Displayname: '&bSpawner Boost'
+        Claimed:
+          Lore:
+          - '&7Zvýší spawn rate monster na ostrově.'
+          - ''
+          - '&7Rychlost&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+        Claimable:
+          Lore:
+          - '&7Zvýší spawn rate monster na ostrově.'
+          - ''
+          - '&7Rychlost&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+      Jump:
+        Unclaimable:
+          Lore:
+          - '&7Dává hráčům Jump Boost 2'
+          - '&7dokud jsou na ostrově.'
+          - ''
+          - '&7Jump Boost&8: &fII'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Displayname: '&bJump Boost'
+        Claimed:
+          Lore:
+          - '&7Dává hráčům Jump Boost 2'
+          - '&7dokud jsou na ostrově.'
+          - ''
+          - '&7Jump Boost&8: &fII'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+        Claimable:
+          Lore:
+          - '&7Dává hráčům Jump Boost 2'
+          - '&7dokud jsou na ostrově.'
+          - ''
+          - '&7Jump Boost&8: &fII'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+      Fly:
+        Unclaimable:
+          Lore:
+          - '&7Možnost létat na ostrově.'
+          - ''
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Claimed:
+          Lore:
+          - '&7Možnost létat na ostrově.'
+          - ''
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+        Claimable:
+          Lore:
+          - '&7Možnost létat na ostrově.'
+          - ''
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+        Displayname: '&bFlight'
+      Size:
+        Claimable:
+          Lore:
+          - '&7Rozšíří hranice ostrova.'
+          - ''
+          - '&7Hranice&8: &f%sizex%size'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+        Claimed:
+          Lore:
+          - '&7Rozšíří hranice ostrova.'
+          - ''
+          - '&7Hranice&8: &f%sizex%size'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+        Unclaimable:
+          Lore:
+          - '&7Rozšíří hranice ostrova.'
+          - ''
+          - '&7Hranice&8: &f%sizex%size'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Displayname: '&bBorder Size [Tier #%tier]'
+      Word:
+        Enable: povolení
+        Disable: zakázání
+      Speed:
+        Displayname: '&bSpeed Boost'
+        Claimable:
+          Lore:
+          - '&7Dává hráčům Speed Boost 2'
+          - '&7dokud jsou na ostrově.'
+          - ''
+          - '&7Rychlost&8: &fII'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+        Unclaimable:
+          Lore:
+          - '&7Dává hráčům Speed Boost 2'
+          - '&7dokud jsou na ostrově.'
+          - ''
+          - '&7Rychlost&8: &fII'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Claimed:
+          Lore:
+          - '&7Dává hráčům Speed Boost 2'
+          - '&7dokud jsou na ostrově.'
+          - ''
+          - '&7Rychlost&8: &fII'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+      Drops:
+        Unclaimable:
+          Lore:
+          - '&7Zvýší počet dropů z monster na ostrově.'
+          - ''
+          - '&7Dropy&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &c&lZAMKNUTO'
+          - ''
+          - '&cNemáš dostatek peněz!'
+        Claimable:
+          Lore:
+          - '&7Zvýší počet dropů z monster na ostrově.'
+          - ''
+          - '&7Dropy&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &6&lODEMKNUTELNÉ'
+          - ''
+          - '&eKlikni pro odemknutí vylepšení!'
+        Claimed:
+          Lore:
+          - '&7Zvýší počet dropů z monster na ostrově.'
+          - ''
+          - '&7Dropy&8: &f2x'
+          - '&7Cena&8: &f$%cost'
+          - ''
+          - '&7Status&8: &a&lZAKOUPENO'
+          - ''
+          - '&eKlikni pro %status vylepšení!'
+        Displayname: '&bDropy z moonster'
+    Title: '&8Vylepšení ostrova'
+  Rollback:
+    Item:
+      Save:
+        Displayname: '&aUložit Rollback'
+        Lore:
+        - '&7Uloží aktuální stav ostrova'
+        - '&7včetně The Nether'
+        - ''
+        - '&eKlikni pro uložení Rollbacku!'
+      Barrier:
+        Displayname: '&cNastavení Rollbacku ostrova >'
+      Info:
+        Displayname: '&bInformace o Rollbacku'
+      Reset:
+        Displayname: '&aVyresetování ostrova'
+        Lore:
+        - '&7Resetuje ostrov do'
+        - '&7původního stavu.'
+        - ''
+        - '&c&oVarování: Nebudeš mít'
+        - '&c&omožnost vrátit zpět'
+        - '&c&osoučasný stav ostrova.'
+        - ''
+        - '&eKlikni pro vyresetování ostrova!'
+      Load:
+        Lore:
+        - '&7Načtení uloženého Rollbacku.'
+        - ''
+        - '&c&oVarování: Nebudeš mít'
+        - '&c&omožnost vrátit zpět'
+        - '&c&osoučasný stav ostrova.'
+        - ''
+        - '&eKlikni pro načtení Rollbacku ostrova!'
+        Displayname: '&aNačíst Rollback'
+    Title: '&8Rollback ostrova'
+  Weather:
+    Item:
+      Info:
+        Displayname: '&bInformace o počasí'
+        Synchronised:
+          Enabled: '&apravda'
+          Disabled: '&cnepravda'
+        Time:
+          Dawn: Východ slunce
+          Day: Den
+          Noon: Poledne
+          Dusk: Západ slunce
+          Night: Noc
+          Midnight: Půlnoc
+        Lore:
+          Synchronised:
+          - '&7Synchronizováno&8: %synchronised'
+          Unsynchronised:
+          - '&7Synchronizováno&8: %synchronised'
+          - '&7Čas&8: &6%time_name'
+          - '&7Počasí&8: &6%weather'
+      Barrier:
+        Displayname: '&cNastavení počasí na ostrově >'
+      Disabled:
+        Time:
+          Displayname: '&aČas'
+          Lore:
+          - '&cZměna času je deaktivována,'
+          - '&ckdyž je synchronizovaný.'
+        Weather:
+          Displayname: '&aPočasí'
+          Lore:
+          - '&cZměna počasí je deaktivována,'
+          - '&ckdyž je synchronizovaný.'
+      Time:
+        Displayname: '&aČas'
+        Choice:
+          Dawn: Východ slunce
+          Day: Den
+          Noon: Poledne
+          Dusk: Západ slunce
+          Night: Noc
+          Midnight: Půlnoc
+        Lore:
+        - '&7Aktuální volba&8: &b%choice'
+        - ''
+        - '&eKlikni pro změnu času!'
+      Weather:
+        Displayname: '&aPočasí'
+        Choice:
+          Clear: Čisté
+          Downfall: Deštivé
+        Lore:
+        - '&7Volba&8: &b%choice'
+        - ''
+        - '&eKlikni pro změnu počasí!'
+      Synchronised:
+        Displayname: '&aSynchronizováno'
+        Choice:
+          Enable: povolit
+          Disable: zakázat
+        Lore:
+        - '&7Když je to povoleno, tak čas'
+        - '&7a počasí budou stejné hodnoty'
+        - '&7jako jsou na serveru.'
+        - '&7Když je to zakázáno, tak čas'
+        - '&7a počasí bude mít každý hráč'
+        - '&7na ostrově jinak.'
+        - ''
+        - '&eKlikni na %choice!'
+    Title: '&8Počasí na ostrově'
+  Leaderboard:
+    Leaderboard:
+      Item:
+        Island:
+          Displayname: '&a&lTop %position ostrovů'
+          Bank:
+            Lore:
+            - '&7Vlastník&8: &f%owner'
+            - '&7Hodnota&8: &f$%balance'
+            - '&7Členové&8: &f%members'
+            - ''
+            - '&7Podpis&8:'
+            - '%signature'
+          Level:
+            Lore:
+            - '&7Vlastník&8: &f%owner'
+            - '&7Level&8: &f%level'
+            - '&7Členové&8: &f%members'
+            - ''
+            - '&7Podpis&8:'
+            - '%signature'
+          Votes:
+            Lore:
+            - '&7Vlastník&8: &f%owner'
+            - '&7Hlasů&8: &f%votes'
+            - ''
+            - '&7Podpis&8:'
+            - '%signature'
+          Word:
+            Empty: '&f&oPrázdný'
+        Return:
+          Displayname: '&cZpět do kategorií'
+        Exit:
+          Displayname: '&cOdejít'
+        Empty:
+          Lore:
+          - '&f&oPrázdné'
+          Displayname: '&a&lTop %position ostrovů'
+      Title: '&8Top %leaderboard ostrovů'
+    Browse:
+      Title: '&8Zvol si žebříček nejlepších'
+      Item:
+        Leaderboard:
+          Displayname: '&aTop %leaderboard ostrovů'
+          Lore:
+          - '&7Zobrazit 10 nejlepších ostrovů.'
+          - ''
+          - '&eKlikni pro zobrazení žebříčku nejlepších!'
+        Exit:
+          Displayname: '&cOdejít'
+  Visitors:
+    Item:
+      Nothing:
+        Displayname: '&cNa tvém ostrově nejsou návštěvníci.'
+      Visitor:
+        Displayname: '&a%player'
+        Word:
+          Days: den(dny/ů)
+          Hours: hodin(a/y)
+          Minutes: minut(a/y)
+          Seconds: sekund(a/y)
+        Kick:
+          Permission:
+            Ban:
+              Permission:
+                Lore:
+                - '&7Doba návštěvy&8:'
+                - '&d%time'
+                - ''
+                - '&eKlikni levým pro vykopnutí hráče!'
+                - '&eKlikni pravým pro zabanování hráče!'
+              NoPermission:
+                Lore:
+                - '&7Doba návštěvy&8:'
+                - '&d%time'
+                - ''
+                - '&eKlikni pro vykopnutí hráče!'
+          NoPermission:
+            Ban:
+              Permission:
+                Lore:
+                - '&7Doba návštěvy&8:'
+                - '&d%time'
+                - ''
+                - '&eKlikni pro zabanování hráče!'
+              NoPermission:
+                Lore:
+                - '&7Doba návštěvy&8:'
+                - '&d%time'
+      Next:
+        Displayname: '&aDalší stránka >'
+      Barrier:
+        Displayname: '&cNávštěvníci ostrova níže'
+      Statistics:
+        Displayname: '&bnávštěvníci ostrova'
+        Lore:
+        - '&7Návštěvníci&8: &f%visitors'
+      Previous:
+        Displayname: '&a< Předchozí stránka'
+      Exit:
+        Displayname: '&cOdejít'
+    Title: '&8Návštěvníci ostrova'
+  Coop:
+    Item:
+      Information:
+        Displayname: '&bInformace'
+        Lore:
+        - '&7Povoluje těmto hráčům vstoupit'
+        - '&7na tvůj ostrov, když je online'
+        - '&7Operátor nebo vlastník ostrova,'
+        - '&7i když je návštěvníkům uzavřen.'
+        - ''
+        - '&eKlikni pro přidělení hráči coop!'
+      Coop:
+        Displayname: '&a%player'
+        Lore:
+        - ''
+        - '&eKlikni pro odstranění hráče!'
+      Word:
+        Enter: Napiš jméno hráče
+      Next:
+        Displayname: '&aDalší stránka >'
+      Nothing:
+        Displayname: '&cNejsou zde žádní coop hráčí.'
+      Barrier:
+        Displayname: '&cNíže jsou hráči s coop'
+      Previous:
+        Displayname: '&a< Předchozí stránka'
+      Exit:
+        Displayname: '&cOdejít'
+    Title: '&8Coop na ostrově'
+  Bans:
+    Item:
+      Barrier:
+        Displayname: '&cBany na ostrově níže'
+      Next:
+        Displayname: '&aDalší stránka >'
+      Word:
+        Enter: Napiš jméno hráče
+      Ban:
+        Lore:
+        - ''
+        - '&eKlikni pro odbanování hráče!'
+        Displayname: '&a%player'
+      Previous:
+        Displayname: '&a< Předchozí stránka'
+      Information:
+        Displayname: '&bInformace'
+        Lore:
+        - '&7Zabrání těmto hráčům'
+        - '&7před vstupem na tvůj ostrov'
+        - '&7jejich zabanováním.'
+        - ''
+        - '&eKlikni pro zabanování hráče!'
+      Exit:
+        Displayname: '&cOdejít'
+      Nothing:
+        Displayname: '&cNa tvém ostrově nemá nikdo ban.'
+    Title: '&8Ban na ostrov'
+  Creator:
+    Selector:
+      Title: '&8Výběr ostrova'
+      Item:
+        Island:
+          Displayname: '%displayname'
+          Word:
+            Empty: '&f&oPrázdný'
+          Lore:
+          - '&7Popis&8:'
+          - '%description'
+          - ''
+          - '&eKlikni pro vytvoření ostrova!'
+Placeholder:
+  fabledskyblock_leaderboard_votes:
+    Empty:
+      Message: '&f&oNevlastněno'
+    Non-empty:
+      Message: '&f[%position] %player [%votes]'
+  fabledskyblock_leaderboard_bank:
+    Empty:
+      Message: '&f&oNevlastněno'
+    Non-empty:
+      Message: '&f[%position] %player [$%balance]'
+  fabledskyblock_island_exists:
+    Exists:
+      Message: '&asprávně'
+    Not-exists:
+      Message: '&cšpatně'
+  fabledskyblock_island_members:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_coops:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_leaderboard_level:
+    Empty:
+      Message: '&f&oNevlastněno'
+    Non-empty:
+      Message: '&f[%position] %player [%level]'
+  fabledskyblock_island_points:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_visitors:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_size:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_time:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_bank_balance_formatted:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_owner:
+    Non-empty:
+      Yourself:
+        Message: '&fTy'
+      Other:
+        Message: '&f%placeholder'
+    Empty:
+      Message: '&f&oNic'
+  fabledskyblock_island_leaderboard_bank_rank:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_bans:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_coops_total:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_invites:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_level_block_count:
+    Invalid:
+      Message: '&cNeznámý typ'
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_weather:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_role:
+    Empty:
+      Message: '&f&oNic'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_operators:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_bank_balance:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_biome:
+    Empty:
+      Message: '&f&oNic'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_level:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_level_formatted:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_members_total:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_island_level_block_points:
+    Empty:
+      Message: '&c0'
+    Invalid:
+      Message: '&cNeznámý typ'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_isopen:
+    Closed:
+      Message: '&cšpatně'
+    Open:
+      Message: '&asprávně'
+    Empty:
+      Message: '&cšpatně'
+  fabledskyblock_island_votes:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_radius:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_leaderboard_votes_rank:
+    Non-empty:
+      Message: '&f%placeholder'
+    Empty:
+      Message: '&c0'
+  fabledskyblock_level_block_value:
+    Invalid:
+      Message: '&cNeznámý typ'
+    Non-empty:
+      Message: '&f%placeholder'
+  fabledskyblock_island_leaderboard_level_rank:
+    Empty:
+      Message: '&c0'
+    Non-empty:
+      Message: '&f%placeholder'
+Island:
+  Chat:
+    Format:
+      Role:
+        Member: '&a[Člen]'
+        Operator: '&b[Operátor]'
+        Owner: '&c[Vlastník]'
+      Message: '&8[&bSkyBlock &8| &dChat&8] %role &e%player&8: &f%message'
+    Untoggled:
+      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrovní chat byl vypnut, protože
+        nejsou žádní další členové ostrova online. Zprávy budou nyní viditelné pro
+        všechny hráče.'
+  SpawnProtection:
+    Break:
+      Message: '&c&l(!) &cNemůžeš zničit spawn pozici ostrova.'
+    Place:
+      Message: '&c&l(!) &cNemůžeš zastavět spawn pozici ostrova.'
+  Admin:
+    Levelling:
+      Numerical:
+        Message: '&c&l(!) &cPlease provide a numerical value.'
+      Removed:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the material ''&d%material&e''.'
+      Points:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set the material ''&d%material&e''
+          points to ''&6%points&8''.'
+      Permission:
+        Message: '&c&l(!) &cYou don''t have permission to do that.'
+      Already:
+        Message: '&c&l(!) &cThat material type has already been added.'
+      Exist:
+        Message: '&c&l(!) &cThat material type has not been added.'
+      Division:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set the points division
+          to ''&f%division&e''.'
+      Added:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have added the material ''&d%material&e''.'
+    Generator:
+      Material:
+        Limit:
+          Message: '&c&l(!) &cYou have reached the limit of materials for that generator.'
+        Added:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have added the material ''&d%material&e''
+            to the generator ''&d%generator&e''.'
+        Already:
+          Message: '&c&l(!) &cThat material type has already been added to that generator.'
+      Chance:
+        Numerical:
+          Message: '&c&l(!) &cYou must enter a numerical value.'
+        Over:
+          Message: '&c&l(!) &cYou cannot set the chance of the material to that, because
+            the overall chance total for materials will exceed 100.'
+      Exist:
+        Message: '&c&l(!) &cThat generator does not exist.'
+      Permission:
+        Message: '&c&l(!) &cYou don''t have permission to do that.'
+      Already:
+        Message: '&c&l(!) &cA generator by that name already exists.'
+      Removed:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the generator
+          with the name ''&d%generator&e''.'
+      Selected:
+        Message: '&c&l(!) &cYou have not selected a generator.'
+      Disabled:
+        Message: '&c&l(!) &cYou cannot do that because generators have been disabled.'
+      Created:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have created a generator with
+          the name ''&d%generator&e''.'
+      Characters:
+        Message: '&c&l(!) &cThe generator name can only contain letters and numbers.'
+    Upgrade:
+      Permission:
+        Message: '&c&l(!) &cYou don''t have permission to do that.'
+      Tier:
+        Size:
+          Message: '&c&l(!) &cThe size of the tier must be less than 1000.'
+        Limit:
+          Message: '&c&l(!) &cYou have reached the limit of tiers for this upgrade.'
+        Selected:
+          Message: '&c&l(!) &cYou cannot do that because the selected tier has been
+            removed.'
+        Exist:
+          Message: '&c&l(!) &cA tier for that upgrade already exists.'
+      Numerical:
+        Message: '&c&l(!) &cYou must enter a numerical value.'
+    Creator:
+      Item:
+        Removed:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have been removed from the
+            item selector.'
+        Cancelled:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have cancelled the item selector.'
+        Added:
+          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eSelect an item in your inventory.'
+      Characters:
+        Message: '&c&l(!) &cThe Structure name can only contain letters and numbers.'
+      Permission:
+        Message: '&c&l(!) &cYou don''t have permission to do that.'
+      Selected:
+        Message: '&c&l(!) &cYou have not selected a Structure.'
+      Removed:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the Structure
+          with the name ''&d%structure&e''.'
+      Already:
+        Message: '&c&l(!) &cA Structure by that name already exists.'
+      Numerical:
+        Message: '&c&l(!) &cYou must enter a numerical value.'
+      Created:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have created a Structure with
+          the name ''&d%structure&e''.'
+      Exist:
+        Message: '&c&l(!) &cThat Structure does not exist.'
+      File:
+        Message: '&c&l(!) &cThat file does not exist in the Structures directory.'
+  Creator:
+    Selector:
+      Created:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNyní jsi vlastníkem ostrova.'
+      None:
+        Message: '&c&l(!) &cNejsou zde žádné struktury k použití.'
+      Permission:
+        Message: '&c&l(!) &cNemáš práva použít tuto strukturu.'
+      File:
+        Overworld:
+          Message: '&c&l(!) &cStruktura pro hlavní svět neexistuje.'
+        Nether:
+          Message: '&c&l(!) &cStruktura pro The Nether neexistuje.'
+        End:
+          Message: '&c&l(!) &cStruktura pro The End neexistuje.'
+      Cooldown:
+        Word:
+          Minute: minut(a/y)
+          Second: sekund(a/y)
+        Message: '&c&l(!) &cMusíš počkat &c&o%time &epřed vytvořením ostrova.'
+    Error:
+      Message: '&c&l(!) &cHlavní spawn pozice musí být nastavena předtím, než Ti bude
+        umožněno vytvořit ostrov. ''&f&o/island admin setspawn&e''.'
+  Upgrade:
+    Owner:
+      Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+    Disabled:
+      Message: '&c&l(!) &cTohle nepůjde. Vylepšení ostrovů jsou vypnuté.'
+    Exist:
+      Message: '&c&l(!) &cTakové vylepšení neexistuje.'
+    Money:
+      Message: '&c&l(!) &cNemáš dostatek peněz k nákupu tohoto vylepšení.'
+    Claimed:
+      Message: '&c&l(!) &cJiž sis zakoupil toto vylepšení.'
+    Bought:
+      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZakoupil sis vylepšení ''&7%upgrade&e''.'
+  Biome:
+    Cooldown:
+      Word:
+        Second: sekund(a/y)
+        Minute: minut(a/y)
+      Message: '&c&l(!) &cMusíš počkat &c&o%time &epřed změnou biomu tvého ostrova.'
+  Information:
+    Island:
+      Message: '&c&l(!) &cHráče, kterého jsi zvolil, již nemá ostrov.'
+    Visitors:
+      Message: '&c&l(!) &cNa zvoleném ostrově nejsou návštěvníci.'
+    Closed:
+      Message: '&c&l(!) &cZvolený ostrov je pro návštěvníky uzavřen.'
+  Coop:
+    Removed:
+      Owner:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi přesunut z ostrova, protože
+          vlastník se odpojil.'
+      Operator:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi přesunut z ostrova, protože
+          vlastník i operátoři tohoto ostrova se odpojili.'
+  Structure:
+    Tool:
+      Position:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePozice &b%position &ebyla zvolena!'
+      Material:
+        Message: '&c&l(!) &cDefinovaný materiál v konfiguračním souboru pro volbu
+          struktur nebyl nalezen.'
+      Item:
+        Displayname: '&bStructure Tool'
+        Lore:
+        - '&7Zvol dvě pozice pro označení oblasti.'
+  Portal:
+    Destination:
+      Message: '&c&l(!) &cNení cílová destinace pro průchod tímto portálem.'
+    Stuck:
+      Message: '&c&l(!) &cByl jsi teleportován na bezpečnou pozici, protože jsi uvízl.'
+  WorldBorder:
+    Outside:
+      Message: '&c&l(!) &cByl jsi až moc daleko od hranic ostrova.'
+    Disappeared:
+      Message: '&c&l(!) &cOstrov, na kterém jsi byl, najednou zmizel.'
+  World:
+    Word:
+      Nether: The Nether
+      End: The End
+    Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován z The Nether pryč,
+      protože není povolen.'
+  Visit:
+    Teleported:
+      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován na ostrov hráče
+        &a%player &eIsland.'
+    Closed:
+      Plugin:
+        Message: '&c&l(!) &cNemůžeš se teleportovat do cílové lokace, protože ostrov
+          není otevřený pro návštěvníky.'
+      Island:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrov, na kterém jsi byl, již
+          není otevřen pro návštěvníky.'
+      Menu:
+        Message: '&c&l(!) &cOstrov již není otevřen pro návštěvníky.'
+    Banned:
+      Island:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi zabanován z ostrova, na
+          kterém jsi byl.'
+      Teleport:
+        Message: '&c&l(!) &cNemůžeš se teleportovat do cílové lokace, protože jsi
+          byl na tomto ostrově zabanován.'
+    Already:
+      Message: '&c&l(!) &cJiž jsi na ostrově tohoto hráče.'
+    Vote:
+      Added:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &a&lPŘIDÁN &ena ostrov
+          hráče &a%player&e.'
+      Island:
+        Message: '&c&l(!) &cMusíš být na daném ostrově pro hlasování.'
+      Removed:
+        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &c&lODEBRÁN &ez ostrova
+          hráče &a%player&e.'
+    Unloaded:
+      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eŽádní členové tohoto ostrova nejsou
+        online, byl jsi z něj tedy vykopnut.'
+    Exist:
+      Message: '&c&l(!) &cTento ostrov již neexistuje.'
+    Deleted:
+      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVlastník ostrova smazal tento ostrov,
+        a proto jsi byl z ostrova vykopnut.'
+  Unlock:
+    Nether:
+      Message: '&c&l(!) &cMusíš zaplatit k odemknutí The Nether. K tomu potřebuješ
+        napsat &7/island unlock nether&e Bude tě to stát ''&7$%cost%&e''.'
+    End:
+      Message: '&c&l(!) &cMusíš zaplatit k odemknutí The End. K tomu potřebuješ napsat
+        &7/island unlock nether&e Bude tě to stát ''&7$%cost%&e''.'
+  Settings:
+    Visitor:
+      Welcome:
+        Disabled:
+          Message: '&c&l(!) &cNemáš práva použít tuto funkci.'
+      Signature:
+        Disabled:
+          Message: '&c&l(!) &cNemáš práva použít tuto funkci.'
+    Permission:
+      Message: '&c&l(!) &cNemáš práva toto dělat na daném ostrově.'
+  Limit:
+    Block:
+      Exceeded:
+        Message: '&c&l(!) &cDosáhl jsi limitu počtu blocků typu &b%types&e, které
+          můžeš položit (&b%limit&e).'
+Hologram:
+  Leaderboard:
+    Votes:
+      Footer: '&ewww.craftmania.cz'
+      Claimed: '&8* &f&o[%position] &a%player &7- &6%votes'
+      Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
+      Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - hlasů'
+    Bank:
+      Footer: '&ewww.example.net'
+      Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
+      Claimed: '&8* &f&o[%position] &a%player &7- &6$%balance'
+      Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - Stav účtu'
+    Level:
+      Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - Level'
+      Claimed: '&8* &f&o[%position] &a%player &7- &6%level'
+      Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
+      Footer: '&ewww.example.net'
+  Stackable:
+    Message: '%blocks: %amount'
