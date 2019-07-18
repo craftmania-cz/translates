@@ -2316,20 +2316,28 @@ command:
       args: ''
       explanation:
       - 'Perm: '
+      - cmi.command.list.group1
+      - cmi.command.list.group2
+      - cmi.command.list.group3
+      - cmi.command.list.group4
+      - cmi.command.list.group5
+      - cmi.command.list.group6
+      - cmi.command.list.group7
+      - cmi.command.list.group8
+      - cmi.command.list.group9
       - cmi.command.list.admin
-      - cmi.command.list.staff
+     # - cmi.command.list.staff
       - cmi.command.list.hidden
-      - cmi.command.list.group[number]
     info:
       List:
       - '&7========================'
-      - '&ePlayers online &6[amount][hidden]&e/&6[maxamount]'
+      - '&ePrávě je online &6[amount][hidden]&e/&6[maxamount] &ehráčů'
       - '[adminLine]'
-      - '[staffLine]'
+     # - '[staffLine]'
       - '[groupLine]'
       - '&7========================'
       staffL: '&7Staff: &f[list]'
-      adminL: '&8Admin: &f[list]'
+      adminL: '&4Vedení&8: &f[list]'
       hiddenPref: '&e&7[H]'
       hiddenCount: '&e&7([amount])'
       groupL: '&6[groupName]: &f[list]'
@@ -2337,16 +2345,15 @@ command:
       # Add as many groups as you wish, by default there is only 10, to create new one, just copy paste one line and add increment into lines name, like group11 or group12 and so on.
       # Player have to have appropriate permission node to be placed in group cmi.command.list.group.[groupnumber], bigger number have priority
       groups:
-        group1: '&eGroup1: &f[list]'
-        group2: '&eGroup2: &f[list]'
-        group3: '&eGroup3: &f[list]'
-        group4: '&eGroup4: &f[list]'
-        group5: '&eGroup5: &f[list]'
-        group6: '&eGroup6: &f[list]'
-        group7: '&eGroup7: &f[list]'
-        group8: '&eGroup8: &f[list]'
-        group9: '&eGroup9: &f[list]'
-        group10: '&eGroup10: &f[list]'
+        group1: '&7Hráči&8: &f[list]'
+        group2: '&6Gold&8: &f[list]'
+        group3: '&bDiamond&8: &f[list]'
+        group4: '&aEmerald&8: &f[list]'
+        group5: '&9Obsidian&8: &f[list]'
+        group6: '&2Helper&8: &f[list]'
+        group7: '&cAdmin&8: &f[list]'
+        group8: '&1Builder&8: &f[list]'
+        group9: '&eDeveloper&8: &f[list]'
       noGroupLine: '&eList'
   lockip:
     help:
