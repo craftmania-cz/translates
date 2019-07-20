@@ -87,7 +87,7 @@ Command:
         Progress:
           Message: '&eSkenuje level ostrova: &b%percent%'
         NotOnIsland:
-          Message: '&c&l(!) &cNemůžeš spustit sken ostrov, když na žádnem nejsi.'
+          Message: '&c&l(!) &cNemůžeš spustit sken ostrova, když na žádnem nejsi.'
         BlockPlacing:
           Message: '&b&lSky&f&lCloud &8| &Chyba&8: &eNemůžeš pokládat blocky dokud
             běží level sken ostrova. Vyčkej na dokončení skenu.'
@@ -96,7 +96,7 @@ Command:
           Minute: minut(a/y)
           Second: sekund(a/y)
           Hour: hodin(a/y)
-        Message: '&c&l(!) &cMusíš počkat &c&o%time &enež budeš mít možnost znovu zažádat
+        Message: '&c&l(!) &cMusíš počkat &c&o%time &cnež budeš mít možnost znovu zažádat
           o level sken ostrova.'
       Level:
         Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrov hráče &d%player &emá level
@@ -2181,9 +2181,8 @@ Menu:
       Biome:
         Displayname: '&aBiomy ostrova'
         Lore:
-        - '&7[&f!&7] Zvol několik biomů, které'
-        - '    &7budou na tvém ostrově a rozhodni'
-        - '    &7které se nejvíce hodí k tomu tvému.'
+        - '&7[&f!&7] Zvol si Biom, který Ti bude'
+        - '    &7na ostrově vyhovovat nejvíce'
         - ''
         - '&eKlikni pro změnu biomu ostrova!'
       Settings:
@@ -3490,19 +3489,19 @@ Island:
 Hologram:
   Leaderboard:
     Votes:
-      Footer: '&ewww.craftmania.cz'
+      Footer: '&emc.craftmania.cz'
       Claimed: '&8* &f&o[%position] &a%player &7- &6%votes'
       Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
-      Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - hlasů'
+      Header: '&e&lTop 10 - hlasů'
     Bank:
-      Footer: '&ewww.example.net'
+      Footer: '&emc.craftmania.cz'
       Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
       Claimed: '&8* &f&o[%position] &a%player &7- &6$%balance'
       Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - Stav účtu'
     Level:
-      Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - Level'
+      Header: '&e&lTop 10 - Level'
       Claimed: '&8* &f&o[%position] &a%player &7- &6%level'
       Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
-      Footer: '&ewww.example.net'
+      Footer: '&emc.craftmania.cz'
   Stackable:
     Message: '%blocks: %amount'
