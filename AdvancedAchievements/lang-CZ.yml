@@ -1,216 +1,211 @@
 
 #=============================================================#
 # +---------------------------------------------------------+ #
-# | Advanced Achievements Czech translation by EncryptSL    | #
-# |             ~ Valid as of version 5.9.3 ~               | #
+# | Advanced Achievements Czech translation by Krosta8      | #
+# |             ~ Valid as of version 5.12.3 ~               | #
 # |   Newer plugin versions will automatically append new   | #
 # |     untranslated parameters to the end of the file.     | #
 # +---------------------------------------------------------+ #
 #=============================================================#
-no-permissions: Nemas dostatek opravneni k provedeni teto akce.
-statistic-cooldown: 'Uspeschy cooldown: pockej TIME sekundu, nez se akce zapocita
-  znovu.'
+no-permissions: Nemáš práva provádět tuto akci!
+statistic-cooldown: Musíš počkat TIME sekund, pro opětovné zobrazení statistik.
 category-does-not-exist: Kategorie nebo podkategorie CAT neexistuje.
-all-achievements-received: Gratuluji, obdrzel jsi vsechny uspechy!
+all-achievements-received: Gratulujeme! Již jsi obdržel všechny aktuálně dostupné achievementy.
+invalid-command: §cNeznámý příkaz. Prosím použij /aach pro zobrazení nápovědy.
+achievement-not-recognized: §cAchievement nazvaný 'NAME' nebyl nalezen. Neměl jsi na mysli CLOSEST_MATCH?
 
 # Related to /aach reload.
-configuration-successfully-reloaded: Konfigurace uspesne nactena.
-configuration-reload-failed: Chyba pri znovunacteni konfigurace. Prosim podivej se
-  do logu.
+configuration-successfully-reloaded: §eKonfigurace úspěšně načtena.
+configuration-reload-failed: §cChyba při opětovné načtění konfigurace. Podrobné informace nalezeš v logu.
 
 # Related to /aach top week and month.
-top-achievement: 'Nejlepsi uspechy majitelu:'
-player-rank: 'Aktualni rank:'
-week-achievement: 'Tydenni hodnoceni uspechu:'
-month-achievement: 'Mesicni hodnoceni uspechu:'
-not-ranked: Nejsi v teto chvili hodnocen.
-pagination-header: '&7> &5Stranka PAGE/MAX'
+top-achievement: 'Nejúspěšnější lovci achievementů:'
+player-rank: 'Aktualní pozice:'
+week-achievement: 'Týdenní hodnocení achievementů:'
+month-achievement: 'Měsíční hodnocení achievementů:'
+not-ranked: §cV tuto chvíli nejsi hodnocen.
+pagination-header: '&7> &5Stránka PAGE/MAX'
 pagination-footer: '&7>'
 
 # Related to /aach stats.
-number-achievements: 'Dosazene uspechy:'
+number-achievements: 'Splněný počet achievementů:'
 
 # Related to /aach book.
-book-received: Obdrzel si knihu uspechu!
-book-delay: Musis pockat TIME sekund/u mezi kazdym obdrzenim knihy!
-book-name: Kniha uspechu
-book-date: Kniha vytvorena DATE.
-book-not-received: Dosud jsi nedosahl zadneho uspechu.
+book-received: Obdržel jsi knihu s achievementy!
+book-delay: Musíš počkat TIME sekund/u mezi každým obdržením knihy!
+book-name: Kniha achievementů
+book-date: Kniha byla vytvořena DATE.
+book-not-received: Zatím jsi nezískal achievement.
 
 # Related to /aach give.
-player-offline: Hrac PLAYER je offline!
-achievement-already-received: Hrac PLAYER jiz obdrzel tento uspech!
-achievement-not-found: Tento uspech nebyl nalezen.
-achievement-given: Dosazeny uspech !
+player-offline: Hráč PLAYER je offline!
+achievement-already-received: Hráč PLAYER tento achievement již má!
+achievement-not-found: Takový achievement neexistuje.
+achievement-given: Získal jsi achievement!
 
 # Related to /aach add.
-error-value: Hodnota VALUE musi byt ciselna!
-statistic-increased: Statistika ACH se zvisila o AMOUNT pro hrace PLAYER!
+error-value: Hodnota VALUE musí být číselná!
+statistic-increased: Statistika ACH se zvýšila o AMOUNT pro hráče PLAYER!
 
 # Related to achievement reception.
-achievement-received: 'Hrac PLAYER ziskal uspech:'
-achievement-new: 'Novy uspech:'
+achievement-received: 'Hráč PLAYER získal achievement:'
+achievement-new: 'Nový achievement:'
 
 # Related to /aach check.
-check-achievement-true: Hrac PLAYER ziskal uspech ACH!
-check-achievements-false: Hrac PLAYER nedostal uspech ACH!
+check-achievement-true: Hráč PLAYER získal achievement ACH!
+check-achievements-false: Hráč PLAYER nezískal achievement ACH!
 
 # Related to /aach delete.
-delete-achievements: The achievement ACH was deleted from PLAYER.
+delete-achievements: Hráči PLAYER byl smazán achievement ACH.
 
 # Related to achievement rewards.
-item-reward-received: 'Obdrzel jste odmenu:'
-money-reward-received: 'Obdrzel jste: AMOUNT!'
-command-reward: Odmena byla provedena!
-custom-command-reward: 'Ziskal jste svou odmenu: MESSAGE'
-experience-reward-received: 'Obdrzel jste: AMOUNT zkusenosti!'
-increase-max-health-reward-received: Vase zdravi se zvysilo o AMOUNT!
-increase-max-oxygen-reward-received: Vas kyslik vzrostl o AMOUNT!
+item-reward-received: 'Obdržel jsi odměnu:'
+money-reward-received: 'Obdržel jsi: AMOUNT!'
+command-reward: Odměna byla provedena!
+custom-command-reward: 'Získal jsi svou odměnu: MESSAGE'
+experience-reward-received: 'Obdržel jsi: AMOUNT XP!'
+increase-max-health-reward-received: Počet srdíček se zvýšil o AMOUNT!
+increase-max-oxygen-reward-received: Maximální doba dýchání pod vodou se zvýšila o AMOUNT!
 
 # Related to /aach help.
-aach-command-book: Ziskate knihu uspechu.
-aach-command-book-hover: Položky RP muzete shromazdovat a vymenit s ostatnimi.
-aach-command-stats: Zobrazi mnostvi uspechu.
-aach-command-stats-hover: Ukazatel prubehu, musite je vsechny mit!
-aach-command-list: Zobrazi prijate a dokoncene uspechy.
-aach-command-list-hover: Pekne menu se vsemi uspechy!
-aach-command-top: Zobrazi osobni a globalni uspechy.
-aach-command-top-hover: Kdo je boss serveru a jak ho pokorite?
-aach-command-give: Dat uspech ACH na NAME.
-aach-command-give-hover: Hrac musi byt online; jinak prikaz nelze pouzit.
-aach-command-add: Zvyste statistiku.
-aach-command-add-hover: Hrac musi byt online; pouzivane hlavne pro vlastni kategorii.
-aach-command-reload: Znovu nacte konfiguraci.
-aach-command-reload-hover: Znovu nacte nastaveni konfigurace, gui.yml a lang.yml soubory.
-aach-command-info: Zobrazi informace o pluginu.
-aach-command-info-hover: Nekolik dalsich informaci o pluginu a jeho uzasnem authoru!
-aach-command-check: Zkontrolujte, zda NAME ma ACH.
-aach-command-check-hover: Pouzijte parametr NAME, pouzity v konfiguraci.
-aach-command-delete: Vymaze ACH z NAME.
-aach-command-delete-hover: Hrac musi byt online; neresetuje zadne souvisejici statistiky.
-aach-command-week: Zobrazit tydenni hodnoceni.
-aach-command-week-hover: Nejlepsi lovci uspechu od zacatku tydne!
-aach-command-month: Zobrazi mesicni hodnoceni.
-aach-command-month-hover: Nejlepsi lovci uspechu od zacatku mesice!
-aach-command-toggle: Prepinejte uspechy ostatnim hracum.
-aach-command-toggle-hover: Vase volba je ulozena az do dalsiho restartu serveru
-aach-command-reset: Obnovit statistku pro kategorii CAT.
-aach-command-reset-hover: 'Hrac musi byt online; priklad: reset Places.stone DarkPyves'
-aach-command-generate: Vytvorte uspech.
-aach-command-generate-hover: Potencionalne spomalit prikaz; pouzivat s opatrnosti!
-aach-tip: '&lTIP &8Muzete &7&n&onajet na prikaz&8 nebo &7&n&okliknout&8 na prikaz!'
+aach-command-book: Kniha splněných achievementů.
+aach-command-book-hover: V knize jsou vypsané získané achievementy a kdy byly získané.
+aach-command-stats: Zobrazí statistiky úspěchů.
+aach-command-stats-hover: Zobrazení počtu splněných a celkových achievementů.
+aach-command-list: Zobrazí dostupné a získané achievementy.
+aach-command-list-hover: Menu se všemi dostupný achievementy!
+aach-command-top: Zobrazí tvoje a globální achievementy.
+aach-command-top-hover: Kdo je na serveru nejlepší lovec achievementů.
+aach-command-give: Dát achievement ACH hráči NAME.
+aach-command-give-hover: Hráč musí být online, jinak příkaz nelze použít.
+aach-command-add: Zvýšení statistiky.
+aach-command-add-hover: Hráč musí být online, používané hlavně pro vlastní statistiky.
+aach-command-reload: Znovu načte konfiguraci.
+aach-command-reload-hover: Znovu načtenastavení konfigurace, gui.yml a lang.yml soubory.
+aach-command-info: Zobrazí informace o pluginu.
+aach-command-info-hover: Několik dalších informací o pluginu a jeho autorovi!
+aach-command-check: Zkontrolujte, zda hráč NAME má achievement ACH.
+aach-command-check-hover: Použijte ACH nastavený v konfiguraci.
+aach-command-delete: Vymaže achievement ACH hráči NAME.
+aach-command-delete-hover: Hráč musí být online\nNeresetuje žádné související statistiky.
+aach-command-week: Zobrazí týdenní hodnocení.
+aach-command-week-hover: Nejlepší lovci achievementů od začátku týdne!
+aach-command-month: Zobrazí měsíční hodnocení.
+aach-command-month-hover: Nejlepší lovci achievementů od začátku měsíce!
+aach-command-toggle: Přepínání achievementů ostatním hráčům.
+aach-command-toggle-hover: Volba je uložena až do restartu serveru.
+aach-command-reset: Obnovit statistiku pro kategorii CAT.
+aach-command-reset-hover: 'Hráč musí být online\nPříklad: reset Places.stone DarkPyves'
+aach-command-generate: Vytvořit nový achievement.
+aach-command-generate-hover: Přidávání achievementu za běhu serveru může způsobovat potíže!\nPoužívejte jen pokud není jiný možnost!
+aach-command-inspect: Kontrola hráčů, kteří mají achievement ACH.
+aach-command-inspect-hover: Seznam hráčů, kteří nedávno získali achievement.
+aach-tip: '&lTIP &8Můžete &7&n&onajet na příkaz&8 nebo na něj &7&n&okliknout&8!'
 
 # Related to /aach info.
 version-command-version: 'Verze:'
 version-command-website: 'Web:'
 version-command-author: 'Autor:'
 version-command-description: 'Popis:'
-version-command-description-details: Advanced Achievements enables unique and challenging
-  achievements. Try to collect as many as you can, earn rewards, climb the rankings
-  and receive RP books!
-version-command-vault: 'Vault integration:'
-version-command-petmaster: 'Pet Master integration:'
-version-command-btlp: 'BungeeTabListPlus integration:'
-version-command-essentials: 'Essentials integration:'
-version-command-placeholderapi: 'PlaceholderAPI integration:'
-version-command-database: 'Database type:'
+version-command-description-details: Advanced Achievements umožňují použití unikátních a vyzývajících achivementů. 
+  Zkus jich získat tolik, kolik jen můžeš, získávat odměny a vyšplhat se na nejvyšší možnou příčku v žebříčku!
+version-command-vault: 'Vault integrace:'
+version-command-petmaster: 'Pet Master integrace:'
+version-command-btlp: 'BungeeTabListPlus integrace:'
+version-command-essentials: 'Essentials integrace:'
+version-command-placeholderapi: 'PlaceholderAPI integrace:'
+version-command-database: 'Typ databáze:'
 
 # Related to /aach list.
-list-gui-title: '&5&lSeznam uspechu'
-list-delay: Musite pockat TIME sekund/u pred dalsim prikazem!
+list-gui-title: '&5&lSeznam achievementů'
+list-delay: §cMusíš počkat TIME sekund/u před opětovným použitím příkazu!
 list-description: 'Popis:'
-list-goal: 'Goal:'
-list-reception: 'Datum prijmu:'
+list-goal: 'Cíl:'
+list-reception: 'Datum získání:'
 list-progress: 'Postup:'
-list-reward: 'Odmena(y):'
-list-reward-money: obdrzel AMOUNT
-list-reward-item: obdrzel AMOUNT ITEM
-list-reward-command: ostatni
-list-reward-experience: obdrzel AMOUNT zkusenosti
-list-reward-increase-max-health: zvysit HP o AMOUNT
-list-reward-increase-max-oxygen: zvysit kyslik o AMOUNT
+list-reward: 'Odměna(y):'
+list-reward-money: 'Peněz: AMOUNT'
+list-reward-item: 'Předmět: AMOUNT ITEM'
+list-reward-command: 'Příkaz:'
+list-reward-experience: 'Získal AMOUNT XP'
+list-reward-increase-max-health: 'Zvýšení HP o AMOUNT'
+list-reward-increase-max-oxygen: 'Zvýšení dýchání pod vodou o AMOUNT'
 list-achievement-received: '&5✔&f '
 list-achievement-not-received: '&4✘ '
-list-category-not-unlocked: Jeste jste neodemkli tuto kategorii.
-list-back-message: '&7Zpet'
-list-previous-message: '&7Predchozi'
-list-next-message: '&7Dalsi'
-list-achievements-in-category-singular: AMOUNT uspech
-list-achievements-in-category-plural: AMOUNT uspechu
+list-category-not-unlocked: 'Tuto kategorii ještě nemáš odemknutou.'
+list-back-message: '&7Zpět'
+list-previous-message: '&7Předchozí'
+list-next-message: '&7Další'
+list-achievements-in-category-singular: AMOUNT achievement
+list-achievements-in-category-plural: AMOUNT achievementů
 
 # Related to category names in /aach list.
 # Set a parameter to "" to hide it from /aach list (but not disable the category).
-list-connections: Pripojeni
-list-places: Polozene bloky
-list-breaks: Znicene bloky
-list-kills: Zabite entity
-list-crafts: Vyrobene itemy
-list-playercommands: Napsano Prikazu
-list-deaths: Pocet umrti
-list-arrows: Vystrelene sipy
-list-snowballs: Vyhazene Koule
-list-eggs: Vyhazene vajicka
-list-fish: Chycene ryby
-list-treasure: Poklad
-list-itembreaks: Znicene itemy
-list-eatenitems: Snezene jidlo
-list-shear: Ostrihane ovce
-list-milk: Kravy mleka
-list-lavabuckets: Kbelik lavy
+list-connections: Připojení
+list-places: Položené blocky
+list-breaks: Zničené blocky
+list-kills: Zabité entity
+list-crafts: Vyrobené předměty
+list-playercommands: Napsáno příkazů
+list-deaths: Počet smrtí
+list-arrows: Vystřelené šípy
+list-snowballs: Vyházené koule
+list-eggs: Vyházená vajíčka
+list-fish: Chycené ryby
+list-treasure: Poklad z vody
+list-itembreaks: Zničené předměty
+list-eatenitems: Snězené jídlo
+list-shear: Ostříhané ovce
+list-milk: Mléko z krávy
+list-lavabuckets: Kbelik lávy
 list-waterbuckets: Kbelik vody
-list-trades: Pocet vymeny
-list-anvils: Pouzite kovadliny
-list-enchantments: Ocarovane predmety
-list-beds: Pocet spanku
-list-maxlevel: Dosahnute levely
-list-potions: Vypite lektvary
-list-playedtime: Odehrany cas
-list-distance-foot: Vzdalenost ujita pesky
-list-distance-pig: Vzdalenost ujeta na praseti
-list-distance-horse: Vzdalenost ujeta na koni
-list-distance-minecart: Vzdalenost ujeta na voziku
-list-distance-boat: Vzdalenost ujeta na lodi
-list-distance-gliding: Vzdalenost proletena s elytrou
-list-distance-llama: Vzdalenost ujeta na llame
-list-itemdrops: Vyhozene itemy
-list-itempickups: Sebrane itemy
-list-hoeplowings: Povrchova uprava
-list-fertilising: Oplodnene rostliny
-list-taming: Zkrocene zvirata
-list-breeding: Chovani zvirat
-list-brewing: Uvarene lektvary
-list-fireworks: Pouzite ohnostroje
-list-musicdiscs: Odehrano hudebnich desek
-list-enderpearls: Teleportace s enderperlou
+list-trades: Počet obchodů s Villagery
+list-anvils: Použití kovadliny
+list-enchantments: Enchantované předměty
+list-beds: Použití postele
+list-maxlevel: Dosáhnuto levelu XP
+list-potions: Vypito lektvary
+list-playedtime: Odehraný čas
+list-distance-foot: Vzdálenost ujitá pešky
+list-distance-pig: Vzdálenost ujetá na praseti
+list-distance-horse: Vzdálenost ujetá na koni
+list-distance-minecart: Vzdálenost ujetá ve voziku
+list-distance-boat: Vzdálenost ujetá v loďce
+list-distance-gliding: Vzdálenost proletěná s Elytrou
+list-distance-llama: Vzdálenost ujetá na Llamě
+list-itemdrops: Vyhozené předměty
+list-itempickups: Sebrané předměty
+list-hoeplowings: Úprava terénu
+list-fertilising: Použití Bone Mealu
+list-taming: Ochočená zvířata
+list-breeding: Rozmnožování zvířat
+list-brewing: Uvařené lektvary
+list-fireworks: Použití ohňostroje
+list-musicdiscs: Přehráno hudebních desek
+list-enderpearls: Teleportace s Ender Perlou
 list-petmastergive: Zvirate dana jinemu hraci
 list-petmasterreceive: Obdrzene zrivate od jinych hracu
-list-smelting: Vypalene itemy
-list-commands: Ostatni Uspechy
-list-custom: Vlastni Kategorie
+list-smelting: Vypálené předměty
+list-commands: Ostatní achievementy
+list-custom: Vlastní kategorie
+list-targetsshot: Střelit cíl
+list-previous-lore: ''
+list-next-lore: ''
+list-back-lore: ''
 
 # Related to /aach toggle.
-toggle-displayed: Nyni budete upozorneni kdyz ostatni hraci dosahnou uspechu.
-toggle-hidden: Jiz nebudete dostavat upozorneni.
+toggle-displayed: Nyní budeš upozorněn, když jiný hráč získá achievement.
+toggle-hidden: Již nebudeš dostávat upozornění, když jiný hráč obdrží achievement.
 
 # Related to /aach reset.
-reset-successful: ' statistiky byli resetovani hraci PLAYER.'
+reset-successful: ' statistiky hráče PLAYER byly vyresetovány.'
 
 # Related to /aach generate.
-advancements-generated: Uspechy byli uspesne vygenerovany.
-minecraft-not-supported: Uspechy nefunguji na vasi versi serveru. Pouzijte prosim
-  verzi 1.12+.
+advancements-generated: Achievementy byly úspěšně vygenerovány.
+minecraft-not-supported: Achievementy nefungují na této verzi serveru. Použijte prosím verzi 1.12+.
 
 #============================================================#
 # +--------------------------------------------------------+ #
 # | Parameters in future plugin versions will  appear here | #
 # +--------------------------------------------------------+ #
 #============================================================#
-list-targetsshot: Targets Shot
-invalid-command: Invalid command. Please type /aach to display the command help.
-achievement-not-recognized: Achievement called 'NAME' was not recognized. Did you
-  mean CLOSEST_MATCH?
-aach-command-inspect: Inspect recipients of ACH.
-aach-command-inspect-hover: Lists most recent recipients of an achievement, max 1000.
-list-previous-lore: ''
-list-next-lore: ''
-list-back-lore: ''
