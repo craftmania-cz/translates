@@ -1,0 +1,271 @@
+# Set line to empty one like '' so it will not be displayed
+info:
+  prefix: '&e[&aTradeMe&e] '
+  NoPermission: '&cYou don''t have permission!'
+  NoTargetpermission: '&4Target doesn''t have permission for this!'
+  Ingame: '&cYou can use this only in game!'
+  NoInformation: '&cCant find any information!'
+  FromConsole: '&cYou can use this only from console!'
+  NotOnline: '&cThe player is not online!'
+  NoPlayer: '&cCan''t find player with this name!'
+  NoCommand: '&cThere is no command by this name!'
+  UseInteger: '&4Please use numbers!'
+  UseBoolean: '&4Please use True or False!'
+  NoLessThan: '&4Number can''t be less than [amount]!'
+  NoMoreThan: '&4Value can''t be more than [amount]'
+  Spliter: '&e--------------------------------------------------'
+  fliperSimbols: '&e----------'
+  prevPage: '&2----<< &6Prev '
+  prevPageGui: '&6Previous page '
+  prevPageClean: '&6Prev '
+  prevPageOff: '&7----<< Prev '
+  prevPageHover: '&7<<<'
+  nextPage: '&6 Next &2>>----'
+  nextPageGui: '&6Next Page'
+  nextPageClean: '&6 Next'
+  nextPageOff: '&7 Next >>----'
+  nextPageHover: '&7>>>'
+  pageCount: '&2[current]/[total]'
+  pageCountHover: '&2[totalEntries]'
+error:
+  CantChat: '&cCan''t chat while trading!'
+  CantSendCommands: '&cCan''t perform commands while trading!'
+NoRequests: '&cNemas zadnou zadost!'
+CanceledTrade: '&e[playername] &cstornoval obchod!'
+YouCanceledTrade: '&cZrusil jsi obchod!'
+BlockedWorldSender: '&eV tomto svete se neda obchodovat!'
+BlockedWorldTarget: '&eVe vybranem svete je zakazano obchodovat!'
+DifferentGameMode: '&eNemuzes obchodovat s nekym kdo ma jiny Gamemode!'
+BetweenWorlds: '&eNelze obchodovat mezi svety!'
+ToFar: '&eHrac je prislis daleko! Max vzdalenost je &6[distance] &ebloku.'
+StillInCombat: '&eHrac [player] je stale v kombatu, pockej jeste [time] vterin.'
+InvIsOpen: '&eHrac [player] ma otevreny inventar, pockej az ho zavre.'
+CantTradeDifGroup: '&cNelze obchodovat s touto skupinou hracu.'
+MiddleMouse: '&2Use middle mouse button to scroll through modes'
+CantTradeOverBungge: '&cCant trade with this player over bungee network'
+CantTradeOverServers: '&cCan''t trade between these 2 servers: [server1] - > [server2]'
+NotOnline: '&c[playername] &eneni pripojen!'
+Vanished: '&ePlayer [playername] neni online!'
+yourSelf: '&6You cant trade with your self!'
+NotAccepting: '&c[playername] &bnesouhlasi &es jakoukoliv nabidkou!'
+BlacklistedItem: '&4This item is blacklisted!'
+AlreadyTrading: '&c[playername] &7jiz s nekym obchoduje!'
+PendingRequest: '&eJiz jsi odeslal zadost! Cekej &6[time] &evterin.'
+AlreadyRequested: '&eNekdo s nim obchoduje! Cekej &6[time] &evterin.'
+Successful: '&aObchod byl uspesne proveden!'
+Failed: '&cTrade failed!'
+Taxes:
+  Mein: ' Taxes:'
+  BothEnabled: ' &'
+  Fixed: ' [amount]'
+  Percentage: ' [amount]% ([takenamount])'
+  Left: (&4 [amount] &e)
+Button:
+  Decline:
+    Name: '&eClick to decline'
+    Lore: []
+  Accept:
+    Name: '&2Click to Accept offer'
+    Lore: []
+  Accepted:
+    Name: '&eAccepted your offer'
+    Lore: []
+  Waiting:
+    Name: '&2Still hasn''t accepted your offer'
+    Lore: []
+Item:
+  Got: '&eObdrzel jsi: &6[itemlist]'
+  YourInvFull: '&eNemas dostatek mista v inventari'
+  TargetInvFull: '&f[player] &enema dostatek mista v inventari.'
+Regions:
+  WorldGuard:
+    YouCanttrade: '&2You can''t trade in this region!'
+    PlayerCanttrade: '&2[playername] can''t trade in hes region!'
+  Residence:
+    YouCanttrade: '&2You can''t trade in this residence!'
+    PlayerCanttrade: '&2[playername] can''t trade in this residence!'
+TradeModes:
+  Exp:
+    Button:
+      Name: '&2Exp increment by &6[amount]'
+      Lore:
+      - '&eLeft click to add'
+      - '&eRight click to take'
+      - '&eHold shift to increase 10 times'
+      - '&eMaximum available: &6[balance]'
+      - '&eCurrent J offer: &6[offer] [taxes]'
+      - '&eYou will be left with &6[sourcelevel] &elevels and &6[sourceexp] &eexp'
+      - '&eTarget player will be at &6[targetlevel] &eand have &6[targetexp] &eexp'
+    OfferedButton:
+      Lore:
+      - '&eCurent exp offer: &6[amount] [taxes]'
+      - '&e[player] will be left with &6[sourcelevel] &elevels and &6[sourceexp] &eexp'
+      - '&eYou will be at &6[targetlevel] &eand have &6[targetexp] &eexp'
+      Name: '&2[player]''s exp offer'
+    log: '&e[amount] &7Exp'
+    ChangedOffer: '&6[playername] &ehas changed their exp offer to: &6[amount]'
+    ToggleButton:
+      Name: '&2Toggle to exp offer'
+      Lore:
+      - '&eCurent exp offer: &6[amount] [taxes]'
+      - '&eYou will be left with &6[sourcelevel] &elevels and &6[sourceexp] &eexp'
+      - '&eTarget player will be at &6[targetlevel] &eand have &6[targetexp] &eexp'
+    Error: '&e[playername] doesn''t have enough exp!'
+    Limit: '&eYou dont have enough exp! Amount was set to maximum you can trade: &6[amount]'
+    Got: '&eYou have received &6[amount] &eexp'
+    ChangedOfferTitle: '&8Offered &0[amount] &8exp'
+  Money:
+    Button:
+      Name: '&2Money increment by &6[amount]'
+      Lore:
+      - '&eLeft click to add'
+      - '&eRight click to take'
+      - '&eHold shift to increase 10 times'
+      - '&eMaximum available: &6[balance]'
+      - '&eCurrent money offer: &6[offer] [taxes]'
+    log: '&e[amount] &7Money'
+    Error: '&e[playername] doesn''t have enough money!'
+    Got: '&eYou have received &6[amount] &emoney'
+    OfferedButton:
+      Name: '&2[player]''s money offer'
+      Lore:
+      - '&eCurent money offer: &6[amount] [taxes]'
+    InLoanTarget: '&eYour offered money amount is to low to get &6[playername] &eout
+      of loan! offer atleast &6[amount]'
+    ChangedOfferTitle: '&8Offered &0[amount] &8money'
+    ChangedOffer: '&6[playername] &ehas changed their money offer to: &6[amount]'
+    ToggleButton:
+      Name: '&2Toggle to money offer'
+      Lore:
+      - '&eCurent money offer: &6[amount] [taxes]'
+    InLoanYou: '&6[playername] &eoffered money amount is to low to get you out of
+      loan!'
+    hardLimit: '&6[playername] &ecant have more than 10,000,000,000,000 money!'
+    Limit: '&eYou dont have enough money! Amount was set to maximum you can trade:
+      &6[amount]'
+    CantWidraw: '&cCan''t widraw money from player! ([playername])'
+  Residence:
+    Button:
+      Name: '&2Currently offering &6[residence]'
+      LoreConfirmed:
+      - '&2Residence confirmed for trade!'
+      LoreSecondConfirm:
+      - '&6Right click to finish confirmation'
+      LoreFirstConfirm:
+      - '&eLeft click to initiate confirm'
+    GotList: '[resname]&e, &6'
+    log: '&7Residence'
+    Got: '&eYou have got residence: &6[list]'
+    OfferedButton:
+      Name: '&2[player]''s residence offer'
+      Lore:
+      - '&eFull list of offer:'
+      - '[list]'
+    ChangedOffer: '&6[playername] &eoffered &c[residence] &eresidence to you'
+    ToggleButton:
+      Name: '&2Toggle to Residence offer'
+      Lore:
+      - '&eCurrent Residence: &6[residencename]'
+      - '&eClick again to switch to another'
+      - ''
+      - '&eFull list of offer:'
+      - '[list]'
+    logList: '&e[name]'
+    Limit: '&eSorry cant offer more residences, as &e[playername] &ehas reached max
+      allowed limit!'
+command:
+  help:
+    output:
+      CommandColor: '&2'
+      VariableColor: '&6'
+      title: '&2----&e ==== &6Trade &e==== &2----'
+      usage: '&ePouziti: &6%usage%'
+      cmdInfoFormat: '[command] &f- &e[description]'
+      cmdFormat: '&6/[command]&f[arguments]'
+      helpPageDescription: '&e* [description]'
+      explanation: '&e * [explanation]'
+  nocmd:
+    help:
+      info: '&eShows all available commands'
+      args: ''
+  accept:
+    help:
+      info: '&2Potvrdit'
+      args: ''
+    info:
+      ClickToAccept: '&6Click to accept offer!'
+  deny:
+    help:
+      info: '&2Zamitnout'
+      args: ''
+      simbol: ' &c[x]'
+    info:
+      ClickToDeny: '&cClick to deny offer!'
+      simbol: '&c[x]'
+      deny: '&eTrade request was declined!'
+      DenyForSender: '&eYour trade request was declined!'
+  block:
+    help:
+      info: '&2Zablokovat hrace'
+      args: '[nick]'
+    info:
+      RemovedFromBlockList: '&6[playername] &ewas removed from your trade block list!'
+      AddedToBlockList: '&6[playername] &ewas added to your trade block list!'
+      Blocked: '&6[playername] &ehas you in their block list!'
+  toggle:
+    help:
+      info: '&2Vypnout/Zapnout trade'
+      args: ''
+    info:
+      ToggledOn: '&eYou are now accepting trade offers!'
+      ToggledOff: '&eYou are no longer accepting any trades offers!'
+  offer:
+    help:
+      info: '&2Odeslat nabidku'
+      args: '[nick] [-s]'
+    info:
+      gotOffer: "&6[playername] &ewants to trade with you. \n"
+      accept: '   &2[Accept]   '
+      deny: '   &c[Decline]   '
+      MadeOffer: '&eYou have sent a trade offer to &6[playername]&e. They have &6[time]&e
+        seconds to accept.'
+      ClickToAccept: '&6Click to accept offer!'
+  set:
+    help:
+      info: '&2Change config setings'
+      args: '[path] [variable]'
+    info:
+      ConfigUpdate: '&eConfig file updated for &6[path] &ewith &6[variable]&e!'
+  reload:
+    help:
+      info: '&2Reload config file'
+      args: ''
+    info:
+      response: '&eConfiguration files was reloaded'
+  log:
+    help:
+      info: '&2Zkontroluj si vlastní log obchodů'
+      args: '[username]'
+    info:
+      tradelog: '&e[number]. &6[player1] &e--> &6[player2] &eon &6[date]'
+      dateformat: dd/MM/yyyy HH:mm:ss
+      deletedentries: '&6[amount] &eentries was deleted from database!'
+      noentries: '&eThere is no entries by this time range!'
+      noplayerlogentries: '&eThere is no log entries!'
+      offered: '&3&n[playername] &6offered! '
+  force:
+    help:
+      info: '&2Force a trade between 2 players'
+      args: '[nick1] [nick2]'
+  purge:
+    help:
+      info: '&2Clears database to specific point'
+      args: '[TimeInMinutes]'
+  logitems:
+    help:
+      info: '&2Check yor own or players traded items'
+      args: (username)
+    info:
+      offered: '&3&n[playerName] &6traded!'
+      item: '&e[&r[itemName] &ex &6[amount]&e] '
+      noItem: '&eThere was no items traded'

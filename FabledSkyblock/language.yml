@@ -3466,11 +3466,11 @@ Island:
         a proto jsi byl z ostrova vykopnut.'
   Unlock:
     Nether:
-      Message: '&c&l(!) &cMusíš zaplatit k odemknutí The Nether. K tomu potřebuješ
+      Message: '&c&l(!) &cMusíš zaplatit k odemknutí světa The Nether. K tomu potřebuješ
         napsat &7/island unlock nether&e Bude tě to stát ''&7$%cost%&e''.'
     End:
-      Message: '&c&l(!) &cMusíš zaplatit k odemknutí The End. K tomu potřebuješ napsat
-        &7/island unlock nether&e Bude tě to stát ''&7$%cost%&e''.'
+      Message: '&c&l(!) &cMusíš zaplatit k odemknutí světa The End. K tomu potřebuješ napsat
+        &7/island unlock end&e Bude tě to stát ''&7$%cost%&e''.'
   Settings:
     Visitor:
       Welcome:
@@ -3497,7 +3497,7 @@ Hologram:
       Footer: '&emc.craftmania.cz'
       Unclaimed: '&8* &f&o[%position] &7&oVolná pozice'
       Claimed: '&8* &f&o[%position] &a%player &7- &6$%balance'
-      Header: '&b&lSky&f&lCloud &8| &e&lTop 10 - Stav účtu'
+      Header: '&e&lTop 10 - Stav účtu'
     Level:
       Header: '&e&lTop 10 - Level'
       Claimed: '&8* &f&o[%position] &a%player &7- &6%level'

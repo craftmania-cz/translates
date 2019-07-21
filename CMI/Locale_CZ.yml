@@ -2326,14 +2326,12 @@ command:
       - cmi.command.list.group8
       - cmi.command.list.group9
       - cmi.command.list.admin
-     # - cmi.command.list.staff
       - cmi.command.list.hidden
     info:
       List:
       - '&7========================'
       - '&ePrávě je online &6[amount][hidden]&e/&6[maxamount] &ehráčů'
       - '[adminLine]'
-     # - '[staffLine]'
       - '[groupLine]'
       - '&7========================'
       staffL: '&7Staff: &f[list]'
