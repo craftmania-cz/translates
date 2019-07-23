@@ -2,84 +2,84 @@ Command:
   Island:
     Bans:
       Owner:
-        Message: '&c&l(!) &cNejsi majitel ostrova.'
+        Message: '&c&l[!] &cNejsi majitel ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva vidět bany tohoto ostrova.'
+        Message: '&c&l[!] &cNemáš práva vidět bany tohoto ostrova.'
       Bans:
-        Message: '&c&l(!) &cNa tvém ostrově nejsou žádné bany.'
+        Message: '&c&l[!] &cNa tvém ostrově nejsou žádné bany.'
       Info:
         Message: '&f&oOtevře banovací menu ostrova.'
     Unlock:
       Money:
-        Message: '&c&l(!) &cNemáš dostatek peněz k odemčení. Cena za odemknutí je
+        Message: '&c&l[!] &cNemáš dostatek peněz k odemčení. Cena za odemknutí je
           &c$%cost%&e.'
       Info:
         Message: '&f&oOdemkne &c&oThe Nether &f&onebo &3&oThe End.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island unlock [<Nether&8|&cEnd>]'
+        Message: '&c&l[!] &cUprav zadání: /island unlock [<Nether&8|&cEnd>]'
       Owner:
-        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+        Message: '&c&l[!] &cNejsi majitelem ostrova.'
       Finish:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eÚspěšně jsi odemkl ''&7The %type%&e''.'
+        Message: '&e&l[*] &eÚspěšně jsi odemkl ''&7The %type%&e''.'
       Disabled:
-        Message: '&c&l(!) &c''&7The %type%&e'' je vypnutý a není možné jej odemknout.'
+        Message: '&c&l[!] &c''&7The %type%&e'' je vypnutý a není možné jej odemknout.'
       Unlocked:
-        Message: '&c&l(!) &cJiž máš odemknutý ''&7The %type%&e''.'
+        Message: '&c&l[!] &cJiž máš odemknutý ''&7The %type%&e''.'
     Bank:
       Short5:
-        Message: '&c&l(!) &cZadal jsi zápornou hodnotu. Můžeš zadat pouze kladnou
+        Message: '&c&l[!] &cZadal jsi zápornou hodnotu. Můžeš zadat pouze kladnou
           hodnotu.'
       Short2:
-        Message: '&c&l(!) &cNení dostatek peněz k výběru.'
+        Message: '&c&l[!] &cNení dostatek peněz k výběru.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island bank [<Deposit&8|&cWithdraw&8|&cBalance>]'
+        Message: '&c&l[!] &cUprav zadání: /island bank [<Deposit&8|&cWithdraw&8|&cBalance>]'
       Short6:
-        Message: '&c&l(!) &cMusíš zadat pouze celé číslo.'
+        Message: '&c&l[!] &cMusíš zadat pouze celé číslo.'
       Short4:
-        Message: '&c&l(!) &cZadaná částka je neplatná.'
+        Message: '&c&l[!] &cZadaná částka je neplatná.'
       Short3:
-        Message: '&c&l(!) &cNespecifikoval jsi částku.'
+        Message: '&c&l[!] &cNespecifikoval jsi částku.'
       Short:
-        Message: '&c&l(!) &cK tomuto nemáš dostatek peněz.'
+        Message: '&c&l[!] &cK tomuto nemáš dostatek peněz.'
       Withdraw:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eÚspěšně sis vybral částku: ''&7$%amount%&e''.'
+        Message: '&e&l[*] &eÚspěšně sis vybral částku: ''&7$%amount%&e''.'
       Deposit:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eÚspěšně jsi vložil částku: ''&7$%amount%&e''.'
+        Message: '&e&l[*] &eÚspěšně jsi vložil částku: ''&7$%amount%&e''.'
       Disabled:
-        Message: '&c&l(!) &cBanka byla vypnuta.'
+        Message: '&c&l[!] &cBanka byla vypnuta.'
       Unknown:
-        Message: '&c&l(!) &cAktuálně nejsi na ostrově.'
+        Message: '&c&l[!] &cAktuálně nejsi na ostrově.'
       Info:
         Message: '&f&oUmožňuje Ti pracovat s bankou ostrova.'
       Perm:
-        Message: '&c&l(!) &cNemáš práva pracovat s bankou tohoto ostrova.'
+        Message: '&c&l[!] &cNemáš práva pracovat s bankou tohoto ostrova.'
       Balance:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNa tomto ostrově je v bance ''&7$%balance%&e''.'
+        Message: '&e&l[*] &eNa tomto ostrově je v bance ''&7$%balance%&e''.'
     Accept:
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island accept <player>'
+        Message: '&c&l[!] &cUprav zadání: /island accept <player>'
       Invited:
-        Message: '&c&l(!) &cTento hráč tě nepozval na jeho ostrov.'
+        Message: '&c&l[!] &cTento hráč tě nepozval na jeho ostrov.'
       Info:
         Message: '&f&oPotvrdíš pozvání na ostrov.'
       Capacity:
         Broadcast:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvoje pozvánka od hráče &d%player
+          Message: '&e&l[*] &eTvoje pozvánka od hráče &d%player
             &ebyla automaticky zamítnuta, protože ostrov dosáhl maximálního počtu
             členů.'
       Accepted:
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &d%player &epřijal pozvánku.'
+          Message: '&e&l[*] &d%player &epřijal pozvánku.'
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePřijal jsi pozvánku od hráče
+          Message: '&e&l[*] &ePřijal jsi pozvánku od hráče
             &d%player.'
         Broadcast:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &6%player &ese přidal na tvůj ostrov!'
+          Message: '&e&l[*] &6%player &ese přidal na tvůj ostrov!'
       Owner:
-        Message: '&c&l(!) &cMusíš opustit tvůj současný ostrov pro připojení se na
+        Message: '&c&l[!] &cMusíš opustit tvůj současný ostrov pro připojení se na
           jiný ostrov.'
       Invite:
-        Message: '&c&l(!) &cNeobdržel jsi žádnou žádost.'
+        Message: '&c&l[!] &cNeobdržel jsi žádnou žádost.'
     Level:
       Scanning:
         Finished:
@@ -87,187 +87,187 @@ Command:
         Progress:
           Message: '&eSkenuje level ostrova: &b%percent%'
         NotOnIsland:
-          Message: '&c&l(!) &cNemůžeš spustit sken ostrova, když na žádnem nejsi.'
+          Message: '&c&l[!] &cNemůžeš spustit sken ostrova, když na žádnem nejsi.'
         BlockPlacing:
-          Message: '&b&lSky&f&lCloud &8| &Chyba&8: &eNemůžeš pokládat blocky dokud
+          Message: '&c&l[!] &cNemůžeš pokládat blocky dokud
             běží level sken ostrova. Vyčkej na dokončení skenu.'
       Cooldown:
         Word:
           Minute: minut(a/y)
           Second: sekund(a/y)
           Hour: hodin(a/y)
-        Message: '&c&l(!) &cMusíš počkat &c&o%time &cnež budeš mít možnost znovu zažádat
+        Message: '&c&l[!] &cMusíš počkat &c&o%time &cnež budeš mít možnost znovu zažádat
           o level sken ostrova.'
       Level:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrov hráče &d%player &emá level
+        Message: '&e&l[*] &eOstrov hráče &d%player &emá level
           &6%level&e.'
       Owner:
         Yourself:
-          Message: '&c&l(!) &cNejsi majitel ostrova.'
+          Message: '&c&l[!] &cNejsi majitel ostrova.'
         Other:
-          Message: '&c&l(!) &cTento hráč není členem nebo nevlastní tento ostrov.'
+          Message: '&c&l[!] &cTento hráč není členem nebo nevlastní tento ostrov.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva si zobrazit level ostrova jiných hráčů.'
+        Message: '&c&l[!] &cNemáš práva si zobrazit level ostrova jiných hráčů.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island level [<player>]'
+        Message: '&c&l[!] &cUprav zadání: /island level [<player>]'
       Loading:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &7&oNačítám seznam materiálů na ostrově....
+        Message: '&e&l[*] &7&oNačítám seznam materiálů na ostrově....
           Čekej, prosím!'
       Info:
         Message: '&f&oOtevře menu pro level ostrova.'
       Processing:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &7&oZpracovávám požadavek na výpočet
+        Message: '&e&l[*] &7&oZpracovávám požadavek na výpočet
           levelu ostrova... Čekej, prosím!'
       Materials:
-        Message: '&c&l(!) &cNa tomto ostrově nejsou žádné významné blocky.'
+        Message: '&c&l[!] &cNa tomto ostrově nejsou žádné významné blocky.'
     Unban:
       Member:
-        Message: '&c&l(!) &cTento hráč nemá ban na tomto ostrově, protože je členem.'
+        Message: '&c&l[!] &cTento hráč nemá ban na tomto ostrově, protože je členem.'
       Info:
         Message: '&f&oOdbanuje hráče na tvém ostrově.'
       Found:
-        Message: '&c&l(!) &cHráč tohoto jména nebyl nalezen.'
+        Message: '&c&l[!] &cHráč tohoto jména nebyl nalezen.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island unban <player>'
+        Message: '&c&l[!] &cUprav zadání: /island unban <player>'
       Yourself:
-        Message: '&c&l(!) &cNemáš ban na tomto ostrově, protože jsi jeho členem.'
+        Message: '&c&l[!] &cNemáš ban na tomto ostrově, protože jsi jeho členem.'
       Unbanned:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOdbanoval jsi hráče &c%player &ena
+        Message: '&e&l[*] &eOdbanoval jsi hráče &c%player &ena
           tvém ostrově.'
       Disabled:
-        Message: '&c&l(!) &cNemůžeš použít tento příkaz, protože funkce banování byla
+        Message: '&c&l[!] &cNemůžeš použít tento příkaz, protože funkce banování byla
           vypnuta.'
       Banned:
-        Message: '&c&l(!) &cTento hráč nebyl zabanován na tvém ostrově.'
+        Message: '&c&l[!] &cTento hráč nebyl zabanován na tvém ostrově.'
       Owner:
-        Message: '&c&l(!) &cNejsi majitelem tohoto ostrova.'
+        Message: '&c&l[!] &cNejsi majitelem tohoto ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva zrušit ban hráče na tomto ostrově.'
+        Message: '&c&l[!] &cNemáš práva zrušit ban hráče na tomto ostrově.'
     Admin:
       Reload:
         Info:
           Message: '&f&oZnovu načtení všech souborů.'
         Reloaded:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVšechny soubory byly znovu načteny.'
+          Message: '&e&l[*] &eVšechny soubory byly znovu načteny.'
       RemoveUpgrade:
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin removeupgrade <player> <upgrade>'
+          Message: '&c&l[!] &cUprav zadání: /island admin removeupgrade <player> <upgrade>'
         Island:
           Owner:
-            Message: '&c&l(!) &cTento hráč není členem ostrova nebo jej nevlastní.'
+            Message: '&c&l[!] &cTento hráč není členem ostrova nebo jej nevlastní.'
           Data:
-            Message: '&c&l(!) &cData ostrova pro tohoto hráče neexistují.'
+            Message: '&c&l[!] &cData ostrova pro tohoto hráče neexistují.'
         Info:
           Message: '&f&oOdstraní vylepšení z ostrova hráče.'
         Upgrade:
           Missing:
-            Message: '&c&l(!) &cHráčův ostrov nemá toto vylepšení.'
+            Message: '&c&l[!] &cHráčův ostrov nemá toto vylepšení.'
           Exist:
-            Message: '&c&l(!) &cVylepšení tohoto názvu neexistuje.'
+            Message: '&c&l[!] &cVylepšení tohoto názvu neexistuje.'
         Removed:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: c&lODSTRANIL &ejsi vylepšení ''&d%upgrade&e''
+          Message: '&e&l[*] c&lODSTRANIL &ejsi vylepšení ''&d%upgrade&e''
             z ostrova hráče &d%player&e.'
       SetBiome:
         Island:
           Data:
-            Message: '&c&l(!) &cThe Island data for that player''s Island does not
+            Message: '&c&l[!] &cThe Island data for that player''s Island does not
               exist.'
           Owner:
-            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+            Message: '&c&l[!] &cThat player is not a Member of or does not own an
               Island.'
         Set:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set &d%player''s &eIsland
+          Message: '&e&l[*] &eYou have set &d%player''s &eIsland
             biome to &d%biome&e.'
         Info:
           Message: '&f&oSets the size of a player''s Island.'
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin setbiome <player> <biome>'
+          Message: '&c&l[!] &cUprav zadání: /island admin setbiome <player> <biome>'
         InvalidBiome:
-          Message: '&c&l(!) &cA biome with that name does not exist.'
+          Message: '&c&l[!] &cA biome with that name does not exist.'
       Structure:
         Tool:
           Info:
             Message: '&f&oGives the player the Structure tool item.'
           Equiped:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have been given the Structure
+            Message: '&e&l[*] &eYou have been given the Structure
               tool.'
           Inventory:
-            Message: '&c&l(!) &cYou already have the Structure tool in your inventory.'
+            Message: '&c&l[!] &cYou already have the Structure tool in your inventory.'
         Save:
           Player:
             World:
-              Message: '&c&l(!) &cYou must be in the same World as the selected positions.'
+              Message: '&c&l[!] &cYou must be in the same World as the selected positions.'
             Area:
-              Message: '&c&l(!) &cYou must be inside of the selected area.'
+              Message: '&c&l[!] &cYou must be inside of the selected area.'
           Position:
-            Message: '&c&l(!) &cPlease use the Structure tool to select two positions
+            Message: '&c&l[!] &cPlease use the Structure tool to select two positions
               of an area.'
           Complete:
-            Message: '&c&l(!) &cPlease complete the area selection by using the Structure
+            Message: '&c&l[!] &cPlease complete the area selection by using the Structure
               tool and selecting two positions of an area.'
           Invalid:
-            Message: '&c&l(!) &cUprav zadání: /island admin structure save <name>'
+            Message: '&c&l[!] &cUprav zadání: /island admin structure save <name>'
           Info:
             Message: '&f&oSaves a selected Structure.'
           Saved:
             Successful:
-              Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eThe Structure with the name
+              Message: '&e&l[*] &eThe Structure with the name
                 ''&d%name&e'' has been saved!'
             Failed:
-              Message: '&c&l(!) &cAn error occurred when trying to save the Structure.'
+              Message: '&c&l[!] &cAn error occurred when trying to save the Structure.'
           Selection:
             World:
-              Message: '&c&l(!) &cBoth selected positions have to be in the same World.'
+              Message: '&c&l[!] &cBoth selected positions have to be in the same World.'
         Info:
           Message: '&f&oCreate Structures for Islands.'
       SetSize:
         Set:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set &d%player''s &eIsland
+          Message: '&e&l[*] &eYou have set &d%player''s &eIsland
             size to &d%size&e.'
         Size:
           Less:
-            Message: '&c&l(!) &cThe size of the Island must be less than 1000.'
+            Message: '&c&l[!] &cThe size of the Island must be less than 1000.'
           Greater:
-            Message: '&c&l(!) &cThe size of the Island must be greater than 50.'
+            Message: '&c&l[!] &cThe size of the Island must be greater than 50.'
         Info:
           Message: '&f&oSets the size of a player''s Island.'
         Island:
           Owner:
-            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+            Message: '&c&l[!] &cThat player is not a Member of or does not own an
               Island.'
           Data:
-            Message: '&c&l(!) &cThe Island data for that player''s Island does not
+            Message: '&c&l[!] &cThe Island data for that player''s Island does not
               exist.'
         Numerical:
-          Message: '&c&l(!) &cYou must enter a numerical value.'
+          Message: '&c&l[!] &cYou must enter a numerical value.'
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin setsize <player> <size>'
+          Message: '&c&l[!] &cUprav zadání: /island admin setsize <player> <size>'
       AddUpgrade:
         Info:
           Message: '&f&oAdd an upgrade to a player''s Island.'
         Upgrade:
           Exist:
-            Message: '&c&l(!) &cAn upgrade by that name does not exist.'
+            Message: '&c&l[!] &cAn upgrade by that name does not exist.'
           Already:
-            Message: '&c&l(!) &cThat player''s Island already has that upgrade.'
+            Message: '&c&l[!] &cThat player''s Island already has that upgrade.'
         Added:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have &a&lADDED the upgrade
+          Message: '&e&l[*] &eYou have &a&lADDED the upgrade
             ''&d%upgrade&e'' to &d%player''s &eIsland.'
         Island:
           Owner:
-            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+            Message: '&c&l[!] &cThat player is not a Member of or does not own an
               Island.'
           Data:
-            Message: '&c&l(!) &cThe Island data for that player''s Island does not
+            Message: '&c&l[!] &cThe Island data for that player''s Island does not
               exist.'
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin addupgrade <player> <upgrade>'
+          Message: '&c&l[!] &cUprav zadání: /island admin addupgrade <player> <upgrade>'
       SetHologram:
         Set:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eThe ''&b%type&e'' hologram has
+          Message: '&e&l[*] &eThe ''&b%type&e'' hologram has
             been set to your location.'
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin sethologram <Level|Votes>'
+          Message: '&c&l[!] &cUprav zadání: /island admin sethologram <Level|Votes>'
         Info:
           Message: '&f&oSets the location of a hologram.'
       Settings:
@@ -277,361 +277,362 @@ Command:
         Info:
           Message: '&f&oManage upgrades for the Island Upgrade menu.'
         Disabled:
-          Message: '&c&l(!) &cYou cannot perform that command because upgrades have
+          Message: '&c&l[!] &cYou cannot perform that command because upgrades have
             been disabled.'
       Create:
         Info:
           Message: '&f&oManage Structures for the Island Creator menu.'
       Generator:
         Disabled:
-          Message: '&c&l(!) &cYou cannot perform that command because the generator
+          Message: '&c&l[!] &cYou cannot perform that command because the generator
             has been disabled.'
         Info:
           Message: '&f&oManage generators for cobblestone generators.'
       RemoveHologram:
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin removehologram <Level|Votes>'
+          Message: '&c&l[!] &cUprav zadání: /island admin removehologram <Level|Votes>'
         Set:
-          Message: '&c&l(!) &cA location for that hologram has not been set.'
+          Message: '&c&l[!] &cA location for that hologram has not been set.'
         Info:
           Message: '&f&oRemoves an existing hologram.'
         Removed:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the ''&b%type&e''
+          Message: '&e&l[*] &eYou have removed the ''&b%type&e''
             hologram.'
       Delete:
         Deleted:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have deleted &c%player''s
+          Message: '&e&l[*] &eYou have deleted &c%player''s
             &eIsland.'
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin delete <player>'
+          Message: '&c&l[!] &cUprav zadání: /island admin delete <player>'
         Info:
           Message: '&f&oDelete a player''s Island permanently.'
         Spawn:
-          Message: '&c&l(!) &cYou cannot delete that Island because the main spawn
+          Message: '&c&l[!] &cYou cannot delete that Island because the main spawn
             point is set there.'
         Owner:
-          Message: '&c&l(!) &cThat player is not an Island Owner.'
+          Message: '&c&l[!] &cThat player is not an Island Owner.'
       RefreshHolograms:
         Info:
           Message: '&f&oRefreshes any existing holograms.'
         Refreshed:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eRefreshed holograms.'
+          Message: '&e&l[*] &eRefreshed holograms.'
       Level:
         Info:
           Message: '&f&oChange Island level materials and points.'
       Owner:
         Invalid:
-          Message: '&c&l(!) &cUprav zadání: /island admin Owner <player>'
+          Message: '&c&l[!] &cUprav zadání: /island admin Owner <player>'
         Info:
           Message: '&f&oGet the Owner of a player''s Island.'
         Island:
           Owner:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &d%player &eis an Island Owner.'
+            Message: '&e&l[*] &d%player &eis an Island Owner.'
           Member:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &d%player''s Island Owner is
+            Message: '&e&l[*] &d%player''s Island Owner is
               &d%player&e.'
           None:
-            Message: '&c&l(!) &cThat player is not a Member of or does not own an
+            Message: '&c&l[!] &cThat player is not a Member of or does not own an
               Island.'
       SetSpawn:
         Set:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eThe spawn point has been set
+          Message: '&e&l[*] &eThe spawn point has been set
             to your location.'
         Info:
           Message: '&f&oSets the spawn point to your location.'
     Coop:
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island coop [<player>]'
+        Message: '&c&l[!] &cUprav zadání: /island coop [<player>]'
       Removed:
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOdebral jsi coop hráči &d%player&e.'
+          Message: '&e&l[*] &eOdebral jsi coop hráči &d%player&e.'
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eJiž nejsi coop členem tohoto
+          Message: '&e&l[*] &eJiž nejsi coop členem tohoto
             ostrova.'
       Disabled:
-        Message: '&c&l(!) &cNemůžeš použít tento příkaz, protože coop funkce je vypnutá.'
+        Message: '&c&l[!] &cNemůžeš použít tento příkaz, protože coop funkce je vypnutá.'
       Info:
         Message: '&f&oOtevře menu pro nastavení coop hráčů ostrova.'
       Member:
-        Message: '&c&l(!) &cTento hráč nemůže dostat coop, protože je již členem tohoto
+        Message: '&c&l[!] &cTento hráč nemůže dostat coop, protože je již členem tohoto
           ostrova.'
       Found:
-        Message: '&c&l(!) &cHráč tohoto jména nebyl nalezen.'
+        Message: '&c&l[!] &cHráč tohoto jména nebyl nalezen.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Yourself:
-        Message: '&c&l(!) &cNemůžeš dát coop sám sobě, protože již jsi členem tohoto
+        Message: '&c&l[!] &cNemůžeš dát coop sám sobě, protože již jsi členem tohoto
           ostrova.'
       Added:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDal jsi coop hráči &d%player&e.'
+        Message: '&e&l[*] &eDal jsi coop hráči &d%player&e.'
       Banned:
-        Message: '&c&l(!) &cNemůžeš dát coop hráči, který má ban.'
+        Message: '&c&l[!] &cNemůžeš dát coop hráči, který má ban.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva toto udělat.'
+        Message: '&c&l[!] &cNemáš práva toto udělat.'
+      AddedTarget:
+        Message: '&e&l[*] &eDostal jsi coop na ostrově hráče &d%player&e.'
     Delete:
       Owner:
-        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+        Message: '&c&l[!] &cNejsi majitelem ostrova.'
       Confirmation:
         Confirm:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eChystáš se smazat vlastní ostrov.
+          Message: '&e&l[*] &eChystáš se smazat vlastní ostrov.
             Máš &c%time &esekund k potvrzení.   \n %confirm'
           Word:
             Confirm: POTVRZUJI
             Tutorial: '&7Klikni pro &f&opotvrzení &r&7smazání ostrova!'
         Pending:
-          Message: '&c&l(!) &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
+          Message: '&c&l[!] &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
       Info:
         Message: '&f&oSmaže tvůj ostrov.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva na smazání tvého ostrova. Asi někde nastala
-          chyba :D'
+        Message: '&c&l[!] &cNemáš práva na smazání tvého ostrova. Asi někde nastala chyba :D'
     Kick:
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island kick <player>'
+        Message: '&c&l[!] &cUprav zadání: /island kick <player>'
       Role:
         Owner:
-          Message: '&c&l(!) &cNemůžeš vykopnout majitele ostrova.'
+          Message: '&c&l[!] &cNemůžeš vykopnout majitele ostrova.'
         Operator:
-          Message: '&c&l(!) &cNemůžeš vykopnout člena ostrova, který má stejnou roli
+          Message: '&c&l[!] &cNemůžeš vykopnout člena ostrova, který má stejnou roli
             jako ty.'
       Occupant:
         Visit:
           Open:
-            Message: '&c&l(!) &cTento hráč není členem ani návštěvníkem tvého ostrova.'
+            Message: '&c&l[!] &cTento hráč není členem ani návštěvníkem tvého ostrova.'
           Closed:
-            Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+            Message: '&c&l[!] &cTento hráč není členem tvého ostrova.'
       Kicked:
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVykopnul jsi hráče &c%player
+          Message: '&e&l[*] &eVykopnul jsi hráče &c%player
             z ostrova.'
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi vykopnut z ostrova.'
+          Message: '&e&l[*] &eByl jsi vykopnut z ostrova.'
       Yourself:
-        Message: '&c&l(!) &cNemůžeš vykopnout sám sebe z ostrova.'
+        Message: '&c&l[!] &cNemůžeš vykopnout sám sebe z ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+        Message: '&c&l[!] &cNejsi majitelem ostrova.'
       Permission:
         Visit:
           Open:
-            Message: '&c&l(!) &cNemáš práva pro vykopnutí člena ostrova nebo návštěvníky.'
+            Message: '&c&l[!] &cNemáš práva pro vykopnutí člena ostrova nebo návštěvníky.'
           Closed:
-            Message: '&c&l(!) &cNemáš práva pro vykopnutí člena ostrova.'
+            Message: '&c&l[!] &cNemáš práva pro vykopnutí člena ostrova.'
       Cooped:
-        Message: '&c&l(!) &cNemůžeš vykopnout hráče, který má coop.'
+        Message: '&c&l[!] &cNemůžeš vykopnout hráče, který má coop.'
       Info:
         Message: '&f&oOdebere hráče nebo návštěvníka z tvého ostrova.'
     KickAll:
       Info:
         Message: '&f&oVykopne všechny návštěvníky z tvého ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi majitelem ostrova.'
+        Message: '&c&l[!] &cNejsi majitelem ostrova.'
       Role:
-        Message: '&c&l(!) &cNemáš správnou roli, aby jsi mohl vykopávat návštěníky
+        Message: '&c&l[!] &cNemáš správnou roli, aby jsi mohl vykopávat návštěníky
           ostrova.'
       Closed:
-        Message: '&c&l(!) &cNemůžeš vykopnout návštěvníky z ostrova, protože tento
+        Message: '&c&l[!] &cNemůžeš vykopnout návštěvníky z ostrova, protože tento
           ostrov je uzavřen.'
       Kicked:
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVykopnul jsi nášvštěvníka &c%visitors
+          Message: '&e&l[*] &eVykopnul jsi nášvštěvníka &c%visitors
             z ostrova.'
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi vykopnut z ostrova.'
+          Message: '&e&l[*] &eByl jsi vykopnut z ostrova.'
       Visitors:
-        Message: '&c&l(!) &cNa tomto ostrově nejsou návštěvníci.'
+        Message: '&c&l[!] &cNa tomto ostrově nejsou návštěvníci.'
     Open:
       Info:
         Message: '&f&oOtevře ostrov pro návštěvníky.'
       Owner:
-        Message: '&c&l(!) &cTento hráč není vlastníkem ostrova.'
+        Message: '&c&l[!] &cTento hráč není vlastníkem ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva otevřít ostrov.'
+        Message: '&c&l[!] &cNemáš práva otevřít ostrov.'
       Already:
-        Message: '&c&l(!) &cTvůj ostrov je již otevřen.'
+        Message: '&c&l[!] &cTvůj ostrov je již otevřen.'
       Opened:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov byl otevřen.'
+        Message: '&e&l[*] &eTvůj ostrov byl otevřen.'
     Leave:
       Member:
-        Message: '&c&l(!) &cNejsi členem ostrova.'
+        Message: '&c&l[!] &cNejsi členem ostrova.'
       Owner:
-        Message: '&c&l(!) &cNemůžeš opustit tvůj ostrov.'
+        Message: '&c&l[!] &cNemůžeš opustit tvůj ostrov.'
       Left:
         Broadcast:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &c%player &eopustil tvůj ostrov.'
+          Message: '&e&l[*] &c%player &eopustil tvůj ostrov.'
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOpustil jsi ostrov.'
+          Message: '&e&l[*] &eOpustil jsi ostrov.'
       Info:
         Message: '&f&oOpustíš hráčův ostrov.'
     Promote:
       Promoted:
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi povýšen na &dOperátora&e.'
+          Message: '&e&l[*] &eByl jsi povýšen na &dOperátora&e.'
         Broadcast:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč &d%player &ebyl povýšen
+          Message: '&e&l[*] &eHráč &d%player &ebyl povýšen
             na &dOperátora&e.'
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePovýšil jsi hráče &d%player &ena
+          Message: '&e&l[*] &ePovýšil jsi hráče &d%player &ena
             &dOperátora&e.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva k povyšování členů tohoto ostrova.'
+        Message: '&c&l[!] &cNemáš práva k povyšování členů tohoto ostrova.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island promote <player>'
+        Message: '&c&l[!] &cUprav zadání: /island promote <player>'
       Member:
-        Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+        Message: '&c&l[!] &cTento hráč není členem tvého ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Info:
         Message: '&f&oPovýšení člena na Operátora.'
       Operator:
-        Message: '&c&l(!) &cTento hráč je již &dOperátorem&e.'
+        Message: '&c&l[!] &cTento hráč je již &dOperátorem&e.'
     Chat:
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Team:
-        Message: '&c&l(!) &cNemůžeš aktivovat ostrovní chat, protože nemáš ostrovní
+        Message: '&c&l[!] &cNemůžeš aktivovat ostrovní chat, protože nemáš ostrovní
           tým.'
       Offline:
-        Message: '&c&l(!) &cNemůžeš aktivovat ostrovní chat, protože ostatní členové
+        Message: '&c&l[!] &cNemůžeš aktivovat ostrovní chat, protože ostatní členové
           nejsou online.'
       Untoggled:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDeaktivoval jsi ostrovní chat.
+        Message: '&e&l[*] &eDeaktivoval jsi ostrovní chat.
           Zprávy budou nyní vidět pro všechny hráče.'
       Info:
         Message: '&f&oPrivátní komunikace se členy ostrova.'
       Toggled:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eAktvivoval jsi ostrovní chat. Zprávy
+        Message: '&e&l[*] &eAktvivoval jsi ostrovní chat. Zprávy
           budou nyní viditelné jen pro členy ostrova.'
     Vote:
       Island:
         Closed:
-          Message: '&c&l(!) &cNemůžeš hlasovat pro tento ostrov, protože je zavřený.'
+          Message: '&c&l[!] &cNemůžeš hlasovat pro tento ostrov, protože je zavřený.'
         Member:
-          Message: '&c&l(!) &cNemůžeš hlasovat pro tento ostrov, protože jsi jeho
+          Message: '&c&l[!] &cNemůžeš hlasovat pro tento ostrov, protože jsi jeho
             členem.'
         None:
-          Message: '&c&l(!) &cTento hráč není členem ostrova nebo nevlastní ostrov.'
+          Message: '&c&l[!] &cTento hráč není členem ostrova nebo nevlastní ostrov.'
         Location:
-          Message: '&c&l(!) &cMusíš být na ostrově hráče, abys pro něj mohl hlasovat.'
+          Message: '&c&l[!] &cMusíš být na ostrově hráče, abys pro něj mohl hlasovat.'
         Unloaded:
-          Message: '&c&l(!) &cNikdo z členů tohoto ostrova není online.'
+          Message: '&c&l[!] &cNikdo z členů tohoto ostrova není online.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island vote <player>'
+        Message: '&c&l[!] &cUprav zadání: /island vote <player>'
       Disabled:
-        Message: '&c&l(!) &cNemůžeš hlasovat pro tento ostrov, protože hlasování je
+        Message: '&c&l[!] &cNemůžeš hlasovat pro tento ostrov, protože hlasování je
           vypnuté.'
       Info:
         Message: '&f&oPřidá nebo odebere hlas z ostrova hráče.'
       Vote:
         Added:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &a&lPŘIDÁN &epro
+          Message: '&e&l[*] &eTvůj hlas byl &a&lPŘIDÁN &epro
             ostrov hráče %player.'
         Removed:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &c&lODEBRÁN &epro
+          Message: '&e&l[*] &eTvůj hlas byl &c&lODEBRÁN &epro
             ostrov hráče %player.'
     Current:
       Island:
         Owner:
           Yourself:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eJsi na ostrově hráče &d%player''s&e.'
+            Message: '&e&l[*] &eJsi na ostrově hráče &d%player''s&e.'
           Other:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč&a%target &eje na ostrově
+            Message: '&e&l[*] &eHráč&a%target &eje na ostrově
               hráče &d%owner&e.'
         None:
           Yourself:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNejsi na ostrově.'
+            Message: '&e&l[*] &eNejsi na ostrově.'
           Other:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč není na ostrově.'
+            Message: '&e&l[*] &eHráč není na ostrově.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island current <player>'
+        Message: '&c&l[!] &cUprav zadání: /island current <player>'
       Info:
         Message: '&f&oUkáže, na kterém ostrově jsi.'
       Offline:
-        Message: '&c&l(!) &cHráč není připojen na serveru.'
+        Message: '&c&l[!] &cHráč není připojen na serveru.'
       Permission:
-        Message: '&c&l(!) &cNemáš právo se podívat, na kterém ostrově hráči aktuálně
+        Message: '&c&l[!] &cNemáš právo se podívat, na kterém ostrově hráči aktuálně
           jsou.'
     Deny:
       Info:
         Message: '&f&oZamítne pozvánku na ostrov.'
       Invited:
-        Message: '&c&l(!) &cTento hráč Ti neposlal pozvánku na jeho ostrov.'
+        Message: '&c&l[!] &cTento hráč Ti neposlal pozvánku na jeho ostrov.'
       Denied:
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZamítl jsi pozvání od hráče &c%player&e.'
+          Message: '&e&l[*] &eZamítl jsi pozvání od hráče &c%player&e.'
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &Hráč &c%player &eodmítl tvoje
+          Message: '&e&l[*] &Hráč &c%player &eodmítl tvoje
             pozvání.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island deny <player>'
+        Message: '&c&l[!] &cUprav zadání: /island deny <player>'
     Value:
       Hand:
-        Message: '&c&l(!) &cMusíš držet předmět v ruce.'
+        Message: '&c&l[!] &cMusíš držet předmět v ruce.'
       None:
-        Message: '&c&l(!) &cNebylo možné získat hodnotu tohoto materiálu.'
+        Message: '&c&l[!] &cNebylo možné získat hodnotu tohoto materiálu.'
       Info:
         Message: '&f&oVypíše hodnotu materiálu drženého v ruce.'
       Value:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHodnota materiálu ''&d%material&e''
+        Message: '&e&l[*] &eHodnota materiálu ''&d%material&e''
           je &d%points &ebodů a zvýšení o &d%level level(y/ů)&e.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva zjistit hodnotu předmětu.'
+        Message: '&c&l[!] &cNemáš práva zjistit hodnotu předmětu.'
     Ownership:
       Confirmation:
         Pending:
-          Message: '&c&l(!) &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
+          Message: '&c&l[!] &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
         Confirm:
           Word:
             Confirm: POTVRZENÍ
             Tutorial: '&7Klikni pro &f&opotvrzení &r&7převodu vlastnictví ostrova!'
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eChystáš se převést vlastnictví
+          Message: '&e&l[*] &eChystáš se převést vlastnictví
             ostrova na hráče &d%player&e. Máš &c%time &esekund k potvrzení.   \n %confirm'
       Password:
         Unset:
-          Message: '&c&l(!) &cVlastník ostrova nemá nastavené heslo.'
+          Message: '&c&l[!] &cVlastník ostrova nemá nastavené heslo.'
         Incorrect:
-          Message: '&c&l(!) &cZadané heslo je chybné.'
+          Message: '&c&l[!] &cZadané heslo je chybné.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island ownership / (<player> / <password>)'
+        Message: '&c&l[!] &cUprav zadání: /island ownership / (<player> / <password>)'
       Cooldown:
         Word:
           Minute: minut(a/y)
           Second: sekund(a/y)
           Hour: hodin(a/y)
-        Message: '&c&l(!) &cMusíš vyčkat &c&o%time &epředtím, než převedeš vlastníctví
+        Message: '&c&l[!] &cMusíš vyčkat &c&o%time &epředtím, než převedeš vlastníctví
           ostrova.'
       Info:
         Message: '&f&oOtevře menu pro převod vlastnictví.'
       Assigned:
         Broadcast:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVlastnictí ostrova bylo převedeno
+          Message: '&e&l[*] &eVlastnictí ostrova bylo převedeno
             na hráče &a%player&e!'
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePrávě Ti bylo převedeno vlastnictví
+          Message: '&e&l[*] &ePrávě Ti bylo převedeno vlastnictví
             ostrova.'
       Yourself:
-        Message: '&c&l(!) &cNemůžeš převést vlastnictví sám sobě. Již jsi vlastníkem.'
+        Message: '&c&l[!] &cNemůžeš převést vlastnictví sám sobě. Již jsi vlastníkem.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Member:
-        Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+        Message: '&c&l[!] &cTento hráč není členem tvého ostrova.'
     Invite:
       Invited:
         Target:
           Expired:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNa pozvánku od hráče &c%player
+            Message: '&e&l[*] &eNa pozvánku od hráče &c%player
               &ejsi neodpověděl včas..'
           Received:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi pozván pro připojení
+            Message: '&e&l[*] &eByl jsi pozván pro připojení
               se na ostrov hráče &d%player&e. &eMáš &c%time &ena reakci.'
         Sender:
           Expired:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč &c%player &enereagoval
+            Message: '&e&l[*] &eHráč &c%player &enereagoval
               na tvou pozvánku včas.'
           Sent:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePozval jsi hráče &d%player
+            Message: '&e&l[*] &ePozval jsi hráče &d%player
               &ena tvůj ostrov. Má &c%time na reakci.   \n%cancel'
           Disconnected:
-            Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eHráč &c%player &ese odpojil
+            Message: '&e&l[*] &eHráč &c%player &ese odpojil
               a nereagoval na tvou pozvánku.'
         Word:
           Second: sekund(a/y)
@@ -642,87 +643,87 @@ Command:
           Resend: Odeslat znovu
           Accept: Příjmout
       Capacity:
-        Message: '&c&l(!) &cNemůžeš pozvat více hráčů na tvůj sotrov, protože jsi
+        Message: '&c&l[!] &cNemůžeš pozvat více hráčů na tvůj sotrov, protože jsi
           dosáhl kapacity členů.'
       Already:
         Own:
-          Message: '&c&l(!) &cPozvánka tomuto hráči již byla poslána.'
+          Message: '&c&l[!] &cPozvánka tomuto hráči již byla poslána.'
         Other:
-          Message: '&c&l(!) &cJiný ostrov již tohoto hráče pozval.'
+          Message: '&c&l[!] &cJiný ostrov již tohoto hráče pozval.'
       Yourself:
-        Message: '&c&l(!) &cNemůžeš pozvat sám sebe.'
+        Message: '&c&l[!] &cNemůžeš pozvat sám sebe.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva zvát hráče na tvůj ostrov.'
+        Message: '&c&l[!] &cNemáš práva zvát hráče na tvůj ostrov.'
       Offline:
-        Message: '&c&l(!) &cHráč nebyl nalezen, nejspíše je offline.'
+        Message: '&c&l[!] &cHráč nebyl nalezen, nejspíše je offline.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Member:
-        Message: '&c&l(!) &cHráč je již členem tohoto ostrova.'
+        Message: '&c&l[!] &cHráč je již členem tohoto ostrova.'
       Info:
         Message: '&f&oPozvat hráče pro připojení se na tvůj ostrov.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island invite <player>'
+        Message: '&c&l[!] &cUprav zadání: /island invite <player>'
     SetSpawn:
       Protection:
         Centre:
-          Message: '&c&l(!) &cMusíš stát blízko středu blocku pro nastavení ochrany
+          Message: '&c&l[!] &cMusíš stát blízko středu blocku pro nastavení ochrany
             spawnu.'
         Ground:
-          Message: '&c&l(!) &cMusíš stát na zemi pro nastavení ochrany spawnu.'
+          Message: '&c&l[!] &cMusíš stát na zemi pro nastavení ochrany spawnu.'
         Block:
-          Message: '&c&l(!) &cMusíš stát na vrchu blocku pro nastavení ochrany spawnu.'
+          Message: '&c&l[!] &cMusíš stát na vrchu blocku pro nastavení ochrany spawnu.'
         Liquid:
-          Message: '&c&l(!) &cNemůžeš být v kapalině, když nastavuješ ochranu spawnu.'
+          Message: '&c&l[!] &cNemůžeš být v kapalině, když nastavuješ ochranu spawnu.'
         Portal:
-          Message: '&c&l(!) &cNemůžeš stát v portále, když nastavuješ ochranu spawnu.'
+          Message: '&c&l[!] &cNemůžeš stát v portále, když nastavuješ ochranu spawnu.'
       Spawn:
-        Message: '&c&l(!) &cToto není správný typ spawnu.'
+        Message: '&c&l[!] &cToto není správný typ spawnu.'
       Set:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &e%spawn pozice spawnu tvého ostrova
+        Message: '&e&l[*] &e%spawn pozice spawnu tvého ostrova
           byla nastavena na tvou lokaci.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island setspawn <Main|Visitor>'
+        Message: '&c&l[!] &cUprav zadání: /island setspawn <Main|Visitor>'
       Permission:
-        Message: '&c&l(!) &cNemáš práva nastavit %spawn pozici spawnu tvého ostrova.'
+        Message: '&c&l[!] &cNemáš práva nastavit %spawn pozici spawnu tvého ostrova.'
       Info:
         Message: '&f&oNastaví hlavní a návštěvnickou pozici spawnu.'
       Role:
-        Message: '&c&l(!) &cNejsi tím, kdo může nastavit %spawn spawn pozici tvého
+        Message: '&c&l[!] &cNejsi tím, kdo může nastavit %spawn spawn pozici tvého
           ostrova.'
       Island:
-        Message: '&c&l(!) &cMusíš být na tvém ostrově pro nastavení %spawn spawn pozice.'
+        Message: '&c&l[!] &cMusíš být na tvém ostrově pro nastavení %spawn spawn pozice.'
     Demote:
       Role:
-        Message: '&c&l(!) &cTento hráč je již členem.'
+        Message: '&c&l[!] &cTento hráč je již členem.'
       Demoted:
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDegradoval jsi hráče &d%player
+          Message: '&e&l[*] &eDegradoval jsi hráče &d%player
             &ena &dčlena&e.'
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi degradován na &dčlena&e.'
+          Message: '&e&l[*] &eByl jsi degradován na &dčlena&e.'
       Member:
-        Message: '&c&l(!) &cTento hráč není členem tvého ostrova.'
+        Message: '&c&l[!] &cTento hráč není členem tvého ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva pro degradování členů ostrova.'
+        Message: '&c&l[!] &cNemáš práva pro degradování členů ostrova.'
       Info:
         Message: '&f&oDegradování Operátora na člena.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island demote <player>'
+        Message: '&c&l[!] &cUprav zadání: /island demote <player>'
     Information:
       Island:
-        Message: '&c&l(!) &cTento hráč není členem ostrova nebo jej nevlastní.'
+        Message: '&c&l[!] &cTento hráč není členem ostrova nebo jej nevlastní.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island information [<player>]'
+        Message: '&c&l[!] &cUprav zadání: /island information [<player>]'
       Permission:
-        Message: '&c&l(!) &cNemáš práva zobrazit si informace o ostrovech ostatních
+        Message: '&c&l[!] &cNemáš práva zobrazit si informace o ostrovech ostatních
           hráčů.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Info:
         Message: '&f&oOtevře menu s informacemi o ostrově.'
     Reset:
@@ -733,145 +734,145 @@ Command:
           Word:
             Confirm: Potvrzení
             Tutorial: '&7Klikni na &f&opotvrzení &r&7pro restartování ostrova!'
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eChystáš se restartovat tvůj ostrov.
+          Message: '&e&l[*] &eChystáš se restartovat tvůj ostrov.
             Máš &c%time sekund pro potvrzení.'
         Pending:
-          Message: '&c&l(!) &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
+          Message: '&c&l[!] &cUž se čeká na potvrzení. Zkus to znovu za pár sekund!'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva pro restartování tvého ostrova.'
+        Message: '&c&l[!] &cNemáš práva pro restartování tvého ostrova.'
     Upgrade:
       Info:
         Message: '&f&oOtevře menu pro vylepšení ostrova.'
       Disabled:
-        Message: '&c&l(!) &cNemůžeš udělat vylepšení ostrova, protože byly deaktivovány.'
+        Message: '&c&l[!] &cNemůžeš udělat vylepšení ostrova, protože byly deaktivovány.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
     Ban:
       Banned:
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZabanoval jsi hráče &c%player
+          Message: '&e&l[*] &eZabanoval jsi hráče &c%player
             &ez ostrova.'
         Target:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eDostal jsi ban na ostrově.'
+          Message: '&e&l[*] &eDostal jsi ban na ostrově.'
       Already:
-        Message: '&c&l(!) &cTento hráč již má ban na daném ostrově.'
+        Message: '&c&l[!] &cTento hráč již má ban na daném ostrově.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva pro udělení banu členovy ostrova.'
+        Message: '&c&l[!] &cNemáš práva pro udělení banu členovy ostrova.'
       Yourself:
-        Message: '&c&l(!) &cNemůžeš udělit ban sám sobě.'
+        Message: '&c&l[!] &cNemůžeš udělit ban sám sobě.'
       Found:
-        Message: '&c&l(!) &cHráč tohoto jména nebyl nalezen.'
+        Message: '&c&l[!] &cHráč tohoto jména nebyl nalezen.'
       Info:
         Message: '&f&oZabanovat hráče z tvého ostrova.'
       Member:
-        Message: '&c&l(!) &cNemůžeš zabanovat daného hráče z ostrova, protože je jeho
+        Message: '&c&l[!] &cNemůžeš zabanovat daného hráče z ostrova, protože je jeho
           členem.'
       Disabled:
-        Message: '&c&l(!) &cNemůžeš provést tento příkat, protože banování z ostrovů
+        Message: '&c&l[!] &cNemůžeš provést tento příkat, protože banování z ostrovů
           je deaktivované.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island ban <player>'
+        Message: '&c&l[!] &cUprav zadání: /island ban <player>'
     Rollback:
       Info:
         Message: '&f&oOtevře Rollback menu ostrova.'
       Role:
-        Message: '&c&l(!) &cNemáš správnou roli pro otevření Rollback menu ostrova.'
+        Message: '&c&l[!] &cNemáš správnou roli pro otevření Rollback menu ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
     Biome:
       Info:
         Message: '&f&oOtevře menu biomů ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš právo měnit biomy na tvém ostrově.'
+        Message: '&c&l[!] &cNemáš právo měnit biomy na tvém ostrově.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
     Visitors:
       Info:
         Message: '&f&oOtevře menu návštěvníků ostrova.'
       Closed:
-        Message: '&c&l(!) &cNemůžeš otevřít menu návštěvníků ostrova, protože ostrov
+        Message: '&c&l[!] &cNemůžeš otevřít menu návštěvníků ostrova, protože ostrov
           je zavřený.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Visitors:
-        Message: '&c&l(!) &cNa ostrově nejsou návštěvníci.'
+        Message: '&c&l[!] &cNa ostrově nejsou návštěvníci.'
     ControlPanel:
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Info:
         Message: '&f&oOtevře menu kontrolního panelu ostrova.'
     Border:
       Info:
         Message: '&f&oOtevře menu hranic ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva pro zobrazení menu hranic ostrova.'
+        Message: '&c&l[!] &cNemáš práva pro zobrazení menu hranic ostrova.'
       Disabled:
-        Message: '&c&l(!) &cToto nemůžeš udělat, protože hranice ostrovů jsou vypnuté.'
+        Message: '&c&l[!] &cToto nemůžeš udělat, protože hranice ostrovů jsou vypnuté.'
     Settings:
       Permission:
         Default:
-          Message: '&c&l(!) &cNemáš práva pro otevření nastavení ostrova.'
+          Message: '&c&l[!] &cNemáš práva pro otevření nastavení ostrova.'
         Change:
-          Message: '&c&l(!) &cNemáš práva pro změnu tohoto nastavení.'
+          Message: '&c&l[!] &cNemáš práva pro změnu tohoto nastavení.'
         Access:
-          Message: '&c&l(!) &cNemáš práva pro úpravu tohoto nastavení.'
+          Message: '&c&l[!] &cNemáš práva pro úpravu tohoto nastavení.'
       Info:
         Message: '&f&oOtevře menu nastavení ostrova.'
       Role:
-        Message: '&c&l(!) &cNemáš správnou roli pro otevření menu nastavení ostrova.'
+        Message: '&c&l[!] &cNemáš správnou roli pro otevření menu nastavení ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
     Confirmation:
       Deletion:
         Spawn:
-          Message: '&c&l(!) &cNemůžeš smazat tvůj ostrov, protože je na něm hlavní
+          Message: '&c&l[!] &cNemůžeš smazat tvůj ostrov, protože je na něm hlavní
             spawn.'
         Open:
-          Message: '&c&l(!) &cMusíš zavřít tvůj ostrov, než ho smažeš.'
+          Message: '&c&l[!] &cMusíš zavřít tvůj ostrov, než ho smažeš.'
         Sender:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eUž nejsi vlastník ostrova.'
+          Message: '&e&l[*] &eUž nejsi vlastník ostrova.'
         Broadcast:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVlastník ostrova mazal ostrov.'
+          Message: '&e&l[*] &eVlastník ostrova mazal ostrov.'
         Money:
-          Message: '&c&l(!) &cNemáš dostatek peněz pro smazání tvého ostrova Cena
+          Message: '&c&l[!] &cNemáš dostatek peněz pro smazání tvého ostrova Cena
             za smazání ostrova je &c%cost&e.'
       Owner:
-        Message: '&c&l(!) &cNemůžeš potvrdit čekající potvrzení, protože nejsi vlastníkem
+        Message: '&c&l[!] &cNemůžeš potvrdit čekající potvrzení, protože nejsi vlastníkem
           ostrova.'
       Info:
         Message: '&f&oPotvrzení pro permanentní operaci.'
       Ownership:
         Member:
-          Message: '&c&l(!) &cNemůžeš potvrdit čekající potvrzení, protože hráč, kterému
+          Message: '&c&l[!] &cNemůžeš potvrdit čekající potvrzení, protože hráč, kterému
             jsi předal vlastnictví ostrova již není členem ostrova.'
         Assigned:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eBylo Ti předáno vlastnictví ostrova.'
+          Message: '&e&l[*] &eBylo Ti předáno vlastnictví ostrova.'
       Specified:
-        Message: '&c&l(!) &cDůvod, proč potvrzení nebylo specifikováno. Toto se nemělo
+        Message: '&c&l[!] &cDůvod, proč potvrzení nebylo specifikováno. Toto se nemělo
           stát.'
       Role:
-        Message: '&c&l(!) &cNemůžeš potvrdit čekající potvrzení, protože již nejsi
+        Message: '&c&l[!] &cNemůžeš potvrdit čekající potvrzení, protože již nejsi
           vlastníkem ostrova.'
       Confirmed:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePotvrdil jsi čekající potvrzení.'
+        Message: '&e&l[*] &ePotvrdil jsi čekající potvrzení.'
       Pending:
-        Message: '&c&l(!) &cNemáš čekající potvrzení.'
+        Message: '&c&l[!] &cNemáš čekající potvrzení.'
     Visit:
       Info:
         Message: '&f&oOtevře menu veřejných ostrovů k navštívení.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island visit [<player>]'
+        Message: '&c&l[!] &cUprav zadání: /island visit [<player>]'
     Help:
       Page:
-        Message: '&c&l(!) &cNení zde tolik stránek.'
+        Message: '&c&l[!] &cNení zde tolik stránek.'
       Integer:
-        Message: '&c&l(!) &cMusíš napsat číselnou hodnotu.'
+        Message: '&c&l[!] &cMusíš napsat číselnou hodnotu.'
       Word:
         Next: '&a&lDalší stránka'
         Previous: '&a&lPředchozí stránka'
@@ -883,95 +884,95 @@ Command:
     Teleport:
       Island:
         None:
-          Message: '&c&l(!) &cTento hráč není člen ostrova nebo jej nevlastní.'
+          Message: '&c&l[!] &cTento hráč není člen ostrova nebo jej nevlastní.'
         Closed:
-          Message: '&c&l(!) &cTento hráčův ostrov není otevřen pro návštěvníky.'
+          Message: '&c&l[!] &cTento hráčův ostrov není otevřen pro návštěvníky.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva se teleportovat na ostrovy ostatních hráčů.'
+        Message: '&c&l[!] &cNemáš práva se teleportovat na ostrovy ostatních hráčů.'
       Info:
         Message: '&f&oTeleport na tvůj ostrov.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island teleport [<player>]'
+        Message: '&c&l[!] &cUprav zadání: /island teleport [<player>]'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Teleported:
         Yourself:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován na tvůj
+          Message: '&e&l[*] &eByl jsi teleportován na tvůj
             ostrov.'
         Other:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován na ostrov
+          Message: '&e&l[*] &eByl jsi teleportován na ostrov
             hráče &a%player&e.'
     Create:
       Owner:
-        Message: '&c&l(!) &cJiž jsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cJiž jsi vlastníkem ostrova.'
       Info:
         Message: '&f&oOtevře menu pro vytváření ostrova.'
     Members:
       Info:
         Message: '&f&oOtevře menu členů ostrova.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
     Weather:
       Permission:
-        Message: '&c&l(!) &cNemáš práva pro změnu počasí na tvém ostrově.'
+        Message: '&c&l[!] &cNemáš práva pro změnu počasí na tvém ostrově.'
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Info:
         Message: '&f&oOtevře menu počasí na ostrově.'
     Argument:
       Unrecognised:
-        Message: '&c&l(!) &cTento argument nebyl rozpoznán.'
+        Message: '&c&l[!] &cTento argument nebyl rozpoznán.'
     Cancel:
       Owner:
-        Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+        Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
       Offline:
-        Message: '&c&l(!) &cTento hráč nebyl nalezen.'
+        Message: '&c&l[!] &cTento hráč nebyl nalezen.'
       Info:
         Message: '&f&oZruší pozvání hráče.'
       Invited:
-        Message: '&c&l(!) &cTento hráč nebyl pozván na tvůj ostrov.'
+        Message: '&c&l[!] &cTento hráč nebyl pozván na tvůj ostrov.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva pro zrušení pozvánek na tvůj ostrov.'
+        Message: '&c&l[!] &cNemáš práva pro zrušení pozvánek na tvůj ostrov.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island cancel <player>'
+        Message: '&c&l[!] &cUprav zadání: /island cancel <player>'
       Cancelled:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZrušil jsi pozvánku hráče &c%player&e.'
+        Message: '&e&l[*] &eZrušil jsi pozvánku hráče &c%player&e.'
       Member:
-        Message: '&c&l(!) &cTento hráč je členem ostrova.'
+        Message: '&c&l[!] &cTento hráč je členem ostrova.'
     Close:
       Closed:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov byl uzavřen.'
+        Message: '&e&l[*] &eTvůj ostrov byl uzavřen.'
       Already:
-        Message: '&c&l(!) &cTvůj ostrov je již uzavřen.'
+        Message: '&c&l[!] &cTvůj ostrov je již uzavřen.'
       Owner:
-        Message: '&c&l(!) &cTento hráč nemá ostrov.'
+        Message: '&c&l[!] &cTento hráč nemá ostrov.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva uzavřít ostrov.'
+        Message: '&c&l[!] &cNemáš práva uzavřít ostrov.'
       Info:
         Message: '&f&oUzavře ostrov pro návštěvníky.'
     Public:
       Info:
         Message: '&f&oZmění tvůj ostrov na privátní nebo veřejný.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva změnit ostrov na veřejný nebo privátní.'
+        Message: '&c&l[!] &cNemáš práva změnit ostrov na veřejný nebo privátní.'
       Owner:
-        Message: '&c&l(!) &cTento hráč není vlastníkem ostrova.'
+        Message: '&c&l[!] &cTento hráč není vlastníkem ostrova.'
       Private:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov je nyní &cprivátní&e.'
+        Message: '&e&l[*] &eTvůj ostrov je nyní &cprivátní&e.'
       Public:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj ostrov je nyní &aveřejný&e.'
+        Message: '&e&l[*] &eTvůj ostrov je nyní &aveřejný&e.'
     Leaderboard:
       Disabled:
-        Message: '&c&l(!) &cNemůžeš si zobrazit žebříček nejlepších, protože byl vypnut.'
+        Message: '&c&l[!] &cNemůžeš si zobrazit žebříček nejlepších, protože byl vypnut.'
       Info:
         Message: '&f&oOtevře menu s žebříčkem 10 nejlepších ostrovů.'
       Invalid:
-        Message: '&c&l(!) &cUprav zadání: /island leaderboard [<Level&8|&eBank&8|&eVotes>]'
+        Message: '&c&l[!] &cUprav zadání: /island leaderboard [<Level&8|&eBank&8|&eVotes>]'
   PermissionDenied:
     Admin:
-      Message: '&c&l(!) &cNemáš práva k provedení tohoto příkazu.'
+      Message: '&c&l[!] &cNemáš práva k provedení tohoto příkazu.'
     Island:
-      Message: '&c&l(!) &cNemáš práva k provedení tohoto příkazu.'
+      Message: '&c&l[!] &cNemáš práva k provedení tohoto příkazu.'
 Scoreboard:
   Tutorial:
     Displaylines:
@@ -3046,7 +3047,7 @@ Menu:
     Title: '&8Ban na ostrov'
   Creator:
     Selector:
-      Title: '&8Výběr ostrova'
+      Title: '&8Výběr ostrova - &b/warp ostrovy'
       Item:
         Island:
           Displayname: '%displayname'
@@ -3236,174 +3237,174 @@ Island:
         Owner: '&c[Vlastník]'
       Message: '&8[&bSkyBlock &8| &dChat&8] %role &e%player&8: &f%message'
     Untoggled:
-      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrovní chat byl vypnut, protože
+      Message: '&e&l[*] &eOstrovní chat byl vypnut, protože
         nejsou žádní další členové ostrova online. Zprávy budou nyní viditelné pro
         všechny hráče.'
   SpawnProtection:
     Break:
-      Message: '&c&l(!) &cNemůžeš zničit spawn pozici ostrova.'
+      Message: '&c&l[!] &cNemůžeš zničit spawn pozici ostrova.'
     Place:
-      Message: '&c&l(!) &cNemůžeš zastavět spawn pozici ostrova.'
+      Message: '&c&l[!] &cNemůžeš zastavět spawn pozici ostrova.'
   Admin:
     Levelling:
       Numerical:
-        Message: '&c&l(!) &cPlease provide a numerical value.'
+        Message: '&c&l[!] &cPlease provide a numerical value.'
       Removed:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the material ''&d%material&e''.'
+        Message: '&e&l[*] &eYou have removed the material ''&d%material&e''.'
       Points:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set the material ''&d%material&e''
+        Message: '&e&l[*] &eYou have set the material ''&d%material&e''
           points to ''&6%points&8''.'
       Permission:
-        Message: '&c&l(!) &cYou don''t have permission to do that.'
+        Message: '&c&l[!] &cYou don''t have permission to do that.'
       Already:
-        Message: '&c&l(!) &cThat material type has already been added.'
+        Message: '&c&l[!] &cThat material type has already been added.'
       Exist:
-        Message: '&c&l(!) &cThat material type has not been added.'
+        Message: '&c&l[!] &cThat material type has not been added.'
       Division:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have set the points division
+        Message: '&e&l[*] &eYou have set the points division
           to ''&f%division&e''.'
       Added:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have added the material ''&d%material&e''.'
+        Message: '&e&l[*] &eYou have added the material ''&d%material&e''.'
     Generator:
       Material:
         Limit:
-          Message: '&c&l(!) &cYou have reached the limit of materials for that generator.'
+          Message: '&c&l[!] &cYou have reached the limit of materials for that generator.'
         Added:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have added the material ''&d%material&e''
+          Message: '&e&l[*] &eYou have added the material ''&d%material&e''
             to the generator ''&d%generator&e''.'
         Already:
-          Message: '&c&l(!) &cThat material type has already been added to that generator.'
+          Message: '&c&l[!] &cThat material type has already been added to that generator.'
       Chance:
         Numerical:
-          Message: '&c&l(!) &cYou must enter a numerical value.'
+          Message: '&c&l[!] &cYou must enter a numerical value.'
         Over:
-          Message: '&c&l(!) &cYou cannot set the chance of the material to that, because
+          Message: '&c&l[!] &cYou cannot set the chance of the material to that, because
             the overall chance total for materials will exceed 100.'
       Exist:
-        Message: '&c&l(!) &cThat generator does not exist.'
+        Message: '&c&l[!] &cThat generator does not exist.'
       Permission:
-        Message: '&c&l(!) &cYou don''t have permission to do that.'
+        Message: '&c&l[!] &cYou don''t have permission to do that.'
       Already:
-        Message: '&c&l(!) &cA generator by that name already exists.'
+        Message: '&c&l[!] &cA generator by that name already exists.'
       Removed:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the generator
+        Message: '&e&l[*] &eYou have removed the generator
           with the name ''&d%generator&e''.'
       Selected:
-        Message: '&c&l(!) &cYou have not selected a generator.'
+        Message: '&c&l[!] &cYou have not selected a generator.'
       Disabled:
-        Message: '&c&l(!) &cYou cannot do that because generators have been disabled.'
+        Message: '&c&l[!] &cYou cannot do that because generators have been disabled.'
       Created:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have created a generator with
+        Message: '&e&l[*] &eYou have created a generator with
           the name ''&d%generator&e''.'
       Characters:
-        Message: '&c&l(!) &cThe generator name can only contain letters and numbers.'
+        Message: '&c&l[!] &cThe generator name can only contain letters and numbers.'
     Upgrade:
       Permission:
-        Message: '&c&l(!) &cYou don''t have permission to do that.'
+        Message: '&c&l[!] &cYou don''t have permission to do that.'
       Tier:
         Size:
-          Message: '&c&l(!) &cThe size of the tier must be less than 1000.'
+          Message: '&c&l[!] &cThe size of the tier must be less than 1000.'
         Limit:
-          Message: '&c&l(!) &cYou have reached the limit of tiers for this upgrade.'
+          Message: '&c&l[!] &cYou have reached the limit of tiers for this upgrade.'
         Selected:
-          Message: '&c&l(!) &cYou cannot do that because the selected tier has been
+          Message: '&c&l[!] &cYou cannot do that because the selected tier has been
             removed.'
         Exist:
-          Message: '&c&l(!) &cA tier for that upgrade already exists.'
+          Message: '&c&l[!] &cA tier for that upgrade already exists.'
       Numerical:
-        Message: '&c&l(!) &cYou must enter a numerical value.'
+        Message: '&c&l[!] &cYou must enter a numerical value.'
     Creator:
       Item:
         Removed:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have been removed from the
+          Message: '&e&l[*] &eYou have been removed from the
             item selector.'
         Cancelled:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have cancelled the item selector.'
+          Message: '&e&l[*] &eYou have cancelled the item selector.'
         Added:
-          Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eSelect an item in your inventory.'
+          Message: '&e&l[*] &eSelect an item in your inventory.'
       Characters:
-        Message: '&c&l(!) &cThe Structure name can only contain letters and numbers.'
+        Message: '&c&l[!] &cThe Structure name can only contain letters and numbers.'
       Permission:
-        Message: '&c&l(!) &cYou don''t have permission to do that.'
+        Message: '&c&l[!] &cYou don''t have permission to do that.'
       Selected:
-        Message: '&c&l(!) &cYou have not selected a Structure.'
+        Message: '&c&l[!] &cYou have not selected a Structure.'
       Removed:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have removed the Structure
+        Message: '&e&l[*] &eYou have removed the Structure
           with the name ''&d%structure&e''.'
       Already:
-        Message: '&c&l(!) &cA Structure by that name already exists.'
+        Message: '&c&l[!] &cA Structure by that name already exists.'
       Numerical:
-        Message: '&c&l(!) &cYou must enter a numerical value.'
+        Message: '&c&l[!] &cYou must enter a numerical value.'
       Created:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eYou have created a Structure with
+        Message: '&e&l[*] &eYou have created a Structure with
           the name ''&d%structure&e''.'
       Exist:
-        Message: '&c&l(!) &cThat Structure does not exist.'
+        Message: '&c&l[!] &cThat Structure does not exist.'
       File:
-        Message: '&c&l(!) &cThat file does not exist in the Structures directory.'
+        Message: '&c&l[!] &cThat file does not exist in the Structures directory.'
   Creator:
     Selector:
       Created:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eNyní jsi vlastníkem ostrova.'
+        Message: '&e&l[*] &eNyní jsi vlastníkem ostrova.'
       None:
-        Message: '&c&l(!) &cNejsou zde žádné struktury k použití.'
+        Message: '&c&l[!] &cNejsou zde žádné struktury k použití.'
       Permission:
-        Message: '&c&l(!) &cNemáš práva použít tuto strukturu.'
+        Message: '&c&l[!] &cNemáš práva použít tuto strukturu.'
       File:
         Overworld:
-          Message: '&c&l(!) &cStruktura pro hlavní svět neexistuje.'
+          Message: '&c&l[!] &cStruktura pro hlavní svět neexistuje.'
         Nether:
-          Message: '&c&l(!) &cStruktura pro The Nether neexistuje.'
+          Message: '&c&l[!] &cStruktura pro The Nether neexistuje.'
         End:
-          Message: '&c&l(!) &cStruktura pro The End neexistuje.'
+          Message: '&c&l[!] &cStruktura pro The End neexistuje.'
       Cooldown:
         Word:
           Minute: minut(a/y)
           Second: sekund(a/y)
-        Message: '&c&l(!) &cMusíš počkat &c&o%time &epřed vytvořením ostrova.'
+        Message: '&c&l[!] &cMusíš počkat &c&o%time &epřed vytvořením ostrova.'
     Error:
-      Message: '&c&l(!) &cHlavní spawn pozice musí být nastavena předtím, než Ti bude
+      Message: '&c&l[!] &cHlavní spawn pozice musí být nastavena předtím, než Ti bude
         umožněno vytvořit ostrov. ''&f&o/island admin setspawn&e''.'
   Upgrade:
     Owner:
-      Message: '&c&l(!) &cNejsi vlastníkem ostrova.'
+      Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
     Disabled:
-      Message: '&c&l(!) &cTohle nepůjde. Vylepšení ostrovů jsou vypnuté.'
+      Message: '&c&l[!] &cTohle nepůjde. Vylepšení ostrovů jsou vypnuté.'
     Exist:
-      Message: '&c&l(!) &cTakové vylepšení neexistuje.'
+      Message: '&c&l[!] &cTakové vylepšení neexistuje.'
     Money:
-      Message: '&c&l(!) &cNemáš dostatek peněz k nákupu tohoto vylepšení.'
+      Message: '&c&l[!] &cNemáš dostatek peněz k nákupu tohoto vylepšení.'
     Claimed:
-      Message: '&c&l(!) &cJiž sis zakoupil toto vylepšení.'
+      Message: '&c&l[!] &cJiž sis zakoupil toto vylepšení.'
     Bought:
-      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eZakoupil sis vylepšení ''&7%upgrade&e''.'
+      Message: '&e&l[*] &eZakoupil sis vylepšení ''&7%upgrade&e''.'
   Biome:
     Cooldown:
       Word:
         Second: sekund(a/y)
         Minute: minut(a/y)
-      Message: '&c&l(!) &cMusíš počkat &c&o%time &epřed změnou biomu tvého ostrova.'
+      Message: '&c&l[!] &cMusíš počkat &c&o%time &epřed změnou biomu tvého ostrova.'
   Information:
     Island:
-      Message: '&c&l(!) &cHráče, kterého jsi zvolil, již nemá ostrov.'
+      Message: '&c&l[!] &cHráče, kterého jsi zvolil, již nemá ostrov.'
     Visitors:
-      Message: '&c&l(!) &cNa zvoleném ostrově nejsou návštěvníci.'
+      Message: '&c&l[!] &cNa zvoleném ostrově nejsou návštěvníci.'
     Closed:
-      Message: '&c&l(!) &cZvolený ostrov je pro návštěvníky uzavřen.'
+      Message: '&c&l[!] &cZvolený ostrov je pro návštěvníky uzavřen.'
   Coop:
     Removed:
       Owner:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi přesunut z ostrova, protože
+        Message: '&e&l[*] &eByl jsi přesunut z ostrova, protože
           vlastník se odpojil.'
       Operator:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi přesunut z ostrova, protože
+        Message: '&e&l[*] &eByl jsi přesunut z ostrova, protože
           vlastník i operátoři tohoto ostrova se odpojili.'
   Structure:
     Tool:
       Position:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &ePozice &b%position &ebyla zvolena!'
+        Message: '&e&l[*] &ePozice &b%position &ebyla zvolena!'
       Material:
-        Message: '&c&l(!) &cDefinovaný materiál v konfiguračním souboru pro volbu
+        Message: '&c&l[!] &cDefinovaný materiál v konfiguračním souboru pro volbu
           struktur nebyl nalezen.'
       Item:
         Displayname: '&bStructure Tool'
@@ -3411,80 +3412,80 @@ Island:
         - '&7Zvol dvě pozice pro označení oblasti.'
   Portal:
     Destination:
-      Message: '&c&l(!) &cNení cílová destinace pro průchod tímto portálem.'
+      Message: '&c&l[!] &cNení cílová destinace pro průchod tímto portálem.'
     Stuck:
-      Message: '&c&l(!) &cByl jsi teleportován na bezpečnou pozici, protože jsi uvízl.'
+      Message: '&c&l[!] &cByl jsi teleportován na bezpečnou pozici, protože jsi uvízl.'
   WorldBorder:
     Outside:
-      Message: '&c&l(!) &cByl jsi až moc daleko od hranic ostrova.'
+      Message: '&c&l[!] &cByl jsi až moc daleko od hranic ostrova.'
     Disappeared:
-      Message: '&c&l(!) &cOstrov, na kterém jsi byl, najednou zmizel.'
+      Message: '&c&l[!] &cOstrov, na kterém jsi byl, najednou zmizel.'
   World:
     Word:
       Nether: The Nether
       End: The End
-    Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován z The Nether pryč,
+    Message: '&e&l[*] &eByl jsi teleportován z The Nether pryč,
       protože není povolen.'
   Visit:
     Teleported:
-      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi teleportován na ostrov hráče
+      Message: '&e&l[*] &eByl jsi teleportován na ostrov hráče
         &a%player &eIsland.'
     Closed:
       Plugin:
-        Message: '&c&l(!) &cNemůžeš se teleportovat do cílové lokace, protože ostrov
+        Message: '&c&l[!] &cNemůžeš se teleportovat do cílové lokace, protože ostrov
           není otevřený pro návštěvníky.'
       Island:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eOstrov, na kterém jsi byl, již
+        Message: '&e&l[*] &eOstrov, na kterém jsi byl, již
           není otevřen pro návštěvníky.'
       Menu:
-        Message: '&c&l(!) &cOstrov již není otevřen pro návštěvníky.'
+        Message: '&c&l[!] &cOstrov již není otevřen pro návštěvníky.'
     Banned:
       Island:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eByl jsi zabanován z ostrova, na
+        Message: '&e&l[*] &eByl jsi zabanován z ostrova, na
           kterém jsi byl.'
       Teleport:
-        Message: '&c&l(!) &cNemůžeš se teleportovat do cílové lokace, protože jsi
+        Message: '&c&l[!] &cNemůžeš se teleportovat do cílové lokace, protože jsi
           byl na tomto ostrově zabanován.'
     Already:
-      Message: '&c&l(!) &cJiž jsi na ostrově tohoto hráče.'
+      Message: '&c&l[!] &cJiž jsi na ostrově tohoto hráče.'
     Vote:
       Added:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &a&lPŘIDÁN &ena ostrov
+        Message: '&e&l[*] &eTvůj hlas byl &a&lPŘIDÁN &ena ostrov
           hráče &a%player&e.'
       Island:
-        Message: '&c&l(!) &cMusíš být na daném ostrově pro hlasování.'
+        Message: '&c&l[!] &cMusíš být na daném ostrově pro hlasování.'
       Removed:
-        Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eTvůj hlas byl &c&lODEBRÁN &ez ostrova
+        Message: '&e&l[*] &eTvůj hlas byl &c&lODEBRÁN &ez ostrova
           hráče &a%player&e.'
     Unloaded:
-      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eŽádní členové tohoto ostrova nejsou
+      Message: '&e&l[*] &eŽádní členové tohoto ostrova nejsou
         online, byl jsi z něj tedy vykopnut.'
     Exist:
-      Message: '&c&l(!) &cTento ostrov již neexistuje.'
+      Message: '&c&l[!] &cTento ostrov již neexistuje.'
     Deleted:
-      Message: '&b&lSky&f&lCloud &8| &aInfo&8: &eVlastník ostrova smazal tento ostrov,
+      Message: '&e&l[*] &eVlastník ostrova smazal tento ostrov,
         a proto jsi byl z ostrova vykopnut.'
   Unlock:
     Nether:
-      Message: '&c&l(!) &cMusíš zaplatit k odemknutí světa The Nether. K tomu potřebuješ
+      Message: '&c&l[!] &cMusíš zaplatit k odemknutí světa The Nether. K tomu potřebuješ
         napsat &7/island unlock nether&e Bude tě to stát ''&7$%cost%&e''.'
     End:
-      Message: '&c&l(!) &cMusíš zaplatit k odemknutí světa The End. K tomu potřebuješ napsat
-        &7/island unlock end&e Bude tě to stát ''&7$%cost%&e''.'
+      Message: '&c&l[!] &cMusíš zaplatit k odemknutí světa The End. K tomu potřebuješ
+        napsat &7/island unlock end&e Bude tě to stát ''&7$%cost%&e''.'
   Settings:
     Visitor:
       Welcome:
         Disabled:
-          Message: '&c&l(!) &cNemáš práva použít tuto funkci.'
+          Message: '&c&l[!] &cNemáš práva použít tuto funkci.'
       Signature:
         Disabled:
-          Message: '&c&l(!) &cNemáš práva použít tuto funkci.'
+          Message: '&c&l[!] &cNemáš práva použít tuto funkci.'
     Permission:
-      Message: '&c&l(!) &cNemáš práva toto dělat na daném ostrově.'
+      Message: '&c&l[!] &cNemáš práva toto dělat na daném ostrově.'
   Limit:
     Block:
       Exceeded:
-        Message: '&c&l(!) &cDosáhl jsi limitu počtu blocků typu &b%types&e, které
+        Message: '&c&l[!] &cDosáhl jsi limitu počtu blocků typu &b%types&e, které
           můžeš položit (&b%limit&e).'
 Hologram:
   Leaderboard:
