@@ -647,8 +647,7 @@ modify:
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 teleportation:
-  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported
-    to a safe location.'
+  relocation: '!actionbar!&cPoloha pro teleport není bezpečná. Byl jsi teleportován na bezpečnou polohu.'
 afk:
   'on': '&6AFK'
   'off': '&7Playing'
@@ -735,29 +734,29 @@ Chat:
 command:
   help:
     output:
-      usage: '&eUsage: &7%usage%'
+      usage: '&ePoužití: &7%usage%'
       cmdInfoFormat: '[command] &f- &e[description]'
       cmdFormat: '&6/[command]&f[arguments]'
       helpPageDescription: '&e* [description]'
       explanation: '&e * [explanation]'
-      title: '&e------ ======= &6Help&e &e======= ------'
+      title: '&e------ ======= &6Nápověda&e &e======= ------'
   nocmd:
     help:
-      info: '&eShows all available commands'
+      info: '&eZobrazí všechny dostupné příkazy'
       args: ''
   actionbarmsg:
     help:
-      info: '&eSends action bar message to player'
+      info: '&eZašle action bar zprávu hráči'
       args: '[playerName/all] [message]'
     info:
       message: '&f[messsage]'
   afk:
     help:
-      info: '&eToggle afk mode. Reason could be provided'
+      info: '&eZapne AFK mód. Lze přidat důvod.'
       args: '(-p:playerName) (reason)'
   afkcheck:
     help:
-      info: '&eCheck players afk status'
+      info: '&eKontrola AFK statusu u hráče'
       args: '[playerName]'
     info:
       feedback: '&e[playerDisplayName]&e: &6[status]'
@@ -860,14 +859,14 @@ command:
       cooldown: '&7Item is on cooldown. Wait [time]'
   back:
     help:
-      info: '&eTeleports back to last saved location'
+      info: '&eTeleportuje zpět na poslední uloženou lokaci'
       args: (playerName) (-s)
     info:
-      noinfo: '&4There is no saved location to return to!'
-      feedback: '&eReturned to last saved location (&6[worldName]&e,&6[x]&e,&6[y]&e,&6[z]&e)!'
+      noinfo: '&cNeexistuje žádná poslední uložená pozice'
+      feedback: '&eTeleportován na poslední uloženou pozici (&6[worldName]&e,&6[x]&e,&6[y]&e,&6[z]&e)!'
   balance:
     help:
-      info: '&eCheck money balance'
+      info: '&eKontrola počtu peněz'
       args: (playerName)
     info:
       balance: '&eBalance: &6[money]'
@@ -972,12 +971,11 @@ command:
       format: '&e[&4Broadcast&e] &2[message]'
   burn:  
     help:
-      info: '&eBurn a player'
+      info: '&eSpálit hráče'
       args: (playerName) (time) (-s)
     info:
-      feedback: '&eYou have put on fire &3[playerDisplayName]&e for &6[time] &e(&3[offon]&e).'
-      targetfeedback: '&eYou have been put on fire by &3[senderDisplayName]&e for
-        &6[time]&e.'
+      feedback: '&eZapálil jsi &3[playerDisplayName]&e na &6[time] &e(&3[offon]&e).'
+      targetfeedback: '&eByl jsi zapálen &3[senderDisplayName]&e po dobu &6[time]&e.'
   charges:
     help:
       info: '&eShows left spawner charges'
@@ -1147,7 +1145,7 @@ command:
       reset: '&eCompass target got reseted'
   condense:
     help:
-      info: '&eZkracování itemů do bloků'
+      info: '&eZkracování itemů do bloků' # FIX?
       args: (itemName)
     info:
       converted: '&eItemy &7[items] &ese předělaly do &7[blocks] &ebloků'
@@ -1454,7 +1452,7 @@ command:
       teleportedTo: '&eTeleportován do &6[biome] &ebiomu'
   fixchunk:
     help:
-      info: '&eSkanování poškozených chunků'
+      info: '&eOprava poškozených chunků'
       args: '&ew &6[worldName]&e r &6[range in chunks]&e c &6[x:z]&e '
       explanation:
       - '&6SubCommands:'
@@ -1532,7 +1530,7 @@ command:
       noCharge: '&eFlight charge is depleted'
   flyspeed:
     help:
-      info: '&eNastaví létání hráče od 0 do 10'
+      info: '&eZměna rychlosti létání (0-10)'
       args: '[playerName] [amount] (-s)'
     info:
       feedback: '&eNastavil jsi &3[amount]&e rychlost létání pro &3[playerDisplayName]&e (&3[offon]&e).'
@@ -1752,7 +1750,7 @@ command:
       title: '&0[playerDisplayName] &8homes'
   homes:
     help:
-      info: '&eA list of homes that you can click to teleport to.'
+      info: '&eSeznam home, na které se lze teleportovat'
       args: (playerName)
   hunger:
     help:
@@ -2604,22 +2602,22 @@ command:
       notes: '&eHas &6[amount] &enotes'
   pay:
     help:
-      info: '&ePerform money transaction'
+      info: '&ePřevod peněz'
       args: '[playerName] [amount]'
   paytoggle:
     help:
-      info: '&eToggle payments from another player'
+      info: '&eAktivace a deaktivace přijímání plateb'
       args: (playerName)
     info:
-      feedbackDisabled: '&eYou are now accepting payments from other players'
-      feedbackEnabled: '&eYou no longer accepting payments from other players'
+      feedbackDisabled: '&eNyní přijímáš platby od ostatních hráčů.'
+      feedbackEnabled: '&eJiž nepřijímáš platby od ostatních hráčů.'
   ping:
     help:
-      info: '&eShows players ping'
+      info: '&eZobrazí ping hráče'
       args: (playerName)
     info:
       feedback: '&ePing: &6[ping]ms'
-      selffeedback: '&eYour ping is &6[ping]ms'
+      selffeedback: '&eTvůj ping je: &6[ping]ms'
   placeholders:
     help:
       info: '&eList out all placeholders'
@@ -2638,14 +2636,14 @@ command:
       targetfeedback: '&eYour collision mode changed to &3[boolean]'
   playtime:
     help:
-      info: '&eShows player total play time'
+      info: '&eZobrazí celkový odehraný čas hráče'
       args: (playername)
     info:
-      total: '&e* Total play time: [time]'
-      joined: '&e* Joined on: &6[time]'
+      total: '&e* Celkový čas: [time]'
+      joined: '&e* Poprvé připojeno: &6[time]'
   playtimetop:
     help:
-      info: '&eShows top list of player total play time'
+      info: '&eZobrazí seznam top hrajících hráčů'
       args: '[page]'
     info:
       topLine: '&e----- TopPlaytime &e-----'
@@ -2947,10 +2945,10 @@ command:
       finished: '&eFinished!!! Replaced: &6[amount] &eblocks! In &6[time]&e.'
   reply:
     help:
-      info: '&eReplay to last message sender'
+      info: '&eOdepsání na poslední zprávu'
       args: '[message]'
     info:
-      noOneToReplay: '&eThere is no one to replay'
+      noOneToReplay: '&eNení komu odepsat, musí ti někdo nejdříve poslat /msg'
   resetdbfields:
     help:
       info: '&eResets particular database columns to default value'
@@ -3344,11 +3342,11 @@ command:
         \ &6[pitch] &eVolume: &6[volume]"
   spawn:
     help:
-      info: '&eTeleports back to spawn location'
+      info: '&eTeleportuje na spawn lokaci'
       args: (playerName)
     info:
-      notset: '&4Spawn point is not set!'
-      feedback: '&6Teleported to spawn!'
+      notset: '&cSpawn byl nastaven!'
+      feedback: '&aByl jsi teleportován na spawn!'
   spawner:
     help:
       info: '&eSets spawner'
@@ -3765,32 +3763,31 @@ command:
       args: '[playerName] (-s)'
   tp:
     help:
-      info: '&eTeleports to player''s location'
+      info: '&eTeleport na hráčovu pozici'
       args: '[playerName] (playerName)'
     info:
-      feedback: '&eYou have been teleported to &3[sourceDisplayName] &elocation (&3[offon]&e).'
+      feedback: '&eByl jsi teleportován k &3[sourceDisplayName] &e(&3[offon]&e).'
       bad:
-        msg: '&cTeleport location is unsafe. [reason]'
+        msg: '&cTeleport není bezpečný. [reason]'
         extraMsg: '&eUse &6/tpbypass &eto bypass this. You have [time]'
         lava: '&cLava'
         void: '&cVoid'
         suffocation: '&cSuffocation'
-        unknown: '&cUnknown'
-        plugin: '&c3rd party plugin'
-      notAllowed: '&ccant teleport to this player'
-      prevented: '&cTeleportation has been prevented by another plugin'
+        unknown: '&cNeznámý'
+        plugin: '&cblokuje cizí plugin'
+      notAllowed: '&cNelze se teleportovat na tohoto hráče'
+      prevented: '&cTeleportace byla zrušena jiným pluginem.'
   tpa:
     help:
-      info: '&eAsk the player if you can teleport to them'
+      info: '&eTeleport na jiného hráče'
       args: '[playerName] (playerName) (-c)'
     info:
-      requestSent: '&eRequest sent to &6[playerDisplayName]'
-      gotRequest: '&6[senderDisplayName] &erequests teleportation to you!'
-      time: '&eYou have &6[time]&eto accept this request'
-      alreadyRequesting: '&eYou are already requesting that &6[playerDisplayName]
-        &eaccepts your teleportation request'
-      banned: '&eYou cant send a teleportation request to &6[playerDisplayName]
-        &efor the next &6[time]'
+      requestSent: '&eŽádost o teleport byla odeslána hráči &6[playerDisplayName]'
+      gotRequest: '&6[senderDisplayName] &ežádá o teleport na tvojí pozici!'
+      time: '&eMáš &6[time]&ek potvrzení této žádosti.'
+      alreadyRequesting: '&eJiž jsi odeslal žádost hráči &6[playerDisplayName]'
+      banned: '&eNelze poslat žádost o teleport hráči &6[playerDisplayName]
+        &epo dobu dalších &6[time]'
   tpaall:
     help:
       info: '&eAsk all online players to teleport to your location'
@@ -3799,13 +3796,13 @@ command:
       requestSent: '&eRequest sent to all players'
   tpaccept:
     help:
-      info: '&eAccept teleport request'
+      info: '&ePotvrzení žádosti o teleport'
       args: (playerName)
     info:
-      noRequest: '&eThere is no teleport requests'
-      NotOnline: '&ePlayer is no longer online'
-      accepted: '&6[playerDisplayName] &eaccepted request'
-      youAccepted: '&eTeleportation accepted'
+      noRequest: '&eNemáš žádnou žádost o teleport'
+      NotOnline: '&eHráč již není online'
+      accepted: '&6[playerDisplayName] &epotvrdil(a) žádost'
+      youAccepted: '&eTeleport potvrzen'
   tpahere:
     help:
       info: '&eAsks player to accept teleportation to your location'
@@ -3838,12 +3835,12 @@ command:
       feedback: '&eTeleported to unsafe location'
   tpdeny:
     help:
-      info: '&eDeny teleport request'
+      info: '&eZamítnutí teleport žádosti'
       args: (playerName)
     info:
-      noRequest: '&eYou have no active teleportation requests!'
-      youDenied: '&eYour teleportation request was denied!'
-      denied: '&e[senderDisplayName] &edenied your request.'
+      noRequest: '&eNemáš aktivní žádnou žádost o teleport!'
+      youDenied: '&eŽádost o teleport byla zamítnuta.'
+      denied: '&e[senderDisplayName] &eti zamítl žádost o teleport.'
   tphere:
     help:
       info: '&eTeleports player to your location'
@@ -3857,7 +3854,7 @@ command:
       notAllowed: '&ecant teleport this player'
   tpo:
     help:
-      info: '&eTeleports to player''s location by force'
+      info: '&eBypass na teleport hráče'
       args: '[playerName] (playerName)'
   tpohere:
     help:
