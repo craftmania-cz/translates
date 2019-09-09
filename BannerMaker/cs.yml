@@ -1,0 +1,55 @@
+# Czech (cs)
+# For BannerMaker v1.8.0
+# Contributor(s): KID
+general:
+  prefix: ' &9&lBannerMaker &8⎟&r '
+  reload: Konfigurace znovu nactena
+  no-permission: '&c&l(!) &cNa tuto akci nemas prava!'
+  no-money: '&c&l(!) &cNemas dostatek penez!'
+  money-transaction: Pouzij {0} pro ziskani banneru. Nyni mas {1}
+io:
+  save-failed: §7Ulozeni selhalo
+  save-success: §7Ulozeni probehlo uspesne
+  remove-banner: §7Odstranit banner &r#{0}
+command:
+  player-only: §cTento prikaz muze byt pouzit jenom ze hry.
+  invalid-parameter: '§cNeplatny parametr, spravne pouziti: {0}'
+  not-banner-hand: §cPredmet v ruce neni banner.
+  not-banner-see: §cPredmet, na ktery se divas, neni banner.
+config:
+  add-setting: §cPridat pridat nove nastaveni pro {0}
+gui:
+  prefix: ' &9&lBM &8⎟&r '
+  main-menu: Hlavni menu
+  prev-page: Predchozi stranka
+  next-page: Dalsi stranka
+  create-banner: Vytvorit banner
+  uncraftable-warning: Nevycraftitelne (v craftingu)
+  uncraftable: Nevycraftitelne
+  more-than-6-patterns: §7Vice jak 6 sablon.
+  more-patterns: Vice sablon
+  back: Zpet
+  create: Vytvorit
+  delete: SMAZAT
+  remove-last-pattern: Odstranit posledni sablonu
+  banner-info: Info o banneru
+  pattern-s: sablony
+  no-patterns: Zadna sablona
+  craft-recipe: Craft recept
+  get-this-banner: Ziskat tento banner
+  get-banner: Ziskat banner &r#{0}
+  get-banner-for-free: Ziskat banner zdarma
+  buy-banner-in-price: Zakoupit za {0}
+  get-banner-by-craft: Vycraftit
+  price: 'Cena: {0}'
+  clone-and-edit: Klonovat & Editovat
+  alphabet-and-number: Abeceda & Cisla
+  toggle-border: Zobrazit/skryt okraje
+  materials:
+    enough: Dostatek materialu
+    not-enough: Nedostatek materialu
+  click:
+    left: Leve kliknuti
+    right: Prave kliknuti
+  selected-pattern-color: Selected pattern color
+  toggle-preview-mode: Toggle preview mode
