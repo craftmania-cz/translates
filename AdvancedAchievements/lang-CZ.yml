@@ -1,4 +1,3 @@
-
 #=============================================================#
 # +---------------------------------------------------------+ #
 # | Advanced Achievements Czech translation by Krosta8      | #
@@ -48,8 +47,8 @@ error-value: Hodnota VALUE musí být číselná!
 statistic-increased: Statistika ACH se zvýšila o AMOUNT pro hráče PLAYER!
 
 # Related to achievement reception.
-achievement-received: 'Hráč PLAYER získal achievement:'
-achievement-new: 'Nový achievement:'
+achievement-received: '&eHráč PLAYER získal achievement: '
+achievement-new: '&eNový achievement: '
 
 # Related to /aach check.
 check-achievement-true: Hráč PLAYER získal achievement ACH!
@@ -60,7 +59,7 @@ delete-achievements: Hráči PLAYER byl smazán achievement ACH.
 
 # Related to achievement rewards.
 item-reward-received: 'Obdržel jsi odměnu:'
-money-reward-received: 'Obdržel jsi: AMOUNT!'
+money-reward-received: 'Obdržených peněz: AMOUNT!'
 command-reward: Odměna byla provedena!
 custom-command-reward: 'Získal jsi svou odměnu: MESSAGE'
 experience-reward-received: 'Obdržel jsi: AMOUNT XP!'
@@ -107,7 +106,7 @@ version-command-version: 'Verze:'
 version-command-website: 'Web:'
 version-command-author: 'Autor:'
 version-command-description: 'Popis:'
-version-command-description-details: Advanced Achievements umožňují použití unikátních a vyzývajících achivementů. 
+version-command-description-details: Advanced Achievements umožňují použití unikátních a vyzývajících achievementů. 
   Zkus jich získat tolik, kolik jen můžeš, získávat odměny a vyšplhat se na nejvyšší možnou příčku v žebříčku!
 version-command-vault: 'Vault integrace:'
 version-command-petmaster: 'Pet Master integrace:'
@@ -117,78 +116,78 @@ version-command-placeholderapi: 'PlaceholderAPI integrace:'
 version-command-database: 'Typ databáze:'
 
 # Related to /aach list.
-list-gui-title: '&5&lSeznam achievementů'
-list-delay: §cMusíš počkat TIME sekund/u před opětovným použitím příkazu!
-list-description: 'Popis:'
-list-goal: 'Cíl:'
-list-reception: 'Datum získání:'
-list-progress: 'Postup:'
-list-reward: 'Odměna(y):'
-list-reward-money: 'Peněz: AMOUNT'
-list-reward-item: 'Předmět: AMOUNT ITEM'
-list-reward-command: 'Příkaz:'
+list-gui-title: 'Seznam achievementů'
+list-delay: '§cMusíš počkat TIME sekund/u před opětovným použitím příkazu!'
+list-description: '&ePopis:'
+list-goal: '&eCíl:'
+list-reception: '&eDatum získání:'
+list-progress: '&ePostup:'
+list-reward: '&eOdměna(y):'
+list-reward-money: '&ePeněz: &fAMOUNT'
+list-reward-item: '&ePředmět: &fAMOUNT ITEM'
+list-reward-command: '&ePříkaz:'
 list-reward-experience: 'Získal AMOUNT XP'
 list-reward-increase-max-health: 'Zvýšení HP o AMOUNT'
 list-reward-increase-max-oxygen: 'Zvýšení dýchání pod vodou o AMOUNT'
-list-achievement-received: '&5✔&f '
-list-achievement-not-received: '&4✘ '
-list-category-not-unlocked: 'Tuto kategorii ještě nemáš odemknutou.'
+list-achievement-received: '&a✔ &2'
+list-achievement-not-received: '&4✘ &c'
+list-category-not-unlocked: '&cTuto kategorii ještě nemáš odemknutou.'
 list-back-message: '&7Zpět'
 list-previous-message: '&7Předchozí'
 list-next-message: '&7Další'
-list-achievements-in-category-singular: AMOUNT achievement
-list-achievements-in-category-plural: AMOUNT achievementů
+list-achievements-in-category-singular: '&7AMOUNT achievement'
+list-achievements-in-category-plural: '&7AMOUNT achievementů'
 
 # Related to category names in /aach list.
 # Set a parameter to "" to hide it from /aach list (but not disable the category).
-list-connections: Připojení
-list-places: Položené blocky
-list-breaks: Zničené blocky
-list-kills: Zabité entity
-list-crafts: Vyrobené předměty
-list-playercommands: Napsáno příkazů
-list-deaths: Počet smrtí
-list-arrows: Vystřelené šípy
-list-snowballs: Vyházené koule
-list-eggs: Vyházená vajíčka
-list-fish: Chycené ryby
-list-treasure: Poklad z vody
-list-itembreaks: Zničené předměty
-list-eatenitems: Snězené jídlo
-list-shear: Ostříhané ovce
-list-milk: Mléko z krávy
-list-lavabuckets: Kbelik lávy
-list-waterbuckets: Kbelik vody
-list-trades: Počet obchodů s Villagery
-list-anvils: Použití kovadliny
-list-enchantments: Enchantované předměty
-list-beds: Použití postele
-list-maxlevel: Dosáhnuto levelu XP
-list-potions: Vypito lektvary
-list-playedtime: Odehraný čas
-list-distance-foot: Vzdálenost ujitá pešky
-list-distance-pig: Vzdálenost ujetá na praseti
-list-distance-horse: Vzdálenost ujetá na koni
-list-distance-minecart: Vzdálenost ujetá ve voziku
-list-distance-boat: Vzdálenost ujetá v loďce
-list-distance-gliding: Vzdálenost proletěná s Elytrou
-list-distance-llama: Vzdálenost ujetá na Llamě
-list-itemdrops: Vyhozené předměty
-list-itempickups: Sebrané předměty
-list-hoeplowings: Úprava terénu
-list-fertilising: Použití Bone Mealu
-list-taming: Ochočená zvířata
-list-breeding: Rozmnožování zvířat
-list-brewing: Uvařené lektvary
-list-fireworks: Použití ohňostroje
-list-musicdiscs: Přehráno hudebních desek
-list-enderpearls: Teleportace s Ender Perlou
-list-petmastergive: Zvirate dana jinemu hraci
-list-petmasterreceive: Obdrzene zrivate od jinych hracu
-list-smelting: Vypálené předměty
-list-commands: Ostatní achievementy
-list-custom: Vlastní kategorie
-list-targetsshot: Střelit cíl
+list-connections: '&b&lPřipojení'
+list-places: '&b&lPoložené blocky'
+list-breaks: '&b&lZničené blocky'
+list-kills: '&b&lZabité entity'
+list-crafts: '&b&lVyrobené předměty'
+list-playercommands: '&b&lNapsáno příkazů'
+list-deaths: '&b&lPočet smrtí'
+list-arrows: '&b&lVystřelené šípy'
+list-snowballs: '&b&l&b&lVyházené koule'
+list-eggs: '&b&lVyházená vajíčka'
+list-fish: '&b&lChycené ryby'
+list-treasure: '&b&lPoklad z vody'
+list-itembreaks: '&b&lZničené předměty'
+list-eatenitems: '&b&lSnězené jídlo'
+list-shear: '&b&lOstříhané ovce'
+list-milk: '&b&lMléko z krávy'
+list-lavabuckets: '&b&lKbelik lávy'
+list-waterbuckets: '&b&lKbelik vody'
+list-trades: '&b&lPočet obchodů s Villagery'
+list-anvils: '&b&lPoužití kovadliny'
+list-enchantments: '&b&lEnchantované předměty'
+list-beds: '&b&lPoužití postele'
+list-maxlevel: '&b&lDosáhnuto levelu XP'
+list-potions: '&b&lVypité lektvary'
+list-playedtime: '&b&lOdehraný čas'
+list-distance-foot: '&b&lVzdálenost pešky'
+list-distance-pig: '&b&lVzdálenost ujetá na praseti'
+list-distance-horse: '&b&lVzdálenost ujetá na koni'
+list-distance-minecart: '&b&lVzdálenost ujetá ve voziku'
+list-distance-boat: '&b&lVzdálenost ujetá v loďce'
+list-distance-gliding: '&b&lVzdálenost proletěná s Elytrou'
+list-distance-llama: '&b&lVzdálenost ujetá na Llamě'
+list-itemdrops: '&b&lVyhozené předměty'
+list-itempickups: '&b&lSebrané předměty'
+list-hoeplowings: '&b&lÚprava terénu'
+list-fertilising: '&b&lPoužití Bone Mealu'
+list-taming: '&b&lOchočená zvířata'
+list-breeding: '&b&lMnožení zvířat'
+list-brewing: '&b&lUvařené lektvary'
+list-fireworks: '&b&lPoužití ohňostroje'
+list-musicdiscs: '&b&lPřehráno hudebních desek'
+list-enderpearls: '&b&lTeleportace s Ender Perlou'
+list-petmastergive: '&b&lZvirate dana jinemu hraci' #WAT?
+list-petmasterreceive: '&b&lObdrzene zrivate od jinych hracu'
+list-smelting: '&b&lVypálené předměty'
+list-commands: '&b&lOstatní achievementy'
+list-custom: '&b&lVlastní kategorie'
+list-targetsshot: '&b&lLukostřelba'
 list-previous-lore: ''
 list-next-lore: ''
 list-back-lore: ''
