@@ -9,7 +9,7 @@
 # # https://discord.gg/B4MAJVk
 
 general:
-  prefix: '&a&Lands | '
+  prefix: ''
   wYes: '&aAno'
   wNo: '&cNe'
   none: '&8Nic'
@@ -166,10 +166,10 @@ message:
       disallowed-wilderness: '&c&l[!] &cNemáš povolení na létání v divočině.'
     lands:
       enter: '#t#&a&l{land}{newline}{title}'
-      leave: '#t#&2&lDivočina{newline'
+      leave: '#t#&2&lDivočina'
     safezones:
       enter: '#t#&e&l{land}{newline}{title}'
-      leave: '#t#&2&lDivočina{newline}'
+      leave: '#t#&2&lDivočina'
     teleport:
       already: '&c&l[!] &cNelze zahájit druhý teleport, protože již nějaký probíhá. &7Vyčkej dokud se nedokončí.'
       started: '&7Teleport zahájen. Budeš teleportován za&b {sec} &7vteřin. Nehýbej se'
