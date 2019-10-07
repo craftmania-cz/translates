@@ -34,7 +34,7 @@
 # #         - '&7Close this menu.'
 # #         - ' '
 # #         - '&8- &7You can open it again'
-# #         - '  &7with &8/&aLands menu&7.'
+# #         - '  &7with &a/lands menu&7.'
 # #         material: 'RED_STAINED_GLASS_PANE'
 # #         slot: 9
 # #
@@ -210,7 +210,7 @@ gui:
         name: '&8Území &7-> &cŽádné'
         lore:
         - '&8- &7K vytvoření území napiš:'
-        - '  &8/&alands create &8<&aName&8>'
+        - '  &a/lands create &8<&aName&8>'
         enabled: true
         material: PAPER
         from: 10
@@ -342,7 +342,7 @@ gui:
         - '&7zabraný ještě žádný chunk.'
         - ' '
         - '&8- &7Použij k zabrání:'
-        - '  &8/&aLands claim'
+        - '  &a/lands claim'
         material: PAPER
         from: 10
         to: 36
@@ -480,7 +480,7 @@ gui:
         - '&7aktivní pozvánky.'
         - ' '
         - '&8- &7K pozvání použij:'
-        - '  &8/&aLands trust &8<&aPlayer&8>'
+        - '  &a/lands trust &8<&aPlayer&8>'
         material: PAPER
         from: 10
         to: 27
@@ -621,12 +621,12 @@ gui:
         name: '&8Hráč &7-> &cNikdo'
         lore:
         - '&8- &bPozvi hráče &7na celé území:'
-        - '  &8/&aLands trust &8<&aPlayer&8>'
+        - '  &a/lands trust &8<&aPlayer&8>'
         - '&8- &7Pozvi hráče na chunk:'
         - '  &8/&7Lands trust &8<&7Player&8> &7here'
         - ' '
         - '&8- &bNastav roli &7pro celé území:'
-        - '  &8/&aLands setRole &8<&aPlayer&8>'
+        - '  &a/lands setRole &8<&aPlayer&8>'
         - '&8- &7Nastav roli na chunk:'
         - '  &8/&7Lands setRole &8<&7Player&8> &7here'
         material: PAPER
@@ -697,7 +697,7 @@ gui:
         lore:
         - '&7Sám sobě dát untrust nemůžeš!'
         - ' '
-        - '&8- &7Použij &8/&aLands leave {land}'
+        - '&8- &7Použij &a/lands leave {land}'
         material: RED_DYE
       untrust_owner:
         name: '&4Zamítnuto: &bUntrust'
@@ -1318,7 +1318,7 @@ gui:
         - '&7Nejsou zde žádné pozvánky.'
         - ' '
         - '&8- &7Pozvi hráče pomocí:'
-        - '  &8/&aLands trust &8<&aPlayer&8>'
+        - '  &a/lands trust &8<&aPlayer&8>'
         material: PAPER
         from: 10
         to: 27
@@ -1662,7 +1662,7 @@ gui:
         - '&7There aren''t any created lands yet.'
         - ' '
         - '&8- &7To create a land execute:'
-        - '  &8/&aLands create'
+        - '  &a/lands create'
         material: PAPER
         from: 10
         to: 45
