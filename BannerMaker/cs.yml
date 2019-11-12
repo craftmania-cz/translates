@@ -3,53 +3,53 @@
 # Contributor(s): KID
 general:
   prefix: ' &9&lBannerMaker &8⎟&r '
-  reload: Konfigurace znovu nactena
-  no-permission: '&c&l(!) &cNa tuto akci nemas prava!'
-  no-money: '&c&l(!) &cNemas dostatek penez!'
-  money-transaction: Pouzij {0} pro ziskani banneru. Nyni mas {1}
+  reload: 'Konfigurace znovu načtena.'
+  no-permission: '&c&l[!] &cNa tuto akci nemáš práva!'
+  no-money: '&c&l[!] &cNemáš dostatek peněz!'
+  money-transaction: 'Použij {0} pro získání banneru. Nyní máš {1}'
 io:
-  save-failed: §7Ulozeni selhalo
-  save-success: §7Ulozeni probehlo uspesne
-  remove-banner: §7Odstranit banner &r#{0}
+  save-failed: '§7Uložení selhalo.'
+  save-success: '§7Uložení proběhlo úspěšně.'
+  remove-banner: '§7Odstranit banner &r#{0}'
 command:
-  player-only: §cTento prikaz muze byt pouzit jenom ze hry.
-  invalid-parameter: '§cNeplatny parametr, spravne pouziti: {0}'
-  not-banner-hand: §cPredmet v ruce neni banner.
-  not-banner-see: §cPredmet, na ktery se divas, neni banner.
+  player-only: '§cTento příkaz může být použit jenom ze hry.'
+  invalid-parameter: '§cNeplatný parametr, správně použití: {0}'
+  not-banner-hand: '§cPředmět v ruce není banner.'
+  not-banner-see: '§cPředmět na ktery se díváš, není banner.'
 config:
-  add-setting: §cPridat pridat nove nastaveni pro {0}
+  add-setting: '§cPřidat nové nastavení pro {0}'
 gui:
   prefix: ' &9&lBM &8⎟&r '
-  main-menu: Hlavni menu
-  prev-page: Predchozi stranka
-  next-page: Dalsi stranka
-  create-banner: Vytvorit banner
-  uncraftable-warning: Nevycraftitelne (v craftingu)
-  uncraftable: Nevycraftitelne
-  more-than-6-patterns: §7Vice jak 6 sablon.
-  more-patterns: Vice sablon
-  back: Zpet
-  create: Vytvorit
+  main-menu: 'Hlavní menu'
+  prev-page: 'Předchozí stránka'
+  next-page: 'Další stránka'
+  create-banner: 'Vytvořit banner'
+  uncraftable-warning: 'Nevycraftitelné (v craftingu)'
+  uncraftable: 'Nevycraftitelné'
+  more-than-6-patterns: '§7Více jak 6 šablon.'
+  more-patterns: 'Více šablon'
+  back: 'Zpět'
+  create: 'Vytvořit'
   delete: SMAZAT
-  remove-last-pattern: Odstranit posledni sablonu
-  banner-info: Info o banneru
-  pattern-s: sablony
-  no-patterns: Zadna sablona
-  craft-recipe: Craft recept
-  get-this-banner: Ziskat tento banner
-  get-banner: Ziskat banner &r#{0}
-  get-banner-for-free: Ziskat banner zdarma
-  buy-banner-in-price: Zakoupit za {0}
-  get-banner-by-craft: Vycraftit
+  remove-last-pattern: 'Odstranit poslední šablonu'
+  banner-info: 'Info o banneru'
+  pattern-s: 'šablony'
+  no-patterns: 'Žádná šablona'
+  craft-recipe: 'Vycraftit recept'
+  get-this-banner: 'Získat tento banner'
+  get-banner: 'Získat banner &r#{0}'
+  get-banner-for-free: 'Získat banner zdarma'
+  buy-banner-in-price: 'Zakoupit za {0}'
+  get-banner-by-craft: 'Vycraftit'
   price: 'Cena: {0}'
-  clone-and-edit: Klonovat & Editovat
-  alphabet-and-number: Abeceda & Cisla
-  toggle-border: Zobrazit/skryt okraje
+  clone-and-edit: 'Klonovat & Editovat'
+  alphabet-and-number: 'Abeceda & Čísla'
+  toggle-border: 'Zobrazit/Skrýt okraje'
   materials:
-    enough: Dostatek materialu
-    not-enough: Nedostatek materialu
+    enough: 'Dostatek materiálu'
+    not-enough: 'Nedostatek materialu'
   click:
-    left: Leve kliknuti
-    right: Prave kliknuti
-  selected-pattern-color: Selected pattern color
-  toggle-preview-mode: Toggle preview mode
+    left: 'Levé kliknutí'
+    right: 'Pravé kliknutí'
+  selected-pattern-color: 'Zvolená barva'
+  toggle-preview-mode: 'Přepnutí ukázky'
