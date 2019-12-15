@@ -84,7 +84,7 @@ Command:
           Message: '&aSkenování levelu ostrova dokončeno!'
           Should-Display-Message: false
         Progress:
-          Message: '&eSkenuje level ostrova: &b%percent%'
+          Message: '&eSkenuje level ostrova: &b%percent%%'
           Should-Display-Message: true
           Display-Every-X-Scan: 3
         NotOnIsland:
@@ -93,10 +93,9 @@ Command:
           Message: '&c&l[!] &cNemůžeš pokládat blocky dokud běží level sken ostrova.
             Vyčkej na dokončení skenu.'
         InScan:
-          Message: '&bSkyBlock &8| &aInfo&8: &eThis island is already being scanned.'
+          Message: '&c&l[!] &cTento ostrov se již skenuje, počkej na dokončení!'
         Started:
-          Message: '&bSkyBlock &8| &aInfo&8: &eStarting the island chunk scan. The
-            block scan will start after this is complete.'
+          Message: '&e&l[*] &eZahájen sken ostrova a jeho bloků. Bude to chvilku trvat!'
       Cooldown:
         Word:
           Minute: minut(a/y)
@@ -173,19 +172,17 @@ Command:
       SetBiome:
         Island:
           Data:
-            Message: '&c&l[!] &cThe Island data for that player''s Island does not
-              exist.'
+            Message: '&c&l[!] &cIsland data pro tohoto hráče neexistují.'
           Owner:
-            Message: '&c&l[!] &cThat player is not a Member of or does not own an
-              Island.'
+            Message: '&c&l[!] &cTento hráč není členem nebo nevlastní žádný ostrov.'
         Set:
-          Message: '&e&l[*] &eYou have set &d%player''s &eIsland biome to &d%biome&e.'
+          Message: '&e&l[*] &eNastavil jsi hráči &d%player &eisland biom na &d%biome&e.'
         Info:
-          Message: '&f&oSets the size of a player''s Island.'
+          Message: '&f&oNastaví velikost ostrova'
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin setbiome <player> <biome>'
         InvalidBiome:
-          Message: '&c&l[!] &cA biome with that name does not exist.'
+          Message: '&c&l[!] &cBiom s tímto názvem neexistuje.'
       Structure:
         Tool:
           Info:
@@ -223,160 +220,146 @@ Command:
           Message: '&f&oCreate Structures for Islands.'
       SetSize:
         Set:
-          Message: '&e&l[*] &eYou have set &d%player''s &eIsland size to &d%size&e.'
+          Message: '&e&l[*] &eNastavil jsi hráči &d%player &evelikost ostrova na &d%size&e.'
         Size:
           Less:
-            Message: '&c&l[!] &cThe size of the Island must be less than 1000.'
+            Message: '&c&l[!] &cVelikost ostrova musí být menší než 1000.'
           Greater:
-            Message: '&c&l[!] &cThe size of the Island must be greater than 50.'
+            Message: '&c&l[!] &cVelikost ostrova musí být větší než 50.'
         Info:
-          Message: '&f&oSets the size of a player''s Island.'
+          Message: '&f&oNastaví velikost ostrova'
         Island:
           Owner:
-            Message: '&c&l[!] &cThat player is not a Member of or does not own an
-              Island.'
+            Message: '&c&l[!] &cTento hráč není člen na ostrově nebo nemá žádný ostrov.'
           Data:
-            Message: '&c&l[!] &cThe Island data for that player''s Island does not
-              exist.'
+            Message: '&c&l[!] &cIsland data pro tohoto hráče neexistují.'
         Numerical:
-          Message: '&c&l[!] &cYou must enter a numerical value.'
+          Message: '&c&l[!] &cMusíš napsat číslo, nic jiného.'
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin setsize <player> <size>'
       AddUpgrade:
         Info:
-          Message: '&f&oAdd an upgrade to a player''s Island.'
+          Message: '&f&oPřidá hráči upgrade ostrova'
         Upgrade:
           Exist:
-            Message: '&c&l[!] &cAn upgrade by that name does not exist.'
+            Message: '&c&l[!] &cNázev upgradu neexistuje.'
           Already:
-            Message: '&c&l[!] &cThat player''s Island already has that upgrade.'
+            Message: '&c&l[!] &cTento hráč má již tento upgrade.'
         Added:
-          Message: '&e&l[*] &eYou have &a&lADDED the upgrade ''&d%upgrade&e'' to &d%player''s
-            &eIsland.'
+          Message: '&e&l[*] &a&lPŘIDAL JSI &eupgrade &d%upgrade&e hráči &d%player&e.'
         Island:
           Owner:
-            Message: '&c&l[!] &cThat player is not a Member of or does not own an
-              Island.'
+            Message: '&c&l[!] &cTento hráč není členem na ostrově nebo nemá svůj ostrov.'
           Data:
-            Message: '&c&l[!] &cThe Island data for that player''s Island does not
-              exist.'
+            Message: '&c&l[!] &cIsland data pro tohoto hráče neexistují.'
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin addupgrade <player> <upgrade>'
       SetHologram:
         Set:
-          Message: '&e&l[*] &eThe ''&b%type&e'' hologram has been set to your location.'
+          Message: '&e&l[*] &b%type&e hologram byl nastaven na tvojí polohu.'
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin sethologram <Level|Votes>'
         Info:
-          Message: '&f&oSets the location of a hologram.'
+          Message: '&f&oNastaví polohu hologramu.'
       Settings:
         Info:
-          Message: '&f&oChange the default settings for a newly created Island.'
+          Message: '&f&oZměna nastavení pro nově vytvořené ostrovy.'
       Upgrade:
         Info:
-          Message: '&f&oManage upgrades for the Island Upgrade menu.'
+          Message: '&f&oSpráva upgradů v menu Island upgradů.'
         Disabled:
-          Message: '&c&l[!] &cYou cannot perform that command because upgrades have
-            been disabled.'
+          Message: '&c&l[!] &cNemůžeš provádět tuto akci, jelikož jsou upgrady deaktivány.'
       Create:
         Info:
           Message: '&f&oManage Structures for the Island Creator menu.'
       Generator:
         Disabled:
-          Message: '&c&l[!] &cYou cannot perform that command because the generator
-            has been disabled.'
+          Message: '&c&l[!] &cNelze provádět tuto akci, jelikož generátor není aktivován.'
         Info:
-          Message: '&f&oManage generators for cobblestone generators.'
+          Message: '&f&oSpráva generátorů pro cobblestone generátor.'
       RemoveHologram:
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin removehologram <Level|Votes>'
         Set:
-          Message: '&c&l[!] &cA location for that hologram has not been set.'
+          Message: '&c&l[!] &cPoloha pro hologram nebyla nastavena.'
         Info:
-          Message: '&f&oRemoves an existing hologram.'
+          Message: '&f&oOdebere aktuální hologram.'
         Removed:
-          Message: '&e&l[*] &eYou have removed the ''&b%type&e'' hologram.'
+          Message: '&e&l[*] &eOdebral jsi &b%type&e hologram.'
       Delete:
         Deleted:
-          Message: '&e&l[*] &eYou have deleted &c%player''s &eIsland.'
+          Message: '&e&l[*] &eSmazal jsi ostrov hráče &c%player'
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin delete <player>'
         Info:
-          Message: '&f&oDelete a player''s Island permanently.'
+          Message: '&f&oSmaže hráči ostrov (permanentně)'
         Spawn:
-          Message: '&c&l[!] &cYou cannot delete that Island because the main spawn
-            point is set there.'
+          Message: '&c&l[!] &cNemůžeš smazat tento ostrov, jelikož má nastavený hlavní spawn.'
         Owner:
-          Message: '&c&l[!] &cThat player is not an Island Owner.'
+          Message: '&c&l[!] &cTento hráč není majítel ostrova.'
       RefreshHolograms:
         Info:
-          Message: '&f&oRefreshes any existing holograms.'
+          Message: '&f&oObnoví všechny aktivní hologramy.'
         Refreshed:
-          Message: '&e&l[*] &eRefreshed holograms.'
+          Message: '&e&l[*] &eHologramy byly obnoveny.'
       Level:
         Info:
-          Message: '&f&oChange Island level materials and points.'
+          Message: '&f&oZměna hodnot pro bloky a materialy'
       Owner:
         Invalid:
           Message: '&c&l[!] &cUprav zadání: /island admin Owner <player>'
         Info:
-          Message: '&f&oGet the Owner of a player''s Island.'
+          Message: '&f&oNastaví majítele ostrova (kde jsi) na daného hráče.'
         Island:
           Owner:
-            Message: '&e&l[*] &d%player &eis an Island Owner.'
+            Message: '&e&l[*] &d%player &eje nyní majitel ostrova.'
           Member:
-            Message: '&e&l[*] &d%player''s Island Owner is &d%player&e.'
+            Message: '&e&l[*] &eMajitel pro &d%player je &d%player&e.'
           None:
-            Message: '&c&l[!] &cThat player is not a Member of or does not own an
-              Island.'
+            Message: '&c&l[!] &cTento hráč není člen nebo nevlastní žádný ostrov.'
       SetSpawn:
         Set:
-          Message: '&e&l[*] &eThe spawn point has been set to your location.'
+          Message: '&e&l[*] &eSpawn point byl nastaven na tvojí polohu.'
         Info:
-          Message: '&f&oSets the spawn point to your location.'
+          Message: '&f&oNastaví spawn point na tvojí polohu.'
       Proxy:
         IsOffPlayer:
-          Message: '&bSkyBlock &8| &aInfo&8: &eYou are no longer proxying %player.'
+          Message: '&e&l[*] &eNyní provádíš všechny příkazy jako &b%player.'
         IsOn:
-          Message: '&bSkyBlock &8| &aInfo&8: &eYou are now proxying %player.'
+          Message: '&e&l[*] &eNyní všechny příkazy provádíš jako &b%player.'
         IsOff:
-          Message: '&bSkyBlock &8| &aInfo&8: &eYou are no longer proxying a player.'
+          Message: '&e&l[*] &eNyní již nebudeš provádět příkazy jako majitel ostrova.'
         Info:
-          Message: '&f&oAllows you to execute island commands as another player.'
+          Message: '&f&oDovolí ti provádět příkazy jako majitel daného ostrova.'
       Stackable:
         Setsize:
-          No-Arguments: '&bSkyBlock &8| &cError&8: &ePlease input a number that will
-            become the new stack size.'
-          Invalid-Number: '&bSkyBlock &8| &cError&8: &eFailed to parse a number from
-            %number%'
-          Success: '&bSkyBlock &8| &aInfo&8: &eSuccessfully changed the target block''s
-            stack size from %old_size% to %new_size%'
+          No-Arguments: '&c&l[!] &cPlease input a number that will become the new stack size.'
+          Invalid-Number: '&c&l[!] &cFailed to parse a number from %number%'
+          Success: '&c&l[!] &cSuccessfully changed the target block''s stack size from %old_size% to %new_size%'
         Target:
-          None: '&bSkyBlock &8| &cError&8: &eYou must be looking at a block.'
-          Unstackable: '&bSkyBlock &8| &cError&8: &eUnable to target unstackable block.'
-          Remove-Stack: '&bSkyBlock &8| &aInfo&8: &eSuccessfully removed stack if
-            one was present.'
+          None: '&c&l[!] &cYou must be looking at a block.'
+          Unstackable: '&c&l[!] &cUnable to target unstackable block.'
+          Remove-Stack: '&c&l[!] &cSuccessfully removed stack if one was present.'
         Info:
           Message: '&f&oManage stackables'
       SetAlwaysLoaded:
         IsOn:
-          Message: '&bSkyBlock &8| &aInfo&8: &eThis island will not unload.'
+          Message: '&e&l[*] &eTento ostrov nyní zůstane pořád načtený.'
         IsOff:
-          Message: '&bSkyBlock &8| &aInfo&8: &eThis island will unload.'
+          Message: '&e&l[*] &eTento ostrov nyní bude odnačten z paměti, když na něm nikdo nebude.'
         Info:
-          Message: '&f&oKeeps an island from unloading.'
+          Message: '&f&oDovolí aby ostrov byl permanentně načtený'
         No-Player-Input:
-          Message: '&bSkyBlock &8| &cError&8: &ePlease input a player.'
+          Message: '&c&l[!] &cMusíš napsat hráče, né nic jiného. :)'
       LevelScan:
         Invalid:
-          Message: '&bSkyBlock &8| &cError&8: &eInvalid: /island admin levelscan <player>'
+          Message: '&c&l[!] &cŠpatně: /island admin levelscan <player>'
         Info:
-          Message: '&f&oLevel scan another player''s island.'
+          Message: '&f&oProvede sken levelu ostrova jiného hráče'
         Started:
-          Message: '&bSkyBlock &8| &aInfo&8: &eThe level scan has been started.'
+          Message: '&c&l[!] &cVýpočet levelu ostrova začal.'
         NoIsland:
-          Message: '&bSkyBlock &8| &cError&8: &eA player with that name does not own
-            an island.'
+          Message: '&c&l[!] &cHráč s tímto nickem nemá žádný ostrov.'
     Coop:
       Invalid:
         Message: '&c&l[!] &cUprav zadání: /island coop [<player>]'
@@ -1538,130 +1521,130 @@ Menu:
       Categories:
         Item:
           Owner:
-            Displayname: '&aIsland Settings'
+            Displayname: '&aNastavení základních práv'
             Lore:
-            - '&7Edit and decide what you want'
-            - '&7the default Island permissions'
-            - '&7to be when an Island is created.'
+            - '&7Uprav jakkoliv chceš,'
+            - '&7základní práva pro ostrov'
+            - '&7když je vytvořen.'
             - ''
             - '&eKlikni pro úpravu nastavení!'
           Operator:
-            Displayname: '&aOperator Settings'
+            Displayname: '&aNastavení práv operátora'
             Lore:
-            - '&7Edit and decide what you want'
-            - '&7the default Operator permissions'
-            - '&7to be when an Island is created.'
+            - '&7Uprav jakkoliv chceš,'
+            - '&7práva default operátora na'
+            - '&7nově vytvořených ostrovech.'
             - ''
             - '&eKlikni pro úpravu nastavení!'
           Member:
-            Displayname: '&aMember Settings'
+            Displayname: '&aNastavení práv člena'
             Lore:
-            - '&7Edit and decide what you want'
-            - '&7the default Member permissions'
-            - '&7to be when an Island is created.'
+            - '&7Uprav jakkoliv chceš,'
+            - '&7práva pro členy na'
+            - '&7nově vytvořených ostrovech.'
             - ''
             - '&eKlikni pro úpravu nastavení!'
           Visitor:
-            Displayname: '&aVisitor Settings'
+            Displayname: '&aNastavení práv návštěvníka'
             Lore:
-            - '&7Edit and decide what you want'
-            - '&7the default Visitor permissions'
-            - '&7to be when an Island is created.'
+            - '&7Uprav jakkoliv chceš,'
+            - '&7práva pro návštěvníky na'
+            - '&7nově vytvořených ostrovech.'
             - ''
             - '&eKlikni pro úpravu nastavení!'
           Exit:
-            Displayname: '&cClick to Exit'
+            Displayname: '&cKlikni k opuštění'
           Coop:
             Lore:
-            - '&7Edit and decide what you want'
-            - '&7the default Coop permissions'
-            - '&7to be when an Island is created.'
+            - '&7Uprav jakkoliv chceš,'
+            - '&7práva pro coop na'
+            - '&7nově vytvořených ostrovech.'
             - ''
             - '&eKlikni pro úpravu nastavení!'
-            Displayname: '&aCoop Settings'
-        Title: '&8Settings Editor - Categories'
+            Displayname: '&aNastavení práv pro coop'
+        Title: '&8Úprava nastavení - kategorie'
       Operator:
         Item:
           Setting:
             Kick:
-              Displayname: '&aKick Members & Visitors'
+              Displayname: '&aVyhodit členy a návštěvníky'
             CoopPlayers:
-              Displayname: '&aCoop Players'
+              Displayname: '&aCoop hráči'
             Status:
               Disabled:
                 Lore:
-                - '&7Status&8: &cfalse'
+                - '&7Status&8: &czakázáno'
               Enabled:
                 Lore:
-                - '&7Status&8: &atrue'
+                - '&7Status&8: &apovoleno'
             Weather:
-              Displayname: '&aSet Weather'
+              Displayname: '&aNastavení počasí'
             VisitorSpawn:
-              Displayname: '&aSet Island Visitor Spawn'
+              Displayname: '&aNastavení spawnu pro návštěvníky'
             Island:
-              Displayname: '&aEdit Island Settings'
+              Displayname: '&aÚprava nastavení ostrova'
             Unban:
-              Displayname: '&aUnban Visitors'
+              Displayname: '&aOdbanování návštěvníků'
             Visitor:
-              Displayname: '&aEdit Visitor Settings'
+              Displayname: '&aÚprava nastavení pro návštěvníky'
             Border:
-              Displayname: '&aSet Border'
+              Displayname: '&aNastavení hranic'
             Biome:
-              Displayname: '&aSet Biome'
+              Displayname: '&aNasavení biomu'
             Coop:
-              Displayname: '&aEdit Coop Settings'
+              Displayname: '&aÚprava coop nastavení'
             Member:
-              Displayname: '&aEdit Member Settings'
+              Displayname: '&aÚprava nastavení pro členy'
             Invite:
-              Displayname: '&aSend Invites'
+              Displayname: '&aOdesílání pozvánek'
             MainSpawn:
-              Displayname: '&aSet Island Main Spawn'
+              Displayname: '&aNastavení hlavního spawnu ostrova'
             Ban:
-              Displayname: '&aBan Visitors'
+              Displayname: '&aBanování navštěvníků'
           Return:
             Displayname: '&cZpět'
-        Title: '&8Settings Editor - Operator'
+        Title: '&8Úprava nastavení - Operátor'
       Visitor:
         Item:
           Return:
             Displayname: '&cZpět'
-        Title: '&8Settings Editor - Visitor'
+        Title: '&8Úprava nastavení - Návštěvník'
       Owner:
         Item:
           Setting:
             Status:
               Enabled:
                 Lore:
-                - '&7Status&8: &atrue'
+                - '&7Status&8: &apovoleno'
               Disabled:
                 Lore:
-                - '&7Status&8: &cfalse'
+                - '&7Status&8: &czakázáno'
             NaturalMobSpawning:
-              Displayname: '&aNatural Mob Spawning'
+              Displayname: '&aPřírodní spawn mobů'
             MobGriefing:
               Displayname: '&aMob Griefing'
             PvP:
               Displayname: '&aPvP'
             Explosions:
-              Displayname: '&aExplosions'
+              Displayname: '&aExploze'
             FireSpread:
-              Displayname: '&aFire Spread'
+              Displayname: '&aŠíření ohně'
             LeafDecay:
-              Displayname: '&aLeaf Decay'
+              Displayname: '&aMizení listí'
             KeepItemsOnDeath:
-              Displayname: '&aKeep Items on Death'
+              Displayname: '&aNodrop itemů po smrti'
             Damage:
               Displayname: '&aDamage'
             Hunger:
-              Displayname: '&aHunger'
+              Displayname: '&aHlad'
           Return:
             Displayname: '&cZpět'
-        Title: '&8Settings Editor - Island'
+        Title: '&8Úprava nastavení - Ostrov'
       Coop:
         Item:
           Return:
             Displayname: '&cZpět'
-        Title: '&8Settings Editor - Coop'
+        Title: '&8Úprava nastavení - Coop'
     Upgrade:
       Upgrades:
         Item:
