@@ -82,13 +82,21 @@ Command:
       Scanning:
         Finished:
           Message: '&aSkenování levelu ostrova dokončeno!'
+          Should-Display-Message: false
         Progress:
           Message: '&eSkenuje level ostrova: &b%percent%'
+          Should-Display-Message: true
+          Display-Every-X-Scan: 3
         NotOnIsland:
           Message: '&c&l[!] &cNemůžeš spustit sken ostrova, když na žádnem nejsi.'
         BlockPlacing:
           Message: '&c&l[!] &cNemůžeš pokládat blocky dokud běží level sken ostrova.
             Vyčkej na dokončení skenu.'
+        InScan:
+          Message: '&bSkyBlock &8| &aInfo&8: &eThis island is already being scanned.'
+        Started:
+          Message: '&bSkyBlock &8| &aInfo&8: &eStarting the island chunk scan. The
+            block scan will start after this is complete.'
       Cooldown:
         Word:
           Minute: minut(a/y)
@@ -326,6 +334,49 @@ Command:
           Message: '&e&l[*] &eThe spawn point has been set to your location.'
         Info:
           Message: '&f&oSets the spawn point to your location.'
+      Proxy:
+        IsOffPlayer:
+          Message: '&bSkyBlock &8| &aInfo&8: &eYou are no longer proxying %player.'
+        IsOn:
+          Message: '&bSkyBlock &8| &aInfo&8: &eYou are now proxying %player.'
+        IsOff:
+          Message: '&bSkyBlock &8| &aInfo&8: &eYou are no longer proxying a player.'
+        Info:
+          Message: '&f&oAllows you to execute island commands as another player.'
+      Stackable:
+        Setsize:
+          No-Arguments: '&bSkyBlock &8| &cError&8: &ePlease input a number that will
+            become the new stack size.'
+          Invalid-Number: '&bSkyBlock &8| &cError&8: &eFailed to parse a number from
+            %number%'
+          Success: '&bSkyBlock &8| &aInfo&8: &eSuccessfully changed the target block''s
+            stack size from %old_size% to %new_size%'
+        Target:
+          None: '&bSkyBlock &8| &cError&8: &eYou must be looking at a block.'
+          Unstackable: '&bSkyBlock &8| &cError&8: &eUnable to target unstackable block.'
+          Remove-Stack: '&bSkyBlock &8| &aInfo&8: &eSuccessfully removed stack if
+            one was present.'
+        Info:
+          Message: '&f&oManage stackables'
+      SetAlwaysLoaded:
+        IsOn:
+          Message: '&bSkyBlock &8| &aInfo&8: &eThis island will not unload.'
+        IsOff:
+          Message: '&bSkyBlock &8| &aInfo&8: &eThis island will unload.'
+        Info:
+          Message: '&f&oKeeps an island from unloading.'
+        No-Player-Input:
+          Message: '&bSkyBlock &8| &cError&8: &ePlease input a player.'
+      LevelScan:
+        Invalid:
+          Message: '&bSkyBlock &8| &cError&8: &eInvalid: /island admin levelscan <player>'
+        Info:
+          Message: '&f&oLevel scan another player''s island.'
+        Started:
+          Message: '&bSkyBlock &8| &aInfo&8: &eThe level scan has been started.'
+        NoIsland:
+          Message: '&bSkyBlock &8| &cError&8: &eA player with that name does not own
+            an island.'
     Coop:
       Invalid:
         Message: '&c&l[!] &cUprav zadání: /island coop [<player>]'
@@ -356,12 +407,18 @@ Command:
         Message: '&c&l[!] &cNemáš práva toto udělat.'
       AddedTarget:
         Message: '&e&l[*] &eDostal jsi coop na ostrově hráče &d%player&e.'
+      AddedTemp:
+        Message: '&bSkyBlock &8| &aInfo&8: &eYou have temporally cooped &d%player&e.'
+      AddedTempTarget:
+        Message: '&bSkyBlock &8| &aInfo&8: &eYou have been temporally cooped on &d%player''s&e
+          island.'
     Delete:
       Owner:
         Message: '&c&l[!] &cNejsi majitelem ostrova.'
       Confirmation:
         Confirm:
-          Message: '&e&l[*] &eChystáš se smazat vlastní ostrov. Máš &c%time &esekund k &epotvrzení.\n %confirm'
+          Message: '&e&l[*] &eChystáš se smazat vlastní ostrov. Máš &c%time &esekund
+            k &epotvrzení.\n %confirm'
           Word:
             Confirm: POTVRZUJI
             Tutorial: '&7Klikni pro &f&opotvrzení &r&7smazání ostrova!'
@@ -805,9 +862,12 @@ Command:
           Message: '&c&l[!] &cNemůžeš smazat tvůj ostrov, protože je na něm hlavní
             spawn.'
         Open:
-          Message: '&c&l[!] &cMusíš zavřít tvůj ostrov, než ho smažeš. &cPoužij /is lock'
+          Message: '&c&l[!] &cMusíš zavřít tvůj ostrov, než ho smažeš. &cPoužij /is
+            lock'
         Sender:
           Message: '&e&l[*] &eUž nejsi vlastníkem ostrova.'
+          MaxDeletionMessage: '&bSkyBlock &8| &cError&8: &eYou have reach the maximum
+            island deletions. Sorry.'
         Broadcast:
           Message: '&e&l[*] &eVlastník ostrova mazal ostrov.'
         Money:
@@ -839,6 +899,9 @@ Command:
         Message: '&f&oOtevře menu veřejných ostrovů k navštívení.'
       Invalid:
         Message: '&c&l[!] &cUprav zadání: /island visit [<player>]'
+      Closed:
+        Island:
+          Message: '&bSkyBlock &8| &aInfo&8: &eThe island you were at closed.'
     Help:
       Page:
         Message: '&c&l[!] &cNení zde tolik stránek.'
@@ -2192,6 +2255,20 @@ Menu:
         Displayname: '&aNávštěvníci ostrova'
       Barrier:
         Displayname: '&cKontrolní panel ostrova'
+      Upgrades:
+        Displayname: '&aIsland Upgrades'
+        Lore:
+        - '&7[&f!&7] Upgrade your island'
+        - '    &7and unlock amazing perks'
+        - ''
+        - '&eClick to view Island Upgrades!'
+      Lock:
+        Displayname: '&aIsland Lock'
+        Lore:
+        - '&7[&f!&7] Open or close your'
+        - '    &7island for visitors'
+        - ''
+        - '&eClick to open/close your Island!'
     Title: '&8Kontrolní panel ostrova'
   Border:
     Item:
@@ -2980,6 +3057,8 @@ Menu:
         - '&eKlikni pro odstranění hráče!'
       Word:
         Enter: Napiš jméno hráče
+        Temp: Temp
+        Normal: Normal
       Next:
         Displayname: '&aDalší stránka >'
       Nothing:
@@ -3063,11 +3142,6 @@ Placeholder:
       Message: '&f&oNevlastněno'
     Non-empty:
       Message: '&f[%position] %player [%level]'
-  fabledskyblock_island_points:
-    Non-empty:
-      Message: '&f%placeholder'
-    Empty:
-      Message: '&c0'
   fabledskyblock_island_visitors:
     Non-empty:
       Message: '&f%placeholder'
@@ -3146,11 +3220,6 @@ Placeholder:
   fabledskyblock_island_biome:
     Empty:
       Message: '&f&oNic'
-    Non-empty:
-      Message: '&f%placeholder'
-  fabledskyblock_island_level:
-    Empty:
-      Message: '&c0'
     Non-empty:
       Message: '&f%placeholder'
   fabledskyblock_island_level_formatted:
@@ -3332,6 +3401,8 @@ Island:
     Error:
       Message: '&c&l[!] &cHlavní spawn pozice musí být nastavena předtím, než Ti bude
         umožněno vytvořit ostrov. ''&f&o/island admin setspawn&e''.'
+      MaxCreationMessage: '&bSkyBlock &8| &cError&8: &eYou have reach the maximum
+        island creations. Sorry.'
   Upgrade:
     Owner:
       Message: '&c&l[!] &cNejsi vlastníkem ostrova.'
