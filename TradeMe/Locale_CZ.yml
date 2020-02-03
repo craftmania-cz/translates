@@ -1,89 +1,89 @@
 # Set line to empty one like '' so it will not be displayed
 info:
-  prefix: '&e[&aTradeMe&e] '
-  NoPermission: '&cYou don''t have permission!'
-  NoTargetpermission: '&4Target doesn''t have permission for this!'
-  Ingame: '&cYou can use this only in game!'
-  NoInformation: '&cCant find any information!'
-  FromConsole: '&cYou can use this only from console!'
-  NotOnline: '&cThe player is not online!'
-  NoPlayer: '&cCan''t find player with this name!'
-  NoCommand: '&cThere is no command by this name!'
-  UseInteger: '&4Please use numbers!'
-  UseBoolean: '&4Please use True or False!'
-  NoLessThan: '&4Number can''t be less than [amount]!'
-  NoMoreThan: '&4Value can''t be more than [amount]'
+  prefix: '&e[Trade] '
+  NoPermission: '&cNa toto nemáš dostatek práv.'
+  NoTargetpermission: '&4Zvolený hráč na toto nemá dostatek práv.'
+  Ingame: '&cToto lze použít pouze ve hře.'
+  NoInformation: '&cNelze najít žádné informace.'
+  FromConsole: '&cToto lze použít pouze z konzole!'
+  NotOnline: '&cTento hráč není online.'
+  NoPlayer: '&cZadaný hráč neexistuje.'
+  NoCommand: '&cTakový příkaz neexistuje.'
+  UseInteger: '&4Musíš použít čísla!'
+  UseBoolean: '&4Použij bud true nebo false!'
+  NoLessThan: '&4Číslo nemůže být menší než [amount]!'
+  NoMoreThan: '&4Hodnota nemůže být větší než[amount]'
   Spliter: '&e--------------------------------------------------'
   fliperSimbols: '&e----------'
-  prevPage: '&2----<< &6Prev '
-  prevPageGui: '&6Previous page '
-  prevPageClean: '&6Prev '
-  prevPageOff: '&7----<< Prev '
+  prevPage: '&2----<< &6Předchozí '
+  prevPageGui: '&6Předchozí stránka '
+  prevPageClean: '&6Předchozí '
+  prevPageOff: '&7----<< Předchozí '
   prevPageHover: '&7<<<'
-  nextPage: '&6 Next &2>>----'
-  nextPageGui: '&6Next Page'
-  nextPageClean: '&6 Next'
-  nextPageOff: '&7 Next >>----'
+  nextPage: '&6 Další &2>>----'
+  nextPageGui: '&6Další stránka'
+  nextPageClean: '&6 Další'
+  nextPageOff: '&7 Další >>----'
   nextPageHover: '&7>>>'
   pageCount: '&2[current]/[total]'
   pageCountHover: '&2[totalEntries]'
 error:
-  CantChat: '&cCan''t chat while trading!'
-  CantSendCommands: '&cCan''t perform commands while trading!'
-NoRequests: '&cNemas zadnou zadost!'
+  CantChat: '&cNemůžeš psát když obchoduješ.'
+  CantSendCommands: '&cNemůžeš psát příkazy, když obchoduješ!'
+NoRequests: '&cNemáš žádnou žádost o obchod.'
 CanceledTrade: '&e[playername] &cstornoval obchod!'
-YouCanceledTrade: '&cZrusil jsi obchod!'
-BlockedWorldSender: '&eV tomto svete se neda obchodovat!'
-BlockedWorldTarget: '&eVe vybranem svete je zakazano obchodovat!'
-DifferentGameMode: '&eNemuzes obchodovat s nekym kdo ma jiny Gamemode!'
-BetweenWorlds: '&eNelze obchodovat mezi svety!'
-ToFar: '&eHrac je prislis daleko! Max vzdalenost je &6[distance] &ebloku.'
-StillInCombat: '&eHrac [player] je stale v kombatu, pockej jeste [time] vterin.'
-InvIsOpen: '&eHrac [player] ma otevreny inventar, pockej az ho zavre.'
-CantTradeDifGroup: '&cNelze obchodovat s touto skupinou hracu.'
-MiddleMouse: '&2Use middle mouse button to scroll through modes'
-CantTradeOverBungge: '&cCant trade with this player over bungee network'
-CantTradeOverServers: '&cCan''t trade between these 2 servers: [server1] - > [server2]'
-NotOnline: '&c[playername] &eneni pripojen!'
-Vanished: '&ePlayer [playername] neni online!'
-yourSelf: '&6You cant trade with your self!'
-NotAccepting: '&c[playername] &bnesouhlasi &es jakoukoliv nabidkou!'
-BlacklistedItem: '&4This item is blacklisted!'
-AlreadyTrading: '&c[playername] &7jiz s nekym obchoduje!'
-PendingRequest: '&eJiz jsi odeslal zadost! Cekej &6[time] &evterin.'
-AlreadyRequested: '&eNekdo s nim obchoduje! Cekej &6[time] &evterin.'
-Successful: '&aObchod byl uspesne proveden!'
-Failed: '&cTrade failed!'
+YouCanceledTrade: '&cZrušil jsi obchod!'
+BlockedWorldSender: '&eV tomto světě se nedá obchodovat!'
+BlockedWorldTarget: '&eVe vybraném světě je zakázáno obchodovat!'
+DifferentGameMode: '&eNemůžeš obchodovat s někým kdo ma jiny gamemode!'
+BetweenWorlds: '&eNelze obchodovat mezi světy!'
+ToFar: '&eHráč je příliš daleko! Maximální vzdálenost je &6[distance] &ebloků.'
+StillInCombat: '&eHráč [player] je stále v kombatu, počkej ještě [time] vteřin.'
+InvIsOpen: '&eHráč [player] má otevřený inventář, počkej až ho zavře.'
+CantTradeDifGroup: '&cNelze obchodovat s touto skupinou hráčů.'
+MiddleMouse: '&2Použij střední kolečko myši k skrolování skrz módy.'
+CantTradeOverBungge: '&cNemůžeš obchodovat s hráči skrz Bungeecord.'
+CantTradeOverServers: '&cNelze obchodovat mezi těmito dvěma servery: [server1] - > [server2]'
+NotOnline: '&c[playername] &enení připojen!'
+Vanished: '&eHráč [playername] není online!'
+yourSelf: '&6Nemůžeš obchodovat sám se sebou.'
+NotAccepting: '&c[playername] &bnesouhlasí &es jakoukoliv nabidkou!'
+BlacklistedItem: '&4Tento item je na blacklistu!'
+AlreadyTrading: '&c[playername] &7již s někým obchoduje!'
+PendingRequest: '&eJiž jsi odeslal žadost! Čekej &6[time] &evteřin.'
+AlreadyRequested: '&eNěkdo s ním již obchoduje! Čekej &6[time] &evteřin.'
+Successful: '&aObchod byl úspěšně proveden!'
+Failed: '&cObchod selhal.'
 Taxes:
-  Mein: ' Taxes:'
+  Mein: ' Daně:'
   BothEnabled: ' &'
   Fixed: ' [amount]'
   Percentage: ' [amount]% ([takenamount])'
   Left: (&4 [amount] &e)
 Button:
   Decline:
-    Name: '&eClick to decline'
+    Name: '&eKliknutím zamítneš'
     Lore: []
   Accept:
-    Name: '&2Click to Accept offer'
+    Name: '&2Kliknutím potvrdíš nabídku'
     Lore: []
   Accepted:
-    Name: '&eAccepted your offer'
+    Name: '&ePotvrdil nabídku'
     Lore: []
   Waiting:
-    Name: '&2Still hasn''t accepted your offer'
+    Name: '&2Stále nepotvrdil tvojí nabídku'
     Lore: []
 Item:
-  Got: '&eObdrzel jsi: &6[itemlist]'
-  YourInvFull: '&eNemas dostatek mista v inventari'
-  TargetInvFull: '&f[player] &enema dostatek mista v inventari.'
+  Got: '&eObdržel jsi: &6[itemlist]'
+  YourInvFull: '&eNemáš dostatek místa v inventáři.'
+  TargetInvFull: '&f[player] &enemá dostatek místa v inventáři.'
 Regions:
   WorldGuard:
-    YouCanttrade: '&2You can''t trade in this region!'
-    PlayerCanttrade: '&2[playername] can''t trade in hes region!'
+    YouCanttrade: '&2Nemůžeš obchodovat v tomto regionu.'
+    PlayerCanttrade: '&2Hráč [playername] nemůže obchodovat v tomto regionu.'
   Residence:
-    YouCanttrade: '&2You can''t trade in this residence!'
-    PlayerCanttrade: '&2[playername] can''t trade in this residence!'
+    YouCanttrade: '&2Nemůžeš obchodovat v této residenci.'
+    PlayerCanttrade: '&2Hráč [playername] nemůže obchodovat v této residenci.'
 TradeModes:
   Exp:
     Button:
@@ -116,34 +116,32 @@ TradeModes:
     ChangedOfferTitle: '&8Offered &0[amount] &8exp'
   Money:
     Button:
-      Name: '&2Money increment by &6[amount]'
+      Name: '&2Navýšení nabídky o &6[amount]'
       Lore:
-      - '&eLeft click to add'
-      - '&eRight click to take'
-      - '&eHold shift to increase 10 times'
-      - '&eMaximum available: &6[balance]'
-      - '&eCurrent money offer: &6[offer] [taxes]'
+      - '&eLevým kliknutím přidáš'
+      - '&ePrvým kliknutím odebereš'
+      - '&eDrž shift k desetinásobnému navýšení'
+      - '&eMax. k dispozici: &6[balance]'
+      - '&eAktuální nabídka obchodu: &6[offer] [taxes]'
     log: '&e[amount] &7Money'
-    Error: '&e[playername] doesn''t have enough money!'
-    Got: '&eYou have received &6[amount] &emoney'
+    Error: '&e[playername] nemá dostatek peněz!'
+    Got: '&eObdržel jsi &6[amount] &epeněz'
     OfferedButton:
-      Name: '&2[player]''s money offer'
+      Name: '&2[player] nabízí'
       Lore:
-      - '&eCurent money offer: &6[amount] [taxes]'
-    InLoanTarget: '&eYour offered money amount is to low to get &6[playername] &eout
-      of loan! offer atleast &6[amount]'
-    ChangedOfferTitle: '&8Offered &0[amount] &8money'
-    ChangedOffer: '&6[playername] &ehas changed their money offer to: &6[amount]'
+      - '&eAktuální nabídka: &6[amount] [taxes]'
+    InLoanTarget: '&eYour offered money amount is to low to get &6[playername] &eout of loan! offer atleast &6[amount]'
+    ChangedOfferTitle: '&8Nabízí &0[amount] &8peněz'
+    ChangedOffer: '&6[playername] &ezměnil nabídku na: &6[amount]'
     ToggleButton:
-      Name: '&2Toggle to money offer'
+      Name: '&2Zapnutí peněžních nabídek'
       Lore:
-      - '&eCurent money offer: &6[amount] [taxes]'
+      - '&eAktuální nabídka: &6[amount] [taxes]'
     InLoanYou: '&6[playername] &eoffered money amount is to low to get you out of
       loan!'
-    hardLimit: '&6[playername] &ecant have more than 10,000,000,000,000 money!'
-    Limit: '&eYou dont have enough money! Amount was set to maximum you can trade:
-      &6[amount]'
-    CantWidraw: '&cCan''t widraw money from player! ([playername])'
+    hardLimit: '&6[playername] &enemůže mít více než 10,000,000,000,000 money!'
+    Limit: '&eNemáš dostatek peněz! Můžeš maximálně obchodovat s: &6[amount]'
+    CantWidraw: '&cNelze odebrat peníze hráči! ([playername])'
   Residence:
     Button:
       Name: '&2Currently offering &6[residence]'
@@ -179,60 +177,59 @@ command:
       CommandColor: '&2'
       VariableColor: '&6'
       title: '&2----&e ==== &6Trade &e==== &2----'
-      usage: '&ePouziti: &6%usage%'
+      usage: '&ePoužití: &6%usage%'
       cmdInfoFormat: '[command] &f- &e[description]'
       cmdFormat: '&6/[command]&f[arguments]'
       helpPageDescription: '&e* [description]'
       explanation: '&e * [explanation]'
   nocmd:
     help:
-      info: '&eShows all available commands'
+      info: '&eZobrazí všechny dostupné příkazy'
       args: ''
   accept:
     help:
       info: '&2Potvrdit'
       args: ''
     info:
-      ClickToAccept: '&6Click to accept offer!'
+      ClickToAccept: '&6Kliknutím potvrdíš nabídku'
   deny:
     help:
-      info: '&2Zamitnout'
+      info: '&2Zamítnout'
       args: ''
       simbol: ' &c[x]'
     info:
-      ClickToDeny: '&cClick to deny offer!'
+      ClickToDeny: '&cKliknutím zamítneš nabídku'
       simbol: '&c[x]'
-      deny: '&eTrade request was declined!'
-      DenyForSender: '&eYour trade request was declined!'
+      deny: '&eŽádost o obchod byla zamítnuta.'
+      DenyForSender: '&eTvůj obchod byl zamítnut.'
   block:
     help:
-      info: '&2Zablokovat hrace'
+      info: '&2Zablokovat obchody hráče'
       args: '[nick]'
     info:
-      RemovedFromBlockList: '&6[playername] &ewas removed from your trade block list!'
-      AddedToBlockList: '&6[playername] &ewas added to your trade block list!'
-      Blocked: '&6[playername] &ehas you in their block list!'
+      RemovedFromBlockList: '&6[playername] &ebyl odebrán z tvého blacklistu!'
+      AddedToBlockList: '&6[playername] &ebyl přidán na tvůj obchodní blacklist!'
+      Blocked: '&6[playername] &etě má na blacklistu. Nemůžeš s ním obchodovat!'
   toggle:
     help:
-      info: '&2Vypnout/Zapnout trade'
+      info: '&2Vypnout/zapnout trade'
       args: ''
     info:
-      ToggledOn: '&eYou are now accepting trade offers!'
-      ToggledOff: '&eYou are no longer accepting any trades offers!'
+      ToggledOn: '&eNyní opět přijímáš nabídky.'
+      ToggledOff: '&eNyní máš zablokovaný trade. Nikdo ti nemůže tedy poslat nabídku!'
   offer:
     help:
-      info: '&2Odeslat nabidku'
+      info: '&2Odeslat nabídku'
       args: '[nick] [-s]'
     info:
-      gotOffer: "&6[playername] &ewants to trade with you. \n"
-      accept: '   &2[Accept]   '
-      deny: '   &c[Decline]   '
-      MadeOffer: '&eYou have sent a trade offer to &6[playername]&e. They have &6[time]&e
-        seconds to accept.'
-      ClickToAccept: '&6Click to accept offer!'
+      gotOffer: "&6[playername] &echce s tebou obchodovat \n"
+      accept: '   &2[Potvrdit]   '
+      deny: '   &c[Zamítnout]   '
+      MadeOffer: '&eOdeslal jsi trade request hráči &6[playername]&e. Má &6[time]&e vteřin na potvrzení.'
+      ClickToAccept: '&6Kliknutím příjmeš nabídku'
   set:
     help:
-      info: '&2Change config setings'
+      info: '&2Změna hodnot v configu'
       args: '[path] [variable]'
     info:
       ConfigUpdate: '&eConfig file updated for &6[path] &ewith &6[variable]&e!'
@@ -249,9 +246,9 @@ command:
     info:
       tradelog: '&e[number]. &6[player1] &e--> &6[player2] &eon &6[date]'
       dateformat: dd/MM/yyyy HH:mm:ss
-      deletedentries: '&6[amount] &eentries was deleted from database!'
-      noentries: '&eThere is no entries by this time range!'
-      noplayerlogentries: '&eThere is no log entries!'
+      deletedentries: '&6[amount] &epoložek bylo smazáno z databáze!'
+      noentries: '&eNejsou zde žádné záznamy pro časový úsek.'
+      noplayerlogentries: '&eNebyl nalezen žádný log.'
       offered: '&3&n[playername] &6offered! '
   force:
     help:
