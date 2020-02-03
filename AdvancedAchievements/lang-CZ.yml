@@ -48,7 +48,7 @@ statistic-increased: Statistika ACH se zvýšila o AMOUNT pro hráče PLAYER!
 
 # Related to achievement reception.
 achievement-received: '&eHráč PLAYER získal achievement: '
-achievement-new: '&eNový achievement: '
+achievement-new: '§eNový achievement: §f'
 
 # Related to /aach check.
 check-achievement-true: Hráč PLAYER získal achievement ACH!
