@@ -149,8 +149,7 @@ info:
   specializedItemFail: '&cCant determine specialized item requirement by value: &7[value]
     ke konci'
   sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '&f[sleeping] &7of &f[required] &7sleeping from required for night
-    time speedup'
+  sleepersRequired: '&6&l[☾] &7[sleeping] &9hráči z &7[required] &9spí k zrychlení noci.'
   sunSpeedingTitle: '&7[hour]'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
   repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
