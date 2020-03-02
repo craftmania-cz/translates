@@ -39,7 +39,7 @@
 # Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
 # If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
 # If line starts with !actionbar! then player will get action bar message defined after this variable
-# If line starts with !broadcast! then everyone will receive message
+# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
 # If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
 # To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
@@ -75,6 +75,7 @@ info:
     is set to true!'
   ModuleNotEnabled: '&cTento modul není povolen!'
   versionNotSupported: '&cVerze serveru není podporována pro tuto funkci'
+  bungeeNoGo: '&cThis feature will not work on bungee network based servers'
   clickToTeleport: '&eKlikni pro teleport'
   UseMaterial: '&4Prosím, užij k tomu jména materiálů!'
   UseInteger: '&4Prosím, použij čísla'
@@ -132,6 +133,7 @@ info:
   noItem: '&cNelze najít item'
   dontHaveItem: '&cNemáš &6[amount]x [itemName] &cve svém inventáři'
   wrongWorld: '&cToto nemůžeš dělat v tomto světě'
+  differentWorld: '&cDifferent worlds'
   HaveItem: '&cMáš &6[amount]x [itemName] &cve svém inventáři'
   ItemWillBreak: '!actionbar!&eTvůj předmět (&6[itemName]&e) brzy rozbije! &e[current]&6/&e[max]'
   cantDoForPlayer: '&eToto nemůžeš udělat hráči &6[playerDisplayName]'
@@ -147,12 +149,15 @@ info:
   specializedItemFail: '&cCant determine specialized item requirement by value: &7[value]
     ke konci'
   sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
+  sleepersRequired: '&f[sleeping] &7of &f[required] &7sleeping from required for night
+    time speedup'
   sunSpeedingTitle: '&7[hour]'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
   repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
   bookDate: '&7Written at &f[date]'
   maintenance: '&7Maintenance mode'
   notSet: not set
+  mapLimit: '&cCant go beyond 30 000 000 blocks'
   startedEditingPainting: '&eYou started editing painting. Click any other block to
     cancel.'
   canceledEditingPainting: '&eYou canceled painting editing mode'
@@ -165,6 +170,7 @@ info:
   lookAtBlock: '&eLook at block'
   lookAtEntity: '&eLook at entity'
   notOnGround: '&eYou cant perform this while flying'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
   FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
   LogoutCustom: ' &6[playerDisplayName] &eleft the game'
   LoginCustom: ' &6[playerDisplayName] &ejoined the game'
@@ -240,6 +246,8 @@ info:
   lastPageHover: '&7>|'
   pageCount: '&2[current]&7/&2[total]'
   pageCountHover: '&e[totalEntries] entries'
+  skullOwner: '!actionbar!&7Owner:&r [playerName]'
+  beehive: '!actionbar!&7Honey level: &e[level]&7/&e5 &7Bees inside: &e[count]&7/&e3'
   circle: '&3Circle'
   square: '&5Square'
   protectedArea: '&cProtected area. cant do this here.'
@@ -366,6 +374,7 @@ info:
     armor_stand: Armor stand
     arrow: Arrow
     bat: Bat
+    bee: Bee
     blaze: Blaze
     boat: Boat
     cat: Cat
@@ -629,6 +638,8 @@ modify:
   extraEditSymbol: ' &6!'
   addSymbol: '&2[+]'
   addSymbolHover: '&2Přidat nový'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&aCancel'
   acceptSymbol: ' &2&l[✔]'
   acceptSymbolHover: '&aPřijmout'
   denySymbol: ' &4&l[X]'
@@ -822,6 +833,13 @@ command:
         \ command from console'
       editInfo: '&eClick to paste old text. Type &6cancel &eto cancel action. Type
         &6remove &eto remove line'
+  anvil:
+    help:
+      info: '&eOpen anvil'
+      args: (playerName)
+    info:
+      feedback: '&eYou have opened anvil for &3[playerDisplayName]&e (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e opened anvil for you.'
   armorstand:
     help:
       info: '&eOtevřít ArmorStand Editor'
@@ -829,6 +847,7 @@ command:
     info:
       cantClick: '&cNelze akci provést, někdo již armor stand upravuje!'
       tooFar: '&cArmor stand je příliš daleko'
+      title: Editor
       coordX: '&cX'
       coordY: '&2Y'
       coordZ: '&eZ'
@@ -904,6 +923,7 @@ command:
       explanation:
       - cmi.command.ban.bypass - to bypass ban
     info:
+      # Make sure that OverrideLoginMessage is enabled in config file
       message: '&cJsi zabanován!'
       reason: '&6Důvod: &e[reason]'
       defaultReason: '&ePorušil jsi pravidla serveru'
@@ -1086,6 +1106,13 @@ command:
     help:
       info: '&eClear players inventory'
       args: (playerName) (item(-amount)) (-s)
+      explanation:
+      - 'Posible clearTypes: quickbar, inventory, partinventory, weapons, armorslots,
+        tools, armors, mainhand, offhand'
+      - Should start with + sign
+      - Multiple types can be used
+      - cmi clear +armors - will remove armor type items
+      - cmi clear +armorslots - will remove items from armorslots
     info:
       feedback: '&eYou have cleared &3[playerDisplayName]&e inventory (&3[offon]&e).'
       targetfeedback: '&eYour inventory was cleared by &3[senderDisplayName]&e.'
@@ -1233,6 +1260,7 @@ command:
       unCuffed: '&6[playerDisplayName] &euncuffed'
       free: '&eYou are free now'
       gotCuffed: '&eYou have been cuffed'
+      cuffedInfo: '&eYou are cuffed'
       cantCuff: '&cYou cant cuff this player!'
   customrecipe:
     help:
@@ -1267,6 +1295,12 @@ command:
       args: (playerName)
     info:
       title: '&cPoloží všechny předměty co nepotřebuješ'
+  distance:
+    help:
+      info: '&eCheck distance between 2 points'
+      args: (playerName) (playerName)
+    info:
+      feedback: '&7Distance: &e[dist] &7x:&e[x] &7y:&e[y] &7z:&e[z] &7Direction:&e[dir]'
   donate:
     help:
       info: '&eDaruje item, který držíš'
@@ -1309,6 +1343,8 @@ command:
     info:
       color: '&eAktuální barva - &c[red],&2[green],&9[blue] &eHex:&6#[hex]'
       custom: '&ePovolen vlastní color mod: &6[mode]'
+      bound: '&eSoulBound to: &6'
+      boundName: '[playerName]'
   editctext:
     help:
       info: '&eEditor vlastního textu'
@@ -1720,6 +1756,8 @@ command:
       - Requires cmi.command.helpop.inform too see messages
     info:
       message: '&c[Help]&4[&7[senderDisplayName]&4]&r&c [message]'
+      feedback: '&c[Help]&7Your question was submitted to online staff'
+      offline: '&c[Help]&7There are no staff members currently online, try later'
   hideflags:
     help:
       info: '&eHides item flags'
@@ -1741,6 +1779,10 @@ command:
       intervalLore:
       - '&7Jak často, v sekundách, je informace o hologramu updatována'
       - '&7Pokud se text nezmění, stačí to nastavit na -1'
+      pageInterval: '&7Change page every &6[second] &7seconds'
+      pageIntervalLore:
+      - '&7How often, in seconds, hologram page is changed automatically'
+      pageIntervalNoPages: '&4This hologram doesn''t have any pages yet'
       text: '&7Mezery pro text &6[space]'
       usync: '&7Změna textu v sync: &6[state]'
       reqPermission: '&7Vyžaduje oprávnění k vidění: &6[state]'
@@ -2023,6 +2065,22 @@ command:
       related: |-
         &7Related accounts:
         &f[list]
+  item:
+    help:
+      info: '&eGive item to yourself'
+      args: '[itemname] (amount)'
+      explanation:
+      - Name and lore supports placeholders
+      - 'Example: /give stone'
+      - /give stone 5 n Stonehenge
+      - /give stick e knockback:1
+      - /give sponge l Got_item_on:_%date/YY/MM/dd-HH:mm:ss%
+      - /cmi give sponge 1 e Knockback:%rand/1-5%
+      - /cmi give sponge %rand/1-10%
+      - /give sponge a maxhealth:5:mainhand
+      - /give diamond_sword unbreakable
+      - /give mob_spawner:creeper
+      - /give minecraft:diamond_helmet 1 0 {ench:[{id:0,lvl:100},{id:2,lvl:100},{id:34,lvl:100}]}
   iteminfo:
     help:
       info: '&eShow item information'
@@ -2032,6 +2090,7 @@ command:
       realName: ' &eReal Name: &6[name]'
       bukkitName: ' &eBukkit Name: &6[name]'
       mojangName: ' &eMojang Name: &6[name]'
+      entityType: ' &eEntity Type: &6[type]'
       durability: ' &eDurability: &6[current]&e/&6[max]'
   itemlore:
     help:
@@ -2176,6 +2235,8 @@ command:
       noFoundKit: '&ecant find any kits'
       givenKit: '&eYou have given &6[kit] &eto &6[playerDisplayName]'
       title: '&8Kits'
+      nameCanUse: '&6[kitName]'
+      nameCantUse: '&7[kitName]'
       group: '&eGroup: &6[group]'
       left: '&6Left &eclick to claim'
       right: '&6Right &eclick to preview'
@@ -2351,9 +2412,10 @@ command:
       - cmi.command.list.admin
       - cmi.command.list.hidden
     info:
+      # [groupLine] can be replaced with specific grouped names like [group1] and [group2] and so on, you can have as many of those as you want and order them by your own liking
       List:
       - '&7========================'
-      - '&ePrávě je online &6[amount][hidden]&e/&6[maxamount] &ehráčů'
+      - '&ePrávě je online &6[amount] [hidden]&e/&6[maxamount] &ehráčů'
       - '[adminLine]'
       - '[groupLine]'
       - '&7========================'
@@ -2363,8 +2425,6 @@ command:
       hiddenCount: '&e&7([amount])'
       groupL: '&6[groupName]: &f[list]'
       player: '%cmi_user_afk_symbol%&f[playerDisplayName]'
-      # Add as many groups as you wish, by default there is only 10, to create new one, just copy paste one line and add increment into lines name, like group11 or group12 and so on.
-      # Player have to have appropriate permission node to be placed in group cmi.command.list.group.[groupnumber], bigger number have priority
       groups:
         group1: '&7Hráči&8: &f[list]'
         group2: '&6Gold&8: &f[list]'
@@ -2503,6 +2563,10 @@ command:
       args: '[mobType] (entryNumber) (playerName) (-s)'
     info:
       got: '&eGot &6[type] &emob head'
+      base: '&7Base drop chance: &f[chance]%'
+      personal: '&7Drop chance for you: &f[chance]%'
+      headSpecific: '&7Head specific drop chance: &f[chance]%'
+      criteria: '&7Criteria: &f[criteria]%'
   money:
     help:
       info: '&eManage money balance'
@@ -2627,6 +2691,10 @@ command:
       noNotesById: '&eThere is no saved notes by this id for player'
       noNotes: '&eThere is no saved notes for player'
       list: '&6[id]. &e[note]'
+  openbook:
+    help:
+      info: '&eOpen book gui'
+      args: (cText) (playerName)
   oplist:
     help:
       info: '&eCheck operator player list'
@@ -2666,6 +2734,7 @@ command:
     info:
       feedback: '&ePing: &6[ping]ms'
       selffeedback: '&eTvůj ping je: &6[ping]ms'
+      customMessage: '[message]'
   placeholders:
     help:
       info: '&eList out all placeholders'
@@ -2895,7 +2964,7 @@ command:
       info: '&eCheck item recipe'
       args: (itemName)
     info:
-      title: '&0[itemName]'
+      type: '&0[type]'
       page: ' &0[current]&7/&0[total]'
       noRecipes: '&cCant find any recipes for this item'
   reload:
@@ -3708,7 +3777,7 @@ command:
         &efor: &6[time] &ereason: &6[reason]'
       time: '&eYou will be unbanned after &6[time]'
       badTime: '&cTime is defined incorrectly'
-      badTimeRange: '&cYou cant ban for longer than &6[seconds]'
+      badTimeRanges: '&cYou can''t ban for longer than [time] &6([seconds])'
   tempipban:
     help:
       info: '&eTemp ban ip'
@@ -3837,7 +3906,7 @@ command:
       info: '&eShow or hide totem cooldown bar'
       args: ''
     info:
-      notActive: '&eTotem cooldown is not active'
+      toggle: '&eTotem cooldown bar toggled ([state]&e)'
   top:
     help:
       info: '&eTeleport to highest point at your location'
@@ -3866,6 +3935,7 @@ command:
       requestSent: '&eŽádost o teleport byla odeslána hráči &6[playerDisplayName]'
       gotRequest: '&6[senderDisplayName] &ežádá o teleport na tvojí pozici!'
       time: '&eMáš &6[time]&ek potvrzení této žádosti.'
+      canceled: '&eCanceled'
       alreadyRequesting: '&eJiž jsi odeslal žádost hráči &6[playerDisplayName]'
       banned: '&eNelze poslat žádost o teleport hráči &6[playerDisplayName] &epo dobu
         dalších &6[time]'
@@ -4084,6 +4154,7 @@ command:
       informOnJoin: '&eShows join message'
       PrivateMessages: '&ePrivate messages'
       nightVision: '&eApply night vision'
+      relogDisable: '&eDisable vanish on relog'
       bossbar: '&eShow bossBar when vanished'
       afkcommands: '&eTrigger afk when vanished'
       bossbarTitle: '&fVanished'
