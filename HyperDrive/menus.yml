@@ -1,0 +1,545 @@
+# -------------------------------------------------------------------------------------------------------------------------------- #
+# Again this configuration file is very self-explanatory if you believe this config needs comments please feel free to tell me so. #
+# -------------------------------------------------------------------------------------------------------------------------------- #
+
+# This is where you can create custom commands that act like /Warps. In each command you can set which menu it will open and even give each one their own permission. #
+Custom Menu Commands:
+    # This is a custom command you may set this to anything you desire! (Note: You may create as many commands as you wish) #
+    "/mywarps":
+      # Set this to the menu you want to open when the player types the custom command. #
+      # Current Menus: [Warp Menu, My Warps Menu, Public Warps Menu, Private Warps Menu, Server Warps Menu, Warp Shop Menu] #
+      Menu: "My Warps Menu"
+      # What should the permission be for this custom command? (Note: Set this to "" to have no permission) #
+      Permission: "hyperdrive.customcmd.mywarps"
+  
+  # This is where you can customize which menu opens when the chat interaction is completed or exited.
+  # Note: You can set this to "" to disable.
+  # Current Menus: [Warp Menu, My Warps Menu, Public Warps Menu, Private Warps Menu, Server Warps Menu, Warp Shop Menu] #
+  Chat Interaction Retreat Menu: "Warp Menu"
+  
+  # Change this if you want a different menu to be used as default. #
+  # (If you only want to use this menu and nothing else go down to the menus items and turn "Use This Item" off for the "Main Menu" item) #
+  # Current Menus: [Warp Menu, My Warps Menu, Public Warps Menu, Private Warps Menu, Server Warps Menu, Warp Shop Menu] #
+  Main Menu: "Warp Menu"
+  
+  # These are the slots that warp icons are aloud to be loaded into for the any of the warp loading menus throughout HyperDrive.
+  Warp Icon Slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  
+  Warp Menu:
+    Title: "Warpy na serveru"
+    Size: 45
+    Use Background Items: false
+    Send Open Message: false
+    Open Message: "&eYou have opened the &6Warp Menu&e!"
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Public Warps:
+        Use This Item: true
+        Name: "&a&lVerejne warpy"
+        Lore:
+        - ""
+        - "&7Zobrazi seznam vsech warpu"
+        - "&7vytvorenych hraci, ktere jsou"
+        - "&7oznacene jako verejne!"
+        - ""
+        - "&eKliknutim zobrazis"
+        Material: "GRASS"
+        Durability: 0
+        Amount: 1
+        Slot: 11
+      My Warps:
+        Use This Item: true
+        Name: "&c&lTvoje warpy"
+        Lore:
+        - ""
+        - "&7Zobrazi seznam tvych vytvorenych warpu,"
+        - "&7ktere muze pote jakkoliv upravovat"
+        - "&7nebo prenastavovat..."
+        - ""
+        - "&eKliknutim zobrazis"
+        Material: "CHEST"
+        Durability: 0
+        Amount: 1
+        Slot: 13
+      Warp Shop:
+        Use This Item: false
+        Name: "&9&lShop warpy"
+        Lore:
+        - ""
+        - "&7Zobrazi seznam vsech hracskych warpu"
+        - "&7na kterych se nachazi shopy,"
+        - "&7ve kterych muzes prodavat/nakupovat!"
+        - ""
+        - "&eKliknutim zobrazis"
+        Material: "GOLD_INGOT"
+        Durability: 0
+        Amount: 1
+        Slot: 16
+      Server Warps:
+        Use This Item: true
+        Name: "&d&lServer warpy"
+        Lore:
+        - ""
+        - "&7Zobrazi seznam vsech warpu,"
+        - "&7ktere jsou vytvorene serverem."
+        - "&7Tyto warpy spravuje pouze"
+        - "&7vedeni serveru."
+        - ""
+        - "&eKliknutim zobrazis"
+        Material: "BED"
+        Durability: 0
+        Amount: 1
+        Slot: 15
+      Private Warps:
+        Use This Item: true
+        Name: "&6&lOsobni warpy"
+        Lore:
+        - ""
+        - "&7Zobrazi seznam tvych warpu,"
+        - "&7ktere vidis pouze ty a vedeni serveru."
+        - "&7Hraci se na ne teleportovat nemohou!"
+        - ""
+        - "&eKliknutim zobrazis"
+        Material: "BARRIER"
+        Durability: 0
+        Amount: 1
+        Slot: 31
+  
+  Public Warps Menu:
+    Title: "Verejne warpy"
+    Size: 54
+    Use Background Items: false
+    Send Open Message: false
+    Open Message: "&eYou have opened the &aPublic Warps Menu&e!"
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Refresh:
+        Use This Item: true
+        Name: "&e&lObnovit stranku"
+        Lore:
+        - "&7Klikni pro obnoveni"
+        Material: "ARROW"
+        Durability: 0
+        Amount: 1
+        Slot: 51
+      Warp Menu:
+        Use This Item: true
+        Name: "&c&lHlavni stranka"
+        Lore:
+        - "&7Kliknutim se vratis zpet"
+        Material: "WATCH"
+        Durability: 0
+        Amount: 1
+        Slot: 52
+      View More:
+        Use This Item: true
+        Name: "&f&lZobrazit vice"
+        Lore:
+        - "&7Kliknutim zobrazis jeste vic!"
+        Material: "BOOK"
+        Durability: 0
+        Amount: 1
+        Slot: 53
+  
+  My Warps Menu:
+    Title: "Tvoje warpy"
+    Size: 54
+    Use Background Items: false
+    Send Open Message: false
+    Open Message: "&eYou have opened the &cMy Warps Menu&e!"
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Create Warp:
+        Use This Item: true
+        Name: "&b&lVytvorit warp"
+        Lore:
+        - "&7Kliknutim vytvoris svuj warp"
+        Material: "PAPER"
+        Durability: 0
+        Amount: 1
+        Slot: 50
+      Warp Menu:
+        Use This Item: true
+        Name: "&c&lHlavni stranka"
+        Lore:
+        - "&7Kliknutim se vratis zpet"
+        Material: "WATCH"
+        Durability: 0
+        Amount: 1
+        Slot: 51
+      Refresh:
+        Use This Item: true
+        Name: "&e&lObnovit stranku"
+        Lore:
+        - "&7Klikni pro obnoveni"
+        Material: "ARROW"
+        Durability: 0
+        Amount: 1
+        Slot: 52
+      View More:
+        Use This Item: true
+        Name: "&f&lZobrazit vice"
+        Lore:
+        - "&7Kliknutim zobrazis jeste vic!"
+        Material: "BOOK"
+        Durability: 0
+        Amount: 1
+        Slot: 53
+  
+  Edit Menu:
+    # Warp name is automatically added behind the title. #
+    Title: "Uprava warpu: "
+    Size: 45
+    Use Background Items: false
+    Send Open Message: false
+    Open Message: "&eYou have began to edit the warp &a%warp%&e!"
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Change Name:
+        Use This Item: true
+        Name: "&e&lZmenit nazev"
+        Lore:
+        - "&7Kliknutim prejmenujes warp."
+        Material: "NAME_TAG"
+        Durability: 0
+        Amount: 1
+        Slot: 10
+      Change Material:
+        Use This Item: true
+        Name: "&e&lZmenit material"
+        Lore:
+        - "&7Zmen typ ikonky na jinou!"
+        Material: "GRASS"
+        Durability: 0
+        Amount: 1
+        Slot: 11
+      Enchanted:
+        Use This Item: true
+        Name: "&e&lGlowing efekt"
+        # You cane use the placeholder %status% to tell the player whether it is active or not. #
+        Lore:
+        - "&7Povoli/zakaze glowing efekt warpu v menu."
+        - "&7Kazde prepnuti se plati!"
+        - ""
+        - "%status%"
+        - ""
+        - "&a&lKliknutim zapnes/vypnes"
+        Material: "ENCHANTED_BOOK"
+        Durability: 0
+        Amount: 1
+        Slot: 12
+      Change Description:
+        Use This Item: true
+        Name: "&e&lZmena popisku"
+        Lore:
+        - "&7Kliknutim zmenis popisek warpu."
+        Material: "FEATHER"
+        Durability: 0
+        Amount: 1
+        Slot: 13
+      Change Amount:
+        Use This Item: true
+        Name: "&e&lZmena poctu itemu ikony"
+        Lore:
+        - "&7Kliknutim zmenis pocet itemu v menu."
+        Material: "ARROW"
+        Durability: 0
+        Amount: 12
+        Slot: 14
+      Change Description Color:
+        Use This Item: true
+        Name: "&e&lZmena barvy popisku"
+        Lore:
+        - "&7Kliknutim zmenis barvu popisku!"
+        Material: "INK_SACK"
+        Durability: 13
+        Amount: 1
+        Slot: 15
+      Change Name Color:
+        Use This Item: true
+        Name: "&e&lZmena barvy nazvu"
+        Lore:
+        - "&7Kliknutim zmenis barvu nazvu!"
+        Material: "INK_SACK"
+        Durability: 10
+        Amount: 1
+        Slot: 16
+      Change Status:
+        Use This Item: true
+        Name: "&e&lZmenit status warpu"
+        Lore:
+        - "&7Kliknutim zmenis status warpu"
+        - "&7na public nebo private!"
+        Material: "SIGN"
+        Durability: 0
+        Amount: 1
+        Slot: 19
+      Add Owner:
+        Use This Item: true
+        Name: "&a&lPridat majitele"
+        Lore:
+        - "&7Kliknutim pridas majitele warpu,"
+        - "&7ktery bude moct jakkoliv warp"
+        - "&7upravovat bez tveho vedomi."
+        Material: "EMERALD_BLOCK"
+        Durability: 0
+        Amount: 1
+        Slot: 20
+      Remove Owner:
+        Use This Item: true
+        Name: "&c&lOdebrat majitele"
+        Lore:
+        - "&7Kliknutim odeberes majitele"
+        - "&7z tohoto warpu."
+        Material: "REDSTONE_BLOCK"
+        Durability: 0
+        Amount: 1
+        Slot: 21
+      Give Ownership:
+        Use This Item: true
+        Name: "&e&lPredat warp"
+        Lore:
+        - "&7Kliknutim predas warp jinemu"
+        - "&7hraci. Nebudes mit tedy k warpu"
+        - "&7jakykoliv pristup."
+        Material: "DIAMOND_BLOCK"
+        Durability: 0
+        Amount: 1
+        Slot: 22
+      Relocate:
+        Use This Item: true
+        Name: "&e&lZmenit polohu"
+        Lore:
+        - "&7Kliknutim zmenis polohu warpu."
+        Material: "ANVIL"
+        Durability: 0
+        Amount: 1
+        Slot: 23
+      Usage Price:
+        Use This Item: true
+        Name: "&e&lZmenit cenu za pouziti"
+        Lore:
+        - "&7Kliknutim zmenis cenu"
+        - "&7za pouziti warpu"
+        Material: "EMERALD"
+        Durability: 0
+        Amount: 1
+        Slot: 24
+      Delete Warp:
+        Use This Item: true
+        Name: "&c&lSmazat warp"
+        Lore:
+        - "&7Kliknutim smazes warp."
+        Material: "BARRIER"
+        Durability: 0
+        Amount: 1
+        Slot: 25
+      Add To Player Whitelist:
+        Use This Item: true
+        Name: "&e&lPridat hrace na whitelist"
+        Lore:
+        - "&7Kliknutim pridas hrace na whitelist."
+        - "&7Hrac tedy bude moct warp pouzivat,"
+        - "&7i pres to, ze bude oznacen jako private."
+        Material: "WOOL"
+        Durability: 5
+        Amount: 1
+        Slot: 28
+      Remove From Player Whitelist:
+        Use This Item: true
+        Name: "&e&lOdebrat hrace z whitelistu"
+        Lore:
+        - "&7Kliknutim odeberes hrace z whitelistu."
+        - "&7Hrac jiz nebude moct warp pouzivat."
+        Material: "WOOL"
+        Durability: 14
+        Amount: 1
+        Slot: 29
+      Toggle Player Whitelist:
+        Use This Item: true
+        Name: "&e&lNastaveni whitelistu"
+        Lore:
+        - "&7Kliknutim zapnes/vypnes whitelist na warpu."
+        - ""
+        - "%status%"
+        - ""
+        - "&a&lKlikni pro zmenu"
+        Material: "WOOL"
+        Durability: 4
+        Amount: 1
+        Slot: 30
+      Warp Menu:
+        Use This Item: true
+        Name: "&c&lZpet"
+        Lore:
+        - "&7Kliknutim se vratis na prehled."
+        Material: "ARROW"
+        Durability: 0
+        Amount: 1
+        Slot: 44
+  
+  Warp Shop Menu:
+    # Warp name is automatically added behind the title. #
+    Title: "&6&lWarp Shop"
+    Size: 54
+    Use Background Items: true
+    Send Open Message: true
+    Open Message: "&eYou have opened the &6Warp Shop&e!"
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Sell Warp:
+        Use This Item: true
+        Name: "&a&l&nSell Warp"
+        Lore:
+        - ""
+        - "&7Sell a warp on the market for &a{sell-fee-price}&7!"
+        - ""
+        - "&a&l[Click To Sell]"
+        Material: "PAPER"
+        Durability: 0
+        Amount: 1
+        Slot: 50
+      Refresh:
+        Use This Item: true
+        Name: "&e&l&nRefresh Page"
+        Lore:
+        - ""
+        - "&7Refreshes the page loading in all of the updated market warps!"
+        - ""
+        - "&a&l[Click To Refresh]"
+        Material: "ARROW"
+        Durability: 0
+        Amount: 1
+        Slot: 51
+      Warp Menu:
+        Use This Item: true
+        Name: "&c&l&nWarp Menu"
+        Lore:
+        - ""
+        - "&7Returns you to the warp menu!"
+        - ""
+        - "&a&l[Click To Open]"
+        Material: "WATCH"
+        Durability: 0
+        Amount: 1
+        Slot: 52
+      View More:
+        Use This Item: true
+        Name: "&a&l&nView More"
+        Lore:
+        - ""
+        - "&7Retrieves more warps that are currently not shown!"
+        - ""
+        - "&a&l[Click To View]"
+        Material: "BOOK"
+        Durability: 0
+        Amount: 1
+        Slot: 53
+  
+  Server Warps Menu:
+    Title: "Server warpy"
+    Size: 54
+    Use Background Items: false
+    Send Open Message: false
+    Open Message: "&eYou have opened the &dServer Warps Menu&e!"
+    Hide Inaccessible Warps: true
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Warp Menu:
+        Use This Item: true
+        Name: "&c&lHlavni stranka"
+        Lore:
+        - "&7Kliknutim se vratis zpet"
+        Material: "WATCH"
+        Durability: 0
+        Amount: 1
+        Slot: 52
+      View More:
+        Use This Item: true
+        Name: "&f&lZobrazit vice"
+        Lore:
+        - "&7Kliknutim zobrazis jeste vic!"
+        Material: "BOOK"
+        Durability: 0
+        Amount: 1
+        Slot: 53
+      Refresh:
+        Use This Item: true
+        Name: "&e&lObnovit stranku"
+        Lore:
+        - "&7Klikni pro obnoveni"
+        Material: "ARROW"
+        Durability: 0
+        Amount: 1
+        Slot: 51
+  
+  Private Warps Menu:
+    Title: "Osobni warpy"
+    Size: 54
+    Use Background Items: false
+    Send Open Message: false
+    Open Message: "&eYou have opened the &cPrivate Warps Menu&e!"
+    Items:
+      Background Items:
+        Name: "&a"
+        Lore: []
+        Material: "STAINED_GLASS_PANE"
+        Durability: 15
+        Amount: 1
+      Warp Menu:
+        Use This Item: true
+        Name: "&c&lHlavni stranka"
+        Lore:
+        - "&7Kliknutim se vratis zpet"
+        Material: "WATCH"
+        Durability: 0
+        Amount: 1
+        Slot: 52
+      View More:
+        Use This Item: true
+        Name: "&f&lZobrazit vice"
+        Lore:
+        - "&7Kliknutim zobrazis jeste vic!"
+        Material: "BOOK"
+        Durability: 0
+        Amount: 1
+        Slot: 53
+      Refresh:
+        Use This Item: true
+        Name: "&e&lObnovit stranku"
+        Lore:
+        - "&7Klikni pro obnoveni"
+        Material: "ARROW"
+        Durability: 0
+        Amount: 1
+        Slot: 51
