@@ -1,459 +1,260 @@
-# Should HyperDrive display logging messages in console?
-Logging Mode: false
-# Should HyperDrive notify console and operators when a new update is released?
-update-notifications: false
-
-Converters:
-  # This toggles the essentials warp converter on startup.
-  Essentials Warp Converter: false
-  # If HyperDrive finds essentials installed in the server along with it, HyperDrive will try and convert all warps.
-  Convert Warps In Current Plugins Folder: true
-  # In order for this to work please add the file path to your Essentials Warp folder.
-  # (This must be the exact path to your Warps folder inside of the essentials folder!)
-  # (For Example my path is "D:\Projects\Servers\Test Server\plugins\Essentials\warps" Donn"t include the quotes)
-  Essentials Warp Folder: ""
-  # Should HyperDrive delete the essentials warp after it converts it?
-  Delete Essentials Warps: true
-  # After HyperDrive is ready to convert the warps how long should it wait before actually begin the process (In Seconds).
-  Convert Delay: 5
-  # How should the icons of these newly converted warps look?
-  # (Keep in mind that in order to add someone or yourself to owner of one of these warps
-  # you must have admin access in-game and edit them within the menu they are located in.)
-  Icons:
-    # What status should these newly converted warp take as?
-    # Current Statuses: [Public, Server, Private]
-    Status: "Private"
-
-Options:
-  # How long should a TPA or TPAHere request last? (Note: Expires and can no longer be denied or accepted after this duration)
-  TPA Request Duration: 15
-  # Should the warp others command instantly teleport them?
-  Instant Teleport: true
-  # Should hyperdrive signs be able to be created?
-  Signs: false
-  # What color should the top sign line be?
-  Sign Color: "&d"
-  # This will force a player to have a warp delay and cooldown no matter what.
-  # (Disable this feature if you want ops to be able to bypass but player will require permissions to bypass)
-  Force Teleportation: false
-  # How long should the player have to wait in between page refreshes? (In Seconds)
-  # (This is to keep players from spamming the refresh button in menus.)
-  Refresh Cooldown: 1
-  # How long should the player have to wait in between viewing more warps on a page? (In Seconds)
-  # (This is to keep players from spamming the view more button in menus.)
-  View More Cooldown: 1
-  # How long should the player have to wait in between warps? (In Seconds)
-  Warp Cooldown: 3
-  # How long should the player have to wait before actually teleporting? (In Seconds)
-  # Setting this value to -1 will disable the delay message & title automatically.
-  Warp Delay: -1
-  # Should moving interrupt the player's teleportation?
-  Warp Movment Cancel: false
-  # How many warps should a player be able to own by default? (Set to -1 for unlimited)
-  Default Max Warps: 0
-  # How many public warps should a player be able to own by default? (Set to -1 for unlimited)
-  Default Public Warps Limit: 0
-  # How many private warps should a player be able to own by default? (Set to -1 for unlimited)
-  Default Private Warps Limit: 0
-  # How many warps should a player be able to sell in the warp shop? (Set to -1 for unlimited)
-  Default Shop Warps Limit: 0
-  # This is where you can customize the random teleportation.
-  Random Teleport:
-    # Would you like random teleporting to have a cooldown?
-    # (This will also effect the cooldown)
-    Enabled Cooldown: true
-    # Would you like the player to be teleported randomly from the base coordinates below?
-    # (If disabled the player will be randomly teleported from their current location)
-    Use Base Coordinates: false
-    # These are the base coordinates.
-    Base Coordinates:
-      X: 0
-      Y: 0
-      Z: 0
-    # How long should the player have to wait in between randomly teleporting? (In Seconds)
-    Cooldown: 30
-    # Should moving interrupt the player"s teleportation?
-    Delay: 5
-    # This is how far around the player"s current location that they can be randomly teleported to.
-    Radius: 1000
-    # How many times should the random teleporter try to find a safe location?
-    Search Times: 15
-    # This is how fast the random teleportation query will search in ticks. (20 ticks = 1 second)
-    Search Speed: 0
-    # These are the blocks that the player can not spawn on when using random teleportation.
-    # (This will Asynchronously keep randomly trying to find a new location within the radius until one is found)
-    # Latest Material List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    Block Blacklist: ["WATER", "STATIONARY_WATER", "LAVA", "STATIONARY_LAVA", "WATER_LILY", "AIR"]
-  Group Warping:
-    # Should group warping be allowed?
-    Use Group Warping: false
-    # What action should be performed to edit a warp?
-    # Actions: [SHIFT_CLICK, LEFT_CLICK, RIGHT_CLICK]
-    Action: "RIGHT_CLICK"
-    # How should the action's format look in the lore?
-    Action Format: "&a[%action% To Group Warp]"
-    # When the owner invites a player to a group how long should the request time be in seconds?
-    Request Time: 15
-  Titles:
-    # How should the delay title look?
-    Delay:
-      # Should the delay message be a title or a basic chat message?
-      # (True = Title/False = Chat Message)
-      Use Title: true
-      # What should the main title look like?
-      # (You may use the placeholder %time% in both the title and subtitle)
-      Title: ""
-      # What should the subtitle look like?
-      # (You may use the placeholder %time% in both the title and subtitle)
-      SubTitle: "&eteleportuji..."
-      # How long should the fade in be in seconds?
-      FadeIn: 0
-      # How long should the display time in be in seconds?
-      Display Time: 1
-      # How long should the fade out be in seconds?
-      FadeOut: 0
-    # How should the warp title look?
-    Warp:
-      # Should the warp message be a title or a basic chat message?
-      # (True = Title/False = Chat Message)
-      Use Title: false
-      # What should the main title look like?
-      # (You may use the placeholder %time% in both the title and subtitle)
-      Title: ""
-      # What should the subtitle look like? #
-      # (You may use the placeholder %time% in both the title and subtitle)
-      SubTitle: "&eWarp: &f%warp%"
-      # How long should the fade in be in seconds?
-      FadeIn: 0
-      # How long should the display time in be in seconds?
-      Display Time: 1
-      # How long should the fade out be in seconds?
-      FadeOut: 0
-    # How should the cooldown title look?
-    Cooldown:
-      # Should the cooldown message be a title or a basic chat message?
-      # (True = Title/False = Chat Message)
-      Use Title: false
-      # What should the main title look like?
-      # (You may use the placeholder %time% in both the title and subtitle)
-      Title: "&cYou may not teleport"
-      # What should the subtitle look like?
-      # (You may use the placeholder %time% in both the title and subtitle)
-      SubTitle: "&cfor another &e%timeleft% &cSeconds"
-      # How long should the fade in be in seconds?
-      FadeIn: 0
-      # How long should the display time in be in seconds?
-      Display Time: 2
-      # How long should the fade out be in seconds?
-      FadeOut: 0
-    Random Teleport:
-      # Should the cooldown message be a title or a basic chat message?
-      # (True = Title/False = Chat Message)
-      Use Title: true
-      # What should the main title look like?
-      # (You may use the placeholders %x%, %y%, %z%, and %world% in both the title and subtitle)
-      Title: "&eByl jsi nahodne teleportovan!"
-      # What should the subtitle look like?
-      # (You may use the placeholders %x%, %y%, %z%, and %world% in both the title and subtitle)
-      SubTitle: "&a%x% %y% %z%."
-      # How long should the fade in be in seconds?
-      FadeIn: 0
-      # How long should the display time in be in seconds?
-      Display Time: 1
-      # How long should the fade out be in seconds?
-      FadeOut: 0
-  Icons:
-    # Here is where you can customize the creation date format.
-    Creation Date Format: "MM.dd.yyyy HH:mm:ss"
-    # This allows player's in-game to set the durability of specific materials as a warp icon. If a material id is not
-    # in this list the durability of it can't be changed it will remain zero at all times unless modified via files.
-    # Latest Material List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    Durability Acceptation List:
-      # The format for this is "<material>: [<list of durabilities that can be used for this material>]"
-      WOOD_STEP: [1, 2, 3, 4, 5]
-      SKULL_ITEM: [1, 2, 3, 4]
-    # Should menu warp icons contain line borders in the lore?
-    Use Lines: true
-    # How should the lines look?
-    Line: "*--------------------------*"
-    # What color should these lines be?
-    Line Colors: "&e&m"
-    # How should the action error format look?
-    # (This is used when a action can't be found in the config)
-    Action Error: "&c[Neplatna akce]"
-    # What should be the default status of a my warp (Warp created through the menu) when its created?
-    # Current Statuses: [Public, Private, Server]
-    Default My Warp Status: "Private"
-    # How many characters can a warp name contain? (Don"t go above 32, I recommend staying below 20)
-    Name Max Length: 15
-    # How many characters can a warp description contain?
-    Description Max Length: 45
-    # How many lines can a warp's description have?
-    Description Max Lines: 5
-    # What should the default name color be of each warp icon?
-    Default Name Color: "&6"
-    # What should the default description color be of each warp icon?
-    Default Description Color: "&7"
-    # What should the default description be of each warp icon?
-    Default Description:
-    - "Popis lze zmenit v nastaveni warpu."
-    # Would you like the warp icons to be given the enchanted effect automatically on creation?
-    Default Enchanted: false
-    # What should the default id be of each warp icon?
-    # Latest Material List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    Default Material: "GRASS"
-    # What should the default durability be of each warp icon?
-    Default Durability: 0
-    # What should the default amount be of each warp icon?
-    Default Amount: 1
-    # Should HyperDrive show the warp's coordinates in the lore?
-    Show Coords: false
-    # Should HyperDrive show the warp's owners in the lore?
-    Show Owners: true
-    # Should HyperDrive show the warp's whitelist in the lore?
-    Show Whitelist: true
-    # Should HyperDrive show the warp's seller in the lore when being sold in the warp shop?
-    Show Seller: true
-    # Should HyperDrive show the warp's creation date in the lore?
-    Show Creation Date: false
-    # Should HyperDrive show the warp's usage price?
-    # (Note: This is the price that the player is charged when they use the warp)
-    Show Usage Price: false
-    # What should the usage price format look like on the warp icon when the warp has no charge (Free)?
-    # (Note: Setting a warp's usage charge to 0 will make it free)
-    Usage Price Free Format: "&eTento warp je &a&lZDARMA."
-    # What should the usage price format look like on the warp icon when the player owns the warp?
-    Usage Price Own Format: "&eTento warp vlastnis."
-    # What should the usage price format look like on the warp icon when the warp has a usage price (Is NOT Free)?
-    Usage Price Format: "&eCena za pouziti: &a$%price%"
-    # What color should the warp's coordinates option be?
-    Coords Option Color: "&e"
-    # What color should the warp's coordinates value be?
-    Coords Value Color: "&6"
-    # How should the owners format look in the lore?
-    Owners Format: "&7Majitel: %owners%"
-    # How should the whitelist format look in the lore?
-    Whitelist Format: "&7Whitelist: %players%"
-    # How should the seller format look in the lore?
-    Seller Format: "&7Seller: %seller%"
-    # What color should the warp's creation date be?
-    Creation Date Color: "&a"
-    # How should the price format look in the lore?
-    Price Format: "&7Cena za teleport: &a$%amount%"
-    # If the player has purchased this for his warp's icon this will be displayed.
-    Enchanted Status Active: "&7Status: &aAKTIVNI"
-    # If the player has not purchased this for his warp's icon this will be displayed.
-    Enchanted Status InActive: "&7Status: &cDEAKTIVOVANO"
-    # This is what the status on the Toggle Player Whitelist button will look like if active.
-    Player Whitelist Status Active: "&7Status: &aAKTIVNI"
-    # This is what the status on the Toggle Player Whitelist button will look like if active.
-    Player Whitelist Status InActive: "&7Status: &cDEAKTIVOVANO"
-    # What action should be performed to edit a warp?
-    # Actions: [SHIFT_CLICK, LEFT_CLICK, RIGHT_CLICK]
-    Edit Action: "SHIFT_CLICK"
-    # How should the action's format look in the lore?
-    Edit Action Format: "&8[Shift + levy k uprave]"
-    # What action should be performed to cancel a warp in the warp shop?
-    # Actions: [SHIFT_CLICK, LEFT_CLICK, RIGHT_CLICK]
-    Cancel Action: "RIGHT_CLICK"
-    # How should the action's format look in the lore?
-    Cancel Action Format: "&a[Klikni pravym ke zruseni]"
-    # What status should the warp return to after being cancelled or purchased from the warp shop?
-    Cancel Revert Status: "Public"
-    # What action should be performed to buy a warp from the warp shop?
-    # Actions: [SHIFT_CLICK, LEFT_CLICK, RIGHT_CLICK]
-    Buy Action: "LEFT_CLICK"
-    # How should the action's format look in the lore?
-    Buy Action Format: "&a[Klikni levym k nakupu]"
-    Admin:
-      # What action should be performed to edit a warp as a admin? (requires permission)
-      # Actions: [SHIFT_CLICK, LEFT_CLICK, RIGHT_CLICK]
-      Edit Action: "SHIFT_CLICK"
-      # How should the action's format look in the lore?
-      Edit Action Format: "&c[Shift + levy k uprave]"
-      # What action should be performed to cancel a warp in the warp shop as a admin? (requires permission)
-      # Actions: [SHIFT_CLICK, LEFT_CLICK, RIGHT_CLICK]
-      Cancel Action: "RIGHT_CLICK"
-      # How should the action's format look in the lore?
-      Cancel Action Format: "&c[Klikni pravym ke zruseni]"
-  Chat:
-    # What message should be required to be typed by the player in order to cancel a chat interaction? (None Case-Sensitive)
-    Exit Text: "Cancel"
-    # What warps should be displayed when a player types /warp,warps,w list?
-    # (If it is none of these types you will be defaulted to type 0)
-    # (Remember admins will see all warp at all times)
-    # Type 0 = shows only warps the player owns.
-    # Type 1 = Shows all the warps the player has access to.
-    # Type 2 = Shows only server warps.
-    Listing Type: 0
-  Filter:
-    # What should the filtered word be replaced with?
-    # (This symbol can not be /, \, :, *, ?, ", <, >, or | since this will be in the file name.)
-    Symbol: "^"
-    # What should be filtered out of a warp name?
-    Name Filter: ["fuck", "shit", "!", "&", "§", ".", "?"]
-    # What should be filtered out of a warp's description?
-    Description Filter: ["fuck", "&", "§", "shit"]
-    # What materials should be banned from being used as a warp icon?
-    # Latest Material List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    Material Filter: ["AIR", "WATER", "STATIONARY_WATER", "LAVA", "STATIONARY_LAVA", "BED_BLOCK", "PORTAL"]
-  Sounds:
-    # Sound after teleporting.
-    Warp:
-      Enabled: true
-      # What sound should be played?
-      # You can view a list of sounds by searching for your version of minecraft's list of sounds in google.
-      # Example: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-      Sound: "ENTITY_ENDERMEN_TELEPORT"
-      # These values modify the sound"s volume.
-      Pitch: 1
-      Volume: 1
-    # Sound when clicking in the menus.
-    Menu:
-      Enabled: false
-      # What sound should be played?
-      # You can view a list of sounds by searching for your version of minecraft's list of sounds in google.
-      # Example: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-      Sound: "UI_BUTTON_CLICK"
-      # These values modify the sound"s volume.
-      Pitch: 1
-      volume: 1
-    # Sound when opening the menus.
-    Menu Open:
-      Enabled: false
-      # What sound should be played?
-      # You can view a list of sounds by searching for your version of minecraft's list of sounds in google.
-      # Example: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-      Sound: "BLOCK_CHEST_OPEN"
-      # These values modify the sound"s volume.
-      Pitch: 1
-      volume: 1
-  Animation:
-    # Animation/Effect while teleport is commencing.
-    Delay:
-      Enabled: false
-      # What particle animation template would you like to use?
-      # Type: [0 = Sphere, 1 = Cone, 2 = Helix, 3 = Simple Particle Burst, 4 = Vortex]
-      Type: 4
-      # What should it's radius be?
-      Radius: 1.4
-      # How big should the particle radius be?
-      Particle Radius: 2
-      # It's ratio is basically its base value the lower it is the more compressed the particles are, and the higher it is the more spread out the particles are.
-      Ratio: 12
-      # How many particles should be displayed per tick?
-      Amount: 3
-      # How long should this animation last in seconds?
-      Duration: 5
-      # What should this animation's height be?
-      # (Only works with type 2)
-      Height: 2
-      # What Particle would you like this animation to be made up of?
-      # You can view a list of particles by searching for your version of minecraft's list of particles in google.
-      # Example: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
-      Particle: "FIREWORKS_SPARK"
-      # This is the RGB color scale that is applied to some, but only the particles that can receive.
-      # (Note: The format is "<red>,<green>,<blue>,<brightness>". Each value must be between 0 and 255)
-      RGB Scale: "255,0,0,255"
-    # Animation/Effect after teleporting.
-    Warp:
-      Enabled: true
-      # What particle animation template would you like to use?
-      # Type: [0 = Sphere, 1 = Cone, 2 = Helix, 3 = Simple Particle Burst, 4 = Vortex]
-      Type: 0
-      # What should it's radius be?
-      Radius: 1.5
-      # How big should the particle radius be?
-      Particle Radius: 5
-      # It's ratio is basically its base value the lower it is the more compressed the particles are, and the higher it is the more spread out the particles are.
-      Ratio: 12
-      # How many particles should be displayed per tick?
-      Amount: 2
-      # How long should this animation last in seconds?
-      Duration: 0.5
-      # What should this animation's height be?
-      # (Only works with type 2) #
-      Height: 2
-      # What Particle would you like this animation to be made up of?
-      # You can view a list of particles by searching for your version of minecraft's list of particles in google.
-      # Example: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
-      Particle: "TOTEM"
-      # This is the RGB color scale that is applied to some, but only the particles that can receive.
-      # (Note: The format is "<red>,<green>,<blue>,<brightness>". Each value must be between 0 and 255)
-      RGB Scale: "255,0,0,255"
-    # Animation/Effect while teleport is commencing for a group warp.
-    Group Warp Delay:
-      Enabled: false
-      # What particle animation template would you like to use?
-      # Type: [0 = Sphere, 1 = Cone, 2 = Helix, 3 = Simple Particle Burst, 4 = Vortex]
-      Type: 4
-      # What should it's radius be?
-      Radius: 1.4
-      # How big should the particle radius be?
-      Particle Radius: 2
-      # It's ratio is basically its base value the lower it is the more compressed the particles are, and the higher it is the more spread out the particles are.
-      Ratio: 12
-      # How many particles should be displayed per tick?
-      Amount: 3
-      # How long should this animation last in seconds?
-      Duration: 5
-      # What should this animation's height be?
-      # (Only works with type 2)
-      Height: 2
-      # What Particle would you like this animation to be made up of?
-      # You can view a list of particles by searching for your version of minecraft's list of particles in google.
-      # Example: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
-      Particle: "FIREWORKS_SPARK"
-      # This is the RGB color scale that is applied to some, but only the particles that can receive.
-      # (Note: The format is "<red>,<green>,<blue>,<brightness>". Each value must be between 0 and 255)
-      RGB Scale: "255,0,0,255"
-    # Animation/Effect after a group warp teleport.
-    Group Warp:
-      Enabled: false
-      # What particle animation template would you like to use?
-      # Type: [0 = Sphere, 1 = Cone, 2 = Helix, 3 = Simple Particle Burst, 4 = Vortex]
-      Type: 0
-      # What should it's radius be?
-      Radius: 1.5
-      # How big should the particle radius be?
-      Particle Radius: 5
-      # It's ratio is basically its base value the lower it is the more compressed the particles are, and the higher it is the more spread out the particles are.
-      Ratio: 12
-      # How many particles should be displayed per tick?
-      Amount: 3
-      # How long should this animation last in seconds?
-      Duration: 0.5
-      # What should this animation's height be?
-      # (Only works with type 2)
-      Height: 2
-      # What Particle would you like this animation to be made up of?
-      # You can view a list of particles by searching for your version of minecraft's list of particles in google.
-      # Example: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
-      Particle: "FIREWORKS_SPARK"
-      # This is the RGB color scale that is applied to some, but only the particles that can receive.
-      # (Note: The format is "<red>,<green>,<blue>,<brightness>". Each value must be between 0 and 255)
-      RGB Scale: "255,0,0,255"
-  Prices:
-    Use Economy: false
-    # These are all of your prices for each action that a player can do.
-    Max Sell Price: 0.0
-    Min Sell Price: 0.0
-    Sell Fee: 0.0
-    Create Warp: 0.0
-    Delete Warp: 0.0
-    Change Name: 0.0
-    Change Material: 0.0
-    Enchanted Price: 0.0
-    Change Description: 0.0
-    Change Description Color: 0.0
-    Change Name Color: 0.0
-    Change Amount: 0.0
-    Change Status: 0.0
-    Add Owner: 0.0
-    Remove Owner: 0.0
-    Give Ownership: 0.0
-    Relocate: 0.0
-    Add To Whitelist: 0.0
-    Remove From Whitelist: 0.0
-    Toggle Whitelist: 0.0
-    Change Usage Price: 0.0
+# Here is where the MySQL connection can be configured.
+# (Note: Database tables are created and managed automatically. There is also no MySQL conversion to YAML file; therefore, use at your own risk.)
+mysql-connection:
+    # If this option is enabled, HyperDrive will enable cross-server teleportation and MySQL warp saving/loading.
+    use-mysql: false
+    # If a warp's IP is found blank or null, its IP will be replaced with this IP similar to a backup.
+    default-ip: "127.0.0.1"
+    # Below, define your MySQL information. THE DEFINED DATABASE MUST ALREADY EXIST.
+    database-name: "hyperdrive"
+    host: "localhost"
+    port: 3306
+    username: "root"
+    password: ""
+    # These are the connection properties, you can add/remove from this list as long as it follows an identical format.
+    # (NOTE: This is for advanced users this feature just extends upon the SQL syntax connection line.)
+    sql-properties: ""
+  
+  # Here is where everything that is general can be configured
+  general-section:
+    # If this option is enabled, Vault will be hooked into and be used for item which require a fee.
+    use-vault: false
+    # If this option is enabled, the console will be notified every time the warps are automatically saved.
+    auto-save-log: true
+    # This is the interval of the warp auto-save in seconds.
+    auto-save-interval: 900
+    # If this is enabled, players will be forcefully sent to spawn on join (First join spawn will be skipped if invalid).
+    force-spawn: true
+    # If this is enabled, players will be forced back to spawn on death.
+    force-death-spawn: true
+    # If this is enabled and the option above is enabled, the player will only be sent to the first join spawn on there first log-in.
+    # (Note: If false and the option above is true, the player will be sent to a spawn regardless even if they have already joined before)
+    force-only-first-join: true
+    # The commands in the list below will be initiated in the console when a player joins for the very first time.
+    first-join-commands:
+      - "tell {player} Welcome {player} this is a command that has been sent to you for joining for the very first time!"
+    # If this option is enabled, all warps found in the existing Essentials folder will be converted into HyperDrive warps.
+    # (Note: No essentials warps will be removed; therefore, please disable this option after the conversion is complete.)
+    essentials-converter: false
+    # If using the essentials converter, set this to the name of your installed essentials plugin.
+    essentials-name: "Essentials"
+    # This is what the user must type to forcefully cancel a chat interaction.
+    chat-interaction-cancel: "cancel"
+    # This is the format that is used for toggle based options. These will be the two values used when a option is either enabled or disabled (Please use the format <enable>:<disable>).
+    # (Note: If the format is incorrect the plugin will use the values "Enabled" and "Disabled" by default).
+    option-toggle-format: "Enabled:Disabled"
+    # This is the format that is used for date display and storage within the plugin (Please only change this if you know what you are doing).
+    date-format: "MM/dd/yyyy HH:mm:ss"
+    # This is the default amount of warps a user can own.
+    default-warp-limit: 3
+    # These are the sounds used throughout the plugin. These will need to be adjusted based on the server's Minecraft version.
+    # Latest Sound List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    # Sound List (Legacy): http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+    global-sounds:
+      # This is the sound played when a player is teleported through things like warps.
+      teleport: "ENTITY_ENDERMAN_TELEPORT"
+      # This is the sound played when a player is teleported through a standalone teleportation command.
+      standalone-teleport: "ENTITY_ENDERMAN_TELEPORT"
+    # This is the color that will be placed in front of the header of newly created HyperDrive signs.
+    # (Note: ONLY use color codes)
+    sign-header-color: "&d"
+    # Here you can implement unlimited custom aliases that run commands. Use the format <alias:command:sender>.
+    # You can use the placeholder {player}. (Note: Set the sender to PLAYER for the command to be re-sent as a
+    # player and CONSOLE to send as console. Don't use the initial command / if it is set to CONSOLE)
+    custom-alias-commands: []
+    # Worlds found in this list will not allow warp creation.
+    world-blacklist: []
+  
+  # Here is where filters can be customized to remove unwanted symbols or words from use in the plugin's features.
+  filter-section:
+    # Strings within the global filter will be remove from warp names, descriptions, and other similar textual features. (Case sensitive)
+    # (Note: Phrases can be implemented into this list as well. The list can also be changed to a vertical format like
+    # other lists in the configuration.)
+    global-filter: ["fuck", "shit", "cunt", "fag", "faggot", "bitch", "dick", "damn", "www.", ".com", ".net"]
+  
+  # Here is where everything related to teleportation can be customize.
+  teleportation-section:
+    # This is the warp cooldown that a player must wait before warping again (In seconds).
+    cooldown-duration: 5
+    # This is the TPA cooldown that a player must wait before using the TPA command again (In seconds).
+    tpa-cooldown: 5
+    # If the player teleports while in a vehicle should they be dismounted and teleported?
+    # (Note: The mount will be teleported as well, but half a second after to prevent faulty chunk loading)
+    teleport-vehicles: true
+    # This is the duration of how long a TPA request will stay alive. After the duration the request can no longer be accepted or denied.
+    teleport-ask-duration: 10
+    # This is the duration of how long a group request will stay alive. After the duration the request can no longer be accepted or denied.
+    group-request-duration: 12
+    # If this option is enabled, players will have their teleportation process cancelled upon taking damage from any source.
+    damage-cancellation: true
+    # If this option is enabled, players will have their teleportation process cancelled upon moving.
+    move-cancellation: true
+    # This is the duration the player must wait before engaging warp teleportation (In seconds).
+    warp-delay-duration: 10
+    # This is the duration the player must wait before engaging a standalone teleport (In seconds).
+    standalone-delay-duration: 10
+    # These are the title and sub-title that are sent to the player after they are teleported (Note: Set to "" to disable).
+    teleport-title: "&eYou have been teleported"
+    teleport-sub-title: "&eto the &a{warp} &ewarp."
+    # These are the title and sub-title that are sent to the player 5 seconds before the teleportation is engaged (Note: Set to "" to disable).
+    delay-title: "&eTeleportation will be engaged"
+    delay-sub-title: "&ein approximately &a{duration} &eseconds."
+    # These are the title and sub-title that are sent to the player when the teleportation process has begun (Note: Set to "" to disable).
+    start-title: "&eYou will be teleported to"
+    start-sub-title: "&ethe &a{warp} &ein approximately &a{duration} &eseconds."
+    # This is the message display on the player's action bar while the teleportation process is counting down (Set to "" to disable).
+    delay-bar-message: "&eTeleportation will engage in: &r{progress} &e- &a{duration-left} &eSeconds"
+    # This is the message display on the player's action bar when a teleportation process has begun (Set to "" to disable).
+    start-bar-message: "&eTeleportation to the warp &a{warp} &ewill engage in &a{duration} &eseconds."
+    # This is the message display on the player's action bar when a teleportation process has completed (Set to "" to disable).
+    teleport-bar-message: "&eYou have been teleported to the warp &a{warp}&e."
+  
+  # Here is where everything related to random teleportation can be customize.
+  random-teleport-section:
+    # How long in between random teleportation processes should the player have to wait before beginning another in seconds.
+    cooldown: 10
+    # This is the duration the player must wait before engaging random teleportation (In seconds).
+    delay-duration: 10
+    # These are the title and sub-title that are sent to the player 5 seconds before the random teleportation is engaged (Note: Set to "" to disable).
+    delay-title: "&eRandom teleportation will be engaged"
+    delay-sub-title: "&ein approximately &a{duration} &eseconds."
+    # These are the title and sub-title that are sent to the player when the random teleportation process has begun (Note: Set to "" to disable).
+    start-title: "&eYou will be randomly teleported"
+    start-sub-title: "&ein approximately &a{duration} &eseconds."
+    # This is the message display on the player's action bar while the random teleportation process is counting down (Set to "" to disable).
+    delay-bar-message: "&eRandom teleportation will engage in: &r{progress} &e- &a{duration-left} &eSeconds"
+    # This is the message display on the player's action bar when a random teleportation process has begun (Set to "" to disable).
+    start-bar-message: "&eRandom teleportation will engage in &a{duration} &eseconds."
+    # This is the forced location list which is used to force the random teleportation to generate off of the defined location
+    # instead of using the player's base location. This will only work if the world name is found in the list for where the player
+    # is being teleported. (Format: <world name>:<x>,<y>,<z>)
+    forced-location-list:
+      - "world:0,0,0"
+      - "world_the_nether:0,0,0"
+      - "world_the_end:0,0,0"
+    # These are the worlds where RTP will not be allowed to take a player.
+    forbidden-worlds:
+      - "world_the_end"
+    # This is the bound radius that a player can be teleported within per world. You can think of this as like a world border.
+    # (Note: It is recommended to set this value to the size of your world's world border) (Format: <world name>:<bounds size>>)
+    bounds-radius-list:
+      - "world:5000"
+    # If for any reason bounds are unable to be found for a specific world this bound size will be used.
+    default-bounds: 5000
+    # This is how many times the random teleportation feature can attempt to teleport the player before aborting the task.
+    # (Note: The higher the slower, recommended value is below 30 if "can-load-chunks" is enabled, set to -1 for unlimited)
+    max-tries: 300
+    # If a biome name is contained in this list, that biome will be avoided.
+    # Here is a list of biomes: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html
+    # (NOTE: Biome names can be generalized, for example, if the value "OCEAN" is entered all biomes containing the name "OCEAN" will be blacklisted.)
+    biome-blacklist:
+      - "OCEAN"
+    # Materials in this list will be avoided while a player is undergoing random teleportation.
+    # (NOTE: The material name can be generalized, for example, the value "leaves" will detect all materials that have that value in their name)
+    # This format is what needs to be followed to coordinate specific data values: <material>:<durability>
+    forbidden-materials:
+      - "WATER"
+      - "LAVA"
+      - "LILY"
+      - "AIR"
+      - "LEAVES"
+  
+  warp-icon-section:
+    # This is the sound that is played when a warp icon is selected. This option can be set to "" to disable.
+    # Latest Sound List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    # Sound List (Legacy): http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+    click-sound: "UI_BUTTON_CLICK"
+    # This message is used in place of placeholders in the warp icon that were unable to be retrieved.
+    invalid-retrieval: "&cUnable to be retrieved at this time."
+    # This is the default status a newly created warp is set to.
+    # Current Status Values: [PUBLIC, PRIVATE, SERVER]
+    default-status: "PUBLIC"
+    # This is the default display name color that is used when a warp is created.
+    default-description-color: "GRAY"
+    # This is the default display name color that is used when a warp is created.
+    default-name-color: "GREEN"
+    # This is the default material a warp icon will be set to upon creation.
+    default-icon-material: "PLAYER_HEAD,0,1"
+    # When the player sets the description to only this symbol, the description will be cleared.
+    description-clear-symbol: "-"
+    # This is the maximum word count per description line when setting it. All words past this count will be
+    # wrapped to the next line unless it is a long word to completely and the word is under .
+    description-line-cap: 5
+    # If a long word exceeds this length in characters, it will be trimmed to this length for cleanliness.
+    # (NOTE: This can be set to -1 to disable this check)
+    long-word-wrap: 16
+    # This is the default description that is set to a newly created warp.
+    default-description: "This is the default HyperDrive warp description. (Note: This can be changed inside the edit menu)"
+    # This is the lore the warp icon is given inside of menus.
+    # Current Placeholders:
+    # {description} - replaces the line with the first description line while adding the remaining lines below it.
+    # {status} - replaced with the warp's current status.
+    # {usage-price} - replaced with the warp's usage price.
+    # {traffic} - replaced with the warp's traffic count.
+    # {creation-date} - replaced with the warp's creation date.
+    # {owner} - replaced with the warp owner's name.
+    # {assistant-count}- replaced with warp's assistants count.
+    # {theme} - replaced with the name of the icon theme currently in use by the warp.
+    # {animation-set} - replaced with the name of the animation set.
+    # {list-count} - The total of players in the player list.
+    # {assistant-count} - The total of assistant players.
+    # {likes} - The total likes.
+    # {dislikes} - The total dislikes.
+    # {like-bar} - The like ratio as a progress bar.
+    ###
+    # Unlike other formats in this lore format you are able to hide/show certain lines based on events. To hide/show a line based
+    # on an event you must simply ensure that the line contains an event placeholder. Below are the currently available placeholders:
+    # (Note: The placeholder can be anywhere in the line it just needs to be exactly how it is show below to be detected.
+    # Only one event will be read and used all extra events will be ignored.)
+    ###
+    # {is-owner} - Only displays the line if the player is the owner of the warp.
+    # {has-access} - Only displays the line if the player has access to use the warp.
+    # {no-access} - Only displays the line if the player does NOT have access to use the warp.
+    # {can-edit} - Only displays the line if the player can edit the warp.
+    # {is-private} - Only displays if the warp's status is set to PRIVATE.
+    # {is-public} - Only displays if the warp's status is set to PUBLIC.
+    # {is-admin} - Only displays if the warp's status is set to ADMIN.
+    list-lore-format:
+      - "{description}"
+      - ""
+      - "{no-access}&cYou don't have access to use this warp."
+      - "{has-access}&a(Left-Click) &eBegin the teleportation process."
+      - "{has-access}&a(Right-Click) &eBegin the group teleportation process."
+      - "{has-access}&a(Shift + Left-Click) &eBegin the warp rating process."
+      - "{can-edit}&a(Shift + Right-Click) &eBegin the warp edit process."
+      - ""
+      - "&7It will cost &e${usage-price} &7to use this warp."
+      - "&a\u2714 &e{likes} &r{like-bar} &e{dislikes} &c\u2716"
+      - ""
+      - "&7Owner: &e{owner}"
+      - "&7Visits: &e{traffic}"
+      - ""
+      - "&7Created: &e{creation-date}"
+      - "&7This is a &e{status} &7warp."
+  
+  # Here is where everything related to animation can be customized.
+  special-effects-section:
+    # These are the animation sets a player can choose for the warps. By default, the first in the list will be the default animation set for new warps.
+    # Please follow the format <Set Name>:<Delay Type>/<Delay Effect>:<Teleport Type>/<Teleport Effect> (Note: There must be at least one animation set in the list and the set names can contain color codes).
+    # Particle effects can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    # The current types are: [CONE, HELIX, CIRCLE, VORTEX, RING]
+    warp-animation-list:
+      - "&fFlash Backs:CONE/CLOUD:CIRCLE/SPELL_WITCH"
+      - "&6Over Drive:VORTEX/SPELL_WITCH:CIRCLE/CLOUD"
+      - "&cOddly Hot:RING/FLAME:CIRCLE/FLAME"
+    # This is the animation that is displayed when the player is successfully teleported through a standalone teleportation command such as /TP or /TPO.
+    # (Format: <type>:<effect>) Particle effects can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    # The current types are: [CONE, HELIX, CIRCLE, VORTEX, RING]
+    standalone-teleport-animation: "VORTEX:FIREWORKS_SPARK"
+    # This is the animation that is displayed for each player involved in a group teleport after the teleportation is complete. (Format: <type>:<effect>)
+    # Particle effects can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    # The current types are: [CONE, HELIX, CIRCLE, VORTEX, RING]
+    group-teleport-animation: "VORTEX:FIREWORKS_SPARK"
+    # This is the animation that is displayed when the player is successfully randomly teleported. (Format: <type>:<effect>)
+    # Particle effects can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    # The current types are: [CONE, HELIX, CIRCLE, VORTEX, RING]
+    random-teleport-animation: "CIRCLE:FIREWORKS_SPARK"
+    # This is the animation that is displayed when the player is successfully teleported through a standalone teleportation command such as /TP or /TPO.
+    # (Format: <type>:<effect>) Particle effects can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    # The current types are: [CONE, HELIX, CIRCLE, VORTEX, RING]
+    random-teleport-delay-animation: "VORTEX:FIREWORKS_SPARK"
