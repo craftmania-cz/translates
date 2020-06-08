@@ -4282,10 +4282,10 @@ command:
       original: '&eOriginal name'
   workbench:
     help:
-      info: '&eOpen workbench'
+      info: '&eOtevřít crafting table'
       args: (playerName)
     info:
-      feedback: '&eYou have opened workbench for &3[playerDisplayName]&e (&3[offon]&e).'
+      feedback: '&eOtevřel jsi crafting table hráče &3[playerDisplayName]&e (&3[offon]&e).'
       targetfeedback: '&3[senderDisplayName]&e opened workbench for you.'
   world:
     help:
