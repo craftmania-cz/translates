@@ -1,24 +1,22 @@
 confirm:
-  failed_confirm: $2You have no pending actions to confirm!
-  requires_confirm: '$2Are you sure you wish to execute: $1%s$2?&-$2This cannot be
-    undone! If you are sure: $1/plot confirm'
-  expired_confirm: $2Confirmation has expired, please run the command again!
+  failed_confirm: $2Nemáš žádnou akci na potvrzení!
+  requires_confirm: '$2Jsi si jistý že chceš provést: $1%s$2?&-$2Akci nelze vrátit! Pokud jsi si jistý: $1/plot confirm'
+  expired_confirm: $2Potvrzení expirovalo, pokud chceš akci provést znova, napiš příkaz znova!
 move:
-  move_success: $4Successfully moved plot.
-  copy_success: $4Successfully copied plot.
-  requires_unowned: $2The location specified is already occupied.
-  move_merged: $2Merged plots may not be moved. Please unmerge the plot before performing
-    the move.
+  move_success: $4Pozemek úspěšně přesunut.
+  copy_success: $4Pozemek úspěšně okopírován.
+  requires_unowned: $2Lokace nového pozemku je již zabrána.
+  move_merged: $2Spojené pozemky nelze přesunovat. Prosím dej unmerge a poté je přesuň.
 web:
-  generating_link: $1Processing plot...
-  generating_link_failed: $2Failed to generate download link!
-  save_failed: $2Failed to save
-  load_null: $2Please use $4/plot load $2to get a list of schematics
+  generating_link: $1Zpracovávám pozemek...
+  generating_link_failed: $2Nepodařilo se vygenerovat odkaz :(
+  save_failed: $2Nepodačilo se uložit pozemek
+  load_null: $2Prosím použij $4/plot load $2k získání všech schematics
   load_failed: $2Failed to load schematic
-  load_list: '$2To load a schematic, use $1/plot load #'
-  save_success: $1Successfully saved!
+  load_list: '$2K načtení schematicu, použij $1/plot load #'
+  save_success: $1Úspěšně uloženo!
 compass:
-  compass_target: $4Successfully targeted plot with compass
+  compass_target: $4Poloha byla úspěšně nastavena s kompasem
 cluster:
   cluster_available_args: '$1The following sub commands are available: $4list$2, $4create$2,
     $4delete$2, $4resize$2, $4invite$2, $4kick$2, $4leave$2, $4members$2, $4info$2,
@@ -45,17 +43,17 @@ cluster:
     $2%size%&-$1Rights: $2%rights%'
   cluster_outside: '$2The proposed area is outside the plot area: %s0'
 border:
-  border: $2You are outside the current map border
+  border: $2Jsi mimo hranice světa!
 worldedit masks:
-  worldedit_bypass: $2&oTo bypass your restrictions use $4/plot wea
-  worldedit_bypassed: $2Currently bypassing WorldEdit restriction.
+  worldedit_bypass: $2&oK vypnutí ochran WE použij $4/plot wea
+  worldedit_bypassed: $2Aktuálně obcházíš nastavení WorldEditu.
 gamemode:
-  gamemode_was_bypassed: $1You bypassed the gamemode ($2{gamemode}$1) $1set for $2{plot}
+  gamemode_was_bypassed: $1Obešel jsi gamemode ($2{gamemode}$1) $1nastavený pro $2{plot}
 height limit:
-  height_limit: $1This plot world has a height limit of $2{limit}
+  height_limit: $1Výška limitu stavění je nastavena na $2{limit}
 records:
-  notify_enter: $2%player $2entered your plot ($1%plot$2)
-  notify_leave: $2%player $2left your plot ($1%plot$2)
+  notify_enter: $2%player $2vstoupil na pozemek ($1%plot$2)
+  notify_leave: $2%player $2odešel z pozemku ($1%plot$2)
 swap:
   swap_overlap: $2The proposed areas are not allowed to overlap
   swap_success: $4Successfully swapped plots
