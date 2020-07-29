@@ -1,0 +1,1511 @@
+# Question file
+# Change the answer on number three, or the entire question.
+# Just enter question number, question itself and posible answers. You can have as many answers as you want.
+# Multiple answers are useful when there is more thant one correct answer. For example: Who created Minecraft? Answers: Notch, markus persson
+Data:
+  Default:
+    '1':
+      Question: '&eKolik kilo váží kilo peří?'
+      Answers:
+      - kilo
+      - 1 kilo
+      - jedno kilo
+      - stejne
+      - nastejno
+      - na stejno
+      - stejně
+    '2':
+      Question: '&eKdo vymyslel Minecraft?'
+      Answers:
+      - Notch
+      - Markus Persson
+    '3':
+      Question: '&eKdo je nejznámější v Minecraftu?'
+      Answers:
+      - Notch
+      - Herobrine
+    '4':
+      Question: '&eV kterém roce byl vydán Minecraft?'
+      Answers:
+      - '2009'
+      - 2009 kveten
+      - 2009 květen
+      - 2009 kveten 17
+      - 2009 květen 17
+      - 2009/05/17
+      - 7.5.2009
+    '5':
+      Question: '&eJak se nazývá firma kterou založil Notch?'
+      Answers:
+      - mojang
+    '6':
+      Question: '&eJaký typ hry je Minecraft?'
+      Answers:
+      - sandbox
+    '7':
+      Question: '&eJaké má Notch pravé přijmení?'
+      Answers:
+      - persson
+    '8':
+      Question: '&eJak velký je jeden blok v Minecraftu?'
+      Answers:
+      - jeden metr
+      - 1 metr
+      - 100 cm
+      - 100 centimetru
+      - 100 centimetrů
+      - 1 meter
+      - 100 centimetrov
+      - 1m
+      - 1 m
+      - jeden m
+      - sto cm
+      - sto centimetru
+      - sto centimetrů
+      - sto centimetrov
+    '9':
+      Question: '&eJaký blok má ID 1?'
+      Answers:
+      - stone
+      - kamen
+      - kámen
+      - kameni
+      - kamení
+    '10':
+      Question: '&eKolik druhů vlny je v Minecraftu?'
+      Answers:
+      - '16'
+      - sestnact
+      - sestnast
+      - šestnáct
+    '11':
+      Question: '&eJak se nazývají servery, které hostuje Mojang?'
+      Answers:
+      - realms
+    '12':
+      Question: '&eJaký blok ma ID 25?'
+      Answers:
+      - note block
+      - noteblock
+      - hudebni block
+      - hudobny block
+      - hudebni blok
+      - hudobny blok
+      - hudební blok
+      - hudobný blok
+    '13':
+      Question: '&eV minecraftu jsou různe druhy dřeva, jak se nazývá to nejzákladnější?'
+      Answers:
+      - oak
+      - dub
+      - dubove
+      - oak wood
+      - dubové
+    '14':
+      Question: '&eKterý blok se nedá zníčit?'
+      Answers:
+      - bedrock
+    '15':
+      Question: '&eCo se používá v Singleplayeru v noci?'
+      Answers:
+      - bed
+      - postel
+    '16':
+      Question: '&eCo musíš přidat k pistonu aby lepil?'
+      Answers:
+      - slime
+      - slimeball
+      - sliz
+      - slime ball
+    '17':
+      Question: '&eKterý blok spawnuje moby?'
+      Answers:
+      - mobspawner
+      - '52'
+      - spawner
+      - mob spawner
+    '18':
+      Question: '&eKde se vypalují oréčka?'
+      Answers:
+      - furnace
+      - pec
+      - v peci
+    '19':
+      Question: '&eKtery nastroj se pouziva pred zasetim (seminek) do pudy/zeme v
+        Minecraftu?'
+      Answers:
+      - hoe
+      - motyka
+    '20':
+      Question: '&eKtera vec je v zakladnim Minecraftu nejtvrdsi? Pouziva se na brneni/nastroje.'
+      Answers:
+      - diamond
+      - diamant
+      - diamanty
+    '21':
+      Question: '&eKolik potrebujes skla, abys vytvoril sklenenou tabulku?'
+      Answers:
+      - sest
+      - '6'
+    '22':
+      Question: '&eCim lze vytvaret lektvary/potiony?'
+      Answers:
+      - brewing stand
+      - varny stojan
+    '23':
+      Question: '&eJak se nazyva trava na Mushroom ostrove?'
+      Answers:
+      - mycelium
+      - podhoubi
+      - podhubie
+    '24':
+      Question: '&eJake ID ma blok travy?'
+      Answers:
+      - '2'
+      - dva
+    '25':
+      Question: '&eKolik dreva je zapotrebi k vytvoreni Crafting Tablu?'
+      Answers:
+      - ctyri
+      - '4'
+      - styri
+    '26':
+      Question: '&eKtery blok vytvoreny z materialu z Netheru/Pekla je bily?'
+      Answers:
+      - quartz
+      - kremen
+      - quartz block
+    '27':
+      Question: '&eKolik je 2+2*2?'
+      Answers:
+      - '6'
+      - sest
+    '28':
+      Question: '&eKolik je 2+2/2?'
+      Answers:
+      - '3'
+      - tri
+    '29':
+      Question: '&eKolik je 2+2-2?'
+      Answers:
+      - '2'
+      - dva
+    '30':
+      Question: '&eKolik je 2+2*2-2/2?'
+      Answers:
+      - '5'
+      - pet
+    '31':
+      Question: '&eKolik je 2-2/2*2+2?'
+      Answers:
+      - '-2'
+      - minus dva
+    '32':
+      Question: '&eJak se jmenuje celym jmenem Notch?'
+      Answers:
+      - markus persson
+      - marcus persson
+    '33':
+      Question: '&eJaky je originalni nazev Minecraftu? Drive se mu tak rikalo.'
+      Answers:
+      - cave game
+      - the cave game
+    '34':
+      Question: '&eKolik hernich rezimu/gamemode jsou v Minecraftu?'
+      Answers:
+      - five
+      - pet
+      - '5'
+    '35':
+      Question: '&eJak se nazyva mob, ktery vybuchuje?'
+      Answers:
+      - creeper
+      - sycak
+    '36':
+      Question: '&eNapis jeden blok, na ktery pusobi gravitace?'
+      Answers:
+      - water
+      - gravel
+      - sand
+      - lava
+      - redsand
+      - voda
+      - sterk
+      - pisek
+      - lava
+      - cerveny pisek
+      - anvil
+      - kovadlina
+      - armor stand
+      - piesok
+      - nakova
+      - strk
+      - red sand
+      - cerveny piesok
+    '37':
+      Question: '&eJak se nazyva zakladni skin v Minecraftu?'
+      Answers:
+      - steve
+      - alex
+    '38':
+      Question: '&eKdo slozil hudbu v Minecratu?'
+      Answers:
+      - C418
+      - daniel rosenfeld
+    '39':
+      Question: '&eJmeno temne/strasidelne postavy v Minecraftu?'
+      Answers:
+      - Herobrine
+    '40':
+      Question: '&eCreeperove vznikli na zaklade chyby. Ktereho moba se puvodne Notch
+        pokousel vytvorit?'
+      Answers:
+      - pig
+      - prase
+      - prasata
+      - prasa
+    '41':
+      Question: '&eCo vypadne z Notche, kdyz ho zabijes v Multiplayeru?'
+      Answers:
+      - apple
+      - jablko
+    '42':
+      Question: '&eCo se stane kdyz do prasete uderi blesk? Nazev mobu.'
+      Answers:
+      - promeni se na zombie pigmana
+      - promeni se na zombie pigman
+      - zombie pigman
+      - promeni se
+      - promena
+      - pigman zombie
+      - zmeni se na zombie pigman
+      - zmeni se na zombie pigmana
+      - zmeni se
+      - zmena
+      - promeni sa na zombie pigmana
+      - promeni sa na zombie pigman
+      - zmeni sa
+      - zmeni sa na zombie pigman
+      - zmeni sa na zombie pigmana
+      - pretvori sa
+      - pretvori se
+    '43':
+      Question: '&eNa kolika slotech zacinala CraftMania.cz?'
+      Answers:
+      - '5'
+      - pet
+    '44':
+      Question: '&eCo se stane kdyz do Creepera uderi blesk? (Pokud muzes, napis nazev
+        moba)'
+      Answers:
+      - nabije se
+      - charged creeper
+      - nabity creeper
+      - nabity sycak
+      - nabije sa
+    '45':
+      Question: '&eCim lze zrusit lektvar/potion?'
+      Answers:
+      - milk
+      - mleko
+      - mliko
+      - mlikem
+      - mlekem
+      - bucket of milk
+      - milk bucket
+      - mlieko
+    '46':
+      Question: '&eJak dlouhy je jeden den (den a noc) v Minecraftu v realnem case?'
+      Answers:
+      - 20 minut
+      - 20 min
+      - dvacet minut
+      - dvacet min
+      - dvadsat minut
+      - dvadsat min
+    '47':
+      Question: '&&eNapis chemickou znacku hliniku.'
+      Answers:
+      - Al
+    '48':
+      Question: '&eKdyz vytvaris louc (torch) kolik jich ziskas?'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '49':
+      Question: '&eNejvzacnejsi vec v Minecraftu?'
+      Answers:
+      - emerald
+      - smaragd
+    '50':
+      Question: '&eKolik dimenzi ma Minecraft'
+      Answers:
+      - tri
+      - '3'
+    '51':
+      Question: '&eKdyz vytvaris zelezne mrize (iron bars) kolik jich ziskas?'
+      Answers:
+      - '16'
+      - sestnact
+      - sestnast
+    '52':
+      Question: '&eMuzes jezdit na praseti?'
+      Answers:
+      - ano
+      - hej
+      - jo
+      - j
+      - jj
+      - jop
+      - spravne
+    '53':
+      Question: '&eJak se nazyva postava (skin), ktera byla pridana ve verzi 1.8?'
+      Answers:
+      - alex
+    '54':
+      Question: '&eJak se nazyva spolecnost, ktera vytvarila pro Mojang Minecraft:
+        Story mode?'
+      Answers:
+      - Telltale Games
+      - Telltale
+    '55':
+      Question: '&eKtery blok lze pouzit jako zbran?'
+      Answers:
+      - tnt
+      - dynamit
+    '56':
+      Question: '&eKtery blok zpomaluje, kdyz pres nej jdes?'
+      Answers:
+      - Soulsand
+      - pisek dusi
+      - Soul sand
+      - piesok dusi
+    '57':
+      Question: '&eK vytvoreni dreveneho uhli (charcoal) musis upect v peci co?'
+      Answers:
+      - wood
+      - drevo
+      - log
+    '58':
+      Question: '&eCeho se Enderman boji?'
+      Answers:
+      - water
+      - vody
+      - voda
+    '59':
+      Question: '&eKtery vesnican se v Minecraftu vyskytuje nejvice? Farmar/Farmer
+        nebo Kovar/Blacksmith?'
+      Answers:
+      - Farmer
+      - Farmar
+    '60':
+      Question: '&eSpawnuje se Zombie Pigman v Netheru/Pekle?'
+      Answers:
+      - ano
+      - hej
+      - jo
+      - j
+      - jj
+      - jop
+      - spravne
+    '61':
+      Question: '&eMuzes obarvit ovecku?'
+      Answers:
+      - ano
+      - hej
+      - jo
+      - j
+      - jj
+      - jop
+      - spravne
+    '62':
+      Question: '&eJsou pavouci hodni a neutoci na hrace v noci?'
+      Answers:
+      - ne
+      - nie
+      - n
+      - nn
+      - nope
+      - spatne
+    '63':
+      Question: '&eJakou barvu ma creeper?'
+      Answers:
+      - zelena
+      - zelenou
+      - zelenu
+      - green
+    '64':
+      Question: '&eJakou barvu ma Enderman?'
+      Answers:
+      - cerna
+      - cernou
+      - ciernu
+      - black
+    '65':
+      Question: '&eJakou barvu ma Ghast?'
+      Answers:
+      - bilou
+      - bila
+      - bielou
+      - white
+    '66':
+      Question: '&eKolik nohou ma Creeper?'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '67':
+      Question: '&eKde se schovava Silverfish?'
+      Answers:
+      - V kamenu
+      - kamen
+      - stone
+      - stone brick
+      - V kamenech
+      - V kamenoch
+      - V kameni
+    '68':
+      Question: '&eKolik nohou ma hrac?'
+      Answers:
+      - dve
+      - '2'
+    '69':
+      Question: '&eNapis nazev jednoho bosse.'
+      Answers:
+      - ender dragon
+      - wither
+      - elderguardian
+      - elder guardian
+      - ender drak
+    '70':
+      Question: '&eCo udela draci vejce, kdyz na nej kliknes?'
+      Answers:
+      - teleport
+      - teleportuje se
+      - posune se
+      - premisti se
+      - zmizi
+      - teleportuje sa
+      - posunie sa
+      - zmizne
+    '71':
+      Question: '&eJak se nazyvaji v Minecraftu obvody?'
+      Answers:
+      - redstone
+      - rudit
+    '72':
+      Question: '&eCo vykupuje Villager?'
+      Answers:
+      - emeralds
+      - emeraldy
+      - emerald
+      - smaragd
+      - smaragdy
+    '73':
+      Question: '&eJaky byl prvni server na CraftManii?'
+      Answers:
+      - survival
+    '74':
+      Question: '&eKolik dni trvalo serveru CraftMania.cz nez ziskal 1. misto na CzechCraftu?'
+      Answers:
+      - '10'
+      - deset
+      - desat
+    '75':
+      Question: '&eMela CraftMania.cz vubec prvni ve stredni EU Prison, KitPVP a UHC?'
+      Answers:
+      - ano
+      - hej
+      - jo
+      - j
+      - jj
+      - jop
+      - spravne
+    '76':
+      Question: '&eNa kolik kousku je v Minecraftu rozdeleny kolac?'
+      Answers:
+      - sedm
+      - '7'
+      - sedem
+    '77':
+      Question: '&eJakou barvu oci ma Enderman?'
+      Answers:
+      - fialova
+      - fialovou
+      - purple
+      - fialovu
+    '78':
+      Question: '&eCo musis mit na prutu, abys mohl jezdit na praseti?'
+      Answers:
+      - mrkev
+      - carrot
+      - mkrva
+      - carrots
+      - mrkve
+      - mrkvy
+    '79':
+      Question: '&eCo ji ocelot?'
+      Answers:
+      - Raw fish
+      - syrovou rybu
+      - surovu rybu
+      - ryby
+      - rybu
+      - ryba
+    '80':
+      Question: '&eCo ji vlci?'
+      Answers:
+      - kost
+      - kosti
+      - bone
+      - bones
+      - maso
+      - steak
+    '81':
+      Question: '&eKolik hudebních disku je v MC?'
+      Answers:
+      - '12'
+      - dvanact
+      - dvanast
+    '82':
+      Question: '&eKtery blok nejde znicit bez pouziti cheatu?'
+      Answers:
+      - Bedrock
+      - podlozi
+      - podlozie
+    '83':
+      Question: '&eKolik HP ma Giant?'
+      Answers:
+      - '100'
+      - sto
+    '84':
+      Question: '&eJak daleko tece voda?'
+      Answers:
+      - '7'
+      - 7 blocku
+      - 7 bloku
+      - 7 blockov
+      - 7 blokov
+      - sedm
+      - sedm bloku
+      - sedm blocku
+      - sedem blockov
+      - sedem blokov
+      - sedem
+    '85':
+      Question: '&eVe kterem roce se narodil Notch?'
+      Answers:
+      - '1979'
+      - '79'
+    '86':
+      Question: '&eJake narodnosti je Notch?'
+      Answers:
+      - Swedish
+      - Svedsko
+      - Sved
+    '87':
+      Question: '&eOd jake urovne lze najit diamanty?'
+      Answers:
+      - '16'
+      - sestnast
+      - sestnact
+    '88':
+      Question: '&eJedna hodina v Minecraftu je kolik vterin v realu?'
+      Answers:
+      - '50'
+      - padesat
+      - patdesiat
+    '89':
+      Question: '&eKolik hodit trva jeden Minecraft mesic?'
+      Answers:
+      - '10'
+      - deset
+      - desat
+    '90':
+      Question: '&eKdo dela TSSSSsssss....?'
+      Answers:
+      - creeper
+      - sycak
+    '91':
+      Question: '&eKolik diamantu lze najit prumerne v jednom chunku?'
+      Answers:
+      - '3'
+      - tri
+    '92':
+      Question: '&eCo dropuji Zombie kdyz zemrou?'
+      Answers:
+      - rotten flesh
+      - shnile maso
+      - zhnile maso
+      - maso
+      - potato
+      - potatoes
+      - iron
+      - iron ingot
+      - iron ingots
+      - zelezo
+      - zemiak
+      - brambory
+      - bramboru
+      - brambora
+      - zemiaky
+      - mrkev
+      - mrkve
+      - mrkvy
+      - mrkva
+      - carrot
+      - carrots
+    '93':
+      Question: '&eKolik ruznych velikosti ma Slime?'
+      Answers:
+      - '3'
+      - tri
+    '94':
+      Question: '&eJakou barvu ma Stevovo tricko?'
+      Answers:
+      - modra
+      - modrou
+      - blue
+    '95':
+      Question: '&eKolik barev ma vlna?'
+      Answers:
+      - '16'
+      - sestnact
+      - sestnast
+    '96':
+      Question: '&eKolik priser hori, kdyz na ne sviti slunce (platne pro Minecraft 1.12)?'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '97':
+      Question: '&eJak daleko tece lava?'
+      Answers:
+      - '3'
+      - tri
+    '98':
+      Question: '&eKdo je majitelem Craftmania?'
+      Answers:
+      - mrwakecz
+      - Wake
+      - WakeCZ
+      - Wejk
+    '99':
+      Question: '&eCo bylo pouzito pro zvuk Ghasta?'
+      Answers:
+      - child voice
+      - hlas ditete
+      - dite
+      - child
+      - hlas dietata
+      - dieta
+    '100':
+      Question: '&eCeho se boji Creeper?'
+      Answers:
+      - kocky
+      - kocek
+      - cat
+      - cats
+      - kocka
+      - macka
+      - maciek
+    '101':
+      Question: '&eVe kterem biomu se nemohou spawnovat monstra?'
+      Answers:
+      - ocean
+      - more
+      - ocean biom
+    '102':
+      Question: '&eKtera hra inspirovala Notche k vytvoreni Minecraftu?'
+      Answers:
+      - Dwarf Fortress
+      - Dungeon Keeper
+      - Infiniminer
+    '103':
+      Question: '&eJakym filmem byl inspirovan mob Iron Golem?'
+      Answers:
+      - Laputa
+    '104':
+      Question: '&eJaky je nejjednodussi plynny chemicky prvek?'
+      Answers:
+      - H
+      - Vodik
+      - H1
+    '105':
+      Question: '&eJaky je nazev neznamejsiho sportu na svete?'
+      Answers:
+      - Football
+      - Fotbal
+      - Futbal
+    '106':
+      Question: '&eJaky je nazev nejvyssi hory na svete?'
+      Answers:
+      - Mount Everest
+      - Everest
+      - Chomolungma
+      - Sagarmatha
+    '107':
+      Question: '&eKolik je potreba presne XP z levelu 0 na 10?'
+      Answers:
+      - '160'
+      - sto sedesat
+      - stosedesat
+    '108':
+      Question: '&eKolik libovolnych barev poskytuji zakladni formatting codes v Minecraftu?'
+      Answers:
+      - '16'
+      - sestnact
+      - sestnast
+    '109':
+      Question: '&eV jakem filmu hral Ryan Reynolds vtipneho cerveneho superhrdinu?'
+      Answers:
+      - Deadpool
+      - Dead pool
+    '110':
+      Question: '&eKolik existuje v cestine padu?'
+      Answers:
+      - '7'
+      - sedm
+      - sedem
+    '111':
+      Question: '&eNapis nazev jednoho bloku, ktery lze pouzit jako odpadkovy kos.'
+      Answers:
+      - cactus
+      - lava
+      - kaktus
+    '112':
+      Question: '&eNapis nazev jednoho z 2 nejznamejsich anime.'
+      Answers:
+      - Pokemon
+      - Pokemoni
+      - Pokemons
+      - Naruto
+    '113':
+      Question: '&eJak se nazyva cast v skladbe, ktera se nekolikrat opakuje?'
+      Answers:
+      - Refren
+      - Ref
+    '114':
+      Question: '&eKolik je na CraftManii Creative serveru?'
+      Answers:
+      - '1'
+      - jeden
+    '115':
+      Question: '&eNapis nazev nejznamejsiho ceskeho panovnika.'
+      Answers:
+      - Karel IV
+      - Karel IV.
+      - Karel Ctvrty
+      - Karel 4
+      - Karel 4.
+      - Karel Stvrty
+    '116':
+      Question: '&eNapis maximalni stupen zemetreseni, dle richterovy stupnice.'
+      Answers:
+      - '10'
+      - deset
+      - deset stupnu
+      - desat
+      - desat stupnov
+    '117':
+      Question: '&eKolik je 1t gramu?'
+      Answers:
+      - 1m
+      - 1 milion
+      - jeden milion
+      - 1m g
+      - '1000000'
+      - 1000000g
+      - 1000000 g
+      - 1 milion gramu
+      - jeden milion gramu
+      - 1 milion gramov
+      - jeden milion gramov
+      - 1000000 gramu
+      - 1000000 gramov
+    '118':
+      Question: '&eNapis nazev jedne z dvou castic ze kterych je slozeno jadro atomu.'
+      Answers:
+      - proton
+      - neutron
+    '119':
+      Question: '&eJakou barvu prefixu maji na serveru Helperi?'
+      Answers:
+      - Zelena
+      - Zelenou
+      - Green
+      - Zelenu
+      - Tmave zelenou
+      - Tmavo zelenu
+      - Tmave zelenu
+    '120':
+      Question: '&eOd jakeho VIP je poskytovana vyhoda pouziti prikazu /heal?'
+      Answers:
+      - Diamond
+      - Diamant
+      - Diamantovy
+      - DVIP
+      - Diamond VIP
+      - Diamantovy VIP
+    '121':
+      Question: '&eNapis ID torch.'
+      Answers:
+      - '50'
+      - padesat
+      - patdesiat
+    '122':
+      Question: '&eMa CraftMania svuj officialni TeamSpeak server?'
+      Answers:
+      - Ne
+      - n
+      - nn
+      - nope
+      - nie
+      - spatne
+    '123':
+      Question: '&eKolik druhu dreva je v Minecraftu? 1.11.2'
+      Answers:
+      - '6'
+      - sest
+      - sest druhu
+      - sest druhu dreva
+      - sest druhov dreva
+    '124':
+      Question: '&eNapis chemickou znacku uhliku.'
+      Answers:
+      - C
+    '125':
+      Question: '&eNapis chemickou znacku chloridu sodneho.'
+      Answers:
+      - NaCl
+    '126':
+      Question: '&eKolik let trvala 2. svetova valka?'
+      Answers:
+      - '6'
+      - sest
+    '127':
+      Question: '&eNapis nejznamejsi znacku auta, co se vyrabi v Mlade Boleslavi.'
+      Answers:
+      - Skoda
+      - Skoda Auto
+      - Auto Skoda
+    '128':
+      Question: '&eNapis jmeno jednoho ze dvou zakladatelu firmy Windows.'
+      Answers:
+      - Bill Gates
+      - Gates Bill
+      - Paul Allen
+      - Allen Paul
+      - Allen
+      - Gates
+    '129':
+      Question: '&eNapis jmeno jedne z nekolika nejznamnejsich socialnich siti.'
+      Answers:
+      - Facebook
+      - Twitter
+      - Ask.fm
+      - Ask
+      - Tumblr
+      - Google+
+      - Myspace
+      - Instagram
+      - Snapchat
+    '130':
+      Question: '&eKolik je 1*0?'
+      Answers:
+      - '0'
+      - nula
+      - nic
+    '131':
+      Question: '&eNapis nazev nejhlubsiho mista na svete.'
+      Answers:
+      - Mariansky prikop
+      - Marianska priekopa
+      - Mariansky priekop
+    '132':
+      Question: '&eIron golemove byli vytvoreni jako ochrana pro jednoho moba. Ktereho?'
+      Answers:
+      - Villager
+      - Vesnican
+      - Villagers
+      - Vesnicanov
+      - Vesnicany
+    '133':
+      Question: '&eZ kolika poctu materialu se vyrabi chestplate?'
+      Answers:
+      - '8'
+      - osm
+      - osem
+      - z osmi
+      - osmi
+    '134':
+      Question: '&eNapis jmeno jednoho ze dvou zakladatelu firmy Google.'
+      Answers:
+      - Larry Page
+      - Sergey Brin
+      - Page Larry
+      - Brin Sergey
+    '135':
+      Question: '&eNapis jmeno hlavniho zakladatele firmy Facebook. Staci pouze prvni
+        jmeno.'
+      Answers:
+      - Mark
+      - Mark Zuckerberg
+      - Zuckerberg
+      - Zuckerberg Mark
+    '136':
+      Question: '&eJaky pristroj slouzi k mereni elektrickeho naboje?'
+      Answers:
+      - Elektroskop
+      - Elektro skop
+    '137':
+      Question: '&eNapis nazev prvni minihry na CraftManii.'
+      Answers:
+      - Survival Games
+      - SurvivalGames
+      - SG
+    '138':
+      Question: '&eKolik ma jedna hodina sekund?'
+      Answers:
+      - '3600'
+      - 3600s
+      - 3600 s
+    '139':
+      Question: '&eMa CraftMania svuj vlastni web?'
+      Answers:
+      - Ano
+      - Hej
+      - J
+      - jj
+      - Spravne
+      - true
+      - jop
+    '140':
+      Question: '&eNapis nazev autora, jenz slozil zpevohru s nazvem Libuse.'
+      Answers:
+      - Beldrich Smetana
+      - Smetana Beldrich
+      - Smetana
+    '141':
+      Question: '&eNapis nazev nyni nejvice pouzivaneho abecedniho pisma na svete.'
+      Answers:
+      - Latinka
+      - latinske pismo
+    '142':
+      Question: '&eCo se prevazne vyuziva jako ochrana pozemku na Survivalu?'
+      Answers:
+      - Residence
+      - Reska
+      - Resky
+    '143':
+      Question: '&eJe minecraft open-world hra?'
+      Answers:
+      - Ano
+      - hej
+      - j
+      - jj
+      - spravne
+      - jop
+    '144':
+      Question: '&eNapis pocet typu mobu ve hre (Platne pro Minecraft 1.12).'
+      Answers:
+      - '6'
+      - sest
+    '145':
+      Question: '&eNapis nazev obtiznosti, ve ktere nejsou zadni nepratele.'
+      Answers:
+      - Peaceful
+      - Mirumilovna
+      - Mierumilovna
+    '146':
+      Question: '&eJak se nazyva nejstarsi doba kamenna?'
+      Answers:
+      - Paleolit
+    '147':
+      Question: '&eJaka je jednotka prace?'
+      Answers:
+      - Joule
+      - J
+    '148':
+      Question: '&eNapis hlavni mesto Ukrajiny.'
+      Answers:
+      - Kyjev
+    '149':
+      Question: '&eKolik ma Ceska Republika priblizne obyvatel?'
+      Answers:
+      - '10000000'
+      - 10 000 000
+      - 10m
+      - 10 milionu
+      - 10milionu
+      - 10 milionov
+      - 10milionov
+      - deset milionu
+      - desat milionov
+    '150':
+      Question: '&eCo spojuje svaly?'
+      Answers:
+      - Slachy
+    '151':
+      Question: '&eKdo sepsal dilo Puvod Druhu?'
+      Answers:
+      - Charles Darwin
+      - Darwin Charles
+      - Darwin
+    '152':
+      Question: '&eNapis nazev rostlinnych tkani.'
+      Answers:
+      - Pletivo
+      - Pletiva
+    '153':
+      Question: '&eNapis hlavni mesto Italie.'
+      Answers:
+      - Rim
+    '154':
+      Question: '&eNapis chemickou znacku rtuti.'
+      Answers:
+      - Hg
+    '155':
+      Question: '&eNapis chemickou znacku bromu.'
+      Answers:
+      - Br
+    '156':
+      Question: '&eJak se nazyva nauka o bozich?'
+      Answers:
+      - Teologie
+      - Teologia
+    '157':
+      Question: '&eKonstantinopol bylo hlavni mesto jake rise?'
+      Answers:
+      - Vychodorimske rise
+      - Vychodorimske
+      - Vychodo rimske
+      - Vychodo rimske rise
+      - Vychodorimska rise
+      - Vychodo rimska
+      - Vychodo rimska rise
+    '158':
+      Question: '&eCo je SO2?'
+      Answers:
+      - Oxid siricity
+    '159':
+      Question: '&eNapis hlavni mesto Velke Britanie.'
+      Answers:
+      - Londyn
+    '160':
+      Question: '&eNapis hlavni mesto Portugalska.'
+      Answers:
+      - Lisabon
+    '161':
+      Question: '&eJakou odmenu dostanes za hlasovani pro nas server?'
+      Answers:
+      - VoteToken
+      - Vote Token
+      - CraftCoiny
+      - CC
+      - Craft Coiny
+      - CraftCoins
+      - CraftCoin
+      - Craft Coin
+    '162':
+      Question: '&eNapis hlavni mesto Irska.'
+      Answers:
+      - Dublin
+    '163':
+      Question: '&eNapis hlavni mesto Lotysska.'
+      Answers:
+      - Riga
+    '164':
+      Question: '&eNapis hlavni mesto Madarska.'
+      Answers:
+      - Budapest
+    '165':
+      Question: '&eNapis hlavni mesto Nemecka.'
+      Answers:
+      - Berlin
+    '166':
+      Question: '&eNapis hlavni mesto Vietnamu.'
+      Answers:
+      - Hanoj
+    '167':
+      Question: '&eNapis hlavni mesto Francie.'
+      Answers:
+      - Pariz
+    '168':
+      Question: '&eNapis hlavni mesto Rakouska.'
+      Answers:
+      - Viden
+      - Vieden
+    '169':
+      Question: '&eNapis hlavni mesto Turecka.'
+      Answers:
+      - Ankara
+    '170':
+      Question: '&eNapis hlavni mesto Ciny.'
+      Answers:
+      - Peking
+    '171':
+      Question: '&eNapis hlavni mesto Slovenska.'
+      Answers:
+      - Bratislava
+    '172':
+      Question: '&eNapis hlavni mesto Ceske Republiky.'
+      Answers:
+      - Praha
+    '173':
+      Question: '&eNapis hlavni mesto Ruska.'
+      Answers:
+      - Moskva
+    '174':
+      Question: '&eNapis nazev nejvetsiho oceanu.'
+      Answers:
+      - Tichy
+      - Tichy Ocean
+      - Pacifik
+      - Pacific
+    '175':
+      Question: '&eNapis soucet vsech oceanu.'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '176':
+      Question: '&eNapis soucet vsech svetadilu.'
+      Answers:
+      - '7'
+      - sedm
+      - sedem
+    '177':
+      Question: '&eNapis pocet kraju v Ceske Republice.'
+      Answers:
+      - '14'
+      - ctrnact
+      - strnast
+    '178':
+      Question: '&eNapis nazev nejvetsiho svetadilu.'
+      Answers:
+      - Asie
+      - Asia
+    '179':
+      Question: '&eJak je vysoka hora snezka?'
+      Answers:
+      - '1603'
+      - 1 603
+      - 1603m
+      - 1603 m
+      - 1603metru
+      - 1603 metru
+      - 1603metrov
+      - 1603 metrov
+      - '1603'
+      - 1 603m
+      - 1 603 m
+      - 1 603metru
+      - 1 603 metru
+      - 1 603metrov
+      - 1 603 metrov
+    '180':
+      Question: '&eNapis nazev nejmensiho svetadilu.'
+      Answers:
+      - Australie
+      - Australia
+    '181':
+      Question: '&eNapis nazev itemu, diky kteremu se zdvojnasobuje efektivita lektvaru.'
+      Answers:
+      - glowstone
+      - glowstone dust
+      - svetlit
+    '182':
+      Question: '&eKolik ruditu je potreba na vycrafteni redstone lampy?'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '183':
+      Question: '&eJak je velky 1 chunk?'
+      Answers:
+      - 16x16x256
+      - 16x256x16
+      - 16x16
+      - 16*16*256
+      - 16*256*16
+      - 16*16
+      - 16x16x256 blocku
+      - 16x256x16 blocku
+      - 16x16 blocku
+      - 16*16*256 blocku
+      - 16*256*16 blocku
+      - 16*16 blocku
+      - 16x16x256 bloku
+      - 16x256x16 bloku
+      - 16x16 bloku
+      - 16*16*256 bloku
+      - 16*256*16 bloku
+      - 16*16 bloku
+      - 16x16x256 blockov
+      - 16x256x16 blockov
+      - 16x16 blockov
+      - 16*16*256 blockov
+      - 16*256*16 blockov
+      - 16*16 blockov
+      - 16x16x256 blokov
+      - 16x256x16 blokov
+      - 16x16 blokov
+      - 16*16*256 blokov
+      - 16*256*16 blokov
+      - 16*16 blokov
+      - '65536'
+      - 65536 bloku
+      - 65536 blocku
+      - 65536 blockov
+      - 65536 blokov
+      - 65 536
+      - 65 536 bloku
+      - 65 536 blocku
+      - 65 536 blokov
+      - 65 536 blockov
+    '184':
+      Question: '&eJe potreba slimeball na vycrafteni voditka?'
+      Answers:
+      - Ano
+      - j
+      - jj
+      - spravne
+      - hej
+      - true
+      - jo
+      - jop
+    '185':
+      Question: '&eKolik slabu tvori cely blok?'
+      Answers:
+      - '2'
+      - dva
+    '186':
+      Question: '&eNapis nazev itemu, diky kteremu se zdvojnasobuje trvanlivost lektvaru.'
+      Answers:
+      - Rudit
+      - Redstone
+      - Redstone dust
+    '187':
+      Question: '&eJe na Survivalu pro vsechny k dispozici fly?'
+      Answers:
+      - Ano
+      - j
+      - jj
+      - spravne
+      - hej
+      - true
+      - jo
+      - jop
+    '188':
+      Question: '&eDa se ziskat Epic Key v Vote Crate?'
+      Answers:
+      - Ano
+      - j
+      - jj
+      - spravne
+      - hej
+      - true
+      - jo
+      - jop
+    '189':
+      Question: '&eNapis nazev nejvyssi hory Severni Ameriky.'
+      Answers:
+      - Denali
+    '190':
+      Question: '&eNapis nazev nejdelsi reky v Jizni Americe.'
+      Answers:
+      - Amazonka
+    '191':
+      Question: '&eNapis nazev nejvetsiho jezera v Asii.'
+      Answers:
+      - Kaspicke more
+      - Kaspicke
+    '192':
+      Question: '&eNapis nazev nejdelsi reky v Evrope.'
+      Answers:
+      - Volha
+    '193':
+      Question: '&eNapis nazev nejdelsi reky v Africe.'
+      Answers:
+      - Nil
+    '194':
+      Question: '&eNapis pocet statu, jenz tvori USA.'
+      Answers:
+      - '50'
+      - padesat
+      - patdesiat
+    '195':
+      Question: '&eKolik let trvala 1. svetova valka?'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '196':
+      Question: '&eNapis hlavni mesto Polska.'
+      Answers:
+      - Varsava
+    '197':
+      Question: '&eNapis hlavni mesto Tuniska.'
+      Answers:
+      - Tunis
+    '198':
+      Question: '&eNapis hlavni mesto Thajska.'
+      Answers:
+      - Bangkok
+    '199':
+      Question: '&eNapis hlavni mesto Svedska.'
+      Answers:
+      - Stockholm
+    '200':
+      Question: '&eNapis hlavni mesto Syrie.'
+      Answers:
+      - Damasek
+    '201':
+      Question: '&eNapis hlavni mesto Srbska.'
+      Answers:
+      - Belehrad
+    '202':
+      Question: '&eNa kolik casti se rozdeluje doba kamenna?'
+      Answers:
+      - '4'
+      - ctyri
+      - styri
+    '203':
+      Question: '&eV jakem stoleti vznikl Hip Hop?'
+      Answers:
+      - '20'
+      - dvacatym
+      - dvadsiatym
+      - dvadsat
+      - dvacet
+      - dvadsiatym storocim
+      - dvacatym stoletim
+      - dvadsiatym st.
+      - dvadsiatym sr.
+      - dvacatym st.
+      - 20st.
+      - 20 st.
+      - 20 stoletim
+      - 20 storocim
+    '204':
+      Question: '&eJake narodnosti byl Mohamed?'
+      Answers:
+      - Arabske
+      - Arab
+      - Arabska
+    '205':
+      Question: '&eV jakem stoleti se zacal projevovat umelecky sloh s nazvem Gotika?'
+      Answers:
+      - '12'
+      - dvanactym
+      - dvanastym
+      - dvanast
+      - dvanact
+      - dvanastym storocim
+      - dvanactym stoletim
+      - dvanastym st.
+      - dvanastym sr.
+      - dvanactym st.
+      - 12st.
+      - 12 st.
+      - 12 stoletim
+      - 12 storocim
+    '206':
+      Question: '&eNapis rok, v nemz vznikla samova rise.'
+      Answers:
+      - '623'
+      - rok 623
+      - r. 623
+      - r 623
+      - 623 r.
+      - 623 rok
+      - 623 r
+    '207':
+      Question: '&eJakeho roku se narodil Karel IV?'
+      Answers:
+      - '1316'
+      - rok 1316
+      - r. 1316
+      - r 1316
+      - 1316 r.
+      - 1316 rok
+      - 1316 r
+    '208':
+      Question: '&eJakeho roku byl upalen Jan Hus?'
+      Answers:
+      - '1415'
+      - rok 1415
+      - r. 1415
+      - r 1415
+      - 1415 r.
+      - 1415 rok
+      - 1415 r
+    '209':
+      Question: '&eJakou ma barvu acacia wood?'
+      Answers:
+      - Oranzovou
+      - Orange
+      - Oranzovu
+    '210':
+      Question: '&eJakou ma barvu wool:5?'
+      Answers:
+      - Ruzovou
+      - Pink
+      - Ruzovu
+    '211':
+      Question: '&eNapis pocet kraju na Slovensku..'
+      Answers:
+      - '8'
+      - osm
+      - osem
+    '212':
+      Question: '&eKolik ma Slovensko priblizne obyvatel?'
+      Answers:
+      - '5000000'
+      - 5 000 000
+      - 5m
+      - 5 milionu
+      - 5milionu
+      - 5 milionov
+      - 5milionov
+      - pet milionu
+      - pet milionov
+    '213':
+      Question: '&eNapis nazev nejvyssi hory na Slovensku'
+      Answers:
+      - Gerlach
+      - Gerlachovsky stit
+    '214':
+      Question: '&eNapis hlavni mesto Australie.'
+      Answers:
+      - Canberra
+    '215':
+      Question: '&eNapis hlavni mesto Alzirska.'
+      Answers:
+      - Alzir
+    '216':
+      Question: '&eNapis hlavni mesto Belgie.'
+      Answers:
+      - Brusel
+    '217':
+      Question: '&eNapis hlavni mesto Finska.'
+      Answers:
+      - Helsinki
+    '218':
+      Question: '&eNapis chemickou znacku zeleza.'
+      Answers:
+      - Fe
+    '219':
+      Question: '&eNapis chemickou znacku helia.'
+      Answers:
+      - He
+    '220':
+      Question: '&eCo je tezsi? Kilo zeleza nebo kilo peri?'
+      Answers:
+      - wtf
+      - stejne
+      - nastejno
+      - na stejno
+      - ani jedno
