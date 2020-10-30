@@ -1,0 +1,170 @@
+# Here you can edit all chat messages
+# GUI items and menus can be found in <language>_gui.yml
+# 
+# If you encounter any issues or have questions, contact plugin support.
+# Plugin page: https://www.spigotmc.org/resources/authors/315463/
+# Discord: https://discord.gg/B4MAJVk
+# 
+# ###############################
+# About chat message type system:
+# Does only work for messages in
+# "message" or "command" section.
+# ###############################
+# 
+# You can use some codes to set the type
+# of a message to title, actionbar or chat.
+# How does it work:
+# 
+# For example we want to print a message as a title:
+# Set message to: '#t#Title[newline]Subtitle'(Set "#t#" in front of it; use [newline] to set the subtitle)
+# 
+# You also send a message at the actionbar:
+# Set message to: '#c#This is a actionbar message.'
+# (Set #c# in front of it.)
+# 
+# More information: https://github.com/Angeschossen/General/wiki/Messages
+
+
+
+general:
+    prefix:
+      normal: '&8[&6ChestProtect&8] '
+      help: '&8[&6ChestProtect&8] &7Usage: '
+    unlimited: '&aunlimited'
+    role:
+      owner: '&4Owner'
+      admin: '&cAdmin'
+      member: '&eMember'
+      visitor: '&7Visitor'
+      all: '&dAll'
+  help:
+    command:
+      lock: '&8/&3Protect lock &8[&3player&8] - &7Lock object'
+      unlock: '&8/&3Protect unlock &8- &7Unlock object'
+      trust: '&8/&3Protect trust &8<&3player&8> - &7Trust player'
+      untrust: '&8/&3Protect untrust &8<&3player&8> - &7Untrust player'
+      menu: '&8/&3Protect menu &8[&3player&8] - &7Open menu'
+      exit: '&8/&3Protect exit &8- &7Exit mode'
+      help: '&8/&3Protect help &8[&3page&8] - &7Get help'
+      view: '&8/&3Protect view - &7Visualize nearby protections'
+      admin:
+        reload: '&8/&3Protect reload &8- &7Reload configurations'
+        admin: '&8/&3Protect admin &8<&3action&8> - &7Run admin actions'
+        about: '&8/&3Protect about &8- &7Show information'
+  message:
+    world-invalid: '&cThis is deactivated in this world. &7A administrator needs to
+      add it in config. Name of world:&3 {world}'
+    object-invalid: '&cYou can''t protect this object. &7A administrator needs to add
+      it to the config. Name:&3 {object}'
+    noaccess:
+      protection: '&cYou''re not allowed to do this at this protection. &7It belongs
+        to&3 {player}&7.'
+      untrusted: '&cYou''re not trusted at this protection. &7It belongs to&3 {player}&7.'
+      management: '&cYou''re not allowed to do this at this protection. &7It belongs
+        to&3 {player}&7.'
+      action: '&cYou''re not allowed to do this at this protection. &7It belongs to&3
+        {player}&7.'
+      hopper: '&cYour hopper has been removed from a protection. &7Your role is not
+        allowed to use hoppers at this protection. &7World: {world} X: {x} Y: {y} Z:
+        {z}'
+    event:
+      open-owner: '&7This block belongs to &3you&7.'
+      open-trusted: '&7This block is protected by&3 {player}&7.'
+      protectable: '&7You placed a protectable block. Execute &8/&3Lock &7to lock it.'
+    chat-action:
+      name: '&7Please enter the name in chat.'
+      cancelled: '#t#&c&lCancelled{newline}&c&lChat Action'
+      player: '&7Please enter the name of the target player.'
+    teleportation:
+      already: '&cYou can''t start a second teleportation. There''s already a teleportation
+        in progress. &7Please wait until it''s done.'
+      started: '&7Teleportation process started. Teleporting in&5 {sec} &7seconds. Please
+        don''t move.'
+      cancelled: '&cYour teleportation has been cancelled. &7Please don''t move while
+        you''re waiting&5 {sec} &7seconds for teleportation.'
+      plugin: '&cTeleportation has been cancelled by a 3rd party plugin. &7Please check
+        your other plugins. &7This is not a Lands issue.'
+      unsafe: '&cTeleportation has been cancelled, because the destination is not safe.'
+      corrected: '&7The original teleport destination was unsafe. &7Your final destination
+        has been corrected to a safe location.'
+    role:
+      not-exist: '&cRole&e {role} &cdoes not exist in this area. &7Typo?'
+      delete:
+        owner: '&cYou can''t delete the owner role of your protection. &7This role is
+          required.'
+        entry: '&cYou can''t delete the entry role of your protection. &7It is required
+          for new players.'
+        visitor: '&cYou can''t delete the visitor role of your protection. &7It''s required
+          for untrusted players.'
+  command:
+    general:
+      no-permission: '&cYou don''t have permission to do this. &8You need permission
+        {permission}.'
+      money-cost: '&cYou don''t have enough to pay the cost. &7You need&c ${cost}&7.'
+      pos-not-allowed: '&cYou''re not allowed to do this at this position. &7Go somewhere
+        else.'
+      player-not-exist: '&cThere''s no player with the name&4 {player}&c. &7Typo?'
+      not-protected: '&cYou can''t do that. &7This block isn''t protected.'
+      player-untrusted: '&cYou can''t do this. &7Player&3 {player} &7isn''t trusted
+        at this protection.'
+    help:
+      header: '[NoPrefix][T]&7----------&6<<<<&7-[H]&7Click here to navigate to the
+        previous page.[/H][C]chestprotect help {previous}[/C][/T] &6ChestProtect Help
+        &7Page&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Click here to go
+        to the next page.[/H][C]chestprotect help {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7----------&6<<<<&7-[H]&7Click here to navigate to the previous page.[/H][C]chestprotect help {previous}[/C][/T] &6ChestProtect Help &7Page&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Click here to go to the next page.[/H][C]chestprotect help {next}[/C][/T]
+      help: '&7Use &8/&3{cmd} help &7for help.'
+      cmd-not-exist: '&cThis subcommand doesn''t exist. &7Command&3 {command} &7wasn''t
+        found.'
+      no-page: '&cThe page&3 {page} &cdoesn''t exist. &7Typo?'
+    lock:
+      activated: '#t#&7Lock-Mode{newline}&aClick to lock a object.'
+      deactivated: '#t#&7Lock-Mode{newline}&cDeactivated'
+      already: '&cYou can''t protect this block. &7It''s already protected.'
+      max-protections: '&cYou can''t create any more protections. &7The maximum for
+        you is&3 {max}&7. Permission: chestprotect.protections.NUMBER'
+      npc: '&cYou can''t lock this entity because it is an NPC. &7An administrator can
+        change this in config.'
+      success: '&7You successfully protected this object for&c ${cost}&7.'
+      auto:
+        limit: '&cCouldn''t auto protect this block. &7You''ve reached your max protection
+          limit of&3 {max} &7protections. &8Permission: chestprotect.protections.NUMBER'
+        cost: '&cCouldn''t auto protect this block. &7You don''t have enough money to
+          pay the cost. Cost:&c ${cost}'
+        only-land: |
+          [T]&cCouldn't auto protect this block. &7You can only create protections inside your land.[/T]
+  
+           [T]&7Claim land: &8/&3Lands claim &8[CLICK][H]&7Click here to claim at your current position.[/H][C]lands claim[/C][/T]
+    unlock:
+      activated: '#t#&7Unlock-Mode{newline}&cClick to unlock a object.'
+      deactivated: '#t#&7Unlock-Mode{newline}&cDeactivated'
+      success: '&7Successfully unlocked this object.'
+    trust:
+      activated: '#t#&7Trust-Mode{newline}&7Click to trust&3 {player}&7.'
+      deactivated: '#t#&7Trust-Mode{newline}&cDeactivated'
+      already: '&cYou can''t do this. &7Player&3 {player} &7is already trusted at this
+        protection.'
+      max-members: '&cYou can''t add any more members. &7The maximum for you is&c {max}&7.
+        Permission: chestprotect.members.NUMBER'
+      success: '&7You successfully trusted player&3 {player} &7to this protection.'
+    untrust:
+      activated: '#t#&7Untrust-Mode{newline}&7Click to untrust&3 {player}&7.'
+      deactivated: '#t#&7Untrust-Mode{newline}&cDeactivated'
+      success: '&7You successfully untrusted player&3 {player} &7from this protection.'
+    setRole:
+      activated: '#t#&7SetRole-Mode{newline}&7Click to set role {role}&7.'
+      deactivated: '#t#&7SetRole-Mode{newline}&cDeactivated'
+      role-weight: '&cYou can''t set this role since your own role isn''t higher than
+        the target role. &7Ask someone with a higher role for help.'
+      role-weight-target: '&cYou can''t edit the role of this player. &7His role is
+        higher than yours or equal.'
+      role-not-exist: '&cThe role&e {role} &cdoesn''t exist. &7Typo?'
+      success: '&7Successfully set role {role} &7for player&3 {player}&7.'
+    exit: '#t#&7Mode:{newline}&cDeactivated'
+    view:
+      activated: '#t#&7Visualization{newline}&aNearby protections are visualized.'
+      deactivated: '#t#&7Visualization{newline}&cDeactivated'
+  
