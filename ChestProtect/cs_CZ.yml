@@ -27,115 +27,127 @@
 
 
 general:
-    prefix:
-      normal: ''
-      help: '&7Použití: '
-    unlimited: '&aneomezeně'
-    role:
-      owner: '&4Majtel'
-      admin: '&cAdmin'
-      member: '&eČlen'
-      visitor: '&7Návštěvník'
-      all: '&dVšichni'
-  help:
-    command:
-      lock: '&a/protect lock &8[nick] - &7Uzamkne objekt'
-      unlock: '&a/protect unlock &8- &7Odemkne objekt'
-      trust: '&a/protect trust &8<nick> - &7Přidá trust hráči'
-      untrust: '&a/protect untrust &8<nick> - &7Odebere trust hráči'
-      menu: '&a/protect menu &8[nick] - &7Otevře menu'
-      exit: '&a/protect exit &8- &7Opustit mód'
-      help: '&a/protect help &8[&strana] - &7Nápověda'
-      view: '&a/protect view - &7Zobrazí nejbližší ochrany'
-      admin:
-        reload: '&a/protect reload &8- &7Obnoví nastavení'
-        admin: '&a/protect admin &8<akce> - &7Spustí admin akci'
-        about: '&a/protect about &8- &7Zobrazí informace'
-  message:
-    world-invalid: '&c&l[!] &cTato funkce je v tomto světě deaktivována.'
-    object-invalid: '&c&l[!] &cNemůžeš přidat objekt na tuto ochranu.'
-    noaccess:
-      protection: '&c&l[!] &cToto nemůžeš provádět. Ochrana patří hráči &3{player}'
-      untrusted: '&c&l[!] &cNemáš přidaný trust na této ochraně. Ochrana patří hráči &3{player}'
-      management: '&c&l[!] &cToto nemůžeš provádět. Ochrana patří hráči &3{player}'
-      action: '&c&l[!] &cToto nemůžeš provádět. Ochrana patří hráči &3{player}'
-      hopper: '&c&l[!] &cTvůj hopper byl odebrán. &7Tvoje role nemůže používat hoppere na této lokaci: &7X: {x} Y: {y} Z: {z}'
-    event:
-      open-owner: '&7Tento blok patří &3tobě&7.'
-      open-trusted: '&7Tento blok má nastavenou ochranu hráčem&3 {player}&7.'
-      protectable: '&7Položil jsi blok, který lze uzamknout. Napiš &a/lock &7k uzamknutí.'
-    chat-action:
-      name: '&7Prosím, napiš jméno do chatu.'
-      cancelled: ''
-      player: '&7Napiš jméno zvoleného hráče.'
-    teleportation:
-      already: '&c&l[!] &cNemůžeš zahájit další teleport. Již nějaký teleport probíhá. &7Prosím počkej až se dokončí.'
-      started: '&7Teleport začal. Budeš teleportován za&5 {sec} &7vteřin. Nehýbej se.'
-      cancelled: '&c&l[!] &cTeleport byl zastaven. &7Nehýbej se {sec} vteřin, když čekáš na teleport.'
-      plugin: '&c&l[!] &cTeleport zrušil jiný plugin.'
-      unsafe: '&c&l[!] &cTeleport byl zrušen, jelikož cílová lokace není bezpečná.'
-      corrected: '&7Originální teleport lokace není bezpečná. &7Teleport byl proto o kousek posunut a opraven.'
-    role:
-      not-exist: '&c&l[!] &cRole&e {role} &cneexistuje na tomto území. &7Chyba?'
-      delete:
-        owner: '&c&l[!] &cNemůžeš smazat roli majitele. &7Tato role je vyžadována.'
-        entry: '&c&l[!] &cNemůžeš smazat vstupní roli. &7Je vyžadována pro nové hráče.'
-        visitor: '&c&l[!] &cNemůžeš smazat roli návštěvníka. &7Je vyžadována pro hráče, co nemají trust.'
+  prefix:
+    normal: ''
+    help: '&7Použití: '
+  unlimited: '&aneomezeně'
+  role:
+    owner: '&4Majtel'
+    admin: '&cAdmin'
+    member: '&eČlen'
+    visitor: '&7Návštěvník'
+    all: '&dVšichni'
+help:
   command:
-    general:
-      no-permission: '&c&l[!] &cNa toto nemáš dostatek práv.'
-      money-cost: '&c&l[!] &cNemáš dostateek peněz k zaplacení. &7Potřebuješ &e${cost}&7.'
-      pos-not-allowed: '&c&l[!] &cZde toto nemůžeš provádět. &7Jdi na jiné místo.'
-      player-not-exist: '&c&l[!] &cNení zde žádný hráč s jménem&4 {player}&c. &7Chyba?'
-      not-protected: '&c&l[!] &cToto nemůžeš dělat. &7Tento blok není uzamknut.'
-      player-untrusted: '&c&l[!] &cToto nemůžeš dělat. &7Hráč&3 {player} &7nemá trust v této ochraně.'
-    help:
-      header: '[NoPrefix][T]&7----------&6<<<<&7-[H]&7Klikni k zobrazení předchozí stránky[/H][C]chestprotect help {previous}[/C][/T] &6Nápověda
-        &7Strana&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Klikni zde k zobrazneí další stránky[/H][C]chestprotect help {next}[/C][/T]'
-      footer: |
-        [NoPrefix]
-        &7Klikni na šipky níže
-        [T]&7----------&6<<<<&7-[H]&7Klikni k zobrazení předchozí stránky.[/H][C]chestprotect help {previous}[/C][/T] &6ChestProtect Help &7Page&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Klikni zde k zobrazneí další stránky.[/H][C]chestprotect help {next}[/C][/T]
-      help: '&7Použij &a/{cmd} help &7k zobrazení nápovědy.'
-      cmd-not-exist: '&c&l[!] &cTakový příkaz neexistue.'
-      no-page: '&c&l[!] &cStrana&3 {page} &cneexistuje. &7Chyba?'
-    lock:
-      activated: '#t#&7Mód uzamknutí{newline}&aKlikni na objekt'
-      deactivated: '#t#&7Mód uzamknutí{newline}&cDeaktivováno'
-      already: '&c&l[!] &cNemůžeš přidat ochranu na tento blok. &7Již je uzamknut.'
-      max-protections: '&c&l[!] &cNemůžeš přidat víc ochran. &7Tvé maximum je&3 {max}&7.'
-      npc: '&c&l[!] &cNemůžeš uzamknout tuto entitu jelikož to je server NPC.'
-      success: '&7Úspěšně jsi přidal zámek na tento objekt za cenu&e ${cost}&7.'
-      auto:
-        limit: '&c&l[!] &cNelze vytvořit automatickou ochranu. &7Dosáhl jsi maximálního počtu &3{max} &7ochran.'
-        cost: '&c&l[!] &cNelze vytvořit automatickou ochranu. &7Nemáš dostatek peněz. Cena:&c ${cost}'
-        only-land: |
-          [T]&cNelze vytvořit automatickou ochranu. &7Můžeš vytvářet ochrany pouze v landu.[/T]
-  
-           [T]&7Zabrání landu: &a/lands claim &8[CLICK][H]&7Kliknutím zde vytvoříš a zabereš land[/H][C]lands claim[/C][/T]
-    unlock:
-      activated: '#t#&7Mód odemknutí{newline}&cKlikni na objekt'
-      deactivated: '#t#&7Mód odemknutí{newline}&cDeaktivováno'
-      success: '&7Úspěšně jsi odemkl tento blok.'
-    trust:
-      activated: '#t#&7trust mód{newline}&7Kliknutím přidáš trust hráči&3 {player}&7.'
-      deactivated: '#t#&7Trust mód{newline}&cDeaktivováno'
-      already: '&c&l[!] &cToto nemůžeš dělat. &7Hráč&3 {player} &7má již přidaný trust na této ochraně.'
-      max-members: '&c&l[!] &cNemůžeš přidat více členů. &7Maximum členů, co můžeš mít je&c {max}&7.'
-      success: '&7You successfully trusted player&3 {player} &7to this protection.'
-    untrust:
-      activated: '#t#&7Untrust mód{newline}&7Kliknutím zrušíš trust hráči&3 {player}&7.'
-      deactivated: '#t#&7Untrust mód{newline}&cDeaktivováno'
-      success: '&7Úspěšně jsi odebral trust hráči&3 {player}.'
-    setRole:
-      activated: '#t#&7Mód nastavení role{newline}&7Klikni k nastavení role {role}&7.'
-      deactivated: '#t#&7Mód nastavení role{newline}&cDeaktivováno'
-      role-weight: '&c&l[!] &cNemůžeš nastavit tuto roli, jelikož je vyšší než ta tvoje.'
-      role-weight-target: '&c&l[!] &cNemůžeš upravit roli pro tohoto hráče. &7Jeho role je vyšší než tvoje.'
-      role-not-exist: '&c&l[!] &cRole&e {role} &cneexistuje. &7Chyba?'
-      success: '&7Úspěšně jsi nastavil roli {role} &7pro hráče&3 {player}&7.'
-    exit: '#t#&7Mód:{newline}&cDeaktivováno'
-    view:
-      activated: '#t#&7Vizualizace{newline}&aNejbližší ochrany jsou zobrazovány.'
-      deactivated: '#t#&7Vizualizace{newline}&cDeaktivováno'
-  
+    lock: '&a/protect lock &8[nick] - &7Uzamkne objekt'
+    unlock: '&a/protect unlock &8- &7Odemkne objekt'
+    trust: '&a/protect trust &8<nick> - &7Přidá trust hráči'
+    untrust: '&a/protect untrust &8<nick> - &7Odebere trust hráči'
+    menu: '&a/protect menu &8[nick] - &7Otevře menu'
+    exit: '&a/protect exit &8- &7Opustit mód'
+    help: '&a/protect help &8[&strana] - &7Nápověda'
+    view: '&a/protect view - &7Zobrazí nejbližší ochrany'
+    admin:
+      reload: '&a/protect reload &8- &7Obnoví nastavení'
+      admin: '&a/protect admin &8<akce> - &7Spustí admin akci'
+      about: '&a/protect about &8- &7Zobrazí informace'
+message:
+  world-invalid: '&c&l[!] &cTato funkce je v tomto světě deaktivována.'
+  object-invalid: '&c&l[!] &cNemůžeš přidat objekt na tuto ochranu.'
+  noaccess:
+    protection: '&c&l[!] &cToto nemůžeš provádět. Ochrana patří hráči &3{player}'
+    untrusted: '&c&l[!] &cNemáš přidaný trust na této ochraně. Ochrana patří hráči
+      &3{player}'
+    management: '&c&l[!] &cToto nemůžeš provádět. Ochrana patří hráči &3{player}'
+    action: '&c&l[!] &cToto nemůžeš provádět. Ochrana patří hráči &3{player}'
+    hopper: '&c&l[!] &cTvůj hopper byl odebrán. &7Tvoje role nemůže používat hoppere
+      na této lokaci: &7X: {x} Y: {y} Z: {z}'
+  event:
+    open-owner: '&7Tento blok patří &3tobě&7.'
+    open-trusted: '&7Tento blok má nastavenou ochranu hráčem&3 {player}&7.'
+    protectable: '&7Položil jsi blok, který lze uzamknout. Napiš &a/lock &7k uzamknutí.'
+  chat-action:
+    name: '&7Prosím, napiš jméno do chatu.'
+    cancelled: ''
+    player: '&7Napiš jméno zvoleného hráče.'
+  teleportation:
+    already: '&c&l[!] &cNemůžeš zahájit další teleport. Již nějaký teleport probíhá.
+      &7Prosím počkej až se dokončí.'
+    started: '&7Teleport začal. Budeš teleportován za&5 {sec} &7vteřin. Nehýbej se.'
+    cancelled: '&c&l[!] &cTeleport byl zastaven. &7Nehýbej se {sec} vteřin, když čekáš
+      na teleport.'
+    plugin: '&c&l[!] &cTeleport zrušil jiný plugin.'
+    unsafe: '&c&l[!] &cTeleport byl zrušen, jelikož cílová lokace není bezpečná.'
+    corrected: '&7Originální teleport lokace není bezpečný. &7Teleport byl proto o
+      kousek posunut a opraven.'
+  role:
+    not-exist: '&c&l[!] &cRole&e {role} &cneexistuje na tomto území. &7Chyba?'
+    delete:
+      owner: '&c&l[!] &cNemůžeš smazat roli majitele. &7Tato role je vyžadována.'
+      entry: '&c&l[!] &cNemůžeš smazat vstupní roli. &7Je vyžadována pro nové hráče.'
+      visitor: '&c&l[!] &cNemůžeš smazat roli návštěvníka. &7Je vyžadována pro hráče,
+        co nemají trust.'
+command:
+  general:
+    no-permission: '&c&l[!] &cNa toto nemáš dostatek práv.'
+    money-cost: '&c&l[!] &cNemáš dostateek peněz k zaplacení. &7Potřebuješ &e${cost}&7.'
+    pos-not-allowed: '&c&l[!] &cZde toto nemůžeš provádět. &7Jdi na jiné místo.'
+    player-not-exist: '&c&l[!] &cNení zde žádný hráč s jménem&4 {player}&c. &7Chyba?'
+    not-protected: '&c&l[!] &cToto nemůžeš dělat. &7Tento blok není uzamknut.'
+    player-untrusted: '&c&l[!] &cToto nemůžeš dělat. &7Hráč&3 {player} &7nemá trust
+      v této ochraně.'
+  help:
+    header: '[NoPrefix][T]&7-------&6<<<<&7-[H]&7Klikni k zobrazení předchozí stránky[/H][C]chestprotect
+      help {previous}[/C][/T] &6Nápověda &7Strana&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7-------[H]&7Klikni
+      zde k zobrazneí další stránky[/H][C]chestprotect help {next}[/C][/T]'
+    footer: |
+      [NoPrefix]
+      &7Klikni na šipky níže
+      [T]&7-------&6<<<<&7-[H]&7Klikni k zobrazení předchozí stránky.[/H][C]chestprotect help {previous}[/C][/T] &6ChestProtect Help &7Page&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7-------[H]&7Klikni zde k zobrazneí další stránky.[/H][C]chestprotect help {next}[/C][/T]
+    help: '&7Použij &a/{cmd} help &7k zobrazení nápovědy.'
+    cmd-not-exist: '&c&l[!] &cTakový příkaz neexistue.'
+    no-page: '&c&l[!] &cStrana&3 {page} &cneexistuje. &7Chyba?'
+  lock:
+    activated: '#t#&7Mód uzamknutí{newline}&aKlikni na objekt'
+    deactivated: '#t#&7Mód uzamknutí{newline}&cDeaktivováno'
+    already: '&c&l[!] &cNemůžeš přidat ochranu na tento blok. &7Již je uzamknut.'
+    max-protections: '&c&l[!] &cNemůžeš přidat víc ochran. &7Tvé maximum je&3 {max}&7.'
+    npc: '&c&l[!] &cNemůžeš uzamknout tuto entitu jelikož to je server NPC.'
+    success: '&7Úspěšně jsi přidal zámek na tento objekt za cenu&e ${cost}&7.'
+    auto:
+      limit: '&c&l[!] &cNelze vytvořit automatickou ochranu. &7Dosáhl jsi maximálního
+        počtu &3{max} &7ochran.'
+      cost: '&c&l[!] &cNelze vytvořit automatickou ochranu. &7Nemáš dostatek peněz.
+        Cena:&c ${cost}'
+      only-land: |
+        [T]&cNelze vytvořit automatickou ochranu. &7Můžeš vytvářet ochrany pouze v landu.[/T]
+
+         [T]&7Zabrání landu: &a/lands claim &8[CLICK][H]&7Kliknutím zde vytvoříš a zabereš land[/H][C]lands claim[/C][/T]
+  unlock:
+    activated: '#t#&7Mód odemknutí{newline}&cKlikni na objekt'
+    deactivated: '#t#&7Mód odemknutí{newline}&cDeaktivováno'
+    success: '&7Úspěšně jsi odemkl tento blok.'
+  trust:
+    activated: '#t#&7trust mód{newline}&7Kliknutím přidáš trust hráči&3 {player}&7.'
+    deactivated: '#t#&7Trust mód{newline}&cDeaktivováno'
+    already: '&c&l[!] &cToto nemůžeš dělat. &7Hráč&3 {player} &7má již přidaný trust
+      na této ochraně.'
+    max-members: '&c&l[!] &cNemůžeš přidat více členů. &7Maximum členů, co můžeš mít
+      je&c {max}&7.'
+    success: '&7Úspěšně jsi přidal trust hráči&3 {player} &7na této ochraně.'
+  untrust:
+    activated: '#t#&7Untrust mód{newline}&7Kliknutím zrušíš trust hráči&3 {player}&7.'
+    deactivated: '#t#&7Untrust mód{newline}&cDeaktivováno'
+    success: '&7Úspěšně jsi odebral trust hráči&3 {player}.'
+  setRole:
+    activated: '#t#&7Mód nastavení role{newline}&7Klikni k nastavení role {role}&7.'
+    deactivated: '#t#&7Mód nastavení role{newline}&cDeaktivováno'
+    role-weight: '&c&l[!] &cNemůžeš nastavit tuto roli, jelikož je vyšší než ta tvoje.'
+    role-weight-target: '&c&l[!] &cNemůžeš upravit roli pro tohoto hráče. &7Jeho role
+      je vyšší než tvoje.'
+    role-not-exist: '&c&l[!] &cRole&e {role} &cneexistuje. &7Chyba?'
+    success: '&7Úspěšně jsi nastavil roli {role} &7pro hráče&3 {player}&7.'
+  exit: '#t#&7Mód:{newline}&cDeaktivováno'
+  view:
+    activated: '#t#&7Vizualizace{newline}&aNejbližší ochrany jsou zobrazovány.'
+    deactivated: '#t#&7Vizualizace{newline}&cDeaktivováno'
