@@ -1,0 +1,173 @@
+PREFIX: '&6Auction > &f'
+LANG:
+  CONSOLE: Console
+MSG:
+  ERROR: Error occured, please contact the server owner.
+  INGAMEONLY: This command can be used only in the game.
+  NOACCESS: You don't have access to do this.
+  AUCTIONSNOTLOADED: Auctions aren't loaded yet, please try again later.
+  NOTLOADED: Your data isn't loaded yet, please try again later.
+  PLAYERONLY: This command can be used only in the game.
+  FULLINVENTORY: You don't have enough free space in your inventory.
+  WORLDBANNED: Auctions have been disabled in this world.
+  GAMEMODEBANNED: You can't access auctions when in the %gamemode% gamemode.
+  USAGE:
+    SUBCOMMAND: 'Invalid command usage. Correct usage: %usage%'
+    AUCTION: 'Invalid command usage. Correct usage: /auc start [quantity] [start price]
+      [increment] [time in seconds]'
+    BID: 'Invalid command usage. Correct usage: /bid <auction id> [amount]'
+  ENDED: This auction has ended, please wait until it gets updated.
+  AUCTION:
+    RELOAD:
+      RELOADED: Configuration reloaded!
+    CANCEL:
+      BROADCAST: 'Auction #%id% (%quantity% x %item%&f) has been cancelled by the
+        seller.'
+    CANCELADMIN:
+      CANCELLEDBY: 'Your auction #%id% (%quantity% x %item%&f) was cancelled by %player%.'
+      BROADCAST: 'Auction #%id% (%quantity% x %item%&f) has been cancelled by %player%.'
+    CREATE:
+      QUANTITY: quantity
+      PRICE: price
+      INCREMENT: increment
+      DURATION: duration
+      VALUEINVALID: Invalid %setting% specified.
+      VALUETOOLOW: Too small %setting% specified. You have to specify at least %value%.
+      VALUETOOHIGH: Too high %setting% specified. You can't specify more than %value%.
+      TOOFEWITEM: You need at least %quantity% x %item%&f to start the auction.
+      NOITEM: You must hold an item in your hand to start an auction.
+      BANNEDITEM: You can't put up this item for an auction.
+      LIMIT: You can't run more than %limit% auctions at the same time.
+      CREATED: You put up %quantity% x %item%&f for an auction.
+      BROADCAST: '%player% put up %quantity% x %item%&f for an auction #%id%! Starting
+        price: $%startingprice%, bid increment: $%increment%, duration: %duration%'
+    END:
+      BOUGHT:
+        BOUGHT: '%buyer% won your auction #%id% (%quantity% x %item%&f) with a bid
+          of $%price%.'
+        BOUGHTBY: 'You won %seller%''s auction #%id% (%quantity% x %item%&f) with
+          a bid of $%price%.'
+        BROADCAST: '%buyer% won auction #%id% (%quantity% x %item%&f) with a bid of
+          $%price%.'
+      NOBIDS:
+        ENDED: 'Your auction #%id% (%quantity% x %item%&f) ended with no bids.'
+        BROADCAST: 'Auction #%id% (%quantity% x %item%&f) ended with no bids.'
+    BID:
+      ID: auction ID
+      AMOUNT: amount
+      VALUEINVALID: Invalid %setting% specified.
+      CANNOTBIDOWN: You can't bid on your own auction.
+      CANNOTBIDLASTBID: You have already placed the highest bid, wait until someone
+        overbids you.
+      CANNOTBIDNOTINPROGRESS: You can bid only on auctions in progress.
+      CANNOTBIDANTISNIPE: This auction has almost ended, you can't bid anymore.
+      TOOFEW: You have to bid at least $%amount%.
+      NOTMULTIPLY: The increment has to be a multiply of $%amount%.
+      FIXEDONLY: You can't choose the bid amount, this auction has a fixed increment
+        of $%increment%.
+      CANNOTAFFORD: You can't afford to place the bid.
+      BID: 'You successfully placed bid of $%price% on auction #%id% (%quantity% x
+        %item%&f).'
+      BIDBROADCAST: '%player% placed bid of $%amount% on auction #%id% (%quantity%
+        x %item%&f).'
+    EXPIRE:
+      EXPIRED: 'Your unclaimed item from auction #%id% has expired.'
+    LIMITS: You can run %limit% auctions at the same time.
+AUCTION:
+  SELLER:
+    NONE: none
+  BUYER:
+    NONE: none
+  HIGHESTBIDBY:
+    NONE: none
+  STATUS:
+    CANCELLED: cancelled
+    CANCELLEDADMIN: cancelled by admin
+    INPROGRESS: in progress
+    ENDEDSOLD: sold
+    ENDEDENDED: expired
+GUI:
+  CONFIRM: '&a&lOK'
+  EXPIRED:
+    TITLE: Auction expired
+    MESSAGE: '&c&lAuction expired'
+    DESC: '&7This auction is no longer available.'
+  ANTISNIPE:
+    TITLE: Auction ending
+    MESSAGE: '&c&lAuction is ending'
+    DESC: '&7This auction has almost ended, you can''t bid anymore.'
+  CANCELLED:
+    TITLE: Auction cancelled
+    MESSAGE: '&a&lAuction cancelled'
+    DESC: |-
+      &7You cancelled auction #%id%
+      &7(%quantity% x %item%&7).
+  BID:
+    TITLE: Bid placed
+    MESSAGE: '&a&lBid placed'
+    DESC: "&7You successfully placed bid \n&7of $%price% on auction #%id% \n&7(%quantity%\
+      \ x %item%&7)."
+  CANNOTBIDOWN:
+    TITLE: Couldn't place bid
+    MESSAGE: '&c&lCan''t bid on your own auction'
+    DESC: '&7You can''t bid on your own auction.'
+  CANNOTBIDLASTBID:
+    TITLE: Couldn't place bid
+    MESSAGE: '&c&lCan''t overbid yourself'
+    DESC: "&7You have already placed \n&7the highest bid, wait \n&7until someone overbids\
+      \ you."
+  CANNOTBIDCANNOTAFFORD:
+    TITLE: Couldn't place bid
+    MESSAGE: '&c&lCan''t afford to bid'
+    DESC: "&7You need at least $%amount% \n&7to bid on this auction."
+  CANNOTCANCEL:
+    TITLE: Couldn't cancel
+    MESSAGE: '&c&lAuctions cancelling is disabled'
+    DESC: "&7Cancelling auctions has been \n&7disabled by the server owner."
+  CLAIMED:
+    TITLE: Item claimed
+    MESSAGE: '&a&lItem claimed'
+    DESC: "&7You claimed %quantity% x %item%&7 \n&7from auction #%id%."
+  CLAIMEDWON:
+    TITLE: Item claimed
+    MESSAGE: '&a&lItem claimed'
+    DESC: "&7You claimed %quantity% x %item%&7 \n&7from auction #%id%."
+  PRICECHANGED:
+    TITLE: Price changed
+    MESSAGE: '&e&lCurrent price has changed'
+    DESC: "&7While you were bidding someone \n&7placed a bid and the price changed\
+      \ \n&7from $%from% to $%to%.\n\n&7New price: &6$%to%"
+  EARNINGSCLAIMED:
+    TITLE: Earnings claimed
+    MESSAGE: '&a&lEarnings claimed'
+    DESC: '&7You claimed $%amount% earnings.'
+  EARNINGSNOEARNINGS:
+    TITLE: No earnings
+    MESSAGE: '&c&lNo earnings to claim'
+    DESC: |-
+      &7You don't have any
+      &7earnings you could claim.
+TIME:
+  NOW: now
+  LESSTHAN: less than %time%
+  YEARS:
+    SINGULAR: year
+    PLURAL: years
+  MONTHS:
+    SINGULAR: month
+    PLURAL: months
+  WEEKS:
+    SINGULAR: week
+    PLURAL: weeks
+  DAYS:
+    SINGULAR: day
+    PLURAL: days
+  HOURS:
+    SINGULAR: hour
+    PLURAL: hours
+  MINUTES:
+    SINGULAR: minute
+    PLURAL: minutes
+  SECONDS:
+    SINGULAR: second
+    PLURAL: seconds
