@@ -1,0 +1,781 @@
+menu:
+  main:
+    name: "Aukce"
+    rows: 5
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      all:
+        item:
+          material: BOOK
+          quantity: 1
+          name: "&6&lVšechny aukce"
+          lore: 
+            - "&7Seznam všech %number% aukcí."
+        slot: 11
+      categories:
+        item:
+          material: CHEST
+          quantity: 1
+          name: "&6&lKategorie"
+          lore:
+            - "&7Zobraz aukce, dle kategorií"
+            - "§7Nemusí být využíváno hráči."
+        slot: 13
+      takingPart:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&6&lAukce, kterých se účastníš"
+          lore: 
+            - "&7Seznam aukcí, do kterých"
+            - "&7jsi nějak přispěl."
+        slot: 15
+      own:
+        item:
+          material: PLAYER_HEAD
+          quantity: 1
+          name: "&6&lTvé aukce"
+          lore: 
+            - "&7Seznam aukcí, které jsi"
+            - "&7vytvořil ty."
+        slot: 29
+      won:
+        item:
+          material: CHEST
+          quantity: 1
+          name: "&6&lVyhrané itemy"
+          lore: 
+            - "&7Seznam itemů, které jsi"
+            - "&7vyhrál v aukcích."
+            - "§7Nevybráno: §8%number%"
+        slot: 31
+      unclaimed:
+        item:
+          material: ENDER_CHEST
+          quantity: 1
+          name: "&6&lExpirované itemy"
+          lore: 
+            - "&7Itemy z aukcí,"
+            - "§7které byly zrušeny nebo"
+            - "§7skončily bez nabídky."
+            - "§7Nevybráno: §8%number%"
+        slot: 33
+      earnings:
+        item:
+          material: GOLD_NUGGET
+          quantity: 1
+          name: "&6&lTvé výdělky"
+          lore: 
+            - "&7Máš nevybráno: §e%amount%$"
+        slot: -1
+  all:
+    name: "Všechny aukce"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&eProdávající: &f%seller%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eAktuální cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%$"
+      - "&eNejvyšší nabídka: &f%highestbidby%"
+      - "&eKonec: &f%timeleft%"
+      - ""
+      - "§7Klikni levým pro přidání nabídky"
+  categories:
+    name: "Všechny kategorie"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&7Itemy: &6%items%"
+  takingPart:
+    name: "Aukce, kterých se účastníš"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eAktuální cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%$"
+      - "&eNejvyšší nabídka: &f%highestbidby%"
+      - "&eKonec: &6%timeleft%"
+  own:
+    name: "Tvé aukce"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eAktuální cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%$"
+      - "&eNejvyšší nabídka: &f%highestbidby%"
+      - "&eKonec: &6%timeleft%"
+  won:
+    name: "Vyhrané itemy"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eKonečná cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%§f"
+      - "&eKonec: &f%end%"
+  expired:
+    name: "Expirované itemy"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eKonečná cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%$"
+      - "&eUkončeno: &f%end%"
+      - "&eExpiruje: &f%expire%"
+  category:
+    name: "%name%"
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      previousPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fPředchozí strana"
+        slot: 45
+      nextPage:
+        item:
+          material: PAPER
+          quantity: 1
+          name: "&fDalší strana"
+        slot: 53
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&eObnovit"
+        slot: 48
+      back:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&eZpět do menu"
+        slot: 50
+    replaceLore: false
+    lore:
+      - "&eProdávající: &f%owner%"
+      - "&eCena: &f%price%$"
+      - "&eExpiruje za: &f%timeleft%"
+  start:
+    quantity:
+      name: "Zvol počet"
+      rows: 6
+      itemSlot: 22
+      fill:
+        item:
+          material: GRAY_STAINED_GLASS_PANE
+          quantity: 1
+      buttons:
+        less3:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&cOdebrat 32ks"
+            lore: []
+          value: 32
+          slot: 18
+        less2:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&cOdebrat 10ks"
+            lore: []
+          value: 10
+          slot: 19
+        less1:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&cOdebrat 1ks"
+            lore: []
+          value: 1
+          slot: 20
+        more1:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&aPřidat 1ks"
+            lore: []
+          value: 1
+          slot: 24
+        more2:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&aPřidat 10ks"
+            lore: []
+          value: 10
+          slot: 25
+        more3:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&aPřidat 32ks"
+            lore: []
+          value: 32
+          slot: 26
+        confirm:
+          item:
+            material: LIME_STAINED_GLASS
+            quantity: 1
+            name: "&aPotvrdit"   
+          slot: 39
+        cancel:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZrušit"  
+          slot: 41
+      replaceLore: false
+      lore:
+        - "&ePočet: &f%quantity%ks"
+    price:
+      name: "Zvol počáteční cenu"
+      rows: 6
+      itemSlot: 22
+      fill:
+        item:
+          material: GRAY_STAINED_GLASS_PANE
+          quantity: 1
+      buttons:
+        less3:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-100k$"
+          value: 100000
+          slot: 18
+        less2:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-10k$"
+          value: 10000
+          slot: 19
+        less1:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-1k$"
+          value: 1000
+          slot: 20
+        more1:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+1k$"
+          value: 1000
+          slot: 24
+        more2:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+10k$"
+          value: 10000
+          slot: 25
+        more3:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+100k$"
+          value: 100000
+          slot: 26
+        confirm:
+          item:
+            material: LIME_STAINED_GLASS
+            quantity: 1
+            name: "&aPotvrdit"   
+          slot: 39
+        goBack:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZpět"  
+          slot: 40
+        cancel:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZrušit"  
+          slot: 41
+      replaceLore: false
+      lore:
+        - "&ePočet: &f%quantity%x"
+        - "&ePočáteční cena: &f%price%$"
+    increment:
+      name: "Zvol min. navýšení"
+      rows: 6
+      itemSlot: 22
+      fill:
+        item:
+          material: GRAY_STAINED_GLASS_PANE
+          quantity: 1
+      buttons:
+        less3:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-100k$"
+          value: 100000
+          slot: 18
+        less2:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-10k$"
+          value: 10000
+          slot: 19
+        less1:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-1k$"
+          value: 1000
+          slot: 20
+        more1:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+1k$"
+          value: 1000
+          slot: 24
+        more2:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+10k$"
+          value: 10000
+          slot: 25
+        more3:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+100k$"
+          value: 100000
+          slot: 26
+        confirm:
+          item:
+            material: LIME_STAINED_GLASS
+            quantity: 1
+            name: "&aPotvrdit"   
+          slot: 39
+        goBack:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZpět"  
+          slot: 40
+        cancel:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZrušit"  
+          slot: 41
+      replaceLore: false
+      lore:
+        - "&ePočet: &f%quantity%x"
+        - "&ePočáteční cena: &f%price%$"
+        - "&eMin. navýšení: &f%increment%$"
+    duration:
+      name: "Zvol dobu aukce"
+      rows: 6
+      itemSlot: 22
+      fill:
+        item:
+          material: GRAY_STAINED_GLASS_PANE
+          quantity: 1
+      buttons:
+        less3:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-1 hodina"
+          value: 3600
+          slot: 18
+        less2:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-10 minut"
+          value: 600
+          slot: 19
+        less1:
+          item:
+            material: RED_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&c-1 minuta"
+          value: 60
+          slot: 20
+        more1:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+1 minut"
+          value: 60
+          slot: 24
+        more2:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+10 minut"
+          value: 600
+          slot: 25
+        more3:
+          item:
+            material: LIME_STAINED_GLASS_PANE
+            quantity: 1
+            name: "&a+1 hodin"
+          value: 3600
+          slot: 26
+        confirm:
+          item:
+            material: LIME_STAINED_GLASS
+            quantity: 1
+            name: "&aSpustit aukci"   
+          slot: 39
+        goBack:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZpět"  
+          slot: 40
+        cancel:
+          item:
+            material: RED_STAINED_GLASS
+            quantity: 1
+            name: "&cZrušit"  
+          slot: 41
+      replaceLore: false
+      lore:
+        - "&ePočet: &f%quantity%x"
+        - "&ePočáteční cena: &f%price%$"
+        - "&eMin. navýšení: &f%increment%$"
+        - "&eDoba aukce: §f%duration%"
+  bid:
+    name: "Přidat nabídku"
+    rows: 6
+    itemSlot: 22
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      less:
+        item:
+          material: RED_STAINED_GLASS_PANE
+          quantity: 1
+          name: "&cPřidat méně"
+          lore:
+            - "&7-%increment%$"
+        slot: 19
+      more:
+        item:
+          material: LIME_STAINED_GLASS_PANE
+          quantity: 1
+          name: "&aPřidat více"
+          lore:
+            - "&7+%increment%$"
+        slot: 25
+      bid:
+        item:
+          material: LIME_STAINED_GLASS
+          quantity: 1
+          name: "&aPřidat nabídku"   
+        slot: 39
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&6Obnovit"
+        slot: 40
+      cancel:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&cZrušit"  
+        slot: 41
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eAktuální cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%$"
+      - "&eKonec za: &f%timeleft%"
+      - ""
+      - "&7Tvoje nabídka: &f%bid%$"
+  cancel:
+    name: "Zrušení aukce"
+    rows: 6
+    itemSlot: 22
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      cancelauction:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&aZrušit aukci"   
+        slot: 39
+      refresh:
+        item:
+          material: NETHER_STAR
+          quantity: 1
+          name: "&6Obnovit"
+        slot: 40
+      cancel:
+        item:
+          material: RED_STAINED_GLASS
+          quantity: 1
+          name: "&cZpět"  
+        slot: 41
+    replaceLore: false
+    lore:
+      - "&eID: §f#%id%"
+      - "&ePočáteční cena: &f%startingprice%$"
+      - "&eAktuální cena: &f%price%$"
+      - "&eMin. navýšení: &f%increment%$"
+      - "&eKonec za: &f%timeleft%"
+    
+notifications:
+  error:
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      message:
+        item:
+          material: BARRIER
+          quantity: 1
+        slot: 22
+      confirm:
+        item:
+          material: LIME_STAINED_GLASS
+          quantity: 1
+        slot: 40
+  warning:
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      message:
+        item:
+          material: YELLOW_STAINED_GLASS_PANE
+          quantity: 1
+        slot: 22
+      confirm:
+        item:
+          material: LIME_STAINED_GLASS
+          quantity: 1
+        slot: 40
+  success:
+    rows: 6
+    fill:
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        quantity: 1
+    buttons:
+      message:
+        item:
+          material: LIME_STAINED_GLASS_PANE
+          quantity: 1
+        slot: 22
+      confirm:
+        item:
+          material: LIME_STAINED_GLASS
+          quantity: 1
+        slot: 40

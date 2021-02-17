@@ -1,173 +1,173 @@
-PREFIX: '&6Auction > &f'
+PREFIX: §7
 LANG:
-  CONSOLE: Console
+  CONSOLE: Konzole
 MSG:
-  ERROR: Error occured, please contact the server owner.
-  INGAMEONLY: This command can be used only in the game.
-  NOACCESS: You don't have access to do this.
-  AUCTIONSNOTLOADED: Auctions aren't loaded yet, please try again later.
-  NOTLOADED: Your data isn't loaded yet, please try again later.
-  PLAYERONLY: This command can be used only in the game.
-  FULLINVENTORY: You don't have enough free space in your inventory.
-  WORLDBANNED: Auctions have been disabled in this world.
-  GAMEMODEBANNED: You can't access auctions when in the %gamemode% gamemode.
+  ERROR: §c§l[!!] §cNeznámá chyba se objevila, pokud se bude opakovat nahlaš nám to.
+  INGAMEONLY: §c§l[!] §cTento příkaz může být použit pouze jako hráč.
+  NOACCESS: §c§l[!] §cK tomuto nemáš přístup.
+  AUCTIONSNOTLOADED: §c§l[!] §cAukce stále nejsou načteny, čekej prosím...
+  NOTLOADED: §c§l[!] §cTvá data nejsou stále načtena, čekej prosím...
+  PLAYERONLY: §c§l[!] §cTento příkaz může být použit pouze jako hráč.
+  FULLINVENTORY: §c§l[!] §cNemáš dostatek volného místa v inventáři.
+  WORLDBANNED: §c§l[!] §cAukce jsou deaktivovány v tomto světě.
+  GAMEMODEBANNED: §c§l[!] §cNemůžeš používat aukce když máš %gamemode% gamemode.
   USAGE:
-    SUBCOMMAND: 'Invalid command usage. Correct usage: %usage%'
-    AUCTION: 'Invalid command usage. Correct usage: /auc start [quantity] [start price]
-      [increment] [time in seconds]'
-    BID: 'Invalid command usage. Correct usage: /bid <auction id> [amount]'
-  ENDED: This auction has ended, please wait until it gets updated.
+    SUBCOMMAND: '§c§l[!] §cNeplatný příkaz. §fSprávné použití: %usage%'
+    AUCTION: '§c§l[!] §cNeplatný příkaz. Pro vytvoření aukce: §f/auc start [počet]
+      [počáteční-cena] [min-navýšení] [doba-trvání-aukce]'
+    BID: '§c§l[!] §cNeplatný příkaz. Pro přidání nabídky: /bid <id aukce> [částka]'
+  ENDED: §c§l[!] §cTato aukce skončila, počkej prosím...
   AUCTION:
     RELOAD:
-      RELOADED: Configuration reloaded!
+      RELOADED: §e§l[*] §eConfig byl obnoven.
     CANCEL:
-      BROADCAST: 'Auction #%id% (%quantity% x %item%&f) has been cancelled by the
-        seller.'
+      BROADCAST: §e§l[*] §eAukce §f#%id% (%quantity%x %item%) §ebyl zrušena prodávajícím.
     CANCELADMIN:
-      CANCELLEDBY: 'Your auction #%id% (%quantity% x %item%&f) was cancelled by %player%.'
-      BROADCAST: 'Auction #%id% (%quantity% x %item%&f) has been cancelled by %player%.'
+      CANCELLEDBY: §e§l[*] §eTvoje aukce §f#%id% (%quantity%x %item%) §ebyla zrušena
+        %player%.
+      BROADCAST: §e§l[*] §eAukce §f#%id% (%quantity%x %item%) §ebyla zrušena %player%.
     CREATE:
-      QUANTITY: quantity
-      PRICE: price
-      INCREMENT: increment
-      DURATION: duration
-      VALUEINVALID: Invalid %setting% specified.
-      VALUETOOLOW: Too small %setting% specified. You have to specify at least %value%.
-      VALUETOOHIGH: Too high %setting% specified. You can't specify more than %value%.
-      TOOFEWITEM: You need at least %quantity% x %item%&f to start the auction.
-      NOITEM: You must hold an item in your hand to start an auction.
-      BANNEDITEM: You can't put up this item for an auction.
-      LIMIT: You can't run more than %limit% auctions at the same time.
-      CREATED: You put up %quantity% x %item%&f for an auction.
-      BROADCAST: '%player% put up %quantity% x %item%&f for an auction #%id%! Starting
-        price: $%startingprice%, bid increment: $%increment%, duration: %duration%'
+      QUANTITY: počet
+      PRICE: cena
+      INCREMENT: navýšení
+      DURATION: doba
+      VALUEINVALID: §e§l[*] §eNeplatná hodnota §f%setting%
+      VALUETOOLOW: §e§l[*] §ePříliš malá hodnota %setting%. Musíš uvést nejméně %value%.
+      VALUETOOHIGH: §e§l[*] §ePříliš vysoká hodnota %setting%. Nemůžeš uvést více
+        jak %value%.
+      TOOFEWITEM: §e§l[*] §ePotřebuješ nejméně §f%quantity%x %item% §eke startu aukce.
+      NOITEM: §e§l[*] §eMusíš držet item v ruce, abys jej mohl přidat do aukce.
+      BANNEDITEM: §c§l[!] §cNemůžeš přidat tento item do aukce.
+      LIMIT: §c§l[!] §cNemůžeš vytvořit více než %limit% aukcí.
+      CREATED: §e§l[*] §ePřidal jsi do aukce §f%quantity%x %item%
+      BROADCAST: '§e§l[*] §e%player% přidal do aukce %quantity%x %item% s ID #%id%!
+        Počáteční cena: $%startingprice%, min. navýšení: $%increment%, doba: %duration%'
     END:
       BOUGHT:
-        BOUGHT: '%buyer% won your auction #%id% (%quantity% x %item%&f) with a bid
-          of $%price%.'
-        BOUGHTBY: 'You won %seller%''s auction #%id% (%quantity% x %item%&f) with
-          a bid of $%price%.'
-        BROADCAST: '%buyer% won auction #%id% (%quantity% x %item%&f) with a bid of
-          $%price%.'
+        BOUGHT: §e§l[*] §e%buyer% vyhrál aukci §f#%id% (%quantity% x %item%§f)§e s nabídkou
+          %price%$.
+        BOUGHTBY: §e§l[*] §eVyhrál jsi aukci hráče %seller% - §f#%id% (%quantity%x
+          %item%§f) §es nabídkou %price%$.
+        BROADCAST: §e§l[*] §e%buyer% vyhrál aukci §f#%id% (%quantity%x %item%§f) §es
+          nabídkou %price%$.
       NOBIDS:
-        ENDED: 'Your auction #%id% (%quantity% x %item%&f) ended with no bids.'
-        BROADCAST: 'Auction #%id% (%quantity% x %item%&f) ended with no bids.'
+        ENDED: §e§l[*] §eTvá aukce §f#%id% (%quantity%x %item%§f) §eskončila bez nabídky
+          :(.
+        BROADCAST: §e§l[*] §eAukce §f#%id% (%quantity%x %item%§f) §eskončila bez nabídky.
     BID:
-      ID: auction ID
-      AMOUNT: amount
-      VALUEINVALID: Invalid %setting% specified.
-      CANNOTBIDOWN: You can't bid on your own auction.
-      CANNOTBIDLASTBID: You have already placed the highest bid, wait until someone
-        overbids you.
-      CANNOTBIDNOTINPROGRESS: You can bid only on auctions in progress.
-      CANNOTBIDANTISNIPE: This auction has almost ended, you can't bid anymore.
-      TOOFEW: You have to bid at least $%amount%.
-      NOTMULTIPLY: The increment has to be a multiply of $%amount%.
-      FIXEDONLY: You can't choose the bid amount, this auction has a fixed increment
-        of $%increment%.
-      CANNOTAFFORD: You can't afford to place the bid.
-      BID: 'You successfully placed bid of $%price% on auction #%id% (%quantity% x
-        %item%&f).'
-      BIDBROADCAST: '%player% placed bid of $%amount% on auction #%id% (%quantity%
-        x %item%&f).'
+      ID: ID aukce
+      AMOUNT: počet
+      VALUEINVALID: §c§l[!] §cUvedeno neplatná hodnota §f%setting%
+      CANNOTBIDOWN: §c§l[!] §cNemůžeš přidat nabídku ke své vlastní aukci.
+      CANNOTBIDLASTBID: §c§l[!] §cJiž jsi přidal nejvyšší nabídku, počkej až někdo
+        jiný přidá vyšší.
+      CANNOTBIDNOTINPROGRESS: §c§l[!] §cMůžeš přihazovat do aukcí, které jsou aktivní.
+      CANNOTBIDANTISNIPE: §c§l[!] §cTato aukce je téměř u konce, nelze přidat více.
+      TOOFEW: §e§l[*] §eMusíš přidat nejméně §f%amount%$
+      NOTMULTIPLY: §e§l[*] §eNabídka musí být násobek částky §f%amount%$
+      FIXEDONLY: §e§l[*] §eNemůžeš si zvolit nabídku, tato aukce má fixní navýšení
+        §f%increment%$
+      CANNOTAFFORD: §c§l[!] §cTakovou částku si nemůžeš dovolit.
+      BID: §a§l[*] §eÚspěšně jsi přidal nabídku §7%price%$ §av aukci §f#%id% (%quantity%x
+        %item%&f).
+      BIDBROADCAST: 'Hráč %player% přidal nabídku %amount%$ do aukce #%id% (%quantity%x
+        %item%§f).'
     EXPIRE:
-      EXPIRED: 'Your unclaimed item from auction #%id% has expired.'
-    LIMITS: You can run %limit% auctions at the same time.
+      EXPIRED: §e§l[*] §eDoba na vybrání itemů z aukce §f#%id% §eexpirovala.
+    LIMITS: '§c§l[!] §cMůžeš vytvořit pouze: §f%limit% aukcí'
 AUCTION:
   SELLER:
-    NONE: none
+    NONE: nikdo
   BUYER:
-    NONE: none
+    NONE: nikdo
   HIGHESTBIDBY:
-    NONE: none
+    NONE: nikdo
   STATUS:
-    CANCELLED: cancelled
-    CANCELLEDADMIN: cancelled by admin
-    INPROGRESS: in progress
-    ENDEDSOLD: sold
-    ENDEDENDED: expired
+    CANCELLED: zrušeno
+    CANCELLEDADMIN: zrušeno adminem
+    INPROGRESS: probíhá
+    ENDEDSOLD: prodáno
+    ENDEDENDED: expirovalo
 GUI:
   CONFIRM: '&a&lOK'
   EXPIRED:
-    TITLE: Auction expired
-    MESSAGE: '&c&lAuction expired'
-    DESC: '&7This auction is no longer available.'
+    TITLE: Aukce expirovala
+    MESSAGE: '&c&lAukce expirovala'
+    DESC: '&7Tato aukce již není k dispozici.'
   ANTISNIPE:
-    TITLE: Auction ending
-    MESSAGE: '&c&lAuction is ending'
-    DESC: '&7This auction has almost ended, you can''t bid anymore.'
+    TITLE: Aukce končí
+    MESSAGE: '&c&lAukce končí'
+    DESC: '&7Tato aukce je téměř u konce, nelze přidat další nabídku.'
   CANCELLED:
-    TITLE: Auction cancelled
-    MESSAGE: '&a&lAuction cancelled'
+    TITLE: Aukce zrušena
+    MESSAGE: '&a&lAukce zrušena'
     DESC: |-
-      &7You cancelled auction #%id%
-      &7(%quantity% x %item%&7).
+      &7Zrušil jsi aukci #%id%
+      &7(%quantity%x %item%&7).
   BID:
-    TITLE: Bid placed
-    MESSAGE: '&a&lBid placed'
-    DESC: "&7You successfully placed bid \n&7of $%price% on auction #%id% \n&7(%quantity%\
-      \ x %item%&7)."
+    TITLE: Nabídka přidána
+    MESSAGE: '&a&lNabídka přidána'
+    DESC: "&7Přidal jsi nabídku \n&7%price%# do aukce #%id% \n&7(%quantity%x %item%&7)."
   CANNOTBIDOWN:
-    TITLE: Couldn't place bid
-    MESSAGE: '&c&lCan''t bid on your own auction'
-    DESC: '&7You can''t bid on your own auction.'
+    TITLE: Nelze přidat nabídku
+    MESSAGE: '&c&lNelze přidat nabídku'
+    DESC: '&7Nelze přidávat nabídky do své aukce'
   CANNOTBIDLASTBID:
-    TITLE: Couldn't place bid
-    MESSAGE: '&c&lCan''t overbid yourself'
-    DESC: "&7You have already placed \n&7the highest bid, wait \n&7until someone overbids\
-      \ you."
+    TITLE: Nelze přidat nabídku
+    MESSAGE: '&c&lNelze přidat nabídku'
+    DESC: "&7Již jsi přidal \n&7nejvyšší nabídku, počkej \n&7než aukce skončí."
   CANNOTBIDCANNOTAFFORD:
-    TITLE: Couldn't place bid
-    MESSAGE: '&c&lCan''t afford to bid'
-    DESC: "&7You need at least $%amount% \n&7to bid on this auction."
+    TITLE: Nelze přidat nabídku
+    MESSAGE: '&c&lNemůžeš si dovolit nabídku'
+    DESC: '&7Nemáš dostatek peněz na nabídku %amount%$'
   CANNOTCANCEL:
-    TITLE: Couldn't cancel
-    MESSAGE: '&c&lAuctions cancelling is disabled'
-    DESC: "&7Cancelling auctions has been \n&7disabled by the server owner."
+    TITLE: Nelze zrušit
+    MESSAGE: '&c&lRušení aukcí je deaktivováno'
+    DESC: '&7Takto funkce je vypnuta.'
   CLAIMED:
-    TITLE: Item claimed
-    MESSAGE: '&a&lItem claimed'
-    DESC: "&7You claimed %quantity% x %item%&7 \n&7from auction #%id%."
+    TITLE: Itemy vybrány
+    MESSAGE: '&a&lItemy vybrány'
+    DESC: "&7Vybral jsi %quantity%x %item%&7 \n&7fz aukce #%id%."
   CLAIMEDWON:
-    TITLE: Item claimed
-    MESSAGE: '&a&lItem claimed'
-    DESC: "&7You claimed %quantity% x %item%&7 \n&7from auction #%id%."
+    TITLE: Itemy vybrány
+    MESSAGE: '&a&lItemy vybrány'
+    DESC: "&7Vybral jsi %quantity%x %item%&7 \n&7z aukce #%id%."
   PRICECHANGED:
-    TITLE: Price changed
-    MESSAGE: '&e&lCurrent price has changed'
-    DESC: "&7While you were bidding someone \n&7placed a bid and the price changed\
-      \ \n&7from $%from% to $%to%.\n\n&7New price: &6$%to%"
+    TITLE: Změna ceny
+    MESSAGE: '&e&lAktuální cena byla změněna.'
+    DESC: "&7Když jsi přidával nabídku \n&7cena se změnila \n&7z %from%$ na %to%$.\n\
+      \n&7Nová cena: &6$%to%"
   EARNINGSCLAIMED:
-    TITLE: Earnings claimed
-    MESSAGE: '&a&lEarnings claimed'
-    DESC: '&7You claimed $%amount% earnings.'
+    TITLE: Výdělky sebrány
+    MESSAGE: '&a&lVýdělky sebrány'
+    DESC: '&7Vybral jsi %amount%$.'
   EARNINGSNOEARNINGS:
-    TITLE: No earnings
-    MESSAGE: '&c&lNo earnings to claim'
+    TITLE: Žádné výdělky
+    MESSAGE: '&c&lNic jsi si nevydělal'
     DESC: |-
-      &7You don't have any
-      &7earnings you could claim.
+      &7Nikdo nepřidal nabídku
+      &7k tvé aukci, a tak zde nic není.
 TIME:
-  NOW: now
-  LESSTHAN: less than %time%
+  NOW: nyní
+  LESSTHAN: méně než %time%
   YEARS:
-    SINGULAR: year
-    PLURAL: years
+    SINGULAR: rok
+    PLURAL: roky
   MONTHS:
-    SINGULAR: month
-    PLURAL: months
+    SINGULAR: měsíc
+    PLURAL: měsíce
   WEEKS:
-    SINGULAR: week
-    PLURAL: weeks
+    SINGULAR: týden
+    PLURAL: týdny
   DAYS:
-    SINGULAR: day
-    PLURAL: days
+    SINGULAR: den
+    PLURAL: dny
   HOURS:
-    SINGULAR: hour
-    PLURAL: hours
+    SINGULAR: hodina
+    PLURAL: hodiny
   MINUTES:
-    SINGULAR: minute
-    PLURAL: minutes
+    SINGULAR: minuta
+    PLURAL: minut
   SECONDS:
-    SINGULAR: second
-    PLURAL: seconds
+    SINGULAR: vteřiny
+    PLURAL: vteřin
