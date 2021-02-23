@@ -70,8 +70,8 @@ banned_message: |-
   &eVyprší: &f$duration
   &eDůvod: &a$reason&f
 
-  &7O unban si musíš požádat u nás na Discordu
-  &7v ticketech: §adiscord.gg/lCraftMania
+  &7O unban si můžeš požádat u nás na Discordu
+  &7v ticketech: §ddiscord.gg/craftmania
   &8(Dočasné bany se většinou neruší!)
 
   &b&lCraftMania.cz
@@ -82,8 +82,8 @@ banned_message_permanent: |-
   &eVyprší: &f$duration
   &eDůvod: &a$reason&f
 
-  &7O unban si musíš požádat u nás na Discordu
-  &7v ticketech: §adiscord.gg/lCraftMania
+  &7O unban si můžeš požádat u nás na Discordu
+  &7v ticketech: §ddiscord.gg/craftmania
 
   &b&lCraftMania.cz
 banned_message_appeal_message: 'Appeal at: &nhttp://example.com'
