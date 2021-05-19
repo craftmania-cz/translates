@@ -136,7 +136,7 @@
     },
     "quickshop-gui-preview": "QuickShop GUI Preview Item",
     "translate-not-completed-yet-click": "The translation of language {0} has completed {1}, Do you want help us to improve the translation? Click Here!",
-    "player-bought-from-your-store": "§b{0} §7si zakoupil §8{1}x {2} §7z tvého shopu, výdělek - §e{3}$.",
+    "player-bought-from-your-store": "§6[S] §b{0} §7si zakoupil §f{1}x {2} §a(+{3}$).",
     "reached-maximum-can-create": "§c§l[!] §cJiž jsi vytvořil maximální počet shopů {0}/{1}!",
     "translation-version": "Support Version: Reremake",
     "no-double-chests": "§cNemůžeš vytvářet double chest shop.",
