@@ -1721,22 +1721,22 @@ command:
       info: '&eManage and check flight charges'
       args: (add/take/set/show/expcharge/moneycharge/recharge) (playerName) (amount)
     info:
-      charge: '&eCurrent charge: &6[charge]&e/&6[max]'
+      charge: '&eAktuální nabití fly: &6[charge]&e/&6[max]'
       changed: '⻭ &eFly ti bylo dobito na hodnotu: &6[charge]'
       newCharge: '&eNew charge level: &6[charge]'
       bossbar: ⻭ &7Nabití fly §f[charge][changeAmount]
-      guiTitle: '&8Flight recharge'
+      guiTitle: Dobití fly (/flyc)
       buttonExp: '&6Recharge with exp'
-      buttonMoney: '&6Recharge with money'
-      max: '&6Already fully charged'
+      buttonMoney: '&aDobití pomocí peněz'
+      max: '&6Již plně nabito'
       lore:
-      - '&eLeft click +1. Cost: &7[amount1]'
-      - '&6Shift left click +10. Cost: &7[amount10]'
-      - '&eRight click +100. Cost: &7[amount100]'
-      - '&6Shift right click +1000. Cost: &7[amount1000]'
+      - '&eLevý kliknutí §6[+1] §e- Cena: &f[amount1]$'
+      - '&eLevý kliknutí a shift §6[+10] §e- Cena: &f[amount10]$'
+      - '&ePravé kliknutí §6[+100] §e- Cena: &f[amount100]$'
+      - '&ePravý kliknutí a shift §6[+1000] §e- Cena: §f[amount1000]$'
       - ''
       changeAmount: '&e([amount]&e)'
-      cost: '&eCharged &6[amount] &efor &6[charge] &eflight charges'
+      cost: '&eZaplaceno &6[amount]$ &eza &6[charge] &ejednotek nabití fly.'
   fly:
     help:
       info: '&eDá hráči létání na true nebo false'
@@ -1753,7 +1753,7 @@ command:
         (&3[offon]&e).
       targetFeedback: ⻫ &eFly byl změnen na &3[boolean]&e od &3[senderDisplayName]&e.
       targetFeedbackSelf: ⻫ &eFly bylo nastaveno na &3[boolean]
-      noCharge: ⻬ &cJiž jsi vyčerpal všechen svůj fly - nabij si ho.
+      noCharge: ⻬ &cJiž jsi vyčerpal všechen svůj fly, nabij si ho §f/recharge
   flyspeed:
     help:
       info: '&eZměna rychlosti létání (0-10)'
@@ -3087,7 +3087,7 @@ command:
       inform: '!actionbar!&2You have unclaimed rewards waiting for you! /prewards'
   ptime:
     help:
-      info: '&eControls player personal time'
+      info: '&eOvládání vlastního času pro sebe'
       args: ''
       explanation:
       - 'Example:'
@@ -3101,12 +3101,13 @@ command:
       - /ptime realtime
       - /ptime reset
     info:
-      check: '&ePersonal Time: &6[24h] &eor &6[12h] &eor &6[ticks]ticks'
+      check: '&eOsobní čas: &6[24h] &enebo &6[12h] &enebo &6[ticks]ticků'
       frozen: ' &c(-)'
-      gotreseted: '&6[playerDisplayName] &etime has been reset'
-      gotfrozen: '&6[playerDisplayName] &etime has been frozen'
-      gotunfrozen: '&6[playerDisplayName] &etime has been unfrozen'
-      setto: '&eTime set to &6[24h] &eor &6[12h] &eor &6[ticks]ticks &efor &6[playerDisplayName]'
+      gotreseted: '&6[playerDisplayName] &ečas byl vyresetován.'
+      gotfrozen: '&6[playerDisplayName] &ečas byl zmražen.'
+      gotunfrozen: '&6[playerDisplayName] &ečas byl rozmrazen.'
+      setto: '&eČas byl nastaven na &6[24h] &enebo &6[12h] &enebo &6[ticks]ticků &epro
+        &6[playerDisplayName]'
   purge:
     help:
       info: '&eCleans player data from world folder by inactive days'
