@@ -249,7 +249,7 @@ gui:
         - ''
         - '&8✖ &bLEVÝ KLIKNUTÍ'
         - '   &7Přepneš do správy landu.'
-        - '&8✖ &9PRAVÝ KLIKNUTÍ'
+        - '&8✖ &9PRAVÉ KLIKNUTÍ'
         - '   &7Zobrazíš základní informace'
         - '   &7o tomto landu.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFiNDNiOGMzZDM0ZjEyNWU1YTNmOGI5MmNkNDNkZmQxNGM2MjQwMmMzMzI5ODQ2MWQ0ZDRkN2NlMmQzYWVhIn19fQ==
@@ -263,7 +263,7 @@ gui:
         - ''
         - '&8✖ &bLEVÝ KLIKNUTÍ'
         - '   &7Přepneš do správy landu.'
-        - '&8✖ &9PRAVÝ KLIKNUTÍ'
+        - '&8✖ &9PRAVÉ KLIKNUTÍ'
         - '   &7Zobrazíš základní informace'
         - '   &7o tomto landu.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
@@ -281,7 +281,7 @@ gui:
         - ''
         - '&8✖ &bLEVÝ KLIKNUTÍ'
         - '   &7Přepneš do správy kempu.'
-        - '&8✖ &9PRAVÝ KLIKNUTÍ'
+        - '&8✖ &9PRAVÉ KLIKNUTÍ'
         - '   &7Zobrazíš základní informace'
         - '   &7o tomto kempu.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJiODRlNGMxYTMzMDY5M2Y3YmU1NTE2ZmQ2YzRmMzVhZWVjNDcwNTEyNDg5Y2U3MDYzYzYzOTMyOGFkNTdjNSJ9fX0=
@@ -299,7 +299,7 @@ gui:
         - ''
         - '&8✖ &bLEVÝ KLIKNUTÍ'
         - '   &7Přepneš do správy kempu.'
-        - '&8✖ &9PRAVÝ KLIKNUTÍ'
+        - '&8✖ &9PRAVÉ KLIKNUTÍ'
         - '   &7Zobrazíš základní informace'
         - '   &7o tomto kempu.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ5NTk2NWQ3OWRkZjYxM2Y1OTRmZDIwZDUxZTc2NWMwOWEyYTVmZjhkMGUwOWNmZjE5YThlYTQzMDIzNThhZCJ9fX0=
@@ -396,7 +396,7 @@ gui:
         name: '&6&lPoplatky a platby'
         lore:
         - '&7Zobraz si aktuální platbu za land.'
-        - '&7pro region &6{area}'
+        - '&7v regionu &6{area}'
         material: GOLD_INGOT
         slot: 33
       areas:
@@ -511,7 +511,7 @@ gui:
         - '&7{description}'
         - ''
         - '&8✖ &7Správa regionu'
-        - '&8✖ &3KLAVESA Q'
+        - '&8✖ &3KLÁVESA Q'
         - '   &7Smazání regionu'
         material: OAK_FENCE
         from: 10
@@ -533,7 +533,7 @@ gui:
         - '&82. &7Pak napiš &e/lands selection assign {area}'
         - '  &7k přiřazení výběru k regionu/landu.'
         - ''
-        - '&8✖ &3KLAVESA Q'
+        - '&8✖ &3KLÁVESA Q'
         - '   &7Smaže tento region.'
         material: ACACIA_FENCE
         from: 10
@@ -611,7 +611,7 @@ gui:
       object:
         name: '&6&lSvět: {world} X: {x} Z: {z}'
         lore:
-        - '&7Zabráno:&epřed {time}'
+        - '&7Zabráno:&e před {time}'
         - ''
         - '&7Kliknutím se teleportuješ do tohoto chunku.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
@@ -919,7 +919,7 @@ gui:
         from: 38
         to: 45
   area_banned:
-    title: '&8{area} &7> &8Zabanovaný hráči'
+    title: '&8{area} &7> &8Zabanovaní hráči'
     size: 45
     l:
       object_all:
@@ -950,7 +950,7 @@ gui:
       toggle:
         name: '&6&lZobrazit pouze region: {current}'
         lore:
-        - '&7Zobrazí pouze hráče,k kteří mají ban'
+        - '&7Zobrazí pouze hráče, kteří mají ban'
         - '&7v tomto regionu &8(&6{area}&8)&7?'
         - ''
         - '&8• &6&lKdyž je deaktivováno:'
@@ -1082,10 +1082,10 @@ gui:
         lore:
         - '&8✖ &bSHIFT + LEVÝ TLAČÍTKO'
         - '   &7Vyšší priorita'
-        - '&8✖ &9SHIFT + PRAVÝ TLAČÍTKO'
+        - '&8✖ &9SHIFT + PRAVÉ TLAČÍTKO'
         - '   &7Nižší priorita'
         - ''
-        - '&8✖ &3KLAVESA Q'
+        - '&8✖ &3KLÁVESA Q'
         - '   &7Smaže roli.'
         material: PLAYER_HEAD
         from: 10
@@ -1125,7 +1125,7 @@ gui:
         lore:
         - '&cTento land dosáhl maximální počtu rolí.'
         - '§7Pokud si chceš navýšit počet rolí navštiv §f/cshop'
-        - '&7Maximim:&f {max} rolí.'
+        - '&7Maximum:&f {max} rolí.'
       failure_priority:
         name: '&4&lPriorita role'
         lore:
@@ -1761,7 +1761,7 @@ gui:
       entity_griefing:
         name: '&6&lEntity Griefing: {enabled}'
         lore:
-        - '&7Povoluje entitám níčit bloky.'
+        - '&7Povoluje mobům níčit bloky.'
         - ''
         - '&8• &7&lPokud je aktivní:'
         - '    &7Creepeři mohou níčit bloky při explozi.'
@@ -2888,15 +2888,15 @@ gui:
         material: GOLD_INGOT
         slot: 23
       send-declaration:
-        name: '&a&lOdeslat deklaraci války'
+        name: '&a&lOdeslat vyhlášení války'
         lore:
-        - '§7Odešleš deklaraci války jinému národu.'
+        - '§7Odešleš vyhlášení války jinému národu.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
         slot: 45
       abort-declaration:
-        name: '&c&lZrušit deklaraci války'
+        name: '&c&lZrušit vyhlášení války'
         lore:
-        - '&7Zrušíš deklaraci války a žádná se konat nebude!'
+        - '&7Zrušíš vyhlášení války a žádná se konat nebude!'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
         slot: 37
       back:
@@ -3008,6 +3008,8 @@ gui:
         lore:
         - '&7Poplatky landu, které spadají'
         - '&7do národa a jeho velikosti.'
+        - '&7Zde můžeš upravit částku, kterou ti budou'
+        - '&7landy v tvém národě platit.'
         material: GOLD_INGOT
         slot: 31
       effects:

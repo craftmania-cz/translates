@@ -51,7 +51,7 @@ general:
       rented: '&7Tento region/chunk je pronajímán hráči §f{player}.'
       sold: '&7Tento region/chunk je prodáván hráči §f{player}.'
   time:
-    days: den(y)
+    days: dní
     hours: hodin(a)
     minutes: minut(a)
     seconds: vteřin(a)
@@ -60,8 +60,8 @@ general:
     offline: '&coffline'
   top:
     hologram:
-      title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Lands &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
-      footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Lands &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+      title: '&7&m━━━━━━━━━━━━━━<━&r &2Nejlepších 10 landů &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+      footer: '&7&m━━━━━━━━━━━━━━<━&r &2Nejlepších 10 landůs &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
   integration:
     dynmap:
       land:
@@ -176,21 +176,21 @@ general:
         warning: '&cNelze zaplatit náklady na provoz: {0}'
         unclaim: '&cNelze zaplatit náklady na provoz {0}. Poslední {1} poslední zabrané chunky byly zrušeny.'
         paid: '&7Zaplatil jsi za provoz: {0}'
-        nation: '&cNárod {0} nemůže zaplatit náklady za provoz {1} z jejich národní banky, takže byli zrušeni.'
+        nation: '&cNárod {0} nemůže zaplatit náklady za provoz {1} z jejich národní banky, takže byl zrušen.'
       bank:
         withdraw: '&cHráč {0} vybral částku {1} z banky. Nová hodnota účtu: {2}'
         deposit: '&7Hráč {0} vložil {1} do banky. Nová hodnota účtu: {2}'
       taxes:
         warning: '&cHráč {0} nemůže zaplatit poplatky.'
         untrusted: '&cHráč {0} nemůže zaplatit poplatky. Byl automaticky odebrán.'
-        received: '&7Obdržel jsi celkem {0} částek za poplatky od všech členů landu. Nová hodnota účtu v bance: {1}'
+        received: '&7Obdržel jsi poplatky (celkem {0}) od všech členů landu. Nová hodnota účtu v bance: {1}'
     war:
       declaration:
-        sent: '&7Deklaroval jsi válku proti {0}: &8/wars info'
-        received: '&c{0} &cdeklarovali válku proti tobě: &e/wars info'
+        sent: '&7Vyhlásil jsi válku národu {0}: &8/wars info'
+        received: '&c{0} &cvyhlásili válku proti tobě: &e/wars info'
         mutual:
           sent: '&7Odeslána žádost o válku {0}. &7Musí ji akceptovat.'
-          received: '&c{0} &cti odeslal válečný request. Potvrdit: &e/wars declare {1}'
+          received: '&c{0} &cti odeslal žádost o válku. Potvrdit: &e/wars declare {1}'
       surrender:
         sent: '&cVzdali jste se ve válce. Zaplatili jste {0} jako poctu protivníkovi.'
         received: '&7Protivník {0} &7se vzdal. Obdrželi jste {1} jako poctu.'
@@ -225,19 +225,19 @@ general:
       fight: '&cBoj'
     capture:
       none: '&aV této oblasti nejsou žádní útočníci.'
-      broadcast: '&cNepřítel se zmocňuje části {land} - {progress}%, {players} utočník(ů),
+      broadcast: '&cNepřítel dobývá {land} - {progress}%, {players} utočník(ů),
         x: {x}, y: {y}, z: {z}'
       invaders: '&cZabíráme - {progress}%, {players} utočník(ů)'
       defenders: '&cProtivník zabírá - {progress}%, {players} utočník(ů)'
   teleportation:
-    bossbar: '&7Čekej&5 {time} &7vteřin před teleportem.'
+    bossbar: '&7Počkej&5 {time} &7vteřin před teleportem.'
   combat-tag:
     bossbar: '&7Combat tag:&5 {time}'
 
 help:
   command:
     help: '[T]&e/lands {subcmd} &8[&estrana&8] - &7K získání nápovědy[H]&7Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
-    edit: '[T]&e/lands {subcmd} &8<&eland&8> &8- &7Vstoupíš do mod uprav pro land.[H]&7Uprava landu je používána pro příkazy jako /lands claim. &7Kliknutím okopíruješ příkaz.[/H][SC]{cmd}[/SC][/T]'
+    edit: '[T]&e/lands {subcmd} &8<&eland&8> &8- &7Vstoupíš do módu úprav pro land.[H]&7Uprava landu je používána pro příkazy jako /lands claim. &7Kliknutím okopíruješ příkaz.[/H][SC]{cmd}[/SC][/T]'
     claim: '[T]&e/lands {subcmd} &8[&eland | radius | auto&8] - &7Zabrání chunku[H]&7Zabereš
       chunk, ve kterém aktuálně jsi. Můžeš také specifikovat land, do kterého se chunk přiřadí.
       &7Kliknutím okopíruješ příkaz.[/H][SC]{cmd}[/SC][/T]'
@@ -289,10 +289,10 @@ help:
     rentlist: '[T]&e/lands {subcmd}&8- &7Zobrazí list všech pronájmů.[H]&7Seznam všech landů, které si lze pronajmout. &7Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
     level: '[T]&e/lands {subcmd}&8- &7Zobrazí postup levelu landu.[H]&7Zobrazí aktuální postup levelu landu k odemknutí dalších perků a benefitů. Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
     wars:
-      declare: '[T]&e/wars {subcmd} &8<&eland or nation&8> - &7Deklarace války[H]&7Kliknutím okopíruješ příkaz.[/H][SC]{cmd}[/SC][/T]'
+      declare: '[T]&e/wars {subcmd} &8<&eland or nation&8> - &7Vyhlášení války[H]&7Kliknutím okopíruješ příkaz.[/H][SC]{cmd}[/SC][/T]'
       info: '[T]&e/wars {subcmd} - &7Zobrazí aktuální nebo další válku[H]&7Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
       menu: '[T]&e/wars {subcmd} &8[&eshortcut&8] - &7Otevře menu války[H]&7Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
-      deny: '[T]&e/wars {subcmd} &8- &7Zamítne žádost o deklaraci války[H]&7Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
+      deny: '[T]&e/wars {subcmd} &8- &7Zamítne žádost o vyhlášení války[H]&7Kliknutím okopíruješ příkaz.[/H][C]{cmd}[/C][/T]'
     nations:
       chat: '[T]&e/nations {subcmd} &8[&enation&8] <&emessage&8> &8- &7Odešle zprávu do národního chatu.[H]&7Kliknutím okopíruješ příkaz.[/H][SC]{cmd}[/SC][/T]'
       trust: '[T]&e/nations {subcmd} &8<&eland&8> - &7Pozve land do národa[H]&7Kliknutím okopíruješ příkaz[/H][SC]{cmd}[/SC][/T]'
@@ -369,7 +369,7 @@ message:
   teleportation:
     already: '&cNelze spustit druhý teleport. Již probíhá jeden teleport. §7Počet až se dokončí ten první.'
     started: '&7Teleportování započalo... Teleportuji tě za&5 {sec} vteřin&7. Nepohybuj se!'
-    cmd: '&cNemůžeš používat příkazy, když se teleportuješ. &7Čekej dalších&5
+    cmd: '&cNemůžeš používat příkazy, když se teleportuješ. &7Počkej dalších&5
       {sec} vteřin &7než se teleport dokončí.'
     cancelled: '&cTvůj teleport byl zrušen. &7Nepohybuj se když čekáš na teleport.'
     chunk: '#t#&6Teleportován[newline]&7X: {x} Z: {z} Cena:&c {cost}'
@@ -394,7 +394,7 @@ message:
     war: '&cNemáš povolení k používání tohoto příkazu, když jsi ve válce.'
   auto-action:
     started:
-      claim: '&7Automatické zabírání chunků započalo. Pohybuj se po okolí aby jsi zabral všechny chunky, které chceš.'
+      claim: '&7Automatické zabírání chunků započalo. Pohybuj se po okolí, aby jsi zabral všechny chunky, které chceš.'
       unclaim: '&7Automatické rušení zabraných chunků započalo. Pohybuj se po okolí k zrušení landu v chunkách.'
     stopped:
       claim: '&7Automatické zabírání chunků bylo zastaveno.'
@@ -466,7 +466,7 @@ command:
         &7&m━━━━━━━━━<━&r &5&lRent Area &7&m━>━━━━━━━━━
     rent:
       expire: '&cNemůžeš prodloužit čas pronájmu v regionu&4 {area}&c. &7Land&2 {land} &7odebral pronájem. Expiruje za&5 {time}&7.'
-      max: '&cNemůžeš přidloužit pronájem v regionu&4 {area}&c. &7Land&2 {land} &7má nastavený maximální počet pronájmů na&5 {max}.'
+      max: '&cNemůžeš prodloužit pronájem v regionu&4 {area}&c. &7Land&2 {land} &7má nastavený maximální počet pronájmů na&5 {max}.'
       add: '&7Přidal jsi&5 {add} &7k tvému pronájmu v regionu&6 {area} &7za&c {cost}&7.
         Expirace za&5 {time}&7.'
       success: |
@@ -483,12 +483,12 @@ command:
          &8• &8Pronájem: {cost} každých {time}
         &7&m━━━━━━━━━<━&r &5&lRented Info &7&m━>━━━━━━━━━
     cancel:
-      success: '&7Zrušil jsi pronájem v regionu&6 {area}&7. Již nemáš přístup k této oblasti.'
+      success: '&7Zrušil jsi pronájem v regionu&6 {area}&7. Již nemáš přístup do této oblasti.'
     remove:
       offer:
         success:
           land: '&7Land&2 {land} &7již nemůže být zakoupen nebo pronajmut.'
-          area: '&7Region&6 {area} &7v landu&2 {land} &7již nemůže býýt zakoupen nebo pronajmut. Současný nájemníci zůstanou do doby než pronájem skončí.'
+          area: '&7Region&6 {area} &7v landu&2 {land} &7již nemůže být zakoupen nebo pronajmut. Současný nájemníci zůstanou do doby než pronájem skončí.'
       tenant:
         success: '&7Odebral jsi nájemce&3 {player} &7z regionu&6 {area} &7v landu&2
           {land} &7a zaplatil jsi&c {cost} &7jako kompenzaci nákladů.'
@@ -535,7 +535,7 @@ command:
   general:
     no-permission: '&cNa tuto akci nemáš dostatek práv.'
     land-not-exist: '&cLand&2 {land} &cneexistuje. &7Není zde žádný land s tímto názvem.'
-    area-not-exist: '&cRegion&4 {area} &cneexistuje v landu&4 {land}&c. &7Můžeš vytvořit nový region v land menu v výběru regionů.'
+    area-not-exist: '&cRegion&4 {area} &cneexistuje v landu&4 {land}&c. &7Můžeš vytvořit nový region v land menu ve výběru regionů.'
     noaccess:
       untrusted: '&cNemáš nastavený trust v tomto landuY&4 {land}&c. &7Použij &e/lands menu &7k zobrazení všech landů, ve kterých jsi členem.'
       land: '&cNemáš povolení na provádění toto akce v landu&4 {land}&c. &8Vlajka: {flag}'
@@ -598,9 +598,9 @@ command:
   create:
     land-other: '&cNemáš povolení mít vlastní land a být členem v jiném landu. &7Musíš prvně opustit land&2 {land} &7.'
     max:
-      land: '&cNemůžeš vytvořit více landů. &7Dosíhl jsi maxámálního počtu&3 {max}
+      land: '&cNemůžeš vytvořit více landů. &7Dosáhl jsi maximálního počtu&3 {max}
         &7vlastních landů.'
-      camp: '&cNemůžeš vytvořit více kempů. &7Dosáhl jsi máximálního počtu&3 {max}
+      camp: '&cNemůžeš vytvořit více kempů. &7Dosáhl jsi maximálního počtu&3 {max}
         &7kempů.'
     success:
       land: |
@@ -631,7 +631,7 @@ command:
       members: '[NoPrefix][T]&c#{pos} &2{land} &7Počet členů:&3 {members}[H]&7Peníze v bance:
         {balance}[newline]&7Počet chunků: {chunks}[newline]&7Počet členů: {members}[newline]&7Level:
         {level}[newline]  Postup: {progress}%[newline][newline]&7Kliknutím zobrazíš více informací o landu.[/H][C]lands info {land_p}[/C][/T]'
-      level: '[NoPrefix][T]&c#{pos} &2{land} &7Postup:&3 {level}[H]&7Penáze v bance: {balance}[newline]&7Počet chunků:
+      level: '[NoPrefix][T]&c#{pos} &2{land} &7Postup:&3 {level}[H]&7Peníze v bance: {balance}[newline]&7Počet chunků:
         {chunks}[newline]&7Počet členů: {members}[newline]&7Level: {level}[newline]  Postup:
         {progress}%[newline][newline]&7Kliknutím zobrazíš více informací o landu.[/H][C]lands
         info {land_p}[/C][/T]'
@@ -662,7 +662,7 @@ command:
     status:
       complete: '#t#&6Výběr[newline]&7První: {first} &7Druhý: {second}[newline]&7Zabrání:
         &e&l/claim &7Zrušení zabrání: &e&l/unclaim &7Region: &e&l/assign'
-      progress: '#t#&6Výběr[newline]&7První: {first} &7Druhý: {second}[newline]&6Použij &lnástroj &6nebo &lQ &6k výběru chunk okrajů. &7Změň item v ruce ke zrušení.'
+      progress: '#t#&6Výběr[newline]&7První: {first} &7Druhý: {second}[newline]&6Použij &lnástroj &6nebo &lQ &6k výběru okrajů chunku. &7Změň item v ruce ke zrušení.'
       reminder: |
         &7Výběr dokončen: Následující akce budou provedeny:
 
@@ -670,7 +670,7 @@ command:
           [T]&7✖ Zrušení zabrání: &e/unclaim &8[&8CLICK&8][H]&7Klikni zde k zrušení vybrané části.[/H][C]lands unclaim[/C][/T]
           [T]&7✖ Region: &e/assign &8[&8CLICK&8][H]&7Přiřaď výběr k nějakému regionu.[/H][SC]lands assign <area>[/SC][/T]
       not-complete: '&cTvůj výběr není kompletní &7Ujisti se, že máš vybrané obě pozice. [T]&7Můžeš přepnout na výběrový mod pomocí &e/lands
-        selection &8[&8KLIKNI&8][H]&7Klikni zde aktivaci výběruvého modu.[/H][C]lands
+        selection &8[&8KLIKNI&8][H]&7Klikni zde aktivaci výběrového modu.[/H][C]lands
         selection[/C][/T]'
       disabled: '#t#&6Výběr[newline]&cDeaktivováno'
   
@@ -700,7 +700,7 @@ command:
       &7za&c {cost}&7. Další zabrání tě bude stát&c {next}&7.'
     already-claimed: '&cVe tvém výběru je chunk, který je již spravován jiným landem &8(&7X: {x} Z: {z}&8)&c. &7Tento chunk patří landu&2 {land}&7.'
     max-chunk: '&cNemůžeš zabrat&4 {chunks} &ca více chunků pro tento land. &7Maximální počet pro land&2 {land} &7je&3 {max} &7chunků.'
-    processing: '&cTvůj minulý výběr je ještě zpracováván. &7Čekej prosím na dokončení akce.'
+    processing: '&cTvůj minulý výběr je ještě zpracováván. &7Počkej prosím na dokončení akce.'
     selection:
       success: '&7Úspěšně jsi zabral&3 {chunks} &7chunků pro land&2 {land}&7.
         Zaplatil jsi&c {cost}&7.'
@@ -743,14 +743,14 @@ command:
       success: '&7Úspěšně jsi opustil region&6 {area} &7v landu&2 {land}&7.'
   unclaim:
     rental: '&cNemůžeš zrušit zabrání tohoto chunku&7, protože obsahuje pronajmutý/prodávaný region&6 {area}&7. Nájemce:&3 {player}'
-    split: '&cNemůžeš zabrání tohoto chunku, protože by to mohlo způsobit rozdělaní tvého landu na dvě části. &7Části které mohou být rozděleny jsou nyní zobrazovány.'
+    split: '&cNemůžeš zabrání tohoto chunku, protože by to mohlo způsobit rozdělení tvého landu na dvě části. &7Části které mohou být rozdělený jsou nyní zobrazovány.'
     success: '&7Úspěšně jsi zrušil zabrání chunku &8(&7Land:&2 {land} &7X: {x} Z:
       {z}&8)&7. Dostal jsi&c {back} &7jako cashback.'
     selection:
       empty: '&cNezrušil jsi zabrání v žádném chunku, protože nejsou zabrány nebo na to nemáš povolení.'
       rental: '&cNemůžeš zrušit zabrání chunků dle tvého výběru&7, jelikož obsahují chunk, které jsou pronajímány/prodávány - &6 {area} &7v landu&2 {land}&7. Nájemce:&3 {player}'
       split: '&7Úspěšně jsi zrušil zabrání {success} / {size} chunků ve dle tvého výběru, &cale {failed}
-        chunků nemohlo být zrušeno, protože by mohlo dojít k rozdělení landu do několaika částí&7. Části, které mohou být rozděleny jsou nyní zobrazovány. Dostal jsi&c {back} &7jako cashback.'
+        chunků nemohlo být zrušeno, protože by mohlo dojít k rozdělení landu do několika částí&7. Části, které mohou být rozděleny jsou nyní zobrazovány. Dostal jsi&c {back} &7jako cashback.'
       partly: '&7Úspěšně jsi zrušil zabrání {success} / {size} chunků ve tvém výběru. Dostal jsi&c {back} &7jako cashback.'
       success: '&7Úspěšně jsi zrušil zabrání všech chunků ve tvém výběru. Dostal jsi&c {back} &7jako cashback.'
   unclaimall:
@@ -859,7 +859,7 @@ command:
   spawn:
     not-exist: '&cNení nastavený žádný spanwnpoint pro land&4 {land}&c. &7Někdo kdo na to má práva v landu, jej musí nastavit pomocí &e/lands setspawn&7.'
     not-allowed: '&cNemáš povolení se teleportovat na spawn landu&4 {land}&c.
-      &7Musí ti to povolit v nastavení rolích.'
+      &7Musí ti to povolit v nastavení rolí.'
     chunk: '&7Land&2 {land} &7nemá nastavený land spawnpoint &8(&e/lands setspawn&8) &7.
       &7Byl jsi teleportován na první zabraný chunk tohoto landu.'
     success: '&7Úspěšně jsi teleportoval na spawn landu&2 {land} &7Cena:&c {cost}'
@@ -975,18 +975,18 @@ list:
     - '&6Pronájem {area} &8[KLIKNI]'
     - '&c{cost} &7každých &5{time}'
     - '&7Max doba: {max}'
-    - '&8Projamout'
+    - '&fPronajmout'
     sell:
       area:
       - '&aNákup &8[KLIKNI]'
       - '&7Region&6 {area}'
       - '§7Cena: &c{cost}'
-      - '&8Zakoupit'
+      - '&fZakoupit'
       land:
       - '&aNákup &8[KLIKNI]'
       - '&7Land&2 {land}'
       - '§7Cena: &c{cost}'
-      - '&8Zakoupit'
+      - '&fZakoupit'
     rented:
     - '&7Region&6 {area} &8[KLIKNI]'
     - '&7Nájemce: {player}'
@@ -1090,44 +1090,44 @@ wars:
       no-war: '&cNejsou zde žádné budoucí války pro {object}&c. &7Všude je mír!'
     declare:
       not-allowed: '&cNemáš povolení spustit válku pro {object}&c. &7Vůdce {object} &7toto musí provést sám.'
-      member: '&cNemůžeš neklarovat válku s {object}&c. &7Ty nebo protivník máte někde trust v landu / národu.'
-      war-shield: '&cAktuálně nemůžeš dekarovat válku proti {object}&c. &7Mají válečnou ochranu po dalších&5 {time}&7.'
+      member: '&cNemůžeš vyhlásit válku s {object}&c. &7Ty nebo protivník máte někde trust v landu / národu.'
+      war-shield: '&cAktuálně nemůžeš vyhlásit válku proti {object}&c. &7Mají válečnou ochranu na dalších&5 {time}&7.'
       no-nation: '&cNemůžeš zautočit na land&4 {land}&c. &7Musí být v nějakém národě aby se mohli účastnit válek.'
       no-target: '&cNení zde žádný land nebo národ s názvem&4 {target}&c. &7Chyba?'
-      ally: '&cNemůžeš deklarovat válku proti {object}&c. &7Jsou členem stejného národa&9 {nation}&7.'
-      balance: '&cNelze odeslat delkaraci. &7Útočníci {object} &7nemají v bance minimální částkuf&c {min} &7aby mohli vstoupit do války.'
-      online: '&cNelze odeslat deklaraci. &7Nejméně jeden hráč z {object} &7musí být připojený na serveru.'
-      broadcast: '&c{attacker} &7deklarovali válku proti {defender}&7. Válka začne za&5 {time}&7.'
-      success: '&7Ty &8({attacker}&8) &7jste úspěšně deklarovali válku proti {defender}&7.
+      ally: '&cNemůžeš vyhlásit válku proti {object}&c. &7Jsou členem stejného národa&9 {nation}&7.'
+      balance: '&cNelze vyhlásit válku. &7Útočníci {object} &7nemají v bance minimální částkuf&c {min} &7aby mohli vstoupit do války.'
+      online: '&cNelze vyhlásit válku. &7Nejméně jeden hráč z {object} &7musí být připojený na serveru.'
+      broadcast: '&c{attacker} &7vyhlásili válku proti {defender}&7. Válka začne za&5 {time}&7.'
+      success: '&7Ty &8({attacker}&8) &7jste úspěšně vyhlásili válku proti {defender}&7.
         Válka začne za&5 {time}&7.'
-      target: '&c{attacker} &7deklaroval válku proti {defender} &8(&7TY&8)&7.
+      target: '&c{attacker} &7vyhlásili válku proti {defender} &8(&7TY&8)&7.
         Válka začne za&5 {time}&7.'
       confirm: |
-        &cJsi si jistý, že chceš deklarovat válku proti {object}&c?
+        &cJsi si jistý, že chceš vyhlásit válku proti {object}&c?
 
-         [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde potvrdíš a deklaruješ válku ve tvém národě.[/H][C]wars declare {input} confirm[/C][/T]
+         [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde potvrdíš a vyhlásíš válku ve tvém národě.[/H][C]wars declare {input} confirm[/C][/T]
       mutual:
-        success: '&7Ty &8({attacker}&8) &7jste úspěšně odeslali deklaraci války
+        success: '&7Ty &8({attacker}&8) &7jste úspěšně odeslali vyhlásili války
           {defender}&7. &7Nyní to mohou potvrdit nebo zamítnout, předtím než válka začne.
           &7Pokud se protivník vzdá během války, budou ti muset zaplatit&c {tribute}'
         target: |
-          &7Národ {attacker} &7odeslal deklaraci výlky proti {defender} &8(&7TY&8)&7. &7Pokud se bránící se národ vzdá během války, budou muset zaplatit&c {tribute}.
+          &7Národ {attacker} &7odeslal vyhlášení války proti {defender} &8(&7TY&8)&7. &7Pokud se bránící se národ vzdá během války, budou muset zaplatit&c {tribute}.
 
-           [T]&2✔ Potvrdit &8[&8KLIKNI&8][H]&7Kliknutím zde potvrdíš deklaraci války. (Nevratné)[/H][C]wars declare {input}[/C][/T]
-           [T]&c✘ Zamítnout &8[&8KLIKNI&8][H]&7Kliknutím zde zrušíš deklaraci války.[/H][C]wars deny[/C][/T]
+           [T]&2✔ Potvrdit &8[&8KLIKNI&8][H]&7Kliknutím zde potvrdíš vyhlášení války. (Nevratné)[/H][C]wars declare {input}[/C][/T]
+           [T]&c✘ Zamítnout &8[&8KLIKNI&8][H]&7Kliknutím zde zrušíš vyhlášení války.[/H][C]wars deny[/C][/T]
       already:
         attacker: '&cNelze se připojit do další války. &7Aktuální válka s {object} &7musí nejprve skočit.'
-        defender: '&cAktuálně nelze deklarovat proti nim válku. &7Národ {object}
+        defender: '&cAktuálně nelze vyhlásit proti nim válku. &7Národ {object}
           &7je již ve válce.'
       min-players:
-        attacker: '&cNelze se zapojit do války, protože {object} &cpotřebuje více hráčů. &7Minimum hráčů v národě pro deklarování války je&3 {min}§7.'
+        attacker: '&cNelze se zapojit do války, protože {object} &cpotřebuje více hráčů. &7Minimum hráčů v národě pro vyhlášení války je&3 {min}§7.'
         defender: '&cNemůžeš delkarovat válku proti {object}&c, protože nemají dostatek hráčů v národě. &7Minimální počet hráčů pro bránící se národ a deklaraci války je&3 {min}§7.'
     deny:
-      attacker: '&cÚtočící národ nemůže zrušit jejich deklaraci války. &7Pouze bránící se národ toto může provádět.'
-      ongoing: '&cNemůžeš zrušit probíhající válku {enemy}&c. &7Můžeš pouze zrušit deklaraci války pro {object}&7.'
-      success: '&7Úspěšně jsi zamítnul deklaraci války pro {object} &7proti národu {enemy}&7.'
+      attacker: '&cÚtočící národ nemůže zrušit jejich vyhlášení války. &7Pouze bránící se národ toto může provádět.'
+      ongoing: '&cNemůžeš zrušit probíhající válku {enemy}&c. &7Můžeš pouze zrušit vyhlášení války pro {object}&7.'
+      success: '&7Úspěšně jsi zamítnul vyhlášení války pro {object} &7proti národu {enemy}&7.'
     menu:
-      mutual: '&cNení nemůžeš otevřít válečné menu. &7Deklarace války pro
+      mutual: '&cNyní nemůžeš otevřít válečné menu. &7Vyhlášení války pro
         {object} &7musí být nejprve potvrzena.'
     info:
       war: |
@@ -1192,7 +1192,7 @@ nations:
       none: |
         &cTvůj land&4 {land} &cnení součástí žádného národa.
 
-          &7Jakýkoliv národ můž pozvat tvůj land: &e/nations trust
+          &7Jakýkoliv národ můžeš pozvat tvůj land: &e/nations trust
           [T]&7Vytvoření vlastního národa: &e/nations create[H]&7Kliknutím okopíruješ.[/H][SC]nations create[/SC][/T]
       noaccess: '&cNa toto nemáš povolení pro národ&4 {nation}&c.'
       not-trusted: '&cLand&4 {land} &cnení členem národa&4 {nation}&c.'
@@ -1233,9 +1233,9 @@ nations:
       already: '&cLand&4 {land} &cnení přidaný v národě&4 {nation}&c.'
       success: '&7Úspěšně jsi odebral land&2 {land} &7z národa&9 {nation}&7.'
     delete:
-      war: '&cAktuáolně nemůžeš smazat národ. &7Národ&9 {nation} &7je aktuálně zapojený ve válce proti {object}&7. Zkus to znovu až válka skončí.'
+      war: '&cAktuálně nemůžeš smazat národ. &7Národ&9 {nation} &7je aktuálně zapojený ve válce proti {object}&7. Zkus to znovu až válka skončí.'
       confirm: |
-        &cProsím potvrd, že chceš opravdu smazat národ&4 {nation}&c.
+        &cProsím potvrď, že chceš opravdu smazat národ&4 {nation}&c.
 
          [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde smažeš národ&9 {nation}&7.[/H][C]nations delete {nation} confirm[/C][/T]
       success: '&7Úspěšně jsi smazal národ &8(&7Národ:&2 {nation}&8)&7.'
@@ -1247,7 +1247,7 @@ nations:
         zapojený do války s {object}&7. Válka skončí za&5 {time}&7.'
       success: '&7Úspěšně jsi opustil národ&9 {nation} &7s landem&2 {land}&7.'
       confirm: |
-        &7Prosím potvrd, že chceš opravdu opustit národ&9 {nation} &7s landem&2 {land}&7.
+        &7Prosím potvrď, že chceš opravdu opustit národ&9 {nation} &7s landem&2 {land}&7.
 
          [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde opustíš národ.[/H][C]nations leave confirm[/C][/T]
     rename:
