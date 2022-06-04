@@ -1,74 +1,9 @@
-# Resource page: https://www.spigotmc.org/resources/authors/315463/
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
 # Discord: https://discord.gg/B4MAJVk
 #
-# If you encounter any issues, please report them
-# to discord support server or via pm.
-# Bugs or issues are mostly fixed within hours.
-#
-#
-# Here you can edit the whole GUI.
-# You can set GUI titles, the size and
-# item names, lores, materials and slots.
-# Don't remove any values or keys.
-#
-# You also can add new items to your GUI.
-# This can be done under gui.<GUI>.s.<YourItemName>
-# The name needs to be unique in this section.
-# Example:
-#
-# gui:
-#   lands:
-#     title: '&8Your Lands'
-#     size: 27
-#     s:
-#       close:
-#         name: '&cClose'
-#         lore:
-#         - '&7Close this menu.'
-#         - ' '
-#         - '&8- &7You can open it again'
-#         - '  &7with &8/&3Lands menu&7.'
-#         material: 'RED_STAINED_GLASS_PANE'
-#         slot: 9
-#
-# Please note: You need to set all values
-# otherwise Lands will auto generate values.
-# Also you can't set items where list items
-# are configured. Means if for example the
-# list in the Lands GUI goes from slot
-# 10 - 12 you can set any items with
-# the slot 10, 11, 12. They will be ignored.
-#
-#
-# You also can apply new placeholders.
-# This can be done under gui.<GUI>.p.<YourItemName>
-# The name needs to be unique in this section.
-# Example:
-#
-# gui:
-#   lands:
-#     p:
-#       placeholder_1:
-#       material: 'GRAY_STAINED_GLASS_PANE'
-#       from: 1
-#       to: 9
-#
-# Please note: You need to set all values
-# otherwise Lands will auto generate values.
-# Also you can't set items where list items
-# are configured. Means if for example the
-# list in the Lands GUI goes from slot
-# 10 - 12 you can set any items with
-# the slot 10, 11, 12. They will be ignored.
-# Added enabled: false to a item to disable it.
-# You can set every item as a custom head:
-# Visit /https://minecraft-heads.com/custom-heads
-# Then copy the 'value:' and paste it at 'material:'
-#
-#
-# If you encounter any issues or you simply have
-# some questions, contact me via PM or Discord.
-# Discord: https://discord.gg/B4MAJVk
+# Wiki: https://github.com/Angeschossen/General/wiki/GUI-Menus
 
 general:
   wYes: '&aAno'
@@ -110,6 +45,14 @@ general:
     name:
       land: '&2Land '
       nation: '&9Národ '
+  top:
+    sorting:
+      balance: Balance
+      chunks: Chunks
+      members: Members
+      level: Level
+      ratio_kd: Kills/Deaths
+      ratio_wl: Won/Lost
 
 
 skull:
@@ -490,42 +433,42 @@ gui:
           slots: 24
           data:
             modify: 1
-          name: '&a&lAdd {value}'
+          name: '&a&lPřidat {value}'
           lore: []
         refresh_plus-2:
           material: GLOWSTONE_DUST
           slots: 25
           data:
             modify: 50
-          name: '&a&lAdd {value}'
+          name: '&a&lPřidat {value}'
           lore: []
         refresh_plus-3:
           material: GLOWSTONE_DUST
           slots: 26
           data:
             modify: 500
-          name: '&a&lAdd {value}'
+          name: '&a&lPřidat {value}'
           lore: []
         refresh_minus-3:
           material: REDSTONE
           slots: 22
           data:
             modify: 1
-          name: '&c&lRemove {value}'
+          name: '&c&lOdebrat {value}'
           lore: []
         refresh_minus-2:
           material: REDSTONE
           slots: 21
           data:
             modify: 50
-          name: '&c&lRemove {value}'
+          name: '&c&lOdebrat {value}'
           lore: []
         refresh_minus-1:
           material: REDSTONE
           slots: 20
           data:
             modify: 500
-          name: '&c&lRemove {value}'
+          name: '&c&lOdebrat {value}'
           lore: []
   
   player_info:
@@ -880,116 +823,110 @@ gui:
         war:
           material: IRON_SWORD
           slots: 12
-          name: '&c&lCurrent War'
+          name: '&c&lAktuální válka'
           lore:
-          - '&8✖ &7Get information about'
-          - '   &7the current war.'
+          - '&7Informace o aktuální'
+          - '&7válce a jejím stavu.'
         no-war:
           material: WOODEN_SWORD
           slots: 12
-          name: '&a&lPeaceful'
+          name: '&a&lMír a klid'
           lore:
-          - '&7Your nation isn''t engaged in any'
-          - '&7war. Everything is peaceful.'
+          - '&7YTvůj národ není zapojený do'
+          - '&7žádné války. Všude je mír.'
         inbox:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
           slots: 13
-          name: '&6&lInbox &8(&7{amount}&8)'
+          name: '&6&lSchránka &8(&7{amount}&8)'
           lore:
-          - '&8✖ &7Open advanced view.'
+          - '&8✖ &7Otevři k zobrazení pokročilého zobrazení.'
           - ''
-          - '&7Received messages:'
+          - '&7Obdržené zprávy:'
           - '{inbox}'
         stats:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmYWZmYThjNmM3ZjYyNjIxNjgyZmU1NjcxMWRjM2I4OTQ0NjVmZGY3YTYyZjQzYjMxYTBkMzQwM2YzNGU3In19fQ==
           slots: 16
-          name: '&6&lStatistics'
+          name: '&6&lStatistiky'
           lore:
-          - '&7Total members: {members}'
+          - '&7Celkem členů: {members}'
           - ''
-          - '&6&lEconomy:'
-          - ' &8• &7Nation'
-          - '   &7Balance: {balance}'
-          - '   &7Nation pays&c {upkeep} &7upkeep'
-          - '   &7in {upkeep_next}.'
+          - '&6&lEkonomika:'
+          - ' &8• &7Národ'
+          - '   &7Banka: {balance}'
+          - '   &7Cena za údržbu&c {upkeep} &7za:'
+          - '   &7{upkeep_next}.'
           - ''
-          - ' &8• &4Your land &8({land})'
+          - ' &8• &4Tvůj land &8({land})'
           - '   &7Upkeep of&c {upkeep_land} &7to the'
           - '   &7nation in {upkeep_next_land}.'
         role:
           material: INHERIT
           slots: 30
-          name: '&6&lNation Role'
+          name: '&6&lRole národa'
           lore:
-          - '&8✖ &7Configure what nation members'
-          - '   &7can do in each land that is part'
-          - '   &7of this nation.'
+          - '&7Uprav, co mohou členové národa'
+          - '&7v každém landu, který je součástí'
+          - '&7tvého národa.'
         lands:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
           slots: 11
           name: '&6&lLands'
           lore:
-          - '&8✖ &7Manage lands that are part'
-          - '   &7of this nation.'
+          - '&7Správa landů, které jsou v národě.'
         relations:
           material: LIME_BANNER
           slots: 14
-          name: '&6&lRelations'
+          name: '&6&lVztahy'
           lore:
-          - '&8✖ &7Manage your relations with other'
-          - '   &7lands and nations.'
+          - '&7Správa vztahů mezi landy a národy.'
         level:
           material: EXPERIENCE_BOTTLE
           slots: 15
-          name: '&6&lLevel'
+          name: '&6&lPopstup levelu'
           lore:
-          - '&8✖ &7View level progression and'
-          - '   &7attributes.'
+          - '&7Zobrazení aktuálního postupu.'
         spawn:
           material: ENDER_PEARL
           slots: 9
-          name: '&6&lSpawn'
+          name: '&6&lTeleport na spawn'
           lore:
-          - '&8✖ &7Teleport to the capital''s spawn.'
+          - '&7Kliknutím se teleportuješ na spawn'
+          - '&7hlavního landu.'
         taxes:
           material: GOLD_INGOT
           slots: 29
-          name: '&6&lTaxes'
+          name: '&6&lDaně a poplatky'
           lore:
-          - '&8✖ &7Tax lands that are part of'
-          - '   &7this nation by their size.'
+          - '&7Sbírej poplatky od landů,'
+          - '&7které jsou součástí národa.'
         effects:
           material: POTION
           slots: 31
-          name: '&6&lEffects'
+          name: '&6&lEfekty'
           lore:
-          - '&8✖ &7Set effects to be active within'
-          - '   &7your nation. Effects can be unlocked'
-          - '   &7through nation level progression.'
+          - '&7Nastav efekty, které jsou aktivní'
+          - '&7pro tvůj národ. Efekty mohou být odemknuty'
+          - '&7skrz velikost národa.'
         child_spawn_failure_enter:
-          name: '&4&lNot Allowed to Enter'
+          name: '&4&lNemáš povolení ke vstupu'
           lore:
-          - '&cYou''re not allowed to enter'
-          - '&cthe area in which the capital''s'
-          - '&cspawn is located.'
-          - ''
-          - ' &8• &7The capital''s owner can give your'
-          - '   &7role permission to do so.'
+          - '&cNelze vstoupit do regionu'
+          - '&chlavního landu, kde je umístěný spawn.'
         child_spawn_failure_teleport:
-          name: '&4&lNot Allowed to Teleport'
+          name: '&4&lNelze se teleportovat'
           lore:
-          - '&cYou''re not allowed to teleport'
-          - '&cto &nthe &ccapital''s spawn.'
+          - '&cNemáš povolení se teleportovat'
+          - '&cna &nhlavní land národa'
           - ''
-          - ' &8• &7The capital''s owner can give your'
-          - '   &7role permission to do so.'
+          - '&7Majitel landu musí dát roli'
+          - '&7dostatečná práva.'
         child_spawn_failure_none:
-          name: '&4&lNo Spawnpoint'
+          name: '&4&lŽádný spawn'
           lore:
-          - '&cThe capital hasn''t set a spawn yet.'
+          - '&cHlavní land nemá nastavený spawn.'
           - ''
-          - ' &8• &7Set spawn point:'
-          - '   &e/lands setspawn'
+          - '&7Nastavení spawnu:'
+          - '&e/lands setspawn'
     title: '&8{level} {nation}'
   list_player_lands:
     title: Tvé lands
@@ -2226,7 +2163,7 @@ gui:
           - 42-45
           name: '&c&lZrušit'
           lore: []
-    title: 'Potvrzení akce'
+    title: Potvrzení akce
   player_invite:
     items:
       default:
@@ -2373,7 +2310,7 @@ gui:
           - '   &7Teleport na hlavní město (land).'
           - '&8✖ &9PRAVÉ KLIKNUTÍ'
           - '   &7Zobrazení více informací.'
-    title: 'Všechny národy'
+    title: Všechny národy
   relations:
     items:
       default:
@@ -2401,7 +2338,7 @@ gui:
           name: '&6&lObdržené nabídky'
           lore:
           - '&8✖ &7Správa přijatých nabídek.'
-    title: 'Vztahy'
+    title: Vztahy
   list_relation:
     items:
       default:
@@ -2555,11 +2492,11 @@ gui:
           lore:
           - '&7Toggle natural flags, like'
           - '&7mob spawning etc.'
-    title: 'Vlajky přírody'
+    title: Vlajky přírody
   list_admin_wilderness_roleflags:
-    title: 'Hráčské vlajky'
+    title: Hráčské vlajky
   list_admin_wilderness_landflags:
-    title: 'Klasické vlajky'
+    title: Klasické vlajky
   admin_main:
     items:
       default:
@@ -2625,6 +2562,54 @@ gui:
           lore:
           - '&7Smaže land z povrchu zemského.'
     title: '&8Admin Lands'
+  list_top:
+    items:
+      default:
+        entry_object:
+          material: INHERIT
+          name: '&6&l#{pos} &2{object}'
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Majitel: {owner}'
+          - ''
+          - '&8✖ &bLEVÉ TLAČÍTKO'
+          - '   &7Teleport na spawn'
+          - '   &7tohoto landu.'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zobrazení více informací.'
+        entry_object_ratio_kd:
+          material: INHERIT
+          name: '&6&l#{pos} &2{object}'
+          lore:
+          - ' &8• &7Zabito hráčů ve válce: {numerator} smrti: {denominator}'
+          - '      &7= ratio of: {value}'
+          - ' &8• &7Majitel: {owner}'
+          - ''
+          - '&8✖ &bLEVÉ TLAČÍTKO'
+          - '   &7Teleport na spawn'
+          - '   &7tohoto landu.'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zobrazení více informací.'
+        entry_object_ratio_wl:
+          material: INHERIT
+          name: '&6&l#{pos} &2{object}'
+          lore:
+          - ' &8• &7Vyhrané války: {numerator} prohrané: {denominator}'
+          - '      &7= ratio of: {value}'
+          - ' &8• &7Majitel: {owner}'
+          - ''
+          - '&8✖ &bLEVÉ TLAČÍTKO'
+          - '   &7Teleport na spawn'
+          - '   &7tohoto landu.'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zobrazení více informací.'
+        refresh_sorting:
+          material: HOPPER
+          slots: 41
+          name: '&6&lŘazení: {current}'
+          lore:
+          - '&8✖ &7Aktivace modu řazení.'
+    title: 'Top'
 physical:
   claim_block:
     name: '&aClaimblock'
