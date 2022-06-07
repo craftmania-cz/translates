@@ -7,8 +7,8 @@
 
 general:
   prefix:
-    normal: '&8[&2Lands&8] '
-    help: '&8[&2Lands&8] &7Použití: '
+    normal: '&f쇟&8 '
+    help: '&f쇟&8 &7Použití: '
   wYes: '&aAno'
   wNo: '&cNe'
   none: '&8Nic'
@@ -215,10 +215,10 @@ general:
 help:
   help:
     root:
-      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Klikni k přechodu na
-        předchozí stránku.[/H][C]{cmd} {previous}[/C][/T] &2Lands příkazy &7Strana&3
-        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Kliknutím zde přejdeš na
-        další stránku.[/H][C]{cmd} {next}[/C][/T]'
+      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Klikni k přechodu na předchozí
+        stránku.[/H][C]{cmd} {previous}[/C][/T] &2Lands příkazy &7Strana&3 {page}
+        &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Kliknutím zde přejdeš na další
+        stránku.[/H][C]{cmd} {next}[/C][/T]'
       footer: |
         [NoPrefix]
         &7Klikáním na šipky níže přepínáš stránky.
@@ -227,10 +227,10 @@ help:
       unknown: |
         &cTento subpříkaz&4 {command} &cneexistuje.
           [T]&7✖ Zobrazení příkazů: &3/{cmd} &8[CLICK][H]&7Kliknutím zde zobrazíš všechny dostupné příkazy[/H][C]{cmd}[/C][/T]
-      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Kliknutím zde přepneš
-        na předchozí stránku.[/H][C]{cmd} {previous}[/C][/T] &2Subpříkazy &7Strana&3
-        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Kliknutím zde
-        přepneš na další stránku.[/H][C]{cmd} {next}[/C][/T]'
+      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Kliknutím zde přepneš na
+        předchozí stránku.[/H][C]{cmd} {previous}[/C][/T] &2Subpříkazy &7Strana&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Kliknutím zde přepneš
+        na další stránku.[/H][C]{cmd} {next}[/C][/T]'
       footer: |
         [NoPrefix]
         &7Klikáním na šipky níže přepínáš stránky.
@@ -241,117 +241,138 @@ help:
       help: '[T]&e{parent} {subcmd} {args} - &7Nápověda[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       edit: '[T]&e{parent} {subcmd} {args} &8- &7Vstup do edit modu pro land.[H]&7
         Edit mod je používán pro příkazy jako /lands claim. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      confirmtp: '[T]&e{parent} {subcmd} &8- &7Potvrzení teleportu na nebezpečnou lokaci[H]&7Klikni
-        k provedení.[/H][C]{fullcmd}[/C][/T]'
+      confirmtp: '[T]&e{parent} {subcmd} &8- &7Potvrzení teleportu na nebezpečnou
+        lokaci[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       claim:
         main: '[T]&e{parent} {subcmd} {args} &8- &7Zabrání chunku[H]&7Zabrání pomocí
-          odlišné techniky &8(&e/selection&7, fill, auto, radius&8)&7. &7Klikni
-          k okopírování.[/H][SC]{fullcmd}[/SC][/T]'
-        auto: '[T]&e{parent} {subcmd} &8- &7Zabírání chunků při pohybu[H]&7Tímto budeš zabírat chunky
-          kterými projdeš a budou volné. Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+          odlišné techniky &8(&e/selection&7, fill, auto, radius&8)&7. &7Klikni k
+          okopírování.[/H][SC]{fullcmd}[/SC][/T]'
+        auto: '[T]&e{parent} {subcmd} &8- &7Zabírání chunků při pohybu[H]&7Tímto budeš
+          zabírat chunky kterými projdeš a budou volné. Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
         fill: '[T]&e{parent} {subcmd} &8- &7Zabrání chunků dle tvaru[H]&7Zabereš všechny
           chunky podle určeného tvaru. Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-        radius: '[T]&e{parent} {subcmd} {args} &8- &7Zabrání s radiusem[H]&7Zabereš všechny chunky
-          dle specifického radiusu. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+        radius: '[T]&e{parent} {subcmd} {args} &8- &7Zabrání s radiusem[H]&7Zabereš
+          všechny chunky dle specifického radiusu. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       
       create: '[T]&e{parent} {subcmd} {args} &8- &7Vytvoření landu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      createcamp: '[T]&e{parent} {subcmd} {args} &8- &7Vytvoření kempu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      merge: '[T]&e{parent} {subcmd} {args} &8- &7Spojení landů do aktuálního[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      createcamp: '[T]&e{parent} {subcmd} {args} &8- &7Vytvoření kempu[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      merge: '[T]&e{parent} {subcmd} {args} &8- &7Spojení landů do aktuálního[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       leave: '[T]&e{parent} {subcmd} {args} &8- &7Opustit land nebo region.[H]&7Pokud
-        neuvedeš název landu, opustíš land/region na aktuální pozici. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+        neuvedeš název landu, opustíš land/region na aktuální pozici. &7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       unclaim:
-        main: '[T]&e{parent} {subcmd} &8- &7Zrušení zabrání chunků[H]&7Toto také podporuje &e/lands
-          selection&7. &7Klikni k provedení[/H][C]{fullcmd}[/C][/T]'
-        auto: '[T]&e{parent} {subcmd} &8- &7Zrušení zabrání při pohybu[H]&7Tímto zrušíš zabrání chunků
-          do kterých vstoupíš. Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+        main: '[T]&e{parent} {subcmd} &8- &7Zrušení zabrání chunků[H]&7Toto také podporuje
+          &e/lands selection&7. &7Klikni k provedení[/H][C]{fullcmd}[/C][/T]'
+        auto: '[T]&e{parent} {subcmd} &8- &7Zrušení zabrání při pohybu[H]&7Tímto zrušíš
+          zabrání chunků do kterých vstoupíš. Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       
-      unclaimall: '[T]&e{parent} {subcmd} &8- &7Zrušení zabrání všech chunků[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      unclaimall: '[T]&e{parent} {subcmd} &8- &7Zrušení zabrání všech chunků[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       delete: '[T]&e{parent} delete {args} &8- &7Smazání landu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      trust: '[T]&e{parent} {subcmd} {args} &8- &7Trust hráči[H]&7Použij * jako název landu/regionu
-        k udělení trustu v celém landu. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Zrušení trustu[H]&7Použij * jako název landu/regionu
-        k udělení untrustu hráči v celém landu. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      trust: '[T]&e{parent} {subcmd} {args} &8- &7Trust hráči[H]&7Použij * jako název
+        landu/regionu k udělení trustu v celém landu. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Zrušení trustu[H]&7Použij * jako
+        název landu/regionu k udělení untrustu hráči v celém landu. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       setRole: '[T]&e{parent} {subcmd} {args} &8- &7Nastavení role[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      accept: '[T]&e{parent} {subcmd} {args} &8- &7Potvrzení pozvánky[H]&7K zobrazení všech obdržených
-        pozvánek napiš /lands invites. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      deny: '[T]&e{parent} {subcmd} {args} &8- &7Zamítnutí pozvánky[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      accept: '[T]&e{parent} {subcmd} {args} &8- &7Potvrzení pozvánky[H]&7K zobrazení
+        všech obdržených pozvánek napiš /lands invites. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      deny: '[T]&e{parent} {subcmd} {args} &8- &7Zamítnutí pozvánky[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       view:
-        main: '[T]&e{parent} {subcmd} {args} &8- &7Informace o zabrání[H]&7Tento
-          to zbrazí pomocí efektů aktuální zabrání chunků. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Informace o zabrání[H]&7Tento to
+          zbrazí pomocí efektů aktuální zabrání chunků. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
         disable: '[T]&e{parent} {subcmd} &8- &7Vypnutí vyzualizace[H]&7Vypne vyzualizaci
           aktuálního &e/lands view&7. Kliknutím okopíruješ.[/H][C]{fullcmd}[/C][/T]'
-        here: '[T]&e{parent} {subcmd} &8- &7Vizualizace regionů[H]&7Zobrazení hranic aktuálního regionu, kde stojíš. &7Kliknutím okopíruješ.[/H][C]{fullcmd}[/C][/T]'
-        stay: '[T]&e{parent} {subcmd} &8- &7Uzamknutí Y výšky[H]&7Vizualizace
-          se nebude měnit s tvojí výškou. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+        here: '[T]&e{parent} {subcmd} &8- &7Vizualizace regionů[H]&7Zobrazení hranic
+          aktuálního regionu, kde stojíš. &7Kliknutím okopíruješ.[/H][C]{fullcmd}[/C][/T]'
+        stay: '[T]&e{parent} {subcmd} &8- &7Uzamknutí Y výšky[H]&7Vizualizace se nebude
+          měnit s tvojí výškou. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       
       menu: '[T]&e{parent} {subcmd} {args} &8- &7Otevře menu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       setSpawn: '[T]&e{parent} {subcmd} &8- &7Nastaví land spawn[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       spawn: '[T]&e{parent} {subcmd} {args} &8- &7Teleport na land[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      wild: '[T]&e{parent} {subcmd} {args} &8- &7Teleport na náhodnou pozici[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-      top: '[T]&e{parent} {subcmd} {args} &8- &7Zobrazí TOP 10 landů[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+      wild: '[T]&e{parent} {subcmd} {args} &8- &7Teleport na náhodnou pozici[H]&7Klikni
+        k provedení.[/H][C]{fullcmd}[/C][/T]'
+      top: '[T]&e{parent} {subcmd} {args} &8- &7Zobrazí TOP 10 landů[H]&7Klikni k
+        provedení.[/H][C]{fullcmd}[/C][/T]'
       selection:
         main: '[T]&e{parent} {subcmd} {args} &8- &7Výběrový mod[H]&7S tímto příkazem
           můžeš změnit velikost regionů nebo rozšířit výběr do nekonečna v Y úrovni
           &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-        assign: '[T]&e{parent} {subcmd} {args} &8- &7Změna velikosti regionu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-        expand: '[T]&e{parent} {subcmd} &8- &7Rozšíření z bedrocku do nebe[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+        assign: '[T]&e{parent} {subcmd} {args} &8- &7Změna velikosti regionu[H]&7Kliknutím
+          okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+        expand: '[T]&e{parent} {subcmd} &8- &7Rozšíření z bedrocku do nebe[H]&7Klikni
+          k provedení.[/H][C]{fullcmd}[/C][/T]'
       chat: '[T]&e{parent} {subcmd} {args} &8- &7Land chat[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      rename: '[T]&e{parent} {subcmd} {args} &8- &7Přejmenování landu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      teleport: '[T]&e{parent} {subcmd} {args} &8- &7Teleport na chunk[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      invites: '[T]&e{parent} {subcmd} &8- &7Zobrazí obdržené pozvánky[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+      rename: '[T]&e{parent} {subcmd} {args} &8- &7Přejmenování landu[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      teleport: '[T]&e{parent} {subcmd} {args} &8- &7Teleport na chunk[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      invites: '[T]&e{parent} {subcmd} &8- &7Zobrazí obdržené pozvánky[H]&7Klikni
+        k provedení.[/H][C]{fullcmd}[/C][/T]'
       info: '[T]&e{parent} {subcmd} {args} &8- &7Informace o landu[H]&7Klikni k provedení[/H][C]{fullcmd}[/C][/T]'
-      player: '[T]&e{parent} {subcmd} {args} &8- &7Informace o hráči[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      player: '[T]&e{parent} {subcmd} {args} &8- &7Informace o hráči[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       map: '[T]&e{parent} {subcmd} &8- &7Zobrazení mapy[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       balance: '[T]&e{parent} {subcmd} {args} &8- &7Hodnota banky[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      deposit: '[T]&e{parent} {subcmd} {args} &8- &7Vložení peněz do banky[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      withdraw: '[T]&e{parent} {subcmd} {args} &8- &7Výběr peněz z banky[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      list: '[T]&e{parent} {subcmd} {args} &8- &7Seznam všech chunků[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-      assign: '[T]&e{parent} {subcmd} {args} &8- &7Přiřadí výběr regionu[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      setowner: '[T]&e{parent} {subcmd} {args} &8- &7Změna majitele[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      deposit: '[T]&e{parent} {subcmd} {args} &8- &7Vložení peněz do banky[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      withdraw: '[T]&e{parent} {subcmd} {args} &8- &7Výběr peněz z banky[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      list: '[T]&e{parent} {subcmd} {args} &8- &7Seznam všech chunků[H]&7Klikni k
+        provedení.[/H][C]{fullcmd}[/C][/T]'
+      assign: '[T]&e{parent} {subcmd} {args} &8- &7Přiřadí výběr regionu[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+      setowner: '[T]&e{parent} {subcmd} {args} &8- &7Změna majitele[H]&7Kliknutím
+        okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       ban: '[T]&e{parent} {subcmd} {args} &8- &7Zabanování hráče[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       unban: '[T]&e{parent} {subcmd} {args} &8- &7Unban hráče[H]&7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-      taxes: '[T]&e{parent} {subcmd} &8- &7Zobrazí následující platby[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-      upkeep: '[T]&e{parent} {subcmd} &8- &7Zobrazí následjící platby za udržbu[H]&7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+      taxes: '[T]&e{parent} {subcmd} &8- &7Zobrazí následující platby[H]&7Klikni k
+        provedení.[/H][C]{fullcmd}[/C][/T]'
+      upkeep: '[T]&e{parent} {subcmd} &8- &7Zobrazí následjící platby za udržbu[H]&7Klikni
+        k provedení.[/H][C]{fullcmd}[/C][/T]'
       unstuck: '[T]&e{parent} {subcmd} &8- &7Teleport z pasti[H]&7Kdyby jsi se zasekl
         v nějakém landu jako šroub. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-      claimlist: '[T]&e{parent} {subcmd} {args} &8- &7Seznam zabraných chunků[H]&7Tento příkaz
-        zobrazí všechny zabrané chunky v landu, můžeš se na ně také teleportovat. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+      claimlist: '[T]&e{parent} {subcmd} {args} &8- &7Seznam zabraných chunků[H]&7Tento
+        příkaz zobrazí všechny zabrané chunky v landu, můžeš se na ně také teleportovat.
+        &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       rent:
         main: '[T]&e{parent} {subcmd} {args} &8- &7Správa pronájmu[H]&7Správa pronajmutého
           regionu na aktuální pozici. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
         cancel: '[T]&e{parent} {subcmd} &8- &7Zrušit pronájem[H]&7Zrušení tvého pronájmu
           v regionu na aktuální pozici. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-        info: '[T]&e{parent} {subcmd} &8- &7Zobrazení info[H]&7Informace o pronájmu regionu na aktuální pozici.
-           &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
-        list: '[T]&e{parent} {subcmd} &8- &7Nabídky pronájmu[H]&7Zobrazí všechny
-          nabídky na pronájem od všech landů. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+        info: '[T]&e{parent} {subcmd} &8- &7Zobrazení info[H]&7Informace o pronájmu
+          regionu na aktuální pozici. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+        list: '[T]&e{parent} {subcmd} &8- &7Nabídky pronájmu[H]&7Zobrazí všechny nabídky
+          na pronájem od všech landů. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
         remove:
-          main: '[T]&e{parent} {subcmd} {args} &8- &7Správa pronájmu[H]&7Správa
-            pronajmutého regionu na aktuální pozici. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-          offer: '[T]&e{parent} {subcmd} &8- &7Odebrání nabídky[H]&7Hráči nebudou moct
-            prodloužit jejich pronájem. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Správa pronájmu[H]&7Správa pronajmutého
+            regionu na aktuální pozici. &7Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+          offer: '[T]&e{parent} {subcmd} &8- &7Odebrání nabídky[H]&7Hráči nebudou
+            moct prodloužit jejich pronájem. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
           tenant: '[T]&e{parent} {subcmd} &8- &7Odebrat nájemce[H]&7Odebere aktuálního
             nájemce a vyplatí mu odškodné. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       level: '[T]&e{parent} {subcmd} &8- &7Zobrazí aktuální postup[H]&7Zobraz postup
-        pro odemknutí dalších urovní landu a bonusů.
-        &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
+        pro odemknutí dalších urovní landu a bonusů. &7Klikni k provedení.[/H][C]{fullcmd}[/C][/T]'
       relations:
-        main: '[T]&e{parent} {subcmd} {args} &8- &7Správa vztahů[H]&7Přidá land
-          a národ jako tvoje spojence nebo protivníky. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Správa vztahů[H]&7Přidá land a
+          národ jako tvoje spojence nebo protivníky. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
         allies:
           main: '[T]&e{parent} {subcmd} {args} &8- &7Správa vztahů[H]&7Přidá land
             a národ jako tvoje spojence. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-          add: '[T]&e{parent} {subcmd} {args} &8- &7Add allly[H]&7Přidání landu nebo národa
-            jako spojence. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-          remove: '[T]&e{parent} {subcmd} {args} &8- &7Odebrat spojence[H]&7Ukončí vztah
-            se spojenci. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Add allly[H]&7Přidání landu nebo
+            národa jako spojence. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Odebrat spojence[H]&7Ukončí
+            vztah se spojenci. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
         enemies:
           main: '[T]&e{parent} {subcmd} {args} &8- &7Správa protivníků[H]&7Přidá land
             nebo národ jako protivníky. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-          add: '[T]&e{parent} {subcmd} {args} &8- &7Přidat protivníka[H]&7Označíš land
-            nebo národ jako protivníky. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
-          remove: '[T]&e{parent} {subcmd} {args} &8- &7Odebrat protivníky[H]&7Odešle pakt o neutralním
-            stavu protivníkovi. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Přidat protivníka[H]&7Označíš
+            land nebo národ jako protivníky. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Odebrat protivníky[H]&7Odešle
+            pakt o neutralním stavu protivníkovi. Kliknutím okopíruješ.[/H][SC]{fullcmd}[/SC][/T]'
       
       # Admin Commands: /lands admin
       admin:
@@ -488,10 +509,10 @@ list:
   swear-words: []
   sign:
     rent:
-    - '&6Pronájem {area} &8[KLIKNI]'
-    - '&c{cost} &7každých &5{time}'
-    - '&7Max doba: {max}'
-    - '&fPronajmout'
+    - '&ePronájem &f{area}'
+    - '&c{cost} &ekaždých &a{time}'
+    - '&7Max. doba: &6{max}'
+    - '&fPronajmout [KLIKNI]'
     sell:
       area:
       - '&aNákup &8[KLIKNI]'
@@ -504,12 +525,12 @@ list:
       - '§7Cena: &c{cost}'
       - '&fZakoupit'
     rented:
-    - '&7Region&6 {area} &8[KLIKNI]'
-    - '&7Nájemce: {player}'
-    - '&5{time} &7čas'
+    - '&eRegion&f {area}'
+    - '&eNájemce: &6{player}'
+    - '&eZbývající čas: &a{time}'
+    - ''
     - '&c{cost} &7každých &5{time}'
     - '&8Kliknutím přidáš čas'
-    - '&8Shift + klik: Zrušení'
     sold:
       area:
       - '&7Region&6 {area}'
@@ -873,8 +894,8 @@ lands:
           success: '&7Odebral jsi nájemce&3 {player} &7z regionu&6 {area} &7v landu&2
             {land} &7a zaplatil jsi&c {cost} &7jako kompenzaci nákladů.'
           confirm: |
-            &cPlease confirm that you want to pay&4 {cost} &cas compensation to the tenant&4 {player} &cin order to remove them:
-              [T]&2✔ Confirm &8[CLICK][H]&7Click here to confirm this action and payment.[/H][C]{cmd}[/C][/T]
+            &cProsím potvrď, že cheš zaplatit&4 {cost} &cjako kompenzaci nájemci&4 {player} &ckvůli jeho odebrání:
+              [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde potvrdíš akci a platbu.[/H][C]{cmd}[/C][/T]
     sell:
       sell:
         rented: '&cNemůžeš prodat region, který je pronajmut hráči. &7Region&6 {area}
@@ -1306,7 +1327,7 @@ lands:
         &e/lands withdraw &8<&eland&8> <&3počet&8>&7.'
       balance: '&cNení zde dostatek peněz v lands bance pro land&4 {land}&c. &7Na
         účtu je pouze&3 {bank} &7k dispozici. Očekáváno:&3 {take}'
-      success: '&7Úspěšně jsi vybral&3 {cost} &7z lands banky landu&2 {land}&7. &Nová
+      success: '&7Úspěšně jsi vybral&3 {cost} &7z lands banky landu&2 {land}&7. Nová
         hodnota v bance:&3 {bank}'
     balance: '&7Hodnota peněz v bance pro land&2 {land} &7je&3 {balance}'
     ban:

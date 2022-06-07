@@ -91,16 +91,16 @@ gui:
         limitation:
           name: '&c&lTvé limity'
           lore:
-          - '&7Můžeš vytvořit {ownlands}x &7land.'
+          - '&7Můžeš vytvořit &e{ownlands}x &7land.'
           - '&8     /lands create'
-          - '&7Můžeš zabrat {chunks} chunků &7pro každý land.'
+          - '&7Můžeš zabrat &e{chunks} chunků &7pro každý land.'
           - '&8    /lands claim'
-          - '&7Můžeš přidat až {members} &7do landu.'
+          - '&7Můžeš přidat až &e{members} hráče &7do landu.'
           - '&8    /lands trust'
           - '&e&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-          - '&7Můžeš se připojit do {lands} landů &7jako člen.'
+          - '&7Můžeš se připojit do &a{lands} landů &7jako člen.'
           - '&7A podporovat landy ve kterých jsi připojený s počtem'
-          - '&7{support-chunks} &7dodatečných chunků.'
+          - '&a{support-chunks} &7dodatečných chunků.'
           material: INHERIT
           slots: 26
   land:
@@ -284,7 +284,7 @@ gui:
           - ''
           - '&7Vlajka: §f{flag}'
   role:
-    title: '{role}'
+    title: 'Správa role'
     items:
       default:
         settings:
@@ -992,42 +992,42 @@ gui:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVmNDI1YjRkYjdkNjJiMjAwZTg5YzAxM2U0MjFhOWUxMTBiZmIyN2YyZDhiOWY1ODg0ZDEwMTA0ZDAwZjRmNCJ9fX0=
           name: '&2&l{land}'
           lore:
-          - '&7You have this land set as your'
-          - '&e/lands edit &7land. Commands will'
-          - '&7be executed for this land.'
+          - '&7Tento land je nastavený jako tvůj'
+          - '&e/lands edit &7land. Příkazy budou'
+          - '&7prováděny na tomto landu.'
           - ''
-          - '&8✖ &bLEFT CLICK'
-          - '   &7Manage this land.'
-          - '&8✖ &bSHIFT + LEFT CLICK'
-          - '   &7Select as &e/lands edit &7land.'
-          - '   &7Commands will be executed for'
-          - '   &7this land.'
-          - '&8✖ &9RIGHT CLICK'
-          - '   &7View general information'
-          - '   &7about this land.'
+          - '&8✖ &bLEVÉ KLIKNUTÍ'
+          - '   &7Správa tohoto landu.'
+          - '&8✖ &bSHIFT + LEVÉ KLIKNUTÍ'
+          - '   &7Vyber jako &e/lands edit &7land.'
+          - '   &7Příkazy budou prováděny'
+          - '   &7pro tento land.'
+          - '&8✖ &9PRAVÉ KLIKNUTÍ'
+          - '   &7Zobrazí základní informace'
+          - '   &7o tomto landu.'
         entry_camp_edit:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDMxMmNhNDYzMmRlZjVmZmFmMmViMGQ5ZDdjYzdiNTVhNTBjNGUzOTIwZDkwMzcyYWFiMTQwNzgxZjVkZmJjNCJ9fX0=
           name: '&2&l{land}'
           lore:
-          - '&7You have this camp set as your'
-          - '&e/lands edit &7land. Commands will'
-          - '&7be executed for this land.'
+          - '&7Máš nastavený tento kemp jako tvůj'
+          - '&e/lands edit &7land. Příkazy budou'
+          - '&7prováděny na tomto landu.'
           - ''
-          - '&7Camps are lands that can''t be'
-          - '&7expanded and don''t pay upkeep.'
+          - '&7Kempy nemohou být rozšířeny'
+          - '&7a ani neplatí poplatek za údržbu.'
           - ''
-          - '&7&lThis camp expires in:'
+          - '&7&lTento kemp expiruje za:'
           - '&5~{time}'
           - ''
-          - '&8✖ &bLEFT CLICK'
-          - '   &7Manage this camp.'
-          - '&8✖ &bSHIFT + LEFT CLICK'
-          - '   &7Select as &e/lands edit &7land.'
-          - '   &7Commands will be executed for'
-          - '   &7this land.'
-          - '&8✖ &9RIGHT CLICK'
-          - '   &7View general information'
-          - '   &7about this camp.'
+          - '&8✖ &bLEVÉ KLIKNUTÍ'
+          - '   &7Správa tohoto kempu.'
+          - '&8✖ &bSHIFT + LEVÉ KLIKNUTÍ'
+          - '   &7Vyber jako &e/lands edit &7land.'
+          - '   &7Příkazy budou prováděny'
+          - '   &7pro tento land.'
+          - '&8✖ &9PRAVÉ KLIKNUTÍ'
+          - '   &7Zobrazí základní informace'
+          - '   &7o tomto kempu.'
   list_land_areas:
     title: Regiony landu
     items:
@@ -1126,10 +1126,9 @@ gui:
         refresh_toggle:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzljODg4MWU0MjkxNWE5ZDI5YmI2MWExNmZiMjZkMDU5OTEzMjA0ZDI2NWRmNWI0MzliM2Q3OTJhY2Q1NiJ9fX0=
           slots: 41
-          name: '&6&lWorld: {world}'
+          name: '&6&lSvět: {world}'
           lore:
-          - '&8✖ &7Click here to toggle'
-          - '   &7the world.'
+          - '&8✖ &7Kliknutím zde přepneš svět.'
   list_inbox:
     title: Schránka
     items:
@@ -1149,10 +1148,10 @@ gui:
         refresh_filter:
           material: HOPPER
           slots: 41
-          name: '&6&lFilter by Type'
+          name: '&6&lFiltrovat podle typu'
           lore:
-          - '&8✖ &7Cycle through message types.'
-          - '   &7Current:&3 {type}'
+          - '&8✖ &7Kliknutím přepínáš typ.'
+          - '   &7Aktuálně:&3 {type}'
   list_area_players:
     title: '&8{area} &7> &8Členové'
     items:
@@ -1228,45 +1227,45 @@ gui:
           material: INHERIT
           name: '&e&l{player}'
           lore:
-          - '&7Trusted in these areas:'
+          - '&7Přidán v těchto regionech:'
           - '{areas}'
           - ''
-          - '&8✖ &3KEY Q'
-          - '   &7Untrust in the whole land.'
-          - '&8✖ &7Click for more information.'
+          - '&8✖ &3KLÁVESA Q'
+          - '   &7Odebere z celého landu.'
+          - '&8✖ &7Kliknutím zobrazíš více informací.'
         entry_area:
           material: INHERIT
           name: '&e&l{player}'
           lore:
           - '&7Role: {role}'
           - ''
-          - '&8✖ &bSHIFT + LEFT CLICK'
-          - '   &7▲ Promote'
-          - '&8✖ &9SHIFT + RIGHT CLICK'
-          - '   &7▼ Demote'
+          - '&8✖ &bSHIFT + LEVÉ TLAČÍTKO'
+          - '   &7▲ Povýšit'
+          - '&8✖ &9SHIFT + PRAVÉ TLAČÍTKO'
+          - '   &7▼ Snížit rank'
           - ''
-          - '&8✖ &3KEY Q'
-          - '   &7Untrust in this area.'
-          - '&8✖ &7Click for more information.'
+          - '&8✖ &3Klávesa Q'
+          - '   &7Odebere hráče z regionu.'
+          - '&8✖ &7Kliknutím zobrazíš více informací.'
         refresh_toggle:
           material: HOPPER
           slots: 41
-          name: '&6&lView only Area: {current}'
+          name: '&6&lZobrazit pouze region: {current}'
           lore:
-          - '&8✖ &7Display only players which are'
-          - '   &7trusted in this area &8(&6{area}&8)&7?'
+          - '&8✖ &7Zobrazí pouze hráče, kteří mají'
+          - '   &7trust status v regionu &8(&6{area}&8)&7?'
           - ''
-          - '    &8• &6&lIf disabled:'
-          - '      &7It displays players of the whole land.'
-          - '      &7Also it allows you to trust or untrust'
-          - '      &7players from the whole land.'
+          - '    &8• &6&lPokud je deaktivováno:'
+          - '      &7Zobrazuje hráče ze celého landu.'
+          - '      &7Můžeš tak jednoduše povolovat a zakazovat trust'
+          - '      &7hráčům v celém landu.'
         child_failure_owner:
-          name: '&4&lOwner'
+          name: '&4&lMajitel'
           lore:
-          - '&cOwners can''t be untrusted.'
+          - '&cMajiteli nemůže být odebrán trust status.'
           - ''
-          - ' &8• &7A new owner can be set by'
-          - '   &7executing &e/{cmd}&7.'
+          - ' &8• &7Nového majitele můžeš nastavit pomocí:'
+          - '   &e/{cmd}&7.'
   list_area_banned:
     title: '&8{area} &7> &8Zabanovaní hráči'
     items:
@@ -1290,32 +1289,32 @@ gui:
           material: INHERIT
           name: '&e&l{player}'
           lore:
-          - '&7Banned in these areas:'
+          - '&7Zabanován v těchto regionech:'
           - '{areas}'
           - ''
-          - '&8✖ &7Click to get more information'
-          - '   &7about this player.'
+          - '&8✖ &7Kliknutím zobrazíš více'
+          - '   &7informací o tomto hráči.'
         entry_area:
           material: INHERIT
           name: '&e&l{player}'
           lore:
-          - '&7This player is banned'
-          - '&7in this area.'
+          - '&7Tento hráč má ban'
+          - '&7v tomto regionu.'
           - ''
-          - '&8✖ &7Click to get more information'
-          - '   &7about this player.'
+          - '&8✖ &7Kliknutím zobrazíš více'
+          - '   &7informací o tomto hráči.'
         refresh_toggle:
           material: HOPPER
           slots: 41
-          name: '&6&lView only Area: {current}'
+          name: '&6&lZobrazit pouze region: {current}'
           lore:
-          - '&8✖ &7Display only players which are'
-          - '   &7banned in this area &8(&6{area}&8)&7?'
+          - '&8✖ &7Zobraz pouze hráče, kteří jsou'
+          - '   &7zabanování v regionu &8(&6{area}&8)&7?'
           - ''
-          - '    &8• &6&lIf disabled:'
-          - '      &7It displays bans of the whole land.'
-          - '      &7Also it allows you to ban or unban'
-          - '      &7players from the whole land.'
+          - '    &8• &6&lPokud je deaktivováno:'
+          - '      &7Zobrazuje bany v celém landu.'
+          - '      &7Dovoluje ti také banovat nebo unbanovat'
+          - '      &7hráče pro celý land.'
   list_area_invites:
     title: '&8{area} &7> &8Pozvánky'
     items:
@@ -1398,13 +1397,13 @@ gui:
           material: INHERIT
           name: '&7&l{role}'
           lore:
-          - '&8✖ &bSHIFT + LEFT CLICK'
-          - '   &7Higher priority'
-          - '&8✖ &9SHIFT + RIGHT CLICK'
-          - '   &7Lower priority'
+          - '&8✖ &bSHIFT + LEVÉ TLAČÍTKO'
+          - '   &7Vyšší priorita'
+          - '&8✖ &9SHIFT + PRAVÉ TLAČÍKO'
+          - '   &7Nižší priorita'
           - ''
-          - '&8✖ &3KEY Q'
-          - '   &7Delete this role.'
+          - '&8✖ &3KLÁVESA Q'
+          - '   &7Smazání role.'
   list_role_players:
     title: Hráči
     items:
@@ -2609,7 +2608,7 @@ gui:
           name: '&6&lŘazení: {current}'
           lore:
           - '&8✖ &7Aktivace modu řazení.'
-    title: 'Top'
+    title: Top
 physical:
   claim_block:
     name: '&aClaimblock'
