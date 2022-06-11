@@ -1,29 +1,29 @@
 # INFO: Use the key name of enchantments if you want to add them to this file
 
 messages:
-  prefix: "&a&lEcoEnchants &r&8» &r"
-  no-permission: "&cYou don't have permission to do this!"
-  not-player: "&cThis command must be run by a player"
-  invalid-command: "&cUnknown subcommand!"
+  prefix: ""
+  no-permission: "&f⻬ &cNa toto nemáš dostatek práv."
+  not-player: "&f⻬ &cTento příkaz může provádět pouze hráč."
+  invalid-command: "&f⻬ &cNeznámý subpříkaz."
   reloaded: "Reloaded! Took %time%ms"
-  got-special: "You got a &dSpecial &fenchantment!"
+  got-special: "&f⻫ &eZískal jsi &dSpecial &eenchantment!"
   skip-added: "&aAdded &flore skip to item!"
   skip-removed: "&cRemoved &flore skip from item!"
-  missing-enchant: "&cYou must specify an enchantment!"
-  not-found: "&cCannot find an enchantment matching name: &f%name%."
+  missing-enchant: "&f⻬ &cMusíš specifikovat enchantment!"
+  not-found: "&f⻬ &cNepodařilo se najít enchant s názvem: &f%name%."
   enchantinfo: |
     %name%: &r%description%
-    &9Rarity: &r%rarity%
-    &9Max Level: &r%maxlevel%
-    &9Can be applied to: &r%target%
-    &9Conflicts with: &r%conflicts%
-  on-cooldown: "&fThis spell is on cooldown! Wait &a%seconds% Seconds&f to use &a%name%&f again."
-  used-spell: "&fUsed &a%name%&f spell!"
-  must-hold-item: "&cYou must be holding an enchantable item!"
-  no-enchants-available: "&fNo available enchantments found for this item!"
+    &eRarita: &r%rarity%
+    &eMax. Level: &r%maxlevel%
+    &eLze aplikovat na: &r%target%
+    &eKonfliktuje s: &r%conflicts%
+  on-cooldown: "&f⻬ &cMusíš počkat ještě &f%seconds% vteřin&c k znovu použití &f%name%&c znova."
+  used-spell: "&f⻫ &ePoužil jsi &a%name%&f spell!"
+  must-hold-item: "&f⻫ &eMusíš držet item k oenchantování v ruce."
+  no-enchants-available: "&f⻫ &eNenalezen žádný enchant pro tento item!"
   applied-random-enchant: "&fAdded %enchantment% to your item!"
   gave-random-book: "&fGave %enchantment% book!"
-  received-random-book: "&fYou have received a %enchantment% book!"
+  received-random-book: "&f⻫ &eObdržel jsi %enchantment% book!"
   invalid-player: "&cInvalid Player!"
   requires-player: "&cRequires a Player!"
   must-hold-item-other: "&cPlayer is not holding an enchantable item!"
@@ -38,8 +38,8 @@ messages:
   cannot-afford-type: "&cYou can't afford to do this! &fCost: &a%cost% %type%"
   cannot-transmit: "&cYou can't transmit here!"
 
-no-targets: "&cCannot be applied"
-no-conflicts: "&cNo conflicts"
+no-targets: "&cNelze aplikovat"
+no-conflicts: "&cŽádné"
 
 missing-requirements-format: "<strikethrough>"
 
