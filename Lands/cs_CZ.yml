@@ -586,7 +586,7 @@ wars:
         overlap: '&cCapture blocks must be placed in a way that the beacon wouldn''t
           overlap with the wilderness.'
       destroy:
-        presense: '&cNyní nemůžeš zníčit tuto vlajku. &7Stále zde je&3 {players} &7obránců
+        presense: '&cNyní nemůžeš zničit tuto vlajku. &7Stále zde je&3 {players} &7obránců
           v chunku.'
         invader: '#t#&cZabírací vlajka[newline]&cv landu {land} byla zníčena'
         defender: '#t#&aZabírací vlajka[newline]&abyla odebrána z vašeho landu {land}[newline]&2&l+
@@ -625,12 +625,12 @@ wars:
         připojený na serveru.'
       broadcast: '&c{attacker} &7vyhlásili válku proti {defender}&7. Válka začne za&5
         {time}&7.'
-      success: '&7Ty &8({attacker}&8) &7jste úspěšně vyhlásili válku proti {defender}&7.
+      success: '&7Ty &8({object}&8) &7jste úspěšně vyhlásili válku proti {enemy}&7.
         Válka začne za&5 {time}&7.'
       target: '&c{attacker} &7vyhlásili válku proti {defender} &8(&7TY&8)&7. Válka
         začne za&5 {time}&7.'
       confirm: |
-        &cJsi si jistý, že chceš vyhlásit válku proti {object}&c?
+        &cJsi si jistý, že chceš vyhlásit válku proti {defender}&c?
 
          [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde potvrdíš a vyhlásíš válku ve tvém národě.[/H][C]{fullcmd}[/C][/T]
       mutual:
@@ -1481,7 +1481,7 @@ lands:
       do války s {object}&7. &7Zkus to znova až válka skončí.'
     flags:
       block_place: '&cNemáš zde povolení pokládat bloky &8(Region: {area}, Land: {land}).'
-      block_break: '&cNemáš zde povolení níčit bloky &8(Region: {area}, Land: {land}).'
+      block_break: '&cNemáš zde povolení ničit bloky &8(Region: {area}, Land: {land}).'
       block_ignite: '&cNemáš zde povolení zapalovat bloky &8(Region: {area}, Land:
         {land}).'
       interact_general: '&cNemáš zde povolenou interakci s bloky &8(Region: {area},
@@ -1552,10 +1552,10 @@ lands:
     teleportation:
       already: '&cNelze spustit druhý teleport. Již probíhá jeden teleport. §7Počet
         až se dokončí ten první.'
-      started: '&7Teleportování započalo... Teleportuji tě za&5 {sec} vteřin&7. Nepohybuj
+      started: '&7Teleportování započalo... Teleportuji tě za&5 {sec} vteřin(y)&7. Nepohybuj
         se!'
       cmd: '&cNemůžeš používat příkazy, když se teleportuješ. &7Počkej dalších&5 {sec}
-        vteřin &7než se teleport dokončí.'
+        vteřin(y) &7než se teleport dokončí.'
       cancelled: '&cTvůj teleport byl zrušen. &7Nepohybuj se když čekáš na teleport.'
       chunk: '#t#&6Teleportován[newline]&7X: {x} Z: {z} Cena:&c {cost}'
       plugin: '&cTeleport byl zrušen jiným pluginem.'
@@ -1565,8 +1565,7 @@ lands:
          [T]&2✔ Pokud se chceš teleportovat i tak, klikni: &8[ZDE][H]&7Varování - můžeš zemřít.[/H][C]{cmd}[/C][/T]
       corrected: '&7Originální poloha pro teleport není bezpečná. §7Proto byl teleport
         o kousek posunut.'
-      progress: '#b#[config]color:purple,style:solid[/config]&7Wait&5 {time} &7Second(s)
-        until Teleportation.'
+      progress: '#b#[config]color:purple,style:solid[/config]&7Čekej prosím&5 {time} &7vteřin před teleportem.'
     claimblock:
       dropped: '&cClaimblock leží na zemi. &7Nemáš dostatek místa v inventáři.'
       success: '&7Dostal jsi&3 {blocks} &7Claimblock(ů). &7Polož je do chunků, které

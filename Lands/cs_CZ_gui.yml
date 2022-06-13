@@ -374,20 +374,20 @@ gui:
         members_ally:
           material: PLAYER_HEAD
           slots: 11
-          name: '&6&lRole Members'
+          name: '&6&lČlenové s rolí'
           lore:
-          - '&7All players that aren''t trusted'
-          - '&7and are part of an ally land, have'
-          - '&7this role assigned.'
+          - '&7Všichni hráči, kteří nejsou přidáni'
+          - '&7a jsou součástí spojenců, mají'
+          - '&7tuto roli přiřazenou.'
         apply_always:
           material: OAK_FENCE
           slots: 14
-          name: '&6&lAdds Role to new Areas'
+          name: '&6&lPřidávání role do nových regionů'
           lore:
-          - '&7This role, including its members'
-          - '&7and flags, is always added to new'
-          - '&7area creations. That can''t be'
-          - '&7toggled for this role.'
+          - '&7Tato role, včetně členů'
+          - '&7a vlajek, jsou vždy přidány'
+          - '&7do nových regionů automaticky.'
+          - '&7U této role toto nelze vypnout.'
   taxes:
     title: Poplatky a platby
     items:
@@ -832,7 +832,7 @@ gui:
           slots: 12
           name: '&a&lMír a klid'
           lore:
-          - '&7YTvůj národ není zapojený do'
+          - '&7Tvůj národ není zapojený do'
           - '&7žádné války. Všude je mír.'
         inbox:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
@@ -882,7 +882,7 @@ gui:
         level:
           material: EXPERIENCE_BOTTLE
           slots: 15
-          name: '&6&lPopstup levelu'
+          name: '&6&lPostup levelu'
           lore:
           - '&7Zobrazení aktuálního postupu.'
         spawn:
@@ -1701,7 +1701,7 @@ gui:
           - '&cNemáš povolení upravovat'
           - '&cnastavení této role.'
           - ''
-          - '&Mám vyšší prioritu'
+          - '&7Má vyšší prioritu'
           - '&7než tvoje nebo jsi členem'
           - '&7této role.'
         child_failure_nation:
@@ -1721,37 +1721,35 @@ gui:
           material: INHERIT
           name: '&6&l{flag}: {enabled}'
           lore:
-          - '&8✖ &7Click to toggle:'
-          - '   &7Unlocked: {unlocked}'
+          - '&8✖ &7Kliknutím přepneš:'
+          - '   &7Odemknuto: {unlocked}'
           - ''
-          - '&7Description:'
+          - '&7Popis:'
           - ' &8• {desc}'
           - ''
-          - ' &8• &7This is an admin flag. It only applies'
-          - '   &7to admin lands and &e/lands admin wilderness&7.'
+          - ' &8• &7Toto je admin vlajka. Aplikuje se pouze na'
+          - '   &7admin landy a na &e/lands admin wilderness&7.'
         entry_general_player:
           material: INHERIT
           name: '&6&l{flag}: {enabled}'
           lore:
-          - '&8✖ &7Click to toggle:'
-          - '   &7Unlocked: {unlocked}'
+          - '&8✖ &7Kliknutím přepneš:'
+          - '   &7Odemknuto: {unlocked}'
           - ''
-          - '&7Description:'
+          - '&7Popis:'
           - '{desc}'
         entry_elytra:
           material: ELYTRA
-          name: '&6&lElytra Usage: {enabled}'
+          name: '&6&lPoužití elytry: {enabled}'
           lore:
-          - '&8✖ &7Allow this role to use elytras'
-          - '   &7in order to fly in this area?'
-          - '   &7Unlocked: {unlocked}'
+          - '&8✖ &7Povoluje roli používat elytru.'
+          - '   &7Odemknuto: {unlocked}'
         entry_plant:
           material: IRON_HOE
-          name: '&6&lPlant: {enabled}'
+          name: '&6&lSázení: {enabled}'
           lore:
-          - '&8✖ &7Allow this role to plant'
-          - '   &7crops, saplings, berries,'
-          - '   &7sugar cane etc.?'
+          - '&8✖ &7Povoluje roli sázet, sklízet'
+          - '   &7semínka, úrodu atd.'
   list_area_settings:
     title: '&8{area} &7> &8Nastavení vlajek'
     items:
@@ -1884,34 +1882,35 @@ gui:
           material: NAME_TAG
           name: '&6&l{flag}: {enabled}'
           lore:
-          - '&8✖ &7Click to toggle:'
-          - '   &7Unlocked: {unlocked}'
+          - '&8✖ &7Kliknutím přepneš:'
+          - '   &7Odemknuto: {unlocked}'
           - ''
-          - '&7Description:'
+          - '&7Popis:'
           - ' &8• {desc}'
           - ''
-          - ' &8• &7This is an admin flag. It only applies'
-          - '   &7to admin lands and &e/lands admin wilderness&7.'
+          - ' &8• &7Toto je admin vlajka. Aplikuje se pouze'
+          - '   &7na admin landy a &e/lands admin wilderness&7.'
         entry_general_player:
           material: NAME_TAG
           name: '&6&l{flag}: {enabled}'
           lore:
-          - '&8✖ &7Click to toggle:'
-          - '   &7Unlocked: {unlocked}'
+          - '&8✖ &7Kliknutím přepneš:'
+          - '   &7Odemknuto: {unlocked}'
           - ''
-          - '&7Description:'
+          - '&7Popis:'
           - '{desc}'
         entry_phantom_spawn:
           material: PHANTOM_SPAWN_EGG
-          name: '&6&lPhantom Spawning: {enabled}'
+          name: '&6&lSpawnování Phantomů: {enabled}'
           lore:
-          - '&8✖ &7Allow phantoms to spawn by'
-          - '   &7natural reasons.'
+          - '&8✖ &7Povoluje aby se ti v landu'
+          - '   &7přírodně spawnoval phantom.'
+          - '   &cNa serveru jsou deaktivovány.'
           - ''
-          - '    &8• &7Spawners are''nt influenced'
-          - '      &7by this flag.'
+          - '    &8• &7Spawnery tato vlajka'
+          - '      &7neovlivnuje.'
           - ''
-          - '   &7Unlocked: {unlocked}'
+          - '   &7Odemknuto: {unlocked}'
   list_player_invites:
     title: Obdržené pozvánky
     items:
@@ -2084,11 +2083,11 @@ gui:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
           slots: 42
         entry_object:
-          name: '&2&l{level} {land}'
+          name: '&2&l{prefix} {land}'
           lore:
           - §7Zobrazit informace o landu.
           - ''
-          - '&7Název:'
+          - '&eNázev:'
           - '&7{title}'
           - ''
           - '&8✖ &9PRAVÉ TLAČÍTKO'
@@ -2730,3 +2729,7 @@ common:
         - ''
         - '&7K nastavení spawnpointu:'
         - '&e/lands setspawn'
+      child_failure_page_previous:
+        name: '&4&lŽádná předchozí stránka'
+      child_failure_page_next:
+        name: '&a&lŽádná další stránka'
