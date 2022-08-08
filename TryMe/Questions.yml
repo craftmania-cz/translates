@@ -25,7 +25,7 @@ Data:
       - Notch
       - Herobrine
     '4':
-      Question: '\n&f쇞 &eV kterém roce byl vydán Minecraft?\n\n '
+      Question: '\n&f쇞 &eVe kterém roce byl vydán Minecraft?\n\n '
       Answers:
       - '2009'
       - 2009 kveten
@@ -33,7 +33,7 @@ Data:
       - 2009 kveten 17
       - 2009 květen 17
       - 2009/05/17
-      - 7.5.2009
+      - '7.5.2009'
     '5':
       Question: '\n&f쇞 &eJak se nazývá firma kterou založil Notch?\n\n '
       Answers:
@@ -94,24 +94,25 @@ Data:
       - hudební blok
       - hudobný blok
     '13':
-      Question: '\n&f쇞 &eV minecraftu jsou různe druhy dřeva, jak se nazývá to nejzákladnější?\n\n '
+      Question: '\n&f쇞 &eV minecraftu jsou různe druhy dřeva, jak se nazývá ten nejzákladnější?\n\n '
       Answers:
       - oak
       - dub
       - dubove
       - oak wood
       - dubové
+      - oak log
     '14':
-      Question: '\n&f쇞 &eKterý blok se nedá zníčit?\n\n '
+      Question: '\n&f쇞 &eKterý blok se nedá zničit?\n\n '
       Answers:
       - bedrock
     '15':
-      Question: '\n&f쇞 &eCo se používá v Singleplayeru v noci?\n\n '
+      Question: '\n&f쇞 &eCo se používá v Singleplayeru k uložení pozice?\n\n '
       Answers:
       - bed
       - postel
     '16':
-      Question: '\n&f쇞 &eCo musíš přidat k pistonu aby lepil?\n\n '
+      Question: '\n&f쇞 &eCo musíš přidat k pistonu, aby lepil?\n\n '
       Answers:
       - slime
       - slimeball
@@ -131,60 +132,68 @@ Data:
       - pec
       - v peci
     '19':
-      Question: '\n&f쇞 &eKtery nastroj se pouziva pred zasetim (seminek) do pudy/zeme v
+      Question: '\n&f쇞 &eKterý nástroj se používá před zasetím (semínek) do půdy/země v
         Minecraftu?\n\n '
       Answers:
       - hoe
       - motyka
     '20':
-      Question: '\n&f쇞 &eKtera vec je v zakladnim Minecraftu nejtvrdsi? Pouziva se na brneni/nastroje.\n\n '
+      Question: '\n&f쇞 &eNa vytvoření čeho se používá Craft Token?\n\n '
       Answers:
-      - diamond
-      - diamant
-      - diamanty
+      - tag
+      - tagu
+      - tags
     '21':
-      Question: '\n&f쇞 &eKolik potrebujes skla, abys vytvoril sklenenou tabulku?\n\n '
+      Question: '\n&f쇞 &eKolik potřebuješ skla, abys vytvořil skleněnou tabulku?\n\n '
       Answers:
       - sest
       - '6'
+      - šest
     '22':
-      Question: '\n&f쇞 &eCim lze vytvaret lektvary/potiony?\n\n '
+      Question: '\n&f쇞 &eV čem lze vytvářet lektvary/potiony?\n\n '
       Answers:
       - brewing stand
       - varny stojan
+      - stojan na vaření
     '23':
-      Question: '\n&f쇞 &eJak se nazyva trava na Mushroom ostrove?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá tráva na Mushroom ostrově?\n\n '
       Answers:
       - mycelium
       - podhoubi
       - podhubie
     '24':
-      Question: '\n&f쇞 &eJake ID ma blok travy?\n\n '
+      Question: '\n&f쇞 &eJaké ID má blok trávy?\n\n '
       Answers:
       - '2'
       - dva
     '25':
-      Question: '\n&f쇞 &eKolik dreva je zapotrebi k vytvoreni Crafting Tablu?\n\n '
+      Question: '\n&f쇞 &eKolik dřeva je potřeba k vycraftění Crafting tablu??\n\n '
       Answers:
       - ctyri
       - '4'
       - styri
+      - čtyři
+      - čtyry
+      - štyri
     '26':
-      Question: '\n&f쇞 &eKtery blok vytvoreny z materialu z Netheru/Pekla je bily?\n\n '
+      Question: '\n&f쇞 &eKterý block vytvořený z orečka z netheru je bílý?\n\n '
       Answers:
       - quartz
       - kremen
       - quartz block
+      - křemen
     '27':
       Question: '\n&f쇞 &eKolik je 2+2*2?\n\n '
       Answers:
       - '6'
       - sest
+      - šest
     '28':
       Question: '\n&f쇞 &eKolik je 2+2/2?\n\n '
       Answers:
       - '3'
       - tri
+      - tři
     '29':
       Question: '\n&f쇞 &eKolik je 2+2-2?\n\n '
       Answers:
@@ -195,34 +204,38 @@ Data:
       Answers:
       - '5'
       - pet
+      - pět
     '31':
       Question: '\n&f쇞 &eKolik je 2-2/2*2+2?\n\n '
       Answers:
       - '-2'
       - minus dva
+      - mínus dva
     '32':
-      Question: '\n&f쇞 &eJak se jmenuje celym jmenem Notch?\n\n '
+      Question: '\n&f쇞 &eJak se jmenuje celým jménem Notch?\n\n '
       Answers:
       - markus persson
       - marcus persson
     '33':
-      Question: '\n&f쇞 &eJaky je originalni nazev Minecraftu? Drive se mu tak rikalo.\n\n '
+      Question: '\n&f쇞 &eJaký je originální název Minecraftu? Dříve se mu tak říkalo.\n\n '
       Answers:
       - cave game
       - the cave game
     '34':
-      Question: '\n&f쇞 &eKolik hernich rezimu/gamemode jsou v Minecraftu?\n\n '
+      Question: '\n&f쇞 &eKolik herních režimů/gamemode je v Minecraftu?\n\n '
       Answers:
       - five
       - pet
       - '5'
+      - pět
+      - pat
     '35':
-      Question: '\n&f쇞 &eJak se nazyva mob, ktery vybuchuje?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá mob, který vybuchuje?\n\n '
       Answers:
       - creeper
       - sycak
     '36':
-      Question: '\n&f쇞 &eNapis jeden blok, na ktery pusobi gravitace?\n\n '
+      Question: '\n&f쇞 &eNapiš jeden blok, na který působí gravitace?\n\n '
       Answers:
       - water
       - gravel
@@ -232,7 +245,7 @@ Data:
       - voda
       - sterk
       - pisek
-      - lava
+      - láva
       - cerveny pisek
       - anvil
       - kovadlina
@@ -242,35 +255,39 @@ Data:
       - strk
       - red sand
       - cerveny piesok
+      - štěrk
+      - písek
+      - červený písek
+      - stojan
     '37':
-      Question: '\n&f쇞 &eJak se nazyva zakladni skin v Minecraftu?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá základní skin v Minecraftu?\n\n '
       Answers:
       - steve
       - alex
     '38':
-      Question: '\n&f쇞 &eKdo slozil hudbu v Minecratu?\n\n '
+      Question: '\n&f쇞 &eKdo složil hudbu v Minecratu?\n\n '
       Answers:
       - C418
       - daniel rosenfeld
     '39':
-      Question: '\n&f쇞 &eJmeno temne/strasidelne postavy v Minecraftu?\n\n '
+      Question: '\n&f쇞 &eJak se říká strašidelné postavě v Minecraftu?\n\n '
       Answers:
       - Herobrine
     '40':
-      Question: '\n&f쇞 &eCreeperove vznikli na zaklade chyby. Ktereho moba se puvodne Notch
-        pokousel vytvorit?\n\n '
+      Question: '\n&f쇞 &eCreeperove vznikli na základě chyby. Kterého moba se původně Notch
+        pokoušel vytvořit?\n\n '
       Answers:
       - pig
       - prase
       - prasata
       - prasa
     '41':
-      Question: '\n&f쇞 &eCo vypadne z Notche, kdyz ho zabijes v Multiplayeru?\n\n '
+      Question: '\n&f쇞 &eCo vypadne z Notche, když ho zabiješ v Multiplayeru?\n\n '
       Answers:
       - apple
       - jablko
     '42':
-      Question: '\n&f쇞 &eCo se stane kdyz do prasete uderi blesk? Nazev mobu.\n\n '
+      Question: '\n&f쇞 &eCo se stane když do prasete udeří blesk? Nazev moba.\n\n '
       Answers:
       - promeni se na zombie pigmana
       - promeni se na zombie pigman
@@ -289,13 +306,17 @@ Data:
       - zmeni sa na zombie pigmana
       - pretvori sa
       - pretvori se
+      - promění se
+      - pigman
     '43':
-      Question: '\n&f쇞 &eNa kolika slotech zacinala CraftMania.cz?\n\n '
+      Question: '\n&f쇞 &eNa kolika slotech začínala CraftMania.cz?\n\n '
       Answers:
       - '5'
       - pet
+      - pat
+      - pět
     '44':
-      Question: '\n&f쇞 &eCo se stane kdyz do Creepera uderi blesk? (Pokud muzes, napis nazev
+      Question: '\n&f쇞 &eCo se stane, když do Creepera udeří blesk? (Pokud můžeš, napiš název
         moba)'
       Answers:
       - nabije se
@@ -303,8 +324,9 @@ Data:
       - nabity creeper
       - nabity sycak
       - nabije sa
+      - charged
     '45':
-      Question: '\n&f쇞 &eCim lze zrusit lektvar/potion?\n\n '
+      Question: '\n&f쇞 &eČím lze zrušit lektvar/potion?\n\n '
       Answers:
       - milk
       - mleko
@@ -314,6 +336,9 @@ Data:
       - bucket of milk
       - milk bucket
       - mlieko
+      - mléko
+      - mlíko
+      - kbelík mléka
     '46':
       Question: '\n&f쇞 &eJak dlouhy je jeden den (den a noc) v Minecraftu v realnem case?\n\n '
       Answers:
@@ -323,34 +348,43 @@ Data:
       - dvacet min
       - dvadsat minut
       - dvadsat min
+      - 20m
+      - 20 m
     '47':
-      Question: '&&eNapis chemickou znacku hliniku.\n\n '
+      Question: '&&eNapiš chemickou značku hliníku.\n\n '
       Answers:
       - Al
+      - Aluminium
     '48':
-      Question: '\n&f쇞 &eKdyz vytvaris louc (torch) kolik jich ziskas?\n\n '
+      Question: '\n&f쇞 &eKdyž vytváříš louč (torch), kolik jich získáš?\n\n '
       Answers:
       - '4'
       - ctyri
       - styri
+      - štyri
+      - čtyry
+      - čtyři
     '49':
-      Question: '\n&f쇞 &eNejvzacnejsi vec v Minecraftu?\n\n '
+      Question: '\n&f쇞 &eJaká je nejvzácnější věc v základním Minecraftu?\n\n '
       Answers:
       - emerald
       - smaragd
     '50':
-      Question: '\n&f쇞 &eKolik dimenzi ma Minecraft'
+      Question: '\n&f쇞 &eKolik dimenzí ma Minecraft'
       Answers:
       - tri
       - '3'
+      - tři
+      - tria
     '51':
-      Question: '\n&f쇞 &eKdyz vytvaris zelezne mrize (iron bars) kolik jich ziskas?\n\n '
+      Question: '\n&f쇞 &eKdyz vytváříš železné mříže (iron bars), kolik jich získáš?\n\n '
       Answers:
       - '16'
       - sestnact
       - sestnast
+      - šestnáct
     '52':
-      Question: '\n&f쇞 &eMuzes jezdit na praseti?\n\n '
+      Question: '\n&f쇞 &eMůžeš jezdit na praseti?\n\n '
       Answers:
       - ano
       - hej
@@ -359,46 +393,50 @@ Data:
       - jj
       - jop
       - spravne
+      - 'yes'
     '53':
-      Question: '\n&f쇞 &eJak se nazyva postava (skin), ktera byla pridana ve verzi 1.8?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá postava (skin), ktera byla pridana ve verzi 1.8?\n\n '
       Answers:
       - alex
     '54':
-      Question: '\n&f쇞 &eJak se nazyva spolecnost, ktera vytvarila pro Mojang Minecraft:
+      Question: '\n&f쇞 &eJak se nazývá společnost, která vytvořila pro Mojang Minecraft:
         Story mode?\n\n '
       Answers:
       - Telltale Games
       - Telltale
     '55':
-      Question: '\n&f쇞 &eKtery blok lze pouzit jako zbran?\n\n '
+      Question: '\n&f쇞 &eKterý blok lze použít jako zbraň?\n\n '
       Answers:
       - tnt
       - dynamit
+      - '46'
     '56':
-      Question: '\n&f쇞 &eKtery blok zpomaluje, kdyz pres nej jdes?\n\n '
+      Question: '\n&f쇞 &eKterý blok zpomaluje, kdyz přes něj jdes?\n\n '
       Answers:
       - Soulsand
       - pisek dusi
       - Soul sand
       - piesok dusi
+      - '88'
     '57':
-      Question: '\n&f쇞 &eK vytvoreni dreveneho uhli (charcoal) musis upect v peci co?\n\n '
+      Question: '\n&f쇞 &eCo musíš upéct v peci, abys vytvořil dřevěné uhlí (charcoal)?\n\n '
       Answers:
       - wood
       - drevo
       - log
     '58':
-      Question: '\n&f쇞 &eCeho se Enderman boji?\n\n '
+      Question: '\n&f쇞 &eČeho se Enderman bojí?\n\n '
       Answers:
       - water
       - vody
       - voda
     '59':
-      Question: '\n&f쇞 &eKtery vesnican se v Minecraftu vyskytuje nejvice? Farmar/Farmer
-        nebo Kovar/Blacksmith?\n\n '
+      Question: '\n&f쇞 &eKterý vesničan se v Minecraftu vyskytuje nejvíce? Farmar/Farmer
+        nebo Kovář/Blacksmith?\n\n '
       Answers:
       - Farmer
       - Farmar
+      - Farmář
     '60':
       Question: '\n&f쇞 &eSpawnuje se Zombie Pigman v Netheru/Pekle?\n\n '
       Answers:
@@ -409,8 +447,9 @@ Data:
       - jj
       - jop
       - spravne
+      - yes
     '61':
-      Question: '\n&f쇞 &eMuzes obarvit ovecku?\n\n '
+      Question: '\n&f쇞 &eMůžeš obarvit ovečku?\n\n '
       Answers:
       - ano
       - hej
@@ -419,8 +458,9 @@ Data:
       - jj
       - jop
       - spravne
+      - yes
     '62':
-      Question: '\n&f쇞 &eJsou pavouci hodni a neutoci na hrace v noci?\n\n '
+      Question: '\n&f쇞 &eJsou pavouci hodní, takže na hráče v noci neútočí?\n\n '
       Answers:
       - ne
       - nie
@@ -428,35 +468,43 @@ Data:
       - nn
       - nope
       - spatne
+      - no
     '63':
-      Question: '\n&f쇞 &eJakou barvu ma creeper?\n\n '
+      Question: '\n&f쇞 &eJakou barvu má creeper?\n\n '
       Answers:
       - zelena
       - zelenou
       - zelenu
       - green
     '64':
-      Question: '\n&f쇞 &eJakou barvu ma Enderman?\n\n '
+      Question: '\n&f쇞 &eJakou barvu má Enderman?\n\n '
       Answers:
       - cerna
       - cernou
       - ciernu
       - black
+      - černou
     '65':
-      Question: '\n&f쇞 &eJakou barvu ma Ghast?\n\n '
+      Question: '\n&f쇞 &eJakou barvu má Ghast?\n\n '
       Answers:
       - bilou
       - bila
       - bielou
       - white
+      - bílou
+      - bílá
+      - biela
     '66':
-      Question: '\n&f쇞 &eKolik nohou ma Creeper?\n\n '
+      Question: '\n&f쇞 &eKolik nohou má Creeper?\n\n '
       Answers:
       - '4'
       - ctyri
       - styri
+      - čtyři
+      - štyri
+      - čtyry
     '67':
-      Question: '\n&f쇞 &eKde se schovava Silverfish?\n\n '
+      Question: '\n&f쇞 &eKde se schovává Silverfish?\n\n '
       Answers:
       - V kamenu
       - kamen
@@ -465,21 +513,29 @@ Data:
       - V kamenech
       - V kamenoch
       - V kameni
+      - ve stone brick
+      - ve stone bricku
+      - ve stonu
     '68':
-      Question: '\n&f쇞 &eKolik nohou ma hrac?\n\n '
+      Question: '\n&f쇞 &eKolik nohou má hráč?\n\n '
       Answers:
       - dve
       - '2'
+      - dvě
     '69':
-      Question: '\n&f쇞 &eNapis nazev jednoho bosse.\n\n '
+      Question: '\n&f쇞 &eNapiš název jednoho bosse.\n\n '
       Answers:
       - ender dragon
       - wither
       - elderguardian
       - elder guardian
       - ender drak
+      - drak
+      - dragon
+      - wither boss
+      - warden
     '70':
-      Question: '\n&f쇞 &eCo udela draci vejce, kdyz na nej kliknes?\n\n '
+      Question: '\n&f쇞 &eCo udělá dračí vejce, když na něj klikneš?\n\n '
       Answers:
       - teleport
       - teleportuje se
@@ -489,13 +545,15 @@ Data:
       - teleportuje sa
       - posunie sa
       - zmizne
+      - zmizí
+      - přemístí se
     '71':
-      Question: '\n&f쇞 &eJak se nazyvaji v Minecraftu obvody?\n\n '
+      Question: '\n&f쇞 &eJak se nazývají v Minecraftu obvody?\n\n '
       Answers:
       - redstone
       - rudit
     '72':
-      Question: '\n&f쇞 &eCo vykupuje Villager?\n\n '
+      Question: '\n&f쇞 &eJaké zelené ore vykupuje Villager?\n\n '
       Answers:
       - emeralds
       - emeraldy
@@ -503,17 +561,18 @@ Data:
       - smaragd
       - smaragdy
     '73':
-      Question: '\n&f쇞 &eJaky byl prvni server na CraftManii?\n\n '
+      Question: '\n&f쇞 &eJaký byl první server na CraftManii?\n\n '
       Answers:
       - survival
+      - surv
     '74':
-      Question: '\n&f쇞 &eKolik dni trvalo serveru CraftMania.cz nez ziskal 1. misto na CzechCraftu?\n\n '
+      Question: '\n&f쇞 &eKolik dní trvalo serveru CraftMania.cz než získal 1. místo na CzechCraftu v roce 2015?\n\n '
       Answers:
       - '10'
       - deset
       - desat
     '75':
-      Question: '\n&f쇞 &eMela CraftMania.cz vubec prvni ve stredni EU Prison, KitPVP a UHC?\n\n '
+      Question: '\n&f쇞 &eMěla CraftMania.cz vůbec první ve střední EU Prison, KitPVP a UHC?\n\n '
       Answers:
       - ano
       - hej
@@ -522,21 +581,22 @@ Data:
       - jj
       - jop
       - spravne
+      - yes
     '76':
-      Question: '\n&f쇞 &eNa kolik kousku je v Minecraftu rozdeleny kolac?\n\n '
+      Question: '\n&f쇞 &eNa kolik kousků je v Minecraftu rozdělený koláč?\n\n '
       Answers:
       - sedm
       - '7'
       - sedem
     '77':
-      Question: '\n&f쇞 &eJakou barvu oci ma Enderman?\n\n '
+      Question: '\n&f쇞 &eJakou barvu očí má Enderman?\n\n '
       Answers:
       - fialova
       - fialovou
       - purple
       - fialovu
     '78':
-      Question: '\n&f쇞 &eCo musis mit na prutu, abys mohl jezdit na praseti?\n\n '
+      Question: '\n&f쇞 &eCo musíš mít na prutu, abys mohl jezdit na praseti?\n\n '
       Answers:
       - mrkev
       - carrot
@@ -545,7 +605,7 @@ Data:
       - mrkve
       - mrkvy
     '79':
-      Question: '\n&f쇞 &eCo ji ocelot?\n\n '
+      Question: '\n&f쇞 &eCo jí ocelot?\n\n '
       Answers:
       - Raw fish
       - syrovou rybu
@@ -554,7 +614,7 @@ Data:
       - rybu
       - ryba
     '80':
-      Question: '\n&f쇞 &eCo ji vlci?\n\n '
+      Question: '\n&f쇞 &eCo jí vlci?\n\n '
       Answers:
       - kost
       - kosti
@@ -563,24 +623,24 @@ Data:
       - maso
       - steak
     '81':
-      Question: '\n&f쇞 &eKolik hudebních disku je v MC?\n\n '
+      Question: '\n&f쇞 &eKolik hudebních disků je v MC (1.19)?\n\n '
       Answers:
-      - '12'
-      - dvanact
-      - dvanast
+      - '15'
+      - patnáct
+      - patnact
     '82':
-      Question: '\n&f쇞 &eKtery blok nejde znicit bez pouziti cheatu?\n\n '
+      Question: '\n&f쇞 &eKterý block nejde zničit bez použití cheatů nebo creativu?\n\n '
       Answers:
       - Bedrock
       - podlozi
       - podlozie
     '83':
-      Question: '\n&f쇞 &eKolik HP ma Giant?\n\n '
+      Question: '\n&f쇞 &eKolik HP má Giant?\n\n '
       Answers:
       - '100'
       - sto
     '84':
-      Question: '\n&f쇞 &eJak daleko tece voda?\n\n '
+      Question: '\n&f쇞 &eJak daleko teče voda?\n\n '
       Answers:
       - '7'
       - 7 blocku
@@ -594,46 +654,54 @@ Data:
       - sedem blokov
       - sedem
     '85':
-      Question: '\n&f쇞 &eVe kterem roce se narodil Notch?\n\n '
+      Question: '\n&f쇞 &eVe kterém roce se narodil Notch?\n\n '
       Answers:
       - '1979'
       - '79'
     '86':
-      Question: '\n&f쇞 &eJake narodnosti je Notch?\n\n '
+      Question: '\n&f쇞 &eJaké národnosti je Notch?\n\n '
       Answers:
       - Swedish
       - Svedsko
       - Sved
+      - Švéd
+      - Švédsko
+      - Švédské
+      - Svedske
     '87':
-      Question: '\n&f쇞 &eOd jake urovne lze najit diamanty?\n\n '
+      Question: '\n&f쇞 &eOd jaké úrovně lze najít diamanty?\n\n '
       Answers:
       - '16'
       - sestnast
       - sestnact
+      - šestnáct
     '88':
-      Question: '\n&f쇞 &eJedna hodina v Minecraftu je kolik vterin v realu?\n\n '
+      Question: '\n&f쇞 &eJedna hodina v Minecraftu je kolik vteřin v reálu?\n\n '
       Answers:
       - '50'
       - padesat
       - patdesiat
+      - padesát
     '89':
-      Question: '\n&f쇞 &eKolik hodit trva jeden Minecraft mesic?\n\n '
+      Question: '\n&f쇞 &eKolik hodin trvá jeden Minecraft měsíc?\n\n '
       Answers:
       - '10'
       - deset
       - desat
     '90':
-      Question: '\n&f쇞 &eKdo dela TSSSSsssss....?\n\n '
+      Question: '\n&f쇞 &eKdo dělá TSSSSsssss....?\n\n '
       Answers:
       - creeper
       - sycak
     '91':
-      Question: '\n&f쇞 &eKolik diamantu lze najit prumerne v jednom chunku?\n\n '
+      Question: '\n&f쇞 &eKolik diamantů lze najít průmerně v jednom chunku?\n\n '
       Answers:
       - '3'
       - tri
+      - tři
+      - tria
     '92':
-      Question: '\n&f쇞 &eCo dropuji Zombie kdyz zemrou?\n\n '
+      Question: '\n&f쇞 &eCo dropují Zombie když zemřou?\n\n '
       Answers:
       - rotten flesh
       - shnile maso
@@ -645,10 +713,12 @@ Data:
       - iron ingot
       - iron ingots
       - zelezo
+      - železo
       - zemiak
       - brambory
       - bramboru
       - brambora
+      - brambor
       - zemiaky
       - mrkev
       - mrkve
@@ -657,42 +727,54 @@ Data:
       - carrot
       - carrots
     '93':
-      Question: '\n&f쇞 &eKolik ruznych velikosti ma Slime?\n\n '
+      Question: '\n&f쇞 &eKolik různých velikostí má Slime?\n\n '
       Answers:
       - '3'
       - tri
+      - tři
+      - tria
     '94':
-      Question: '\n&f쇞 &eJakou barvu ma Stevovo tricko?\n\n '
+      Question: '\n&f쇞 &eJakou barvu má Stevovo tričko?\n\n '
       Answers:
       - modra
       - modrou
       - blue
+      - modrá
     '95':
-      Question: '\n&f쇞 &eKolik barev ma vlna?\n\n '
+      Question: '\n&f쇞 &eKolik barev má vlna?\n\n '
       Answers:
       - '16'
       - sestnact
       - sestnast
+      - šestnáct
     '96':
-      Question: '\n&f쇞 &eKolik priser hori, kdyz na ne sviti slunce (platne pro Minecraft 1.12)?\n\n '
+      Question: '\n&f쇞 &eKolik příšer hoří, když na ně svíti slunce (platné pro Minecraft 1.12)?\n\n '
       Answers:
       - '4'
       - ctyri
       - styri
+      - čtyři
+      - štyri
+      - čtyry
     '97':
-      Question: '\n&f쇞 &eJak daleko tece lava?\n\n '
+      Question: '\n&f쇞 &eJak daleko teče lava?\n\n '
       Answers:
       - '3'
       - tri
+      - tři
+      - tria
     '98':
       Question: '\n&f쇞 &eKdo je majitelem Craftmania?\n\n '
       Answers:
       - mrwakecz
+      - párek
       - Wake
       - WakeCZ
-      - Wejk
+      - Wejk     
+      - Wak
+      - kwak                 
     '99':
-      Question: '\n&f쇞 &eCo bylo pouzito pro zvuk Ghasta?\n\n '
+      Question: '\n&f쇞 &eCo bylo použito pro zvuk Ghasta?\n\n '
       Answers:
       - child voice
       - hlas ditete
@@ -700,8 +782,11 @@ Data:
       - child
       - hlas dietata
       - dieta
+      - dítě
+      - hlas dítěte
+      - hlas dieta
     '100':
-      Question: '\n&f쇞 &eCeho se boji Creeper?\n\n '
+      Question: '\n&f쇞 &eČeho se bojí Creeper?\n\n '
       Answers:
       - kocky
       - kocek
@@ -710,89 +795,103 @@ Data:
       - kocka
       - macka
       - maciek
+      - kočky
+      - koček
     '101':
-      Question: '\n&f쇞 &eVe kterem biomu se nemohou spawnovat monstra?\n\n '
+      Question: '\n&f쇞 &eVe kterém biomu se nemohou spawnovat monstra?\n\n '
       Answers:
-      - ocean
-      - more
-      - ocean biom
+      - Mushroom Fields
+      - Mushroom biom
+      - Houbový ostrov
+      - houbové pole
+      - houbový biom
     '102':
-      Question: '\n&f쇞 &eKtera hra inspirovala Notche k vytvoreni Minecraftu?\n\n '
+      Question: '\n&f쇞 &eKterá hra inspirovala Notche k vytvoření Minecraftu?\n\n '
       Answers:
       - Dwarf Fortress
       - Dungeon Keeper
       - Infiniminer
     '103':
-      Question: '\n&f쇞 &eJakym filmem byl inspirovan mob Iron Golem?\n\n '
+      Question: '\n&f쇞 &eJakým filmem byl inspirován mob Iron Golem?\n\n '
       Answers:
       - Laputa
     '104':
-      Question: '\n&f쇞 &eJaky je nejjednodussi plynny chemicky prvek?\n\n '
+      Question: '\n&f쇞 &eJaký je nejjednodušší plynný chemický prvek?\n\n '
       Answers:
       - H
       - Vodik
       - H1
+      - vodík
     '105':
-      Question: '\n&f쇞 &eJaky je nazev neznamejsiho sportu na svete?\n\n '
+      Question: '\n&f쇞 &eJaký je název neznámějšího sportu na světě?\n\n '
       Answers:
       - Football
       - Fotbal
       - Futbal
     '106':
-      Question: '\n&f쇞 &eJaky je nazev nejvyssi hory na svete?\n\n '
+      Question: '\n&f쇞 &eJaký je název nejvyšší hory na světě?\n\n '
       Answers:
       - Mount Everest
       - Everest
       - Chomolungma
       - Sagarmatha
     '107':
-      Question: '\n&f쇞 &eKolik je potreba presne XP z levelu 0 na 10?\n\n '
+      Question: '\n&f쇞 &eKolik je potřeba přesně XP z levelu 0 na 10?\n\n '
       Answers:
       - '160'
       - sto sedesat
       - stosedesat
+      - sto šedesát
+      - stošedesát
     '108':
-      Question: '\n&f쇞 &eKolik libovolnych barev poskytuji zakladni formatting codes v Minecraftu?\n\n '
+      Question: '\n&f쇞 &eKolik libovolných barev poskytují základní formatting codes v Minecraftu?\n\n '
       Answers:
       - '16'
       - sestnact
       - sestnast
+      - šestnáct
     '109':
-      Question: '\n&f쇞 &eV jakem filmu hral Ryan Reynolds vtipneho cerveneho superhrdinu?\n\n '
+      Question: '\n&f쇞 &eV jakém filmu hrál Ryan Reynolds vtipného červeného superhrdinu?\n\n '
       Answers:
       - Deadpool
       - Dead pool
     '110':
-      Question: '\n&f쇞 &eKolik existuje v cestine padu?\n\n '
+      Question: '\n&f쇞 &eKolik existuje v češtině pádů?\n\n '
       Answers:
       - '7'
       - sedm
       - sedem
     '111':
-      Question: '\n&f쇞 &eNapis nazev jednoho bloku, ktery lze pouzit jako odpadkovy kos.\n\n '
+      Question: '\n&f쇞 &eNapiš název jednoho bloku, který lze použít jako odpadkový koš.\n\n '
       Answers:
       - cactus
       - lava
       - kaktus
+      - fire
+      - camp fire
+      - soul camp fire
+      - kempovací oheň
+      - ohniště
+      - oheň
     '112':
-      Question: '\n&f쇞 &eNapis nazev jednoho z 2 nejznamejsich anime.\n\n '
+      Question: '\n&f쇞 &eNapiš název jednoho z 2 nejznámějších anime.\n\n '
       Answers:
       - Pokemon
       - Pokemoni
       - Pokemons
       - Naruto
     '113':
-      Question: '\n&f쇞 &eJak se nazyva cast v skladbe, ktera se nekolikrat opakuje?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá část v skladbě, která se několikrát opakuje?\n\n '
       Answers:
       - Refren
       - Ref
     '114':
-      Question: '\n&f쇞 &eKolik je na CraftManii Creative serveru?\n\n '
+      Question: '\n&f쇞 &eKolik je na CraftManii Creative serverů?\n\n '
       Answers:
       - '1'
       - jeden
     '115':
-      Question: '\n&f쇞 &eNapis nazev nejznamejsiho ceskeho panovnika.\n\n '
+      Question: '\n&f쇞 &eNapiš jméno nejznámějšího českého panovníka.\n\n '
       Answers:
       - Karel IV
       - Karel IV.
@@ -800,16 +899,19 @@ Data:
       - Karel 4
       - Karel 4.
       - Karel Stvrty
+      - Karel čtvrtý
     '116':
-      Question: '\n&f쇞 &eNapis maximalni stupen zemetreseni, dle richterovy stupnice.\n\n '
+      Question: '\n&f쇞 &eNapiš maximální stupeň zemětřesení, dle richterovy stupnice.\n\n '
       Answers:
       - '10'
       - deset
       - deset stupnu
       - desat
       - desat stupnov
+      - deset stupňů
+      - desat stupňov
     '117':
-      Question: '\n&f쇞 &eKolik je 1t gramu?\n\n '
+      Question: '\n&f쇞 &eKolik je 1t gramů?\n\n '
       Answers:
       - 1m
       - 1 milion
@@ -824,13 +926,15 @@ Data:
       - jeden milion gramov
       - 1000000 gramu
       - 1000000 gramov
+      - milion
+      - mega
     '118':
-      Question: '\n&f쇞 &eNapis nazev jedne z dvou castic ze kterych je slozeno jadro atomu.\n\n '
+      Question: '\n&f쇞 &eNapiš název jedné z dvou částic, ze kterých je složeno jádro atomu.\n\n '
       Answers:
       - proton
       - neutron
     '119':
-      Question: '\n&f쇞 &eJakou barvu prefixu maji na serveru Helperi?\n\n '
+      Question: '\n&f쇞 &eJakou barvu prefixu mají na serveru Helpeři?\n\n '
       Answers:
       - Zelena
       - Zelenou
@@ -839,23 +943,21 @@ Data:
       - Tmave zelenou
       - Tmavo zelenu
       - Tmave zelenu
+      - zelená
     '120':
-      Question: '\n&f쇞 &eOd jakeho VIP je poskytovana vyhoda pouziti prikazu /heal?\n\n '
+      Question: '\n&f쇞 &eV jakém roce odkoupil Microsoft společnost Mojang?\n\n '
       Answers:
-      - Diamond
-      - Diamant
-      - Diamantovy
-      - DVIP
-      - Diamond VIP
-      - Diamantovy VIP
+      - 2014
     '121':
-      Question: '\n&f쇞 &eNapis ID torch.\n\n '
+      Question: '\n&f쇞 &eJak se nazývá první cosmetic set dostupný vytvořený pro CraftManii?\n\n '
       Answers:
-      - '50'
-      - padesat
-      - patdesiat
+      - Ice Rose Set
+      - Ice Rose
+      - iceroseset
+      - icerose
+      - ice
     '122':
-      Question: '\n&f쇞 &eMa CraftMania svuj officialni TeamSpeak server?\n\n '
+      Question: '\n&f쇞 &eMá CraftMania svůj officiálni TeamSpeak server?\n\n '
       Answers:
       - Ne
       - n
@@ -864,7 +966,7 @@ Data:
       - nie
       - spatne
     '123':
-      Question: '\n&f쇞 &eKolik druhu dreva je v Minecraftu? 1.11.2'
+      Question: '\n&f쇞 &eKolik druhů dřeva je v Minecraftu? 1.18.2'
       Answers:
       - '6'
       - sest
@@ -872,26 +974,30 @@ Data:
       - sest druhu dreva
       - sest druhov dreva
     '124':
-      Question: '\n&f쇞 &eNapis chemickou znacku uhliku.\n\n '
+      Question: '\n&f쇞 &eNapiš chemickou značku uhlíku.\n\n '
       Answers:
       - C
     '125':
-      Question: '\n&f쇞 &eNapis chemickou znacku chloridu sodneho.\n\n '
+      Question: '\n&f쇞 &eNapiš chemickou značku chloridu sodného.\n\n '
       Answers:
       - NaCl
     '126':
-      Question: '\n&f쇞 &eKolik let trvala 2. svetova valka?\n\n '
+      Question: '\n&f쇞 &eKolik let trvala 2. světová válka?\n\n '
       Answers:
       - '6'
       - sest
+      - šest
     '127':
-      Question: '\n&f쇞 &eNapis nejznamejsi znacku auta, co se vyrabi v Mlade Boleslavi.\n\n '
+      Question: '\n&f쇞 &eNapiš nejznámější značku auta, co se vyrábí v Mladé Boleslavi.\n\n '
       Answers:
       - Skoda
       - Skoda Auto
+      - škoda
+      - škoda auto
+      - škodovka
       - Auto Skoda
     '128':
-      Question: '\n&f쇞 &eNapis jmeno jednoho ze dvou zakladatelu firmy Windows.\n\n '
+      Question: '\n&f쇞 &eNapiš jméno jednoho ze dvou zakladatelů firmy Windows.\n\n '
       Answers:
       - Bill Gates
       - Gates Bill
@@ -900,17 +1006,16 @@ Data:
       - Allen
       - Gates
     '129':
-      Question: '\n&f쇞 &eNapis jmeno jedne z nekolika nejznamnejsich socialnich siti.\n\n '
+      Question: '\n&f쇞 &eNapiš jméno jedné z několika nejznámějších sociálních sítí.\n\n '
       Answers:
       - Facebook
       - Twitter
-      - Ask.fm
-      - Ask
       - Tumblr
-      - Google+
-      - Myspace
       - Instagram
       - Snapchat
+      - Tiktok
+      - tik tok
+      - pinterest
     '130':
       Question: '\n&f쇞 &eKolik je 1*0?\n\n '
       Answers:
@@ -918,21 +1023,24 @@ Data:
       - nula
       - nic
     '131':
-      Question: '\n&f쇞 &eNapis nazev nejhlubsiho mista na svete.\n\n '
+      Question: '\n&f쇞 &eNapiš název nejhlubšího místa na světě.\n\n '
       Answers:
       - Mariansky prikop
       - Marianska priekopa
       - Mariansky priekop
+      - Mariánský příkop
     '132':
-      Question: '\n&f쇞 &eIron golemove byli vytvoreni jako ochrana pro jednoho moba. Ktereho?\n\n '
+      Question: '\n&f쇞 &eIron golemove byli vytvořeni jako ochrana pro jednoho moba. Kterého?\n\n '
       Answers:
       - Villager
       - Vesnican
       - Villagers
       - Vesnicanov
       - Vesnicany
+      - vesničana
+      - vesničanů
     '133':
-      Question: '\n&f쇞 &eZ kolika poctu materialu se vyrabi chestplate?\n\n '
+      Question: '\n&f쇞 &eZ kolika počtu materiálu se vyrábí chestplate?\n\n '
       Answers:
       - '8'
       - osm
@@ -940,14 +1048,18 @@ Data:
       - z osmi
       - osmi
     '134':
-      Question: '\n&f쇞 &eNapis jmeno jednoho ze dvou zakladatelu firmy Google.\n\n '
+      Question: '\n&f쇞 &eNapiš jméno jednoho ze dvou zakladatelů firmy Google.\n\n '
       Answers:
       - Larry Page
       - Sergey Brin
       - Page Larry
       - Brin Sergey
+      - brin
+      - page
+      - larry
+      - sergey
     '135':
-      Question: '\n&f쇞 &eNapis jmeno hlavniho zakladatele firmy Facebook. Staci pouze prvni
+      Question: '\n&f쇞 &eNapiš jméno hlavního zakladatele firmy Facebook. Stačí pouze křestní.
         jmeno.\n\n '
       Answers:
       - Mark
@@ -955,24 +1067,26 @@ Data:
       - Zuckerberg
       - Zuckerberg Mark
     '136':
-      Question: '\n&f쇞 &eJaky pristroj slouzi k mereni elektrickeho naboje?\n\n '
+      Question: '\n&f쇞 &eJaký přístroj slouží k měření elektrického napětí?\n\n '
       Answers:
-      - Elektroskop
-      - Elektro skop
+      - voltmetr
+      - volt metr
+      - multimetr
+      - multi metr
     '137':
-      Question: '\n&f쇞 &eNapis nazev prvni minihry na CraftManii.\n\n '
+      Question: '\n&f쇞 &eNapiš název první minihry na CraftManii.\n\n '
       Answers:
       - Survival Games
       - SurvivalGames
       - SG
     '138':
-      Question: '\n&f쇞 &eKolik ma jedna hodina sekund?\n\n '
+      Question: '\n&f쇞 &eKolik má jedna hodina sekund?\n\n '
       Answers:
       - '3600'
       - 3600s
       - 3600 s
     '139':
-      Question: '\n&f쇞 &eMa CraftMania svuj vlastni web?\n\n '
+      Question: '\n&f쇞 &eMá CraftMania svůj vlastní web?\n\n '
       Answers:
       - Ano
       - Hej
@@ -981,23 +1095,29 @@ Data:
       - Spravne
       - true
       - jop
+      - yes
     '140':
-      Question: '\n&f쇞 &eNapis nazev autora, jenz slozil zpevohru s nazvem Libuse.\n\n '
+      Question: '\n&f쇞 &eNapiš název autora, který složil zpěvohru s názvem Libuše.\n\n '
       Answers:
-      - Beldrich Smetana
-      - Smetana Beldrich
+      - Bedrich Smetana
+      - Smetana Bedrich
       - Smetana
+      - bedřich smetana
+      - smetana bedřich
     '141':
-      Question: '\n&f쇞 &eNapis nazev nyni nejvice pouzivaneho abecedniho pisma na svete.\n\n '
+      Question: '\n&f쇞 &eNapiš název nyní nejvíce používaného abecedního písma na světě.\n\n '
       Answers:
       - Latinka
       - latinske pismo
     '142':
-      Question: '\n&f쇞 &eCo se prevazne vyuziva jako ochrana pozemku na Survivalu?\n\n '
+      Question: '\n&f쇞 &eCo se převážně využívá jako ochrana pozemku na Survivalu?\n\n '
       Answers:
       - Residence
       - Reska
       - Resky
+      - Land
+      - Landy
+      - Lands
     '143':
       Question: '\n&f쇞 &eJe minecraft open-world hra?\n\n '
       Answers:
@@ -1007,32 +1127,40 @@ Data:
       - jj
       - spravne
       - jop
+      - yes
     '144':
-      Question: '\n&f쇞 &eNapis pocet typu mobu ve hre (Platne pro Minecraft 1.12).\n\n '
+      Question: '\n&f쇞 &eNapiš počet typů mobů ve hře (Platné pro Minecraft 1.19).\n\n '
       Answers:
-      - '6'
-      - sest
+      - '77'
+      - sedmdesát sedm
+      - sedmdesátsedm
+      - sedmdesatsedm
+      - sedmdesat sedm
+      - sedemdesat sedem
+      - sedemdesatsedem
     '145':
-      Question: '\n&f쇞 &eNapis nazev obtiznosti, ve ktere nejsou zadni nepratele.\n\n '
+      Question: '\n&f쇞 &eNapiš název obtížnosti, ve které nejsou žádní nepřátelé.\n\n '
       Answers:
       - Peaceful
       - Mirumilovna
       - Mierumilovna
     '146':
-      Question: '\n&f쇞 &eJak se nazyva nejstarsi doba kamenna?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá nejstarší doba kamenná?\n\n '
       Answers:
       - Paleolit
     '147':
-      Question: '\n&f쇞 &eJaka je jednotka prace?\n\n '
+      Question: '\n&f쇞 &eJaká je jednotka práce?\n\n '
       Answers:
       - Joule
       - J
     '148':
-      Question: '\n&f쇞 &eNapis hlavni mesto Ukrajiny.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Ukrajiny.\n\n '
       Answers:
       - Kyjev
+      - Kyiv
+      - Kiev
     '149':
-      Question: '\n&f쇞 &eKolik ma Ceska Republika priblizne obyvatel?\n\n '
+      Question: '\n&f쇞 &eKolik má Česka republika přibližně obyvatel?\n\n '
       Answers:
       - '10000000'
       - 10 000 000
@@ -1047,36 +1175,39 @@ Data:
       Question: '\n&f쇞 &eCo spojuje svaly?\n\n '
       Answers:
       - Slachy
+      - Šlachy
     '151':
-      Question: '\n&f쇞 &eKdo sepsal dilo Puvod Druhu?\n\n '
+      Question: '\n&f쇞 &eKdo sepsal dílo Původ Druhu?\n\n '
       Answers:
       - Charles Darwin
       - Darwin Charles
       - Darwin
     '152':
-      Question: '\n&f쇞 &eNapis nazev rostlinnych tkani.\n\n '
+      Question: '\n&f쇞 &eNapiš název rostlinných tkání.\n\n '
       Answers:
       - Pletivo
       - Pletiva
     '153':
-      Question: '\n&f쇞 &eNapis hlavni mesto Italie.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Itálie.\n\n '
       Answers:
       - Rim
+      - Řím
+      - Roma
     '154':
-      Question: '\n&f쇞 &eNapis chemickou znacku rtuti.\n\n '
+      Question: '\n&f쇞 &eNapiš chemickou značku rtuti.\n\n '
       Answers:
       - Hg
     '155':
-      Question: '\n&f쇞 &eNapis chemickou znacku bromu.\n\n '
+      Question: '\n&f쇞 &eNapiš chemickou značku bromu.\n\n '
       Answers:
       - Br
     '156':
-      Question: '\n&f쇞 &eJak se nazyva nauka o bozich?\n\n '
+      Question: '\n&f쇞 &eJak se nazývá nauka o bozích?\n\n '
       Answers:
       - Teologie
       - Teologia
     '157':
-      Question: '\n&f쇞 &eKonstantinopol bylo hlavni mesto jake rise?\n\n '
+      Question: '\n&f쇞 &eKonstantinopol bylo hlavní město jaké říše?\n\n '
       Answers:
       - Vychodorimske rise
       - Vychodorimske
@@ -1085,20 +1216,29 @@ Data:
       - Vychodorimska rise
       - Vychodo rimska
       - Vychodo rimska rise
+      - Východo římské říše
+      - Východořímské říše
+      - Východo římské
+      - Východořímské
     '158':
       Question: '\n&f쇞 &eCo je SO2?\n\n '
       Answers:
       - Oxid siricity
+      - oxid siřičitý
+      - Sulfur dioxide
     '159':
-      Question: '\n&f쇞 &eNapis hlavni mesto Velke Britanie.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Velké Británie.\n\n '
       Answers:
       - Londyn
+      - London
+      - Londýn
     '160':
-      Question: '\n&f쇞 &eNapis hlavni mesto Portugalska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Portugalska.\n\n '
       Answers:
       - Lisabon
+      - Lisboa
     '161':
-      Question: '\n&f쇞 &eJakou odmenu dostanes za hlasovani pro nas server?\n\n '
+      Question: '\n&f쇞 &eJakou odměnu dostaneš za hlasování pro náš server?\n\n '
       Answers:
       - VoteToken
       - Vote Token
@@ -1108,87 +1248,100 @@ Data:
       - CraftCoins
       - CraftCoin
       - Craft Coin
+      - VT
     '162':
-      Question: '\n&f쇞 &eNapis hlavni mesto Irska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Irska.\n\n '
       Answers:
       - Dublin
     '163':
-      Question: '\n&f쇞 &eNapis hlavni mesto Lotysska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Lotyšska.\n\n '
       Answers:
       - Riga
     '164':
-      Question: '\n&f쇞 &eNapis hlavni mesto Madarska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Maďarska.\n\n '
       Answers:
       - Budapest
+      - Budapešť
     '165':
-      Question: '\n&f쇞 &eNapis hlavni mesto Nemecka.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Německa.\n\n '
       Answers:
       - Berlin
+      - Berlín
     '166':
-      Question: '\n&f쇞 &eNapis hlavni mesto Vietnamu.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Vietnamu.\n\n '
       Answers:
       - Hanoj
+      - Hanoi
     '167':
-      Question: '\n&f쇞 &eNapis hlavni mesto Francie.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Francie.\n\n '
       Answers:
       - Pariz
+      - Paris
+      - Paříž
     '168':
-      Question: '\n&f쇞 &eNapis hlavni mesto Rakouska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Rakouska.\n\n '
       Answers:
       - Viden
       - Vieden
+      - Vídeň
     '169':
-      Question: '\n&f쇞 &eNapis hlavni mesto Turecka.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Turecka.\n\n '
       Answers:
       - Ankara
     '170':
-      Question: '\n&f쇞 &eNapis hlavni mesto Ciny.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Číny.\n\n '
       Answers:
       - Peking
     '171':
-      Question: '\n&f쇞 &eNapis hlavni mesto Slovenska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Slovenska.\n\n '
       Answers:
       - Bratislava
     '172':
-      Question: '\n&f쇞 &eNapis hlavni mesto Ceske Republiky.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Česke republiky.\n\n '
       Answers:
       - Praha
+      - Prague
+      - Prag
     '173':
-      Question: '\n&f쇞 &eNapis hlavni mesto Ruska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Ruska.\n\n '
       Answers:
       - Moskva
     '174':
-      Question: '\n&f쇞 &eNapis nazev nejvetsiho oceanu.\n\n '
+      Question: '\n&f쇞 &eNapiš název největšího oceánu.\n\n '
       Answers:
       - Tichy
       - Tichy Ocean
       - Pacifik
       - Pacific
+      - Tichý
+      - Tichý oceán
     '175':
-      Question: '\n&f쇞 &eNapis soucet vsech oceanu.\n\n '
+      Question: '\n&f쇞 &eNapiš součet všech oceánů.\n\n '
       Answers:
-      - '4'
-      - ctyri
-      - styri
+      - '5'
+      - pet
+      - pět
+      - pat
     '176':
-      Question: '\n&f쇞 &eNapis soucet vsech svetadilu.\n\n '
+      Question: '\n&f쇞 &eNapiš součet všech světadílů.\n\n '
       Answers:
       - '7'
       - sedm
       - sedem
     '177':
-      Question: '\n&f쇞 &eNapis pocet kraju v Ceske Republice.\n\n '
+      Question: '\n&f쇞 &eNapiš počet krajů v Česke republice.\n\n '
       Answers:
       - '14'
       - ctrnact
       - strnast
+      - čtrnáct
     '178':
-      Question: '\n&f쇞 &eNapis nazev nejvetsiho svetadilu.\n\n '
+      Question: '\n&f쇞 &eNapiš název největšího světadílu.\n\n '
       Answers:
       - Asie
       - Asia
     '179':
-      Question: '\n&f쇞 &eJak je vysoka hora snezka?\n\n '
+      Question: '\n&f쇞 &eJak je vysoká hora Sněžka?\n\n '
       Answers:
       - '1603'
       - 1 603
@@ -1206,24 +1359,26 @@ Data:
       - 1 603metrov
       - 1 603 metrov
     '180':
-      Question: '\n&f쇞 &eNapis nazev nejmensiho svetadilu.\n\n '
+      Question: '\n&f쇞 &eNapiš název nejmenšího světadílu.\n\n '
       Answers:
       - Australie
       - Australia
+      - Austrálie
     '181':
-      Question: '\n&f쇞 &eNapis nazev itemu, diky kteremu se zdvojnasobuje efektivita lektvaru.\n\n '
+      Question: '\n&f쇞 &eNapiš název itemu, díky kterému se zdvojnásobuje efektivita lektvaru.\n\n '
       Answers:
       - glowstone
       - glowstone dust
       - svetlit
+      - světlit
     '182':
-      Question: '\n&f쇞 &eKolik ruditu je potreba na vycrafteni redstone lampy?\n\n '
+      Question: '\n&f쇞 &eKolik redstonu je potřeba na vycraftění redstone lampy?\n\n '
       Answers:
       - '4'
       - ctyri
       - styri
     '183':
-      Question: '\n&f쇞 &eJak je velky 1 chunk?\n\n '
+      Question: '\n&f쇞 &eJak je velký 1 chunk?\n\n '
       Answers:
       - 16x16x256
       - 16x256x16
@@ -1266,7 +1421,7 @@ Data:
       - 65 536 blokov
       - 65 536 blockov
     '184':
-      Question: '\n&f쇞 &eJe potreba slimeball na vycrafteni voditka?\n\n '
+      Question: '\n&f쇞 &eJe potřeba slimeball na vycraftění vodítka?\n\n '
       Answers:
       - Ano
       - j
@@ -1276,30 +1431,33 @@ Data:
       - true
       - jo
       - jop
+      - yes
     '185':
-      Question: '\n&f쇞 &eKolik slabu tvori cely blok?\n\n '
+      Question: '\n&f쇞 &eKolik slabů tvoří celý blok?\n\n '
       Answers:
       - '2'
       - dva
     '186':
-      Question: '\n&f쇞 &eNapis nazev itemu, diky kteremu se zdvojnasobuje trvanlivost lektvaru.\n\n '
+      Question: '\n&f쇞 &eNapiš název itemu, díky kterému se zdvojnásobuje trvanlivost lektvaru.\n\n '
       Answers:
       - Rudit
       - Redstone
       - Redstone dust
     '187':
-      Question: '\n&f쇞 &eJe na Survivalu pro vsechny k dispozici fly?\n\n '
+      Question: '\n&f쇞 &eNapiš jakékoliv arabské číslo.\n\n '
       Answers:
-      - Ano
-      - j
-      - jj
-      - spravne
-      - hej
-      - true
-      - jo
-      - jop
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '0'
     '188':
-      Question: '\n&f쇞 &eDa se ziskat Epic Key v Vote Crate?\n\n '
+      Question: '\n&f쇞 &eLze získat Head Crate Key ve Vote Crate?\n\n '
       Answers:
       - Ano
       - j
@@ -1310,70 +1468,82 @@ Data:
       - jo
       - jop
     '189':
-      Question: '\n&f쇞 &eNapis nazev nejvyssi hory Severni Ameriky.\n\n '
+      Question: '\n&f쇞 &eNapiš název nejvyšší hory Severní Ameriky.\n\n '
       Answers:
       - Denali
+      - Mount McKinley
+      - McKinley
     '190':
-      Question: '\n&f쇞 &eNapis nazev nejdelsi reky v Jizni Americe.\n\n '
+      Question: '\n&f쇞 &eNapiš název nejdelší řeky v Jižní Americe.\n\n '
       Answers:
       - Amazonka
     '191':
-      Question: '\n&f쇞 &eNapis nazev nejvetsiho jezera v Asii.\n\n '
+      Question: '\n&f쇞 &eNapiš název největšího jezera v Asii.\n\n '
       Answers:
       - Kaspicke more
       - Kaspicke
     '192':
-      Question: '\n&f쇞 &eNapis nazev nejdelsi reky v Evrope.\n\n '
+      Question: '\n&f쇞 &eNapiš název nejdelší řeky v Evropě.\n\n '
       Answers:
       - Volha
     '193':
-      Question: '\n&f쇞 &eNapis nazev nejdelsi reky v Africe.\n\n '
+      Question: '\n&f쇞 &eNapiš název nejdelší řeky v Africe.\n\n '
       Answers:
       - Nil
     '194':
-      Question: '\n&f쇞 &eNapis pocet statu, jenz tvori USA.\n\n '
+      Question: '\n&f쇞 &eNapiš počet států, jenž tvoří USA.\n\n '
       Answers:
       - '50'
       - padesat
       - patdesiat
+      - padesát
     '195':
-      Question: '\n&f쇞 &eKolik let trvala 1. svetova valka?\n\n '
+      Question: '\n&f쇞 &eKolik let trvala 1. světová válka?\n\n '
       Answers:
       - '4'
       - ctyri
       - styri
+      - čtyři
+      - štyri
+      - čtyry
     '196':
-      Question: '\n&f쇞 &eNapis hlavni mesto Polska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Polska.\n\n '
       Answers:
       - Varsava
+      - Varšava
+      - Warszawa  
     '197':
-      Question: '\n&f쇞 &eNapis hlavni mesto Tuniska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavni mesto Tuniska.\n\n '
       Answers:
       - Tunis
     '198':
-      Question: '\n&f쇞 &eNapis hlavni mesto Thajska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Thajska.\n\n '
       Answers:
       - Bangkok
     '199':
-      Question: '\n&f쇞 &eNapis hlavni mesto Svedska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Švédska.\n\n '
       Answers:
       - Stockholm
     '200':
-      Question: '\n&f쇞 &eNapis hlavni mesto Syrie.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Sýrie.\n\n '
       Answers:
       - Damasek
+      - Damašek
     '201':
-      Question: '\n&f쇞 &eNapis hlavni mesto Srbska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Srbska.\n\n '
       Answers:
       - Belehrad
+      - Bělehrad
     '202':
-      Question: '\n&f쇞 &eNa kolik casti se rozdeluje doba kamenna?\n\n '
+      Question: '\n&f쇞 &eNa kolik částí se rozděluje doba kamenná?\n\n '
       Answers:
       - '4'
       - ctyri
       - styri
+      - čtyři
+      - štyri
     '203':
-      Question: '\n&f쇞 &eV jakem stoleti vznikl Hip Hop?\n\n '
+      Question: '\n&f쇞 &eV jakém století vznikl Hip Hop?\n\n '
       Answers:
       - '20'
       - dvacatym
@@ -1388,15 +1558,18 @@ Data:
       - 20st.
       - 20 st.
       - 20 stoletim
+      - dvacátém
+      - dvacátým
       - 20 storocim
     '204':
-      Question: '\n&f쇞 &eJake narodnosti byl Mohamed?\n\n '
+      Question: '\n&f쇞 &eJaké národnosti byl Mohamed?\n\n '
       Answers:
       - Arabske
       - Arab
       - Arabska
+      - Arabské
     '205':
-      Question: '\n&f쇞 &eV jakem stoleti se zacal projevovat umelecky sloh s nazvem Gotika?\n\n '
+      Question: '\n&f쇞 &eV jakém století se začal projevovat umělecký sloh s názvem Gotika?\n\n '
       Answers:
       - '12'
       - dvanactym
@@ -1412,8 +1585,10 @@ Data:
       - 12 st.
       - 12 stoletim
       - 12 storocim
+      - dvanáctém
+      - dvanáctým
     '206':
-      Question: '\n&f쇞 &eNapis rok, v nemz vznikla samova rise.\n\n '
+      Question: '\n&f쇞 &eNapiš rok, ve kterém vznikla Sámova říše.\n\n '
       Answers:
       - '623'
       - rok 623
@@ -1423,7 +1598,7 @@ Data:
       - 623 rok
       - 623 r
     '207':
-      Question: '\n&f쇞 &eJakeho roku se narodil Karel IV?\n\n '
+      Question: '\n&f쇞 &eJakého roku se narodil Karel IV?\n\n '
       Answers:
       - '1316'
       - rok 1316
@@ -1433,7 +1608,7 @@ Data:
       - 1316 rok
       - 1316 r
     '208':
-      Question: '\n&f쇞 &eJakeho roku byl upalen Jan Hus?\n\n '
+      Question: '\n&f쇞 &eJakého roku byl upálen Jan Hus?\n\n '
       Answers:
       - '1415'
       - rok 1415
@@ -1443,25 +1618,29 @@ Data:
       - 1415 rok
       - 1415 r
     '209':
-      Question: '\n&f쇞 &eJakou ma barvu acacia wood?\n\n '
+      Question: '\n&f쇞 &eJakou barvu má acacia wood?\n\n '
       Answers:
       - Oranzovou
       - Orange
       - Oranzovu
+      - Oranžovou
+      - Oranžovu
     '210':
-      Question: '\n&f쇞 &eJakou ma barvu wool:5?\n\n '
+      Question: '\n&f쇞 &eJakou barvu má wool:5?\n\n '
       Answers:
       - Ruzovou
       - Pink
       - Ruzovu
+      - Růžová
+      - Růžovou
     '211':
-      Question: '\n&f쇞 &eNapis pocet kraju na Slovensku..\n\n '
+      Question: '\n&f쇞 &eNapiš počet krajů na Slovensku..\n\n '
       Answers:
       - '8'
       - osm
       - osem
     '212':
-      Question: '\n&f쇞 &eKolik ma Slovensko priblizne obyvatel?\n\n '
+      Question: '\n&f쇞 &eKolik má Slovensko přibližně obyvatel?\n\n '
       Answers:
       - '5000000'
       - 5 000 000
@@ -1472,40 +1651,66 @@ Data:
       - 5milionov
       - pet milionu
       - pet milionov
+      - pět milionů
+      - pět milionov
     '213':
-      Question: '\n&f쇞 &eNapis nazev nejvyssi hory na Slovensku'
+      Question: '\n&f쇞 &eNapiš název nejvyšší hory na Slovensku'
       Answers:
       - Gerlach
       - Gerlachovsky stit
+      - Gerlachovský štít
     '214':
-      Question: '\n&f쇞 &eNapis hlavni mesto Australie.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Austrálie.\n\n '
       Answers:
       - Canberra
     '215':
-      Question: '\n&f쇞 &eNapis hlavni mesto Alzirska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Alžírska.\n\n '
       Answers:
       - Alzir
+      - Alžír
     '216':
-      Question: '\n&f쇞 &eNapis hlavni mesto Belgie.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Belgie.\n\n '
       Answers:
       - Brusel
+      - Bruxelles
     '217':
-      Question: '\n&f쇞 &eNapis hlavni mesto Finska.\n\n '
+      Question: '\n&f쇞 &eNapiš hlavní město Finska.\n\n '
       Answers:
       - Helsinki
     '218':
-      Question: '\n&f쇞 &eNapis chemickou znacku zeleza.\n\n '
+      Question: '\n&f쇞 &eNapiš chemickou značku železa.\n\n '
       Answers:
       - Fe
     '219':
-      Question: '\n&f쇞 &eNapis chemickou znacku helia.\n\n '
+      Question: '\n&f쇞 &eNapiš chemickou značku helia.\n\n '
       Answers:
       - He
     '220':
-      Question: '\n&f쇞 &eCo je tezsi? Kilo zeleza nebo kilo peri?\n\n '
+      Question: '\n&f쇞 &eCo je težší? Kilo železa nebo kilo peří?\n\n '
       Answers:
       - wtf
       - stejne
       - nastejno
       - na stejno
       - ani jedno
+      - stejně
+      - stejnou
+    '221':
+      Question: '\n&f쇞 &eV jakém roce vznikla CraftMania?\n\n '
+      Answers:
+      - '2013'
+    '222':
+      Question: '\n&f쇞 &eNa jaké verzi Minecraftu vznikl server Craftmania?\n\n '
+      Answers:
+      - '1.7'
+      - '17'
+      - jednateckasedm
+    '223':
+      Question: '\n&f쇞 &eV jaké verzi Minecraftu se změnilo PvP?\n\n '
+      Answers:
+      - '1.9'
+    '224':
+      Question: '\n&f쇞 &eJak se jmenuje boss přidaný do Minecraftu ve verzi 1.19?\n\n '
+      Answers:
+      - warden
+      - Warden
