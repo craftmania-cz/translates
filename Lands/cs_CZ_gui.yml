@@ -47,12 +47,14 @@ general:
       nation: '&9Národ '
   top:
     sorting:
-      balance: Balance
-      chunks: Chunks
-      members: Members
+      balance: Hodnota v bance
+      chunks: Chunky
+      members: Členovés
       level: Level
-      ratio_kd: Kills/Deaths
-      ratio_wl: Won/Lost
+      ratio_kd: Zabití/Smrti
+      ratio_wl: Výhry/Prohry
+      ratio-kd: Zabití/Smrti
+      ratio-wl: Výhry/Prohry
 
 
 skull:
@@ -103,28 +105,37 @@ gui:
           - '&a{support-chunks} &7dodatečných chunků.'
           material: INHERIT
           slots: 26
+        nations:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU1ODdkYTdmZTczMzZlOGFiOWY3OTFlYTVlMmNmYzhhODI3Y2E5NTk1NjdlYjlkNTNhNjQ3YmFiZjk0OGQ1In19fQ==
+          slots: 12
+          name: '&9&lTvé národy'
+          lore:
+          - '&8✖ &7Zobrazení národů, ve kterých jsi součástí.'
+          - '    &8• &7Vlastní: {own}'
+          - '    &8• &7Přidán v: {trusted}'
+        rentable:
+          material: OAK_FENCE
+          slots: 31
+          name: '&6&lPronajímatelný'
+          lore:
+          - '&8✖ &7Zobrazení regionů, které mohou'
+          - '   &7být pronajaty nebo zakoupeny.'
+        all-nations:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0MDk0MmYzNjRmNmNiY2VmZmNmMTE1MTc5NjQxMDI4NmE0OGIxYWViYTc3MjQzZTIxODAyNmMwOWNkMSJ9fX0=
+          slots: 30
+          name: '&9&lVšechny národy'
+          lore:
+          - '&8✖ &7Zobrazení všech národů na tomto serveru'
+          - '    &8• &7Celkem: {nations}'
+        flags:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWMyZmYyNDRkZmM5ZGQzYTJjZWY2MzExMmU3NTAyZGM2MzY3YjBkMDIxMzI5NTAzNDdiMmI0NzlhNzIzNjZkZCJ9fX0=
+          slots: 32
+          name: '&6&lNastavení'
+          lore:
+          - '&8✖ &7Úprava vlastního nastavení'
   land:
     items:
       default:
-        trusted:
-          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
-          slots: 12
-          name: '&6&lČlenové'
-          lore:
-          - '&7Seznam všech členů,'
-          - '&7kteří jsou přiraný v nějakém tvém'
-          - '&7landu nebo regionu.'
-          - ''
-          - '&8✖ &bSHIFT + LEVÝ KLIKNUTÍ'
-          - '   &7Správa zabanovaných členů'
-          - '   &7v celém landu.'
-        invites:
-          material: WRITABLE_BOOK
-          slots: 13
-          name: '&6&lPozvánky'
-          lore:
-          - '&7Zruš odeslané pozvánky'
-          - '&7nebo si zobraz informace o stavu.'
         level:
           material: EXPERIENCE_BOTTLE
           slots: 16
@@ -221,29 +232,18 @@ gui:
           - '   &7Banka: {balance_player}'
           - '   &7Daně&c {taxes} &7za:'
           - '   &7{taxes_next}'
+        player-management:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
+          slots: 12
+          name: '&6&lSpráva hráčů'
+          lore:
+          - '&7Správa členů, zabanovaných hráčů,'
+          - '&7pozvánky a žádost o členství.'
     title: '&8{level} {land}'
   area:
     title: '{area}'
     items:
       default:
-        trusted:
-          name: '&6&lČlenové'
-          lore:
-          - '&7Seznam všech členů v tomto landu.'
-          - ''
-          - '&8✖ &bSHIFT + LEVÝ KLIKNUTÍ'
-          - '   &7Správa zabanovaných členů'
-          - '   &7v tomto regionu.'
-          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
-          slots: 11
-        invites:
-          name: '&6&lSpráva pozvánek'
-          lore:
-          - '&7Zrušit odeslané pozvánky'
-          - '&7nebo si zobraz informace o'
-          - '&7jejich aktuálním stavu.'
-          material: WRITABLE_BOOK
-          slots: 12
         land-settings:
           name: '&6&lNastavení vlajek'
           lore:
@@ -283,8 +283,15 @@ gui:
           - '&7Majitel regionu ti toto nepovolil.'
           - ''
           - '&7Vlajka: §f{flag}'
+        player-management:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
+          slots: 11
+          name: '&6&lSpráva hráčů'
+          lore:
+          - '&7Správa členů, zabanovaných hráčů,'
+          - '&7pozvánky a žádost o členství.'
   role:
-    title: 'Správa role'
+    title: Správa role
     items:
       default:
         settings:
@@ -344,11 +351,6 @@ gui:
           - '&7landů s touto rolí?'
           material: OAK_FENCE
           slots: 14
-        child_no-item:
-          name: '&c&lNemáš item v ruce'
-          lore:
-          - '&7K nastavení ikony musíš mít'
-          - '&7item v ruce.'
         child_failure_access:
           name: '&c&lNení povoleno'
           lore:
@@ -388,6 +390,23 @@ gui:
           - '&7a vlajek, jsou vždy přidány'
           - '&7do nových regionů automaticky.'
           - '&7U této role toto nelze vypnout.'
+        taxes:
+          material: GOLD_INGOT
+          slots: 15
+          name: '&6&lPlatba daní: {current}'
+          lore:
+          - '&7Mají členové této role'
+          - '&7platit daně?'
+          - ''
+          - '&8• &7Land obdrží&c {taxes} &7na daních'
+          - '    &7od této role za/v'
+          - '    &5{time}&7.'
+        taxes_never:
+          material: GOLD_INGOT
+          slots: 15
+          name: '&6&lThis role doesn''t pay Taxes'
+          lore:
+          - '&7It can''t be changed for this role.'
   taxes:
     title: Poplatky a platby
     items:
@@ -547,6 +566,16 @@ gui:
           - '    §7Kategorie se zobrazuje v: &e/lands list'
           material: HOPPER
           slots: 26
+        icon:
+          material: INHERIT
+          slots: 26
+          name: '&6&lIkona'
+          lore:
+          - '&8✖ &7Vlož item zde k uložení'
+          - '   &7jako ikony landu.'
+          - ''
+          - '&8✖ &3VYHODIT ITEM'
+          - '   &7Resetuje na základní.'
   
   area_various:
     title: Ostatní
@@ -725,12 +754,12 @@ gui:
           slots: 9
           name: '&6&lSpawn'
           lore:
-          - '&7Teleport to the enemies border.'
+          - '&7Teleport k hranicím nepřítele.'
         child_failure_none:
-          name: '&4&lNo Claims'
+          name: '&4&lŽádné zabrané chunky'
           lore:
-          - '&cThe enemy {enemy} &chas no claims'
-          - '&cto teleport to.'
+          - '&cProtivník {enemy} &cnemá zabrané žádné'
+          - '&cchunky k teleportu.'
   war_capture_recipe:
     title: Válka &7> Informace &7> Recepty
     items:
@@ -773,49 +802,49 @@ gui:
           amount: 1
           data:
             modify: 1
-          name: '&a&lAdd {value}'
+          name: '&a&lPřidat {value}'
           lore: []
         refresh_plus-2:
           material: GLOWSTONE_DUST
           slots: 25
           data:
             modify: 100
-          name: '&a&lAdd {value}'
+          name: '&a&lPřidat {value}'
           lore: []
         refresh_plus-3:
           material: GLOWSTONE_DUST
           slots: 26
           data:
             modify: 1000
-          name: '&a&lAdd {value}'
+          name: '&a&lPřidat {value}'
           lore: []
         refresh_minus-3:
           material: REDSTONE
           slots: 22
           data:
             modify: 1
-          name: '&c&lRemove {value}'
+          name: '&c&lOdebrat {value}'
           lore: []
         refresh_minus-2:
           material: REDSTONE
           slots: 21
           data:
             modify: 100
-          name: '&c&lRemove {value}'
+          name: '&c&lOdebrat {value}'
           lore: []
         refresh_minus-1:
           material: REDSTONE
           slots: 20
           data:
             modify: 1000
-          name: '&c&lRemove {value}'
+          name: '&c&lOdebrat {value}'
           lore: []
         cancel-declaration:
           material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
           slots: 37
-          name: '&c&lCancel War Declaration'
+          name: '&c&lZrušit vyhlášení války'
           lore:
-          - '&8✖ &7Cancel this war declaration.'
+          - '&8✖ &7Zrušíš vyhlášení války.'
   
   nation:
     items:
@@ -907,26 +936,30 @@ gui:
           - '&7Nastav efekty, které jsou aktivní'
           - '&7pro tvůj národ. Efekty mohou být odemknuty'
           - '&7skrz velikost národa.'
-        child_spawn_failure_enter:
-          name: '&4&lNemáš povolení ke vstupu'
+        child_failure_spawn_enter:
+          name: '&4&lNot Allowed to Enter'
           lore:
-          - '&cNelze vstoupit do regionu'
-          - '&chlavního landu, kde je umístěný spawn.'
-        child_spawn_failure_teleport:
-          name: '&4&lNelze se teleportovat'
-          lore:
-          - '&cNemáš povolení se teleportovat'
-          - '&cna &nhlavní land národa'
+          - '&cYou''re not allowed to enter'
+          - '&cthe area in which the capital''s'
+          - '&cspawn is located.'
           - ''
-          - '&7Majitel landu musí dát roli'
-          - '&7dostatečná práva.'
-        child_spawn_failure_none:
-          name: '&4&lŽádný spawn'
+          - ' &8• &7The capital''s owner can give your'
+          - '   &7role permission to do so.'
+        child_failure_spawn_teleport:
+          name: '&4&lNot Allowed to Teleport'
           lore:
-          - '&cHlavní land nemá nastavený spawn.'
+          - '&cYou''re not allowed to teleport'
+          - '&cto &nthe &ccapital''s spawn.'
           - ''
-          - '&7Nastavení spawnu:'
-          - '&e/lands setspawn'
+          - ' &8• &7The capital''s owner can give your'
+          - '   &7role permission to do so.'
+        child_failure_spawn_none:
+          name: '&4&lNo Spawnpoint'
+          lore:
+          - '&cThe capital hasn''t set a spawn yet.'
+          - ''
+          - ' &8• &7Set spawn point:'
+          - '   &e/lands setspawn'
     title: '&8{level} {nation}'
   list_player_lands:
     title: Tvé lands
@@ -1177,13 +1210,6 @@ gui:
           - '&7Tato role má vyšší prioritu'
           - '&7než tvoje nebo se má stejnou'
           - '&7prioritu jako tvoje.'
-        child_noaccess_setrole:
-          name: '&c&lPřístup zamítnut'
-          lore:
-          - '&cNemůžeš nastavovat role.'
-          - ''
-          - '&7Majitel landu ti nenastavil právo'
-          - '&7na úpravu rolí v landu.'
         child_failure_max-players:
           name: '&c&lMaximální počet členů'
           lore:
@@ -1266,6 +1292,13 @@ gui:
           - ''
           - ' &8• &7Nového majitele můžeš nastavit pomocí:'
           - '   &e/{cmd}&7.'
+        child_failure_setrole:
+          name: '&4&lBez přístupu'
+          lore:
+          - '&cNemáš povolení nastavovat role.'
+          - ''
+          - '&8• &7Majitel landu musí tvé roli'
+          - '  &7dát práva v nastavení rolích'
   list_area_banned:
     title: '&8{area} &7> &8Zabanovaní hráči'
     items:
@@ -1750,6 +1783,12 @@ gui:
           lore:
           - '&8✖ &7Povoluje roli sázet, sklízet'
           - '   &7semínka, úrodu atd.'
+        entry_shear:
+          material: SHEARS
+          name: '&6&lStříhání mobů: {enabled}'
+          lore:
+          - '&8✖ &7Povoluje hráčům stříhat'
+          - '   &7ovce, houby, krávy a jine.'
   list_area_settings:
     title: '&8{area} &7> &8Nastavení vlajek'
     items:
@@ -1965,39 +2004,6 @@ gui:
           - ''
           - '{description}'
           material: GRAY_STAINED_GLASS
-  list_global_lands:
-    title: Všechny lands
-    items:
-      default:
-        entry_object:
-          name: '&2&l{land}'
-          lore:
-          - '&7Level: {level}'
-          - '&7Název:'
-          - '&7{title}'
-          - ''
-          - '&8✖ &bLEVÉ TLAČÍTKO'
-          - '   &7Teleportuješ se na spawn landu.'
-          - '&8✖ &9PRAVÉ TLAČÍTKO'
-          - '   &7Zobrazí informace o landu a menu.'
-          material: INHERIT
-        refresh_toggle-allowed:
-          material: OAK_DOOR
-          slots: 41
-          name: '&6&lPouze veřejné landy: {only-allowed}'
-          lore:
-          - '&8✖ &7Zobrazí landy, do kterých můžeš vstoupit'
-          - '   &7anebo se teleportovat na spawn.'
-        refresh_toggle-category:
-          material: HOPPER
-          slots: 42
-          name: '&6&lKategorie: {category}'
-          lore:
-          - '&8✖ &7Zobrazí pouze landy,'
-          - '   &7které jsou v této kategorii?'
-          - ''
-          - '   &8• &7Popis kategorie:'
-          - '     {description}'
   list_rentables:
     title: Pronájmy
     items:
@@ -2037,16 +2043,16 @@ gui:
         refresh_sort:
           material: HOPPER
           slots: 41
-          name: '&7&lSort by: {mode}'
+          name: '&7&lSeřadit podle: {mode}'
           lore:
-          - '&8✖ &7Click to toggle the sort mode.'
+          - '&8✖ &7Kliknutím přepneš zobrazení.'
         refresh_type:
           material: COMPARATOR
           slots: 42
-          name: '&7&lType: {type}'
+          name: '&7&lTyp: {type}'
           lore:
-          - '&8✖ &7Display objects to buy'
-          - '   &7or to sell?'
+          - '&8✖ &7Zobrazení landů k nákupu'
+          - '   &7nebo k prodeji?'
   list_war_lands:
     title: '&8{team}'
     items:
@@ -2285,30 +2291,6 @@ gui:
           - '&8✖ &7Zobrazí protivníky.'
           - '   &8• &7Počet: {enemies}'
     title: '&8Relations'
-  list_global_nations:
-    items:
-      default:
-        refresh_toggle-allowed:
-          material: OAK_DOOR
-          slots: 41
-          name: '&6&lPouze veřejné národy: {only-allowed}'
-          lore:
-          - '&8✖ &7Zobrazí pouze veřejné národy'
-          - '   &7do kterých můžeš vstoupit nebo se'
-          - '   &7na ně teleportovat.'
-        entry_object:
-          material: INHERIT
-          name: '&2&l{nation}'
-          lore:
-          - ' &8• &7Level: {level}'
-          - ' &8• &7Landy: {lands}'
-          - ' &8• &7Počet členů: {members}'
-          - ''
-          - '&8✖ &bLEVÉ KLIKNUTÍ'
-          - '   &7Teleport na hlavní město (land).'
-          - '&8✖ &9PRAVÉ KLIKNUTÍ'
-          - '   &7Zobrazení více informací.'
-    title: Všechny národy
   relations:
     items:
       default:
@@ -2464,6 +2446,11 @@ gui:
           lore:
           - '&cVšechny vztahy spravuje národ'
           - '&4{nation}&c, kterého je tento land součástí.'
+        child_war:
+          name: '&4&lAktuálně ve válce'
+          lore:
+          - '&cToto nemůžeš dělat když {object}'
+          - '&cje ve válce.'
     title: '&8Relation'
   admin_wilderness:
     items:
@@ -2560,54 +2547,241 @@ gui:
           lore:
           - '&7Smaže land z povrchu zemského.'
     title: '&8Admin Lands'
-  list_top:
+  player-management:
+    items:
+      default:
+        members:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
+          slots: 20
+          name: '&6&lČlenové'
+          lore:
+          - '&7Správa členů.'
+        banned:
+          material: BARRIER
+          slots: 22
+          name: '&6&lZabanovaní hráči'
+          lore:
+          - '&7Správa zabanovaných hráčů.'
+        invites:
+          material: WRITABLE_BOOK
+          slots: 24
+          name: '&6&lPozvánky'
+          lore:
+          - '&7Správa odeslaných pozvánek.'
+        membership-requests:
+          material: BOOKSHELF
+          slots: 26
+          name: '&6&lŽádosti o členství'
+          lore:
+          - '&7Správa příchozích žádostí.'
+    title: '&8Správa členů'
+  list_player_flags:
+    title: '&8Osobní nastavení'
+    items:
+      default:
+        entry_general_player:
+          material: INHERIT
+          name: '&6&l{flag}: {enabled}'
+          lore:
+          - '&8✖ &7Kliknutím přepneš:'
+          - '   &7Odemknuto: {unlocked}'
+          - ''
+          - '&7Popis:'
+          - '{desc}'
+        entry_enter_messages:
+          material: OAK_SIGN
+          name: '&6&lVstupní a odchozí zprávy: {enabled}'
+          lore:
+          - '&8✖ &7Zobrazování zprávy o vstupu nebo odchodu'
+          - '    &7Odemknuto: {unlocked}'
+        entry_receive_invites:
+          material: WRITABLE_BOOK
+          name: '&6&lObdržení pozvánek: {enabled}'
+          lore:
+          - '&8✖ &7Povoluje ostatním landů ti odeslat'
+          - '   &7pozvánky k připojení se k nim.'
+          - '   &7Odemknuto: {unlocked}'
+  list_all:
+    items:
+      default:
+        refresh_sorting:
+          material: HOPPER
+          slots: 40
+          name: '&6&lŘazení: {current}'
+          lore:
+          - '&8✖ &7Kliknutím přepneš řazení.'
+        refresh_toggle-category:
+          material: BOOKSHELF
+          slots: 41
+          name: '&6&lKategorie: {category}'
+          lore:
+          - '&8✖ &7Zobrazit pouze landy, které splňují'
+          - '   &7výběr zvolené kategorie?'
+          - ''
+          - '   &8• &7Popis kategorie:'
+          - '     {description}'
+        refresh_toggle-allowed:
+          material: OAK_DOOR
+          slots: 42
+          name: '&6&lPouze veřejné: {only-allowed}'
+          lore:
+          - '&8✖ &7Zobrazí landy, do kterých můžeš vstoupit'
+          - '    &7nebo se teleportovat na spawn.'
+        entry_land:
+          material: INHERIT
+          name: '&6&l#{pos} &2&l{land}'
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Category: {category}'
+          - ' &8• &7Nadpis:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bLEVÉ TLAČÍTKO'
+          - '   &7Teleport na spawn tohoto landu'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zobrazení více informací.'
+        entry_land_looking:
+          material: INHERIT
+          name: '&6&l#{pos} &2&l{land}'
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Category: {category}'
+          - ' &8• &7Nadpis:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bLEVÉ TLAČÍTKO'
+          - '   &7Teleport na spawn tohoto landu'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zobrazení více informací.'
+          - ''
+          - '&6&lŽádosti o členství'
+          - '&8✖ &bSHIFT + LEVÉ TLAČÍTKO'
+          - '   &7Zažádat o členství.'
+          - '&8✖ &9SHIFT + PRAVÉ TLAČÍTKO'
+          - '   &7Zamítnout žádost o členství.'
+        entry_nation:
+          material: INHERIT
+          name: '&6&l#{pos} &2&l{nation}'
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Landy: {lands}'
+          - ''
+          - '&8✖ &bLEVÉ TLAČÍTKO'
+          - '   &7Teleport na hlavní spawn.'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zobrazení více informací.'
+        child_failure_membership-request_owner:
+          name: '&4&lVlastní land'
+          lore:
+          - '&cJiž vlastníš svůj vlastní land'
+          - '&cmusíš ho prvně smazat, předtím'
+          - '&cnež se budeš moct připojit do dalšího landu.'
+        child_failure_membership-request_max:
+          name: '&4&lMaximální počet landů'
+          lore:
+          - '&cDosáhl jsi maximálního počtu'
+          - '&clandů ve kterých můžeš být členem'
+          - '&cv jednu chvíli.'
+        child_failure_membership-request_trusted:
+          name: '&4&lJiž je člen'
+          lore:
+          - '&cJiž jsi udělil trust tomuto hráči v landu.'
+        child_success_membership-request_sent:
+          name: '&aOdeslat žádost o členství'
+          lore:
+          - '&7Poté musí tvojí žádost potvrdit nebo'
+          - '&7zamítnout. :('
+        child_success_membership-request_revoked:
+          name: '&cŽádost zamítnuta'
+          lore:
+          - '&7Úspěšně jsi zamítl'
+          - '&7žádost o členství.'
+    title: '&8Všechny landy'
+  list_player_nations:
+    items:
+      default:
+        entry_nation:
+          material: INHERIT
+          name: '&9&l{nation}'
+          lore:
+          - '&7Jsi přidaný v tomto národě.'
+          - ' &8• &7Landy: {lands}'
+          - ' &8• &7Celkem chunků: {chunks}'
+          - ' &8• &7Celkem členů: {members}'
+          - ''
+          - '&8✖ &7Otevřít národní menu.'
+          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '   &7Zoobrazí základní informace'
+          - '   &7o tomto národě.'
+        entry_nation_edit:
+          material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVmNDI1YjRkYjdkNjJiMjAwZTg5YzAxM2U0MjFhOWUxMTBiZmIyN2YyZDhiOWY1ODg0ZDEwMTA0ZDAwZjRmNCJ9fX0=
+          name: '&9&l{nation}'
+          lore:
+          - '&7Tento národ je nastavený jako tvůj hlavní'
+          - '&7skrz &3/lands edit &8<&3capital&8>&7. Tímto příkazem'
+          - '&7budou další příkazy priváděny na tomto národě.'
+          - ''
+          - '&8✖ &7Otevřít národní menu.'
+          - '&8✖ &9PRAVÉ KLIKNUTÍ'
+          - '   &7Zobrazí základní informace'
+          - '   &7o tomto národě.'
+        entry_nation_own:
+          material: INHERIT
+          name: '&9&l{nation}'
+          lore:
+          - '&7Vlastníš tento národ.'
+          - ' &8• &7Landy: {lands}'
+          - ' &8• &7Chunky: {chunks}'
+          - ' &8• &7Celkem členů: {members}'
+          - ''
+          - '&8✖ &7Otevřít národní menu.'
+          - '&8✖ &9PRAVÉ KLIKNUTÍ'
+          - '   &7Zobrazí základní informace'
+          - '   &7o tomto národě.'
+    title: '&8Tvé národy'
+  list_membership-requests:
     items:
       default:
         entry_object:
           material: INHERIT
-          name: '&6&l#{pos} &2{object}'
+          name: '&6&l{name}'
           lore:
-          - ' &8• &7{sorting}: {value}'
-          - ' &8• &7Majitel: {owner}'
+          - '&7před &5{time}'
           - ''
-          - '&8✖ &bLEVÉ TLAČÍTKO'
-          - '   &7Teleport na spawn'
-          - '   &7tohoto landu.'
-          - '&8✖ &9PRAVÉ TLAČÍTKO'
+          - '&8✖ &bLEVÉ KLIKNUTÍ'
+          - '   &7Potvrdit žádost a udělit trust.'
+          - '&8✖ &9PRAVÉ KLIKNUTÍ'
           - '   &7Zobrazení více informací.'
-        entry_object_ratio_kd:
-          material: INHERIT
-          name: '&6&l#{pos} &2{object}'
-          lore:
-          - ' &8• &7Zabito hráčů ve válce: {numerator} smrti: {denominator}'
-          - '      &7= ratio of: {value}'
-          - ' &8• &7Majitel: {owner}'
-          - ''
-          - '&8✖ &bLEVÉ TLAČÍTKO'
-          - '   &7Teleport na spawn'
-          - '   &7tohoto landu.'
-          - '&8✖ &9PRAVÉ TLAČÍTKO'
-          - '   &7Zobrazení více informací.'
-        entry_object_ratio_wl:
-          material: INHERIT
-          name: '&6&l#{pos} &2{object}'
-          lore:
-          - ' &8• &7Vyhrané války: {numerator} prohrané: {denominator}'
-          - '      &7= ratio of: {value}'
-          - ' &8• &7Majitel: {owner}'
-          - ''
-          - '&8✖ &bLEVÉ TLAČÍTKO'
-          - '   &7Teleport na spawn'
-          - '   &7tohoto landu.'
-          - '&8✖ &9PRAVÉ TLAČÍTKO'
-          - '   &7Zobrazení více informací.'
-        refresh_sorting:
-          material: HOPPER
+          - '&8✖ &3VYHODIT ITEM'
+          - '   &7Zamítnutí žádosti.'
+        category:
+          material: BOOKSHELF
           slots: 41
-          name: '&6&lŘazení: {current}'
+          name: '&6&lKategorie: {category}'
           lore:
-          - '&8✖ &7Aktivace modu řazení.'
-    title: Top
+          - '&8✖ &7Změní kategorii landu.'
+          - ''
+          - '&7Ostatní hráči mohou vyžádat člena'
+          - '&7v tomto landu dokud tento land má kategorii'
+          - '&7nastavenou na: {looking}'
+        child_failure_player_own-land:
+          name: '&4&lMá vlastní land'
+          lore:
+          - '&cNelze dát trust tomuto hráči, jelikož'
+          - '&cmá svůj vlastní land.'
+          - '&7Musí prvně smazat svůj land.'
+        child_failure_max:
+          name: '&4&lNelze přidat další trust'
+          lore:
+          - '&c{object}&7 dosáhl maximálního'
+          - '&cpočtu členů.'
+        child_failure_player_max-lands:
+          name: '&4&lNemůže být součástí více landů'
+          lore:
+          - '&cTento hráč dosáhl maximálního'
+          - '&cpočtu land, vekterých může být'
+          - '&cnajedou připojený.'
+    title: '&8Žádosti o členství'
 physical:
   claim_block:
     name: '&aClaimblock'
@@ -2617,12 +2791,6 @@ physical:
     - ''
     - '&7Majitel:&e {owner}'
     material: GRASS_BLOCK
-  capture_block:
-    name: '&2Zabírací vlajka'
-    lore:
-    - '&7Polož tento block na uzemí protivníka'
-    - '&7který je s tebou ve válce a zabereš jeho land.'
-    material: BEACON
   selection:
     name: '&2Výběrový nástroj'
     lore:
@@ -2653,6 +2821,12 @@ physical:
     name: ''
     lore: []
     material: GOLD_INGOT
+  capture_flag:
+    material: BEACON
+    name: '&2Zabírací vlajka'
+    lore:
+    - '&7Polož vlajku na území protivníka'
+    - '&7během války a dané území zabereš.'
 common:
   size: 45
   entries: 10-36
@@ -2676,11 +2850,13 @@ common:
         slots: 38
         name: '&cPředchozí stránka'
         lore: []
+        sound: BLOCK_NOTE_BLOCK_BASS
       refresh_page_next:
         material: ARROW
         slots: 44
         name: '&aDalší stránka'
         lore: []
+        sound: BLOCK_NOTE_BLOCK_BASS
       child_failure_noaccess:
         name: '&4&lNení povoleno'
         lore:
@@ -2689,47 +2865,64 @@ common:
         - '&7Majitel {object} ti na toto musí dát právo'
         - '&7v roli, kterou máš nastavenou.'
         - '&7Vlajka: {flag}'
-      child_spawn_failure_cost:
-        name: '&4&lNedostatek peněz'
-        lore:
-        - '&7Potřebuješ&c {cost} &7k zaplacení'
-        - '&7pro teleport.'
-      child_spawn_failure_enter:
-        name: '&4&lNemáš povolení ke vstupu'
-        lore:
-        - '&cNemáš povolení vstoupit do'
-        - '&ctohoto regionu v tomto landu'
-        - '&ckde se nachází spawn.'
-        - ''
-        - '&7Majitel landu toto může změnit'
-        - '&7v nastavení rolí.'
-      child_spawn_failure_cooldown:
-        name: '&4&lČekej prosím...'
-        lore:
-        - '&cMusíš ještě počkat&4 {time}'
-        - '&cpředtím než se budeš moct znovu'
-        - '&cteleportovat na spawn.'
-      child_spawn_failure_teleport:
-        name: '&4&lNemáš povolení k teleportu'
-        lore:
-        - '&cNemáš povolení se teleportovat'
-        - '&cna &ntento&c land spawn.'
-        - ''
-        - '&7Majitel tě zabanoval nebo to zakázal'
-        - '&7v rolích v landu.'
-      child_spawn_failure_teleport_permission:
-        name: '&4&lChybějící právo'
-        lore:
-        - '&cNemáš povolení se teleportovat'
-        - '&cna &njakýkoliv&c land spawn.'
-      child_spawn_failure_none:
-        name: '&4&lNení nastavený spawnpoint'
-        lore:
-        - '&cTento land nemá nastavený spawn.'
-        - ''
-        - '&7K nastavení spawnpointu:'
-        - '&e/lands setspawn'
       child_failure_page_previous:
         name: '&4&lŽádná předchozí stránka'
       child_failure_page_next:
         name: '&a&lŽádná další stránka'
+        lore:
+        - '&8✖ &7Go to next page:&3 {next}'
+      child_failure_spawn_cost:
+        name: '&4&lNedostatek peněz'
+        lore:
+        - '&7Potřebuješ&c {cost} &7k zaplacení'
+        - '&7teleportu.'
+      child_failure_spawn_enter:
+        name: '&4&lNemáš povolení ke vstupu'
+        lore:
+        - '&cNelze vstoupit do regionu'
+        - '&cv landu ve kterém se spawn nachází.'
+        - ''
+        - ' &8• &7Majitel landu ti toto pomocí rolí'
+        - '    &7může povolit.'
+      child_failure_spawn_cooldown:
+        name: '&4&lCooldown'
+        lore:
+        - '&cMusíš počkat ještě&4 {time}'
+        - '&cpředtím, než se můežeš teleportovat'
+        - '&cznovu na spawn.'
+      child_failure_spawn_teleport:
+        name: '&4&lNepovolený teleport'
+        lore:
+        - '&cNemáš povolení se teleportovat'
+        - '&cna &ntento&c land spawn.'
+        - ''
+        - ' &8• &7Majitel landu ti toto pomocí rolí'
+        - '     &7může povolit.'
+      child_failure_spawn_none:
+        name: '&4&lŽádný spawnpoint'
+        lore:
+        - '&cTento land nemá nastavený spawnpoint.'
+        - ''
+        - ' &8• &7K nastavení spawnpointu:'
+        - '   &e/lands setspawn'
+      child_failure_no-item:
+        name: '&4&lŽádný item na kurzoru'
+        lore:
+        - '&7Musíš vzít item z'
+        - '&7tvého inventáře.'
+      child_failure_current-war:
+        name: '&4&lAktuálně ve válce'
+        lore:
+        - '&7Nemůže toto dělat dokud'
+        - '&7je {object}&7 ve válce.'
+      child_failure_permission:
+        name: '&4&lChybějící práva'
+        lore:
+        - '&cNa toto nemáš dostatek práv.'
+common_sounds:
+  # Play a sound when the item is set in the menu.
+  set:
+    # Each item starting with [item_type]_failure_<name> will have this sound set.
+    # You can still override the "sound_set" for any item in their sections.
+    failure: ENTITY_VILLAGER_NO
+    success: ENTITY_PLAYER_LEVELUP

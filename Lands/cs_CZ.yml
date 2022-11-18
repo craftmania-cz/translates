@@ -42,13 +42,13 @@ general:
   top:
     hologram:
       land:
-        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Lands &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Landů &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
         entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
-        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Lands &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Landů &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
       nation:
-        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Nations &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Národů &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
         entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
-        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Nations &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Národů &8(&7Celkem: {total}&8) &7&m━>━━━━━━━━━━━━━━'
   integration:
     dynmap:
       land:
@@ -193,13 +193,13 @@ general:
           received: '&7Národ obdržel celkem {0} na poplatcích z landů. Banka: {1}'
     relation:
       ally:
-        offer: '&7{0} &7wants to be allies with us.'
-        accepted: '&7We''re now allies with {0}&7.'
-        remove: '&7We''re no longer allies with {0}&7.'
+        offer: '&7{0} &7chtějí být s námi spojenci.'
+        accepted: '&7Nyní jsme spojenci s {0}&7.'
+        remove: '&7Již nejsme spojenci s {0}&7.'
       enemy:
-        add: '&7We''re now enemies to {0}&7.'
-        offer: '&7{0} &7wants to be neutral to us.'
-        accepted: '&7We''re no longer enemies to {0}&7.'
+        add: '&7Nyní jsme protivníci {0}&7.'
+        offer: '&7{0} &7chtějí být s námi neutrální.'
+        accepted: '&7Již nejsme protivníci {0}&7.'
   
   wars:
     object:
@@ -399,30 +399,31 @@ help:
           menu: '[T]&e{parent} {subcmd} &8- &7Open menu of player[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
           delete: '[T]&e{parent} {subcmd} &8- &7Delete player and his lands[H]&7Click
             to copy.[/H][SC]{fullcmd}[/SC][/T]'
+          give:
+            main: '[T]&e{parent} {subcmd} {args} &8- &7Give to player[H]&7Click to
+              copy.[/H][SC]{fullcmd}[/SC][/T]'
+            camp: '[T]&e{parent} {subcmd} {args} &8- &7Give to camp items[H]&7Click
+              to copy.[/H][SC]{fullcmd}[/SC][/T]'
+            captureflag: '[T]&e{parent} {subcmd} {args} &8- &7Give to captureblocks[H]&7Click
+              to copy.[/H][SC]{fullcmd}[/SC][/T]'
+            claimblock: '[T]&e{parent} {subcmd} {args} &8- &7Give claimblocks[H]&7Click
+              to copy.[/H][SC]{fullcmd}[/SC][/T]'
+            permission:
+              main: '[T]&e{parent} {subcmd} {args} &8- &7Modify numbered permissions[H]&7Click
+                to copy.[/H][SC]{fullcmd}[/SC][/T]'
+              chunks: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. chunks[H]&7Click
+                to copy.[/H][SC]{fullcmd}[/SC][/T]'
+              chunks-support: '[T]&e{parent} {subcmd} {args} &8- &7Modify support
+                chunks[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+              lands: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. member lands[H]&7Click
+                to copy.[/H][SC]{fullcmd}[/SC][/T]'
+              members: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. members[H]&7Click
+                to copy.[/H][SC]{fullcmd}[/SC][/T]'
+              ownlands: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. own lands[H]&7Click
+                to copy.[/H][SC]{fullcmd}[/SC][/T]'
         
         resetworld: '[T]&e{parent} {subcmd} {args} &8- &7Delete all claims in world[H]&7Click
           to copy.[/H][SC]{fullcmd}[/SC][/T]'
-        give:
-          main: '[T]&e{parent} {subcmd} {args} &8- &7Give to player[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
-          camp: '[T]&e{parent} {subcmd} {args} &8- &7Give to camp items[H]&7Click
-            to copy.[/H][SC]{fullcmd}[/SC][/T]'
-          captureblock: '[T]&e{parent} {subcmd} {args} &8- &7Give to captureblocks[H]&7Click
-            to copy.[/H][SC]{fullcmd}[/SC][/T]'
-          claimblock: '[T]&e{parent} {subcmd} {args} &8- &7Give claimblocks[H]&7Click
-            to copy.[/H][SC]{fullcmd}[/SC][/T]'
-          permission:
-            main: '[T]&e{parent} {subcmd} {args} &8- &7Modify numbered permissions[H]&7Click
-              to copy.[/H][SC]{fullcmd}[/SC][/T]'
-            chunks: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. chunks[H]&7Click
-              to copy.[/H][SC]{fullcmd}[/SC][/T]'
-            chunks-support: '[T]&e{parent} {subcmd} {args} &8- &7Modify support chunks[H]&7Click
-              to copy.[/H][SC]{fullcmd}[/SC][/T]'
-            lands: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. member lands[H]&7Click
-              to copy.[/H][SC]{fullcmd}[/SC][/T]'
-            members: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. members[H]&7Click
-              to copy.[/H][SC]{fullcmd}[/SC][/T]'
-            ownlands: '[T]&e{parent} {subcmd} {args} &8- &7Modify max. own lands[H]&7Click
-              to copy.[/H][SC]{fullcmd}[/SC][/T]'
         hologram:
           main: '[T]&e{parent} {subcmd} {args} &8- &7Manage leaderboard holograms[H]&7Click
             to copy.[/H][SC]{fullcmd}[/SC][/T]'
@@ -585,6 +586,8 @@ wars:
           tam k připojení se k obráncům.'
         overlap: '&cCapture blocks must be placed in a way that the beacon wouldn''t
           overlap with the wilderness.'
+        region: '&cCan''t place capture flag here. &7It overlaps with a capture region
+          of another capture flag.'
       destroy:
         presense: '&cNyní nemůžeš zničit tuto vlajku. &7Stále zde je&3 {players} &7obránců
           v chunku.'
@@ -654,11 +657,10 @@ wars:
           hráčů v národě. &7Minimální počet hráčů pro bránící se národ a deklaraci
           války je&3 {min}§7.'
       enemies: |
-        &cYou must add&4 {object} &cas an enemy first.
-          [T]&7✖ Add as Enemy &8[CLICK][H]&7Click here to add {object} &7as an enemy in order to declare war on them.[/H][C]{cmd}[/C][/T]
-      admin: '&cYou can''t declare war against admin lands.'
-      nation: '&cYou can''t declare war against {object}&c. &7They''re part of the
-        same nation&9 {nation}&7.'
+        &cMusíš přidat&4 {object} &cprvně jako protivníka.
+          [T]&7✖ Přidat protivníka &8[CLICK][H]&7Kliknutím zde přidáš {object} &7jako protivníka k vyhlášení války.[/H][C]{cmd}[/C][/T]
+      admin: '&cNemůžeš valčit s landy patřící serveru.'
+      nation: '&cNemůžeš vyhlásit válku {object}&c. &7Jsou členem stejného národa&9 {nation}&7.'
     deny:
       attacker: '&cÚtočící národ nemůže zrušit jejich vyhlášení války. &7Pouze bránící
         se národ toto může provádět.'
@@ -714,8 +716,8 @@ wars:
             &cBránící se národ nepotvrdil ještě
             &cdeklaraci války.
     spawn:
-      none: '&cThe enemy {enemy} &chas no claims to teleport to.'
-      success: '&7You were teleported near the border of enemy {enemy}&7.'
+      none: '&cProtivník {enemy} &cnemá nic zabráno, nelze se teleportovat.'
+      success: '&7Byl jsi teleportován poblíž hranic protivníka {enemy}&7.'
 nations:
   message:
     current-war: '&cNyní toto nemůžeš provádět. &7Tvůj národ&9 {nation} &je aktuálně
@@ -896,6 +898,7 @@ lands:
           confirm: |
             &cProsím potvrď, že cheš zaplatit&4 {cost} &cjako kompenzaci nájemci&4 {player} &ckvůli jeho odebrání:
               [T]&2✔ Potvrdit &8[KLIKNI][H]&7Kliknutím zde potvrdíš akci a platbu.[/H][C]{cmd}[/C][/T]
+          target: '&cByl jsi odebrán jako nájemce z regionu&4 {area} &4v landu&4 {land}&c. &7Dostal jsi&c {compensation} &7jako kompenzaci.'
     sell:
       sell:
         rented: '&cNemůžeš prodat region, který je pronajmut hráči. &7Region&6 {area}
@@ -963,7 +966,6 @@ lands:
       wilderness: '&cNení zde žádný zabraný land na tvé pozici. &7Jdi na svůj první
         zabran land, k provedení toto akce. &7Můžeš použít &e/view &7k zobrazení zabraných
         chunků v okolí.'
-      player-offline: '&cZadaný hráč&4 {player} §cnení online.'
       player-self: '&cNo sám sebe zvolit nemůžeš, hahahahaha - Wake.'
       banks-disabled: '&7Banky jsou deaktivovány. &8Toto může povolit pouze Wake.'
       land-not-trusted: '&cHráč&4 {player} &7není přidaný v landu&4 {land}&c. Musíš
@@ -997,22 +999,20 @@ lands:
             Vložit peníze do lands banky: [T]&e/lands deposit {value} &8[CLICK][H]&7Klikni
             k vložení {cost} částky do tvé lands banky.[/H][C]lands deposit {value}[/C][/T]'
           personal: '&cNemáš dostatek peněz k zaplacení poplatků. &7Potřebuješ&c {cost}&7.'
-      not-exist: '&cThere is no such land or nation with the name&4 {object}&c. &7Typo?'
+      not-exist: '&cNení zde žádný národ nebo land s názvem&4 {object}&c. &7Chyba?'
       input:
         confirm: |
-          &7Please confirm this action &8(&e/{input}&8) &7by clicking below:
-            [T]&2✔ Confirm &8[CLICK][H]&7Click here to confirm this action.[/H][C]{fullcmd}[/C][/T]
-        land: '&cThe land&4 {input} &cdoesn''t exist. &7There''s no land with this
-          name.'
-        nation: '&cThe nation&4 {input} &cdoesn''t exist. &7There''s no nation with
-          this name.'
+          &7Prosím potvrď akci &8(&e/{input}&8) &7kliknutím níže:
+            [T]&2✔ Potvrdit &8[CLICK][H]&7Kliknutím zde potvrdíš akci.[/H][C]{fullcmd}[/C][/T]
+        land: '&cLand&4 {input} &cneexistuje. &7Není zde žádný land s tímto názvem.'
+        nation: '&cNárod&4 {input} &cneexistuje. &7Není zde žádný takový nebo podobný národ.'
         holder: '&cThere is not such land or nation with the name&4 {input}&c. &7Typo?'
-        number: '&cYour input&4 {input} &cisn''t a number. &7Argument {pos}: {expected}'
-        player: '&cThere''s no player with the name&4 {input}&c. &7Typo?'
-        offline: '&cThere''s currently no player with the name&4 {input} &conline.
-          &7Typo?'
-        world: '&cThe world&4 {input} &cdoesn''t exist. &7Argument {pos}: {expected}'
-        world-disabled: '&cThis is deactivated in this world. &8World: {input}'
+        number: '&cZadaný text&4 {input} &cnení číslo. &7Argument {pos}: {expected}'
+        player: '&cNení zde žádný hráč s jménem&4 {input}&c. &7Chyba?'
+        offline: '&cHráč s jménem&4 {input} &cnení aktuálně online.
+          &7Chyba?'
+        world: '&cSvět&4 {input} &cneexistuje. &7Argument {pos}: {expected}'
+        world-disabled: '&cTento svět je deaktivovaný. &8Svět: {input}'
     create:
       land-other: '&cNemáš povolení mít vlastní land a být členem v jiném landu. &7Musíš
         prvně opustit land&2 {land} &7.'
@@ -1225,6 +1225,8 @@ lands:
 
             [T]&2✔ Potvrdit &8[&8KLIKNI&8][H]&7Kliknutím zde akceptuješ pozvánku.[/H][C]lands accept {land}[/C][/T]
             [T]&c✘ Zamítnout &8[&8KLIKNI&8][H]&7Kliknutím zde zamítneš pozvánku.[/H][C]lands deny {land}[/C][/T]
+      flag: '&cTento hráč&4 {player}&c si nepřeje dostávat pozvánky do landů.
+        &7Může si to změnit v nastavení pomocí příkazu &8/&3{cmd}&7.'
     untrust:
       area:
         already: '&7Hráč&3 {player} &7nemá trust v regionu &8(&7Region:&6 {area} &7Land:&2
@@ -1243,8 +1245,8 @@ lands:
           {land}&7. Hráč nemá trust v žádném regionu.'
         success: '&7Úspěšně jsi zrušil trust hráči&3 {player} &7v celém landu&2 {land}&7,
           vyjímku regionů, které jsou pronajímány/odkoupeny.'
-      owner: '&cLand owners can''t be untrusted. [T]&7New owners can be set using
-        &e/{cmd}&7. &8[CLICK][H]&7Click here to copy this command.[/H][SC]{cmd}[/SC][/T]'
+      owner: '&cMajiteli landu nemůže být zrušený trust. [T]&7Nový majitel může být nastavený pomocí
+        &e/{cmd}&7. &8[CLICK][H]&7Klikni k okopírování příkazu[/H][SC]{cmd}[/SC][/T]'
     setrole:
       visitor: '&cNemůžeš nastavit roli&4 {role}&c. &7Pokud chceš zrušit trust hráči,
         použij &e/lands untrust {player} [region]&7.'
@@ -1432,36 +1434,35 @@ lands:
         [NoPrefix]&7Tvůj land musí zaplatit celkem {total} za &5{next} &7k udržení všech zabraných chunků a členství v národě. &7Klikni nahoře k vložení peněz do lands banky.
         &7&m━━━━━━━━━<━&r &cNásledují platby &7&m━>━━━━━━━━━
     relations:
-      self: '&cYou can''t add&4 {object} &cas an ally or enemy to itself.'
-      nation: '&cAll relations are managed by the nation&4 {nation}&c, which your
-        land is part of.'
+      self: '&cNemůžeš přidat&4 {object} &csám sebe jako spojence nebo protivníka.'
+      nation: '&cVšechny vztahy jsou spravovány národem&4 {nation}&c, ve kterém je tvůj land členem.'
       allies:
         add:
-          already: '&7{target} &7is already an ally of {object}&7.'
+          already: '&7{target} &7je již spojencem {object}&7.'
           nation: |
-            &cYou can't get into an alliance with land&4 {land}&c. &7The land is governed by nation&9 {nation}&7.
-              [T]&7✖ Send Alliance request to nation&9 {nation} &7instead. &8[CLICK][H]&7Click here to send an alliance request to nation&9 {nation}&7.[/H][C]{cmd}[/C][/T]
-          success: '&7Successfully sent an ally offer to {target}&7. If they accept
-            it, you &8(&7{object}&8) &7will be allied with them.'
+            &cNemůžeš nastavit spojence land&4 {land}&c. &7Tento land patří národu&9 {nation}&7.
+              [T]&7✖ Nastavit národ&9 {nation} &7jako spojence. &8[CLICK][H]&7Kliknutím zde nastavíš národ&9 {nation}&7 jako spojence.[/H][C]{cmd}[/C][/T]
+          success: '&7Úspěšně jsi odeslal nabídku spojenectví {target}&7. Pokud ji potvrdí,
+            vy &8(&7{object}&8) &7budete spojenci.'
         remove:
-          already: '&7{target} &7isn''t an ally of {object}&7.'
-          revoked: '&7You &8(&7{object}&8) revoked the ally offer for {target}&7.'
-          broadcast: '&7{object} &7and {target} &7are no longer allies.'
+          already: '&7{target} &7již není spojencem {object}&7.'
+          revoked: '&7Vy &8(&7{object}&8) jste zrušili nabídku o spojenectví {target}&7.'
+          broadcast: '&7{object} &7a {target} &7již nejsou spojenci.'
       enemies:
         add:
-          already: '&7{target} &7is already an enemy of {object}&7.'
-          revoked: '&7You &8(&7{object}&8) revoked the neutralization offer for {target}&7.'
+          already: '&7{target} &7je již protivníkem {object}&7.'
+          revoked: '&7Vy &8(&7{object}&8) jste zrušili mírovou dohodu s {target}&7.'
           nation: |
-            &cYou can't declare land&4 {land} &cas an enemy. &7The land is governed by nation&9 {nation}&7.
-              [T]&7✖ Declare nation&9 {nation} &7as an enemy instead. &8[CLICK][H]&7Click here to declare nation&9 {nation} &7as an enemy.[/H][C]{cmd}[/C][/T]
-          success: '&7You &8(&7{object}&8) &7and {target} &7are now enemies.'
-          broadcast: '&7{object} &7and {target} &7are now enemies.'
+            &cNemůžeš nastavit land&4 {land} &cjako protivníka. &7Land patří národu&9 {nation}&7.
+              [T]&7✖ Nastavit národ&9 {nation} &7jako protivníka. &8[CLICK][H]&7Kliknutím zde nastavíš národ&9 {nation} &7jako protivníka.[/H][C]{cmd}[/C][/T]
+          success: '&7Ty &8(&7{object}&8) &7a {target} &7jste nyní protivníci.'
+          broadcast: '&7{object} &7a {target} &7jsou nyní protivníci.'
         remove:
-          already: '&7{target} &7isn''t an enemy of&7 {object}&7.'
-          success: '&7Successfully sent an neutralization offer to {target}&7. If
-            they accept it, you &8(&7{object}&8) &7will no longer be enemies.'
+          already: '&7{target} &7není protivníkem&7 {object}&7.'
+          success: '&7Úspěšně jsi odeslal mírovou dohohodu {target}&7. Pokud
+            ji potvrdí, ty &8(&7{object}&8) &7již nebudete protivníci.'
     confirmtp:
-      none: '&cYou have no active teleportation.'
+      none: '&cNemáš aktivní žádný teleport.'
     admin:
       listperms:
         header: '[NoPrefix][T]&7----------&e&l<<<<&7-[H]&7Click here to navigate to
@@ -1477,8 +1478,6 @@ lands:
           [T]&7----------&e&l<<<<&7-[H]&7Click here to navigate to the previous page.[/H][C]{cmd} listperms {player} {previous}[/C][/T] &2Perm List &7Page&3 {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Click here to go to the next page.[/H][C]{cmd} listperms {player} {next}[/C][/T]
   message:
     feature-disabled: '&ctato funkce je deaktivována.'
-    current-war: '&cToto nemůžeš právě dělat. &7Tvůj land&2 {land} &7je aktuálně zapojen
-      do války s {object}&7. &7Zkus to znova až válka skončí.'
     flags:
       block_place: '&cNemáš zde povolení pokládat bloky &8(Region: {area}, Land: {land}).'
       block_break: '&cNemáš zde povolení ničit bloky &8(Region: {area}, Land: {land}).'
@@ -1524,6 +1523,7 @@ lands:
           tvém landu.'
         wilderness: '&cNemůžeš zautočit na tohoto hráče, jelikož on je v přírodě a
           ty jsi v chráném landu.'
+      claimblock: '&cYou don''t own this claimblock. &7It belongs to&3 {player}&7.'
     area:
       exists: '&cRegion s názvem&4 {area} &cjiž existuje v landu&4 {land}&c.'
       not-exist: '&cTento region&4 {area} &cneexistuje v&4 {land}&c.'
@@ -1552,8 +1552,8 @@ lands:
     teleportation:
       already: '&cNelze spustit druhý teleport. Již probíhá jeden teleport. §7Počet
         až se dokončí ten první.'
-      started: '&7Teleportování započalo... Teleportuji tě za&5 {sec} vteřin(y)&7. Nepohybuj
-        se!'
+      started: '&7Teleportování započalo... Teleportuji tě za&5 {sec} vteřin(y)&7.
+        Nepohybuj se!'
       cmd: '&cNemůžeš používat příkazy, když se teleportuješ. &7Počkej dalších&5 {sec}
         vteřin(y) &7než se teleport dokončí.'
       cancelled: '&cTvůj teleport byl zrušen. &7Nepohybuj se když čekáš na teleport.'
@@ -1565,7 +1565,8 @@ lands:
          [T]&2✔ Pokud se chceš teleportovat i tak, klikni: &8[ZDE][H]&7Varování - můžeš zemřít.[/H][C]{cmd}[/C][/T]
       corrected: '&7Originální poloha pro teleport není bezpečná. §7Proto byl teleport
         o kousek posunut.'
-      progress: '#b#[config]color:purple,style:solid[/config]&7Čekej prosím&5 {time} &7vteřin před teleportem.'
+      progress: '#b#[config]color:purple,style:solid[/config]&7Čekej prosím&5 {time}
+        &7vteřin před teleportem.'
     claimblock:
       dropped: '&cClaimblock leží na zemi. &7Nemáš dostatek místa v inventáři.'
       success: '&7Dostal jsi&3 {blocks} &7Claimblock(ů). &7Polož je do chunků, které
@@ -1622,7 +1623,8 @@ lands:
       rename: '#t#&6Napiš nový název[newline]&7do chatu[newline]&7Mezery nejsou povoleny.
         &7Ke zrušení napiš "cancel".'
       name: '#t#&6Napiš název[newline]&7do chatu[newline]&7Ke zrušení napiš "cancel".'
-      object: '#t#&6Enter the Name[newline]&7of a land or nation in chat[newline]&7Enter
-        "cancel" to abort.'
+      object: '#t#&6Napiš název[newline]&7landu nabo národa do chatu[newline]&7Ke zrušení napiš "cancel".'
     combat:
       tag: '#b#[config]color:purple,style:solid[/config]&7Combat tag:&5 {time}'
+    war: '&cToto nyní nemůžeš provádět. &7{object} &7je aktuálně ve válce
+      s {enemy}&7. &7Zkus to znovu až válka skončí.'
